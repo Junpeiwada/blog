@@ -288,6 +288,9 @@ class BlogBuilder:
         # Copy images directory to docs
         self.copy_images()
         
+        # Copy assets directory to docs
+        self.copy_assets()
+        
         print(f"\nBuild complete! Generated {len(posts_data)} posts")
         print(f"Output directory: {self.docs_dir}")
     
@@ -305,6 +308,21 @@ class BlogBuilder:
             print(f"Copied images from {images_src} to {images_dest}")
         else:
             print("No images directory found to copy")
+    
+    def copy_assets(self):
+        """Copy assets directory to docs"""
+        import shutil
+        
+        assets_src = self.root_dir / "assets"
+        assets_dest = self.docs_dir / "assets"
+        
+        if assets_src.exists():
+            if assets_dest.exists():
+                shutil.rmtree(assets_dest)
+            shutil.copytree(assets_src, assets_dest)
+            print(f"Copied assets from {assets_src} to {assets_dest}")
+        else:
+            print("No assets directory found to copy")
     
     def serve_local(self, port=8000):
         """Serve the site locally for testing"""

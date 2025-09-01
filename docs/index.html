@@ -9,135 +9,20 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     
-    <!-- Bootstrap Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
     
-    <!-- Lunr.js for search -->
-    <script src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script>
+<!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+
+<!-- Lunr.js for search -->
+<script src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script>
+
     
     <!-- Custom CSS -->
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans JP', sans-serif;
-            line-height: 1.6;
-            background-color: #f8f9fa;
-        }
-        
-        .navbar-brand {
-            font-weight: 600;
-            font-size: 1.5rem;
-        }
-        
-        .hero-section {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 4rem 0;
-            margin-bottom: 2rem;
-        }
-        
-        .post-card {
-            transition: transform 0.2s, box-shadow 0.2s;
-            border: none;
-            margin-bottom: 2rem;
-            cursor: pointer;
-        }
-        
-        .post-card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-        }
-        
-        .post-meta {
-            color: #6c757d;
-            font-size: 0.9rem;
-        }
-        
-        .tag {
-            background-color: #e9ecef;
-            color: #495057;
-            padding: 0.25rem 0.5rem;
-            border-radius: 0.375rem;
-            text-decoration: none;
-            font-size: 0.875rem;
-            margin-right: 0.5rem;
-            margin-bottom: 0.5rem;
-            display: inline-block;
-        }
-        
-        .tag:hover {
-            background-color: #dee2e6;
-            color: #495057;
-            text-decoration: none;
-        }
-        
-        .category-badge {
-            font-size: 0.8rem;
-            padding: 0.375rem 0.75rem;
-        }
-        
-        footer {
-            background-color: #fff;
-            margin-top: 3rem;
-            border-top: 1px solid #dee2e6;
-        }
-        
-        .search-box {
-            margin-bottom: 2rem;
-        }
-        
-        .filter-buttons {
-            margin-bottom: 2rem;
-        }
-        
-        .filter-btn {
-            margin-right: 0.5rem;
-            margin-bottom: 0.5rem;
-        }
-        
-        .search-results {
-            background-color: #fff;
-            border: 1px solid #dee2e6;
-            border-radius: 0.375rem;
-            box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-            max-height: 400px;
-            overflow-y: auto;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            right: 0;
-            z-index: 1000;
-            display: none;
-        }
-        
-        .search-result-item {
-            padding: 0.75rem 1rem;
-            border-bottom: 1px solid #f8f9fa;
-            cursor: pointer;
-            transition: background-color 0.15s;
-        }
-        
-        .search-result-item:hover {
-            background-color: #f8f9fa;
-        }
-        
-        .search-result-item:last-child {
-            border-bottom: none;
-        }
-        
-        .search-highlight {
-            background-color: #fff3cd;
-            padding: 0.125rem 0.25rem;
-            border-radius: 0.25rem;
-        }
-        
-        .search-container {
-            position: relative;
-        }
-    </style>
+    <link href="assets/css/style.css" rel="stylesheet">
 </head>
-<body>
+<body class="index">
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top border-bottom">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top border-bottom">
         <div class="container">
             <a class="navbar-brand" href="/">Junpei Wada's Blog</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -146,7 +31,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#posts">記事</a>
+                        <a class="nav-link" href="/">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="https://junpeiwada.com" target="_blank">Main Site</a>
@@ -159,657 +44,659 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero-section">
-        <div class="container text-center">
-            <h1 class="display-4 fw-bold mb-4">Junpei Wada's Blog</h1>
-            <p class="lead mb-4">技術、登山、旅行、そして日々の発見について</p>
-            <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <p>ソフトウェア開発、山登り、旅行記録など、様々なトピックについて書いています。</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Main Content -->
-    <main class="container">
-        <!-- Search and Filter -->
+    
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container">
         <div class="row">
-            <div class="col-12">
-                <div class="search-container">
-                    <div class="input-group mb-3">
-                        <span class="input-group-text"><i class="bi bi-search"></i></span>
-                        <input type="text" id="globalSearchInput" class="form-control" placeholder="全記事から検索 (タイトル・本文・タグ)...">
-                        <button class="btn btn-outline-secondary" type="button" id="clearSearch">
-                            <i class="bi bi-x-lg"></i>
-                        </button>
+            <div class="col-lg-8 mx-auto text-center">
+                <h1 class="hero-title">Junpei Wada's Blog</h1>
+                <p class="hero-subtitle">技術・登山・旅行について書いています</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<main class="container my-5">
+    <!-- Global Search Section -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="search-container">
+                <input type="text" id="globalSearch" class="form-control form-control-lg" 
+                       placeholder="全記事から検索 (タイトル・本文・タグ)..." autocomplete="off">
+                <div id="searchResults" class="search-results"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Filter Section -->
+    <div class="filter-section">
+        <div class="row">
+            <div class="col-md-8">
+                <h5 class="mb-3"><i class="bi bi-funnel"></i> フィルタ</h5>
+                <div class="mb-3">
+                    <button class="btn btn-outline-primary filter-btn" data-category="all" id="filterAll">
+                        全て (15)
+                    </button>
+                    <button class="btn btn-outline-success filter-btn" data-category="mountain-guide">
+                        山岳ガイド
+                    </button>
+                    <button class="btn btn-outline-info filter-btn" data-category="sea">
+                        海・釣り
+                    </button>
+                    <button class="btn btn-outline-warning filter-btn" data-category="gear">
+                        ギア・道具
+                    </button>
+                    <button class="btn btn-outline-danger filter-btn" data-category="tech">
+                        技術
+                    </button>
+                    <button class="btn btn-outline-secondary filter-btn" data-category="travel">
+                        旅行
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h5 class="mb-3"><i class="bi bi-search"></i> ローカル検索</h5>
+                <input type="text" id="localSearch" class="form-control" placeholder="表示中の記事を検索...">
+            </div>
+        </div>
+    </div>
+
+    <!-- Posts Grid -->
+    <div class="row" id="postsContainer">
+        
+        <div class="col-lg-4 col-md-6 mb-4 post-card" data-category="gear" data-tags="モーラナイフ ナイフ キャンプ アウトドア レビュー" data-title="モーラナイフ購入レビュー：スカンジグラインドの魅力と4本の比較" data-description="最近購入したモーラナイフ4本（コンパニオンシリーズとbuck狩猟ナイフ）の詳細レビュー。スカンジグラインドの切れ味と研ぎやすさについて">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body d-flex flex-column">
+                    <div class="mb-2">
+                        <span class="badge bg-primary rounded-pill">gear</span>
+                        <small class="text-muted float-end">2025-09-01</small>
                     </div>
-                    <div id="searchResults" class="search-results"></div>
-                </div>
-                <div class="search-box">
-                    <input type="text" id="searchInput" class="form-control" placeholder="表示中の記事をフィルタ...">
-                </div>
-                <div class="filter-buttons">
-                    <button type="button" class="btn btn-outline-primary filter-btn" data-filter="all">すべて</button>
-                    <button type="button" class="btn btn-outline-secondary filter-btn" data-filter="tech">技術</button>
-                    <button type="button" class="btn btn-outline-secondary filter-btn" data-filter="travel">旅行</button>
-                    <button type="button" class="btn btn-outline-secondary filter-btn" data-filter="mountain">登山</button>
-                    <button type="button" class="btn btn-outline-secondary filter-btn" data-filter="life">日記</button>
+                    
+                    <h5 class="card-title">
+                        <a href="posts/2025-09-01-morakniv-review.html" class="text-decoration-none">モーラナイフ購入レビュー：スカンジグラインドの魅力と4本の比較</a>
+                    </h5>
+                    
+                    <p class="card-text">最近購入したモーラナイフ4本（コンパニオンシリーズとBUCK狩猟ナイフ）の詳細レビュー。スカンジグラインドの切れ味と研ぎやすさについて</p>
+                    
+                    
+                    <div class="mb-3 mt-auto">
+                        
+                        <span class="tag">モーラナイフ</span>
+                        
+                        <span class="tag">ナイフ</span>
+                        
+                        <span class="tag">キャンプ</span>
+                        
+                        <span class="tag">アウトドア</span>
+                        
+                        <span class="tag">レビュー</span>
+                        
+                    </div>
+                    
+                    
+                    <div class="mt-auto">
+                        <a href="posts/2025-09-01-morakniv-review.html" class="btn btn-outline-primary btn-sm">続きを読む</a>
+                    </div>
                 </div>
             </div>
         </div>
+        
+        <div class="col-lg-4 col-md-6 mb-4 post-card" data-category="sea" data-tags="海水浴 ダイビング 魚突き 日記" data-title="いつもの海に行きます" data-description="いつもの海でダイビング・魚突きを楽しみました。カンパチとクロダイを捕獲し、水温27度の快適な海での体験記。">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body d-flex flex-column">
+                    <div class="mb-2">
+                        <span class="badge bg-primary rounded-pill">sea</span>
+                        <small class="text-muted float-end">2024-09-29</small>
+                    </div>
+                    
+                    <h5 class="card-title">
+                        <a href="posts/2024-09-29-いつもの海に行きます.html" class="text-decoration-none">いつもの海に行きます</a>
+                    </h5>
+                    
+                    <p class="card-text">いつもの海でダイビング・魚突きを楽しみました。カンパチとクロダイを捕獲し、水温27度の快適な海での体験記。</p>
+                    
+                    
+                    <div class="mb-3 mt-auto">
+                        
+                        <span class="tag">海水浴</span>
+                        
+                        <span class="tag">ダイビング</span>
+                        
+                        <span class="tag">魚突き</span>
+                        
+                        <span class="tag">日記</span>
+                        
+                    </div>
+                    
+                    
+                    <div class="mt-auto">
+                        <a href="posts/2024-09-29-いつもの海に行きます.html" class="btn btn-outline-primary btn-sm">続きを読む</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 mb-4 post-card" data-category="mountain-guide" data-tags="登山 日本アルプス 百名山 山岳ガイド" data-title="日本アルプス登山完全ガイド - 全山制覇への道" data-description="日本アルプス全41山の完全ガイド。北アルプス、中央アルプス、南アルプスの全山を網羅した登山情報データベース。">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body d-flex flex-column">
+                    <div class="mb-2">
+                        <span class="badge bg-primary rounded-pill">mountain-guide</span>
+                        <small class="text-muted float-end">2024-09-04</small>
+                    </div>
+                    
+                    <h5 class="card-title">
+                        <a href="posts/2024-09-04-japanese-alps-complete-guide.html" class="text-decoration-none">日本アルプス登山完全ガイド - 全山制覇への道</a>
+                    </h5>
+                    
+                    <p class="card-text">日本アルプス全41山の完全ガイド。北アルプス、中央アルプス、南アルプスの全山を網羅した登山情報データベース。</p>
+                    
+                    
+                    <div class="mb-3 mt-auto">
+                        
+                        <span class="tag">登山</span>
+                        
+                        <span class="tag">日本アルプス</span>
+                        
+                        <span class="tag">百名山</span>
+                        
+                        <span class="tag">山岳ガイド</span>
+                        
+                    </div>
+                    
+                    
+                    <div class="mt-auto">
+                        <a href="posts/2024-09-04-japanese-alps-complete-guide.html" class="btn btn-outline-primary btn-sm">続きを読む</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 mb-4 post-card" data-category="sea" data-tags="海水浴 旅行 石垣島 ダイビング 魚突き 日記" data-title="石垣島へ" data-description="石垣島での釣りと海水浴の旅行記。御神崎灯台、川平湾、米原海水浴場でシュノーケリングやスピアフィッシングを楽しみました。">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body d-flex flex-column">
+                    <div class="mb-2">
+                        <span class="badge bg-primary rounded-pill">sea</span>
+                        <small class="text-muted float-end">2024-08-29</small>
+                    </div>
+                    
+                    <h5 class="card-title">
+                        <a href="posts/2024-08-29-石垣島へ.html" class="text-decoration-none">石垣島へ</a>
+                    </h5>
+                    
+                    <p class="card-text">石垣島での釣りと海水浴の旅行記。御神崎灯台、川平湾、米原海水浴場でシュノーケリングやスピアフィッシングを楽しみました。</p>
+                    
+                    
+                    <div class="mb-3 mt-auto">
+                        
+                        <span class="tag">海水浴</span>
+                        
+                        <span class="tag">旅行</span>
+                        
+                        <span class="tag">石垣島</span>
+                        
+                        <span class="tag">ダイビング</span>
+                        
+                        <span class="tag">魚突き</span>
+                        
+                        <span class="tag">日記</span>
+                        
+                    </div>
+                    
+                    
+                    <div class="mt-auto">
+                        <a href="posts/2024-08-29-石垣島へ.html" class="btn btn-outline-primary btn-sm">続きを読む</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 mb-4 post-card" data-category="sea" data-tags="海水浴 ダイビング コウイカ 日記" data-title="そろそろ快適な海です" data-description="水温22度の快適な海でダイビング。5mの深さで大きなコウイカを発見し、観察を楽しみました。">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body d-flex flex-column">
+                    <div class="mb-2">
+                        <span class="badge bg-primary rounded-pill">sea</span>
+                        <small class="text-muted float-end">2024-06-22</small>
+                    </div>
+                    
+                    <h5 class="card-title">
+                        <a href="posts/2024-06-22-そろそろ快適な海です.html" class="text-decoration-none">そろそろ快適な海です</a>
+                    </h5>
+                    
+                    <p class="card-text">水温22度の快適な海でダイビング。5mの深さで大きなコウイカを発見し、観察を楽しみました。</p>
+                    
+                    
+                    <div class="mb-3 mt-auto">
+                        
+                        <span class="tag">海水浴</span>
+                        
+                        <span class="tag">ダイビング</span>
+                        
+                        <span class="tag">コウイカ</span>
+                        
+                        <span class="tag">日記</span>
+                        
+                    </div>
+                    
+                    
+                    <div class="mt-auto">
+                        <a href="posts/2024-06-22-そろそろ快適な海です.html" class="btn btn-outline-primary btn-sm">続きを読む</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 mb-4 post-card" data-category="sea" data-tags="海水浴 ダイビング 日本海 メバル 魚突き 日記" data-title="日本海へ魚を探しに行きます" data-description="水温21度の日本海でダイビング。1時間泳いで寒くなったため昼食で温まり、その後メバルを捕獲しました。">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body d-flex flex-column">
+                    <div class="mb-2">
+                        <span class="badge bg-primary rounded-pill">sea</span>
+                        <small class="text-muted float-end">2021-10-30</small>
+                    </div>
+                    
+                    <h5 class="card-title">
+                        <a href="posts/2021-10-30-日本海へ魚を探しに行きます.html" class="text-decoration-none">日本海へ魚を探しに行きます</a>
+                    </h5>
+                    
+                    <p class="card-text">水温21度の日本海でダイビング。1時間泳いで寒くなったため昼食で温まり、その後メバルを捕獲しました。</p>
+                    
+                    
+                    <div class="mb-3 mt-auto">
+                        
+                        <span class="tag">海水浴</span>
+                        
+                        <span class="tag">ダイビング</span>
+                        
+                        <span class="tag">日本海</span>
+                        
+                        <span class="tag">メバル</span>
+                        
+                        <span class="tag">魚突き</span>
+                        
+                        <span class="tag">日記</span>
+                        
+                    </div>
+                    
+                    
+                    <div class="mt-auto">
+                        <a href="posts/2021-10-30-日本海へ魚を探しに行きます.html" class="btn btn-outline-primary btn-sm">続きを読む</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 mb-4 post-card" data-category="sea" data-tags="海水浴 ダイビング 魚突き カサゴ イカ イシダイ 日記" data-title="最近のはやりのポイントへ行きます" data-description="水温27度の海で多様な魚種を捕獲。カサゴ、イカ、イシダイ、ボラ、ササノハベラなど豊富な釣果の記録。">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body d-flex flex-column">
+                    <div class="mb-2">
+                        <span class="badge bg-primary rounded-pill">sea</span>
+                        <small class="text-muted float-end">2021-09-07</small>
+                    </div>
+                    
+                    <h5 class="card-title">
+                        <a href="posts/2021-09-07-最近のはやりのポイントへ行きます.html" class="text-decoration-none">最近のはやりのポイントへ行きます</a>
+                    </h5>
+                    
+                    <p class="card-text">水温27度の海で多様な魚種を捕獲。カサゴ、イカ、イシダイ、ボラ、ササノハベラなど豊富な釣果の記録。</p>
+                    
+                    
+                    <div class="mb-3 mt-auto">
+                        
+                        <span class="tag">海水浴</span>
+                        
+                        <span class="tag">ダイビング</span>
+                        
+                        <span class="tag">魚突き</span>
+                        
+                        <span class="tag">カサゴ</span>
+                        
+                        <span class="tag">イカ</span>
+                        
+                        <span class="tag">イシダイ</span>
+                        
+                        <span class="tag">日記</span>
+                        
+                    </div>
+                    
+                    
+                    <div class="mt-auto">
+                        <a href="posts/2021-09-07-最近のはやりのポイントへ行きます.html" class="btn btn-outline-primary btn-sm">続きを読む</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 mb-4 post-card" data-category="sea" data-tags="海水浴 ダイビング イカ メバル 日記" data-title="今日もまた海" data-description="水温29度の暖かい海でダイビング。イカを捕獲し、メバルなど様々な海洋生物を観察しました。">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body d-flex flex-column">
+                    <div class="mb-2">
+                        <span class="badge bg-primary rounded-pill">sea</span>
+                        <small class="text-muted float-end">2021-09-01</small>
+                    </div>
+                    
+                    <h5 class="card-title">
+                        <a href="posts/2021-09-01-今日もまた海.html" class="text-decoration-none">今日もまた海</a>
+                    </h5>
+                    
+                    <p class="card-text">水温29度の暖かい海でダイビング。イカを捕獲し、メバルなど様々な海洋生物を観察しました。</p>
+                    
+                    
+                    <div class="mb-3 mt-auto">
+                        
+                        <span class="tag">海水浴</span>
+                        
+                        <span class="tag">ダイビング</span>
+                        
+                        <span class="tag">イカ</span>
+                        
+                        <span class="tag">メバル</span>
+                        
+                        <span class="tag">日記</span>
+                        
+                    </div>
+                    
+                    
+                    <div class="mt-auto">
+                        <a href="posts/2021-09-01-今日もまた海.html" class="btn btn-outline-primary btn-sm">続きを読む</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 mb-4 post-card" data-category="sea" data-tags="海水浴 ダイビング 日本海 魚突き 日記" data-title="今日もまた、日本海に行きます" data-description="水温28度の日本海でダイビング。ウェイトが重すぎて沈みやすかったですが、食べごろサイズの石モノを2匹捕獲。">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body d-flex flex-column">
+                    <div class="mb-2">
+                        <span class="badge bg-primary rounded-pill">sea</span>
+                        <small class="text-muted float-end">2021-08-28</small>
+                    </div>
+                    
+                    <h5 class="card-title">
+                        <a href="posts/2021-08-28-今日もまた日本海に行きます.html" class="text-decoration-none">今日もまた、日本海に行きます</a>
+                    </h5>
+                    
+                    <p class="card-text">水温28度の日本海でダイビング。ウェイトが重すぎて沈みやすかったですが、食べごろサイズの石モノを2匹捕獲。</p>
+                    
+                    
+                    <div class="mb-3 mt-auto">
+                        
+                        <span class="tag">海水浴</span>
+                        
+                        <span class="tag">ダイビング</span>
+                        
+                        <span class="tag">日本海</span>
+                        
+                        <span class="tag">魚突き</span>
+                        
+                        <span class="tag">日記</span>
+                        
+                    </div>
+                    
+                    
+                    <div class="mt-auto">
+                        <a href="posts/2021-08-28-今日もまた日本海に行きます.html" class="btn btn-outline-primary btn-sm">続きを読む</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 mb-4 post-card" data-category="sea" data-tags="海水浴 ダイビング 日本海 カサゴ ボラ 魚突き 日記" data-title="またまた日本海へ" data-description="水温30度の暖かい海でダイビング・魚突き。小さなカサゴをリリースし、ボラを捕獲して食用にしました。">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body d-flex flex-column">
+                    <div class="mb-2">
+                        <span class="badge bg-primary rounded-pill">sea</span>
+                        <small class="text-muted float-end">2021-08-09</small>
+                    </div>
+                    
+                    <h5 class="card-title">
+                        <a href="posts/2021-08-09-またまた日本海へ.html" class="text-decoration-none">またまた日本海へ</a>
+                    </h5>
+                    
+                    <p class="card-text">水温30度の暖かい海でダイビング・魚突き。小さなカサゴをリリースし、ボラを捕獲して食用にしました。</p>
+                    
+                    
+                    <div class="mb-3 mt-auto">
+                        
+                        <span class="tag">海水浴</span>
+                        
+                        <span class="tag">ダイビング</span>
+                        
+                        <span class="tag">日本海</span>
+                        
+                        <span class="tag">カサゴ</span>
+                        
+                        <span class="tag">ボラ</span>
+                        
+                        <span class="tag">魚突き</span>
+                        
+                        <span class="tag">日記</span>
+                        
+                    </div>
+                    
+                    
+                    <div class="mt-auto">
+                        <a href="posts/2021-08-09-またまた日本海へ.html" class="btn btn-outline-primary btn-sm">続きを読む</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 mb-4 post-card" data-category="sea" data-tags="海水浴 ダイビング 太平洋 タカノハガイ コブダイ イスズミ 魚突き 日記" data-title="太平洋に魚を捕まえに行く" data-description="水温16度の太平洋でダイビング・魚突き。タカノハガイ3匹、コブダイ1匹、イスズミ1匹を捕獲しました。">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body d-flex flex-column">
+                    <div class="mb-2">
+                        <span class="badge bg-primary rounded-pill">sea</span>
+                        <small class="text-muted float-end">2021-02-10</small>
+                    </div>
+                    
+                    <h5 class="card-title">
+                        <a href="posts/2021-02-10-太平洋に魚を捕まえに行く.html" class="text-decoration-none">太平洋に魚を捕まえに行く</a>
+                    </h5>
+                    
+                    <p class="card-text">水温16度の太平洋でダイビング・魚突き。タカノハガイ3匹、コブダイ1匹、イスズミ1匹を捕獲しました。</p>
+                    
+                    
+                    <div class="mb-3 mt-auto">
+                        
+                        <span class="tag">海水浴</span>
+                        
+                        <span class="tag">ダイビング</span>
+                        
+                        <span class="tag">太平洋</span>
+                        
+                        <span class="tag">タカノハガイ</span>
+                        
+                        <span class="tag">コブダイ</span>
+                        
+                        <span class="tag">イスズミ</span>
+                        
+                        <span class="tag">魚突き</span>
+                        
+                        <span class="tag">日記</span>
+                        
+                    </div>
+                    
+                    
+                    <div class="mt-auto">
+                        <a href="posts/2021-02-10-太平洋に魚を捕まえに行く.html" class="btn btn-outline-primary btn-sm">続きを読む</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 mb-4 post-card" data-category="sea" data-tags="海水浴 ダイビング メバル ウミタナゴ 魚突き 日記" data-title="魚を捕まえる" data-description="水温16度、気温8度の寒い海でダイビング。小さなメバル2匹とウミタナゴ1匹を捕獲。約1.5時間の海水浴体験。">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body d-flex flex-column">
+                    <div class="mb-2">
+                        <span class="badge bg-primary rounded-pill">sea</span>
+                        <small class="text-muted float-end">2020-12-11</small>
+                    </div>
+                    
+                    <h5 class="card-title">
+                        <a href="posts/2020-12-11-魚を捕まえる.html" class="text-decoration-none">魚を捕まえる</a>
+                    </h5>
+                    
+                    <p class="card-text">水温16度、気温8度の寒い海でダイビング。小さなメバル2匹とウミタナゴ1匹を捕獲。約1.5時間の海水浴体験。</p>
+                    
+                    
+                    <div class="mb-3 mt-auto">
+                        
+                        <span class="tag">海水浴</span>
+                        
+                        <span class="tag">ダイビング</span>
+                        
+                        <span class="tag">メバル</span>
+                        
+                        <span class="tag">ウミタナゴ</span>
+                        
+                        <span class="tag">魚突き</span>
+                        
+                        <span class="tag">日記</span>
+                        
+                    </div>
+                    
+                    
+                    <div class="mt-auto">
+                        <a href="posts/2020-12-11-魚を捕まえる.html" class="btn btn-outline-primary btn-sm">続きを読む</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 mb-4 post-card" data-category="sea" data-tags="海水浴 ダイビング 敦賀 メバル ウミタナゴ 魚突き 料理 日記" data-title="魚を捕まえる" data-description="敦賀で魚釣り・ダイビング。メバル2匹とウミタナゴ1匹を捕獲後、携帯コンロで調理して味わいました。">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body d-flex flex-column">
+                    <div class="mb-2">
+                        <span class="badge bg-primary rounded-pill">sea</span>
+                        <small class="text-muted float-end">2020-11-26</small>
+                    </div>
+                    
+                    <h5 class="card-title">
+                        <a href="posts/2020-11-26-魚を捕まえる.html" class="text-decoration-none">魚を捕まえる</a>
+                    </h5>
+                    
+                    <p class="card-text">敦賀で魚釣り・ダイビング。メバル2匹とウミタナゴ1匹を捕獲後、携帯コンロで調理して味わいました。</p>
+                    
+                    
+                    <div class="mb-3 mt-auto">
+                        
+                        <span class="tag">海水浴</span>
+                        
+                        <span class="tag">ダイビング</span>
+                        
+                        <span class="tag">敦賀</span>
+                        
+                        <span class="tag">メバル</span>
+                        
+                        <span class="tag">ウミタナゴ</span>
+                        
+                        <span class="tag">魚突き</span>
+                        
+                        <span class="tag">料理</span>
+                        
+                        <span class="tag">日記</span>
+                        
+                    </div>
+                    
+                    
+                    <div class="mt-auto">
+                        <a href="posts/2020-11-26-魚を捕まえる.html" class="btn btn-outline-primary btn-sm">続きを読む</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 mb-4 post-card" data-category="sea" data-tags="海水浴 魚突き 器材 メンテナンス チョッキ銛 日記" data-title="チョッキ銛の銛先" data-description="チョッキ銛のライン交換作業。1mmダイニーマコードを八の字結びで取り付け、消耗品の定期メンテナンス記録。">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body d-flex flex-column">
+                    <div class="mb-2">
+                        <span class="badge bg-primary rounded-pill">sea</span>
+                        <small class="text-muted float-end">2020-10-28</small>
+                    </div>
+                    
+                    <h5 class="card-title">
+                        <a href="posts/2020-10-28-チョッキ銛の銛先.html" class="text-decoration-none">チョッキ銛の銛先</a>
+                    </h5>
+                    
+                    <p class="card-text">チョッキ銛のライン交換作業。1mmダイニーマコードを八の字結びで取り付け、消耗品の定期メンテナンス記録。</p>
+                    
+                    
+                    <div class="mb-3 mt-auto">
+                        
+                        <span class="tag">海水浴</span>
+                        
+                        <span class="tag">魚突き</span>
+                        
+                        <span class="tag">器材</span>
+                        
+                        <span class="tag">メンテナンス</span>
+                        
+                        <span class="tag">チョッキ銛</span>
+                        
+                        <span class="tag">日記</span>
+                        
+                    </div>
+                    
+                    
+                    <div class="mt-auto">
+                        <a href="posts/2020-10-28-チョッキ銛の銛先.html" class="btn btn-outline-primary btn-sm">続きを読む</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 mb-4 post-card" data-category="sea" data-tags="海水浴 ダイビング イシダイ メバル 魚突き 料理 日記" data-title="イシダイとメバルを捕まえました" data-description="水温22度の海でダイビング・魚突き。イシダイとメバルを捕獲し、塩焼きで調理。イシダイの食感は鯛より締まっていました。">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body d-flex flex-column">
+                    <div class="mb-2">
+                        <span class="badge bg-primary rounded-pill">sea</span>
+                        <small class="text-muted float-end">2020-10-19</small>
+                    </div>
+                    
+                    <h5 class="card-title">
+                        <a href="posts/2020-10-19-イシダイとメバルを捕まえました.html" class="text-decoration-none">イシダイとメバルを捕まえました</a>
+                    </h5>
+                    
+                    <p class="card-text">水温22度の海でダイビング・魚突き。イシダイとメバルを捕獲し、塩焼きで調理。イシダイの食感は鯛より締まっていました。</p>
+                    
+                    
+                    <div class="mb-3 mt-auto">
+                        
+                        <span class="tag">海水浴</span>
+                        
+                        <span class="tag">ダイビング</span>
+                        
+                        <span class="tag">イシダイ</span>
+                        
+                        <span class="tag">メバル</span>
+                        
+                        <span class="tag">魚突き</span>
+                        
+                        <span class="tag">料理</span>
+                        
+                        <span class="tag">日記</span>
+                        
+                    </div>
+                    
+                    
+                    <div class="mt-auto">
+                        <a href="posts/2020-10-19-イシダイとメバルを捕まえました.html" class="btn btn-outline-primary btn-sm">続きを読む</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
 
-        <!-- Posts Section -->
-        <section id="posts">
-            <div class="row" id="postsContainer">
-                
-                <div class="col-md-6 col-lg-4 post-item" data-category="gear" data-tags="モーラナイフ,ナイフ,キャンプ,アウトドア,レビュー">
-                    <div class="card post-card h-100" data-href="posts/2025-09-01-morakniv-review.html">
-                        <div class="card-body d-flex flex-column">
-                            <div class="mb-2">
-                                
-                                <span class="badge bg-primary category-badge">gear</span>
-                                
-                            </div>
-                            <h5 class="card-title text-dark">
-                                モーラナイフ購入レビュー：スカンジグラインドの魅力と4本の比較
-                            </h5>
-                            
-                            <p class="card-text text-muted">最近購入したモーラナイフ4本（コンパニオンシリーズとBUCK狩猟ナイフ）の詳細レビュー。スカンジグラインドの切れ味と研ぎやすさについて</p>
-                            
-                            <div class="post-meta mb-2">
-                                <small>
-                                    <i class="bi bi-calendar3"></i> 2025-09-01
-                                </small>
-                            </div>
-                            
-                            <div class="mt-auto">
-                                
-                                <span class="tag"># モーラナイフ</span>
-                                
-                                <span class="tag"># ナイフ</span>
-                                
-                                <span class="tag"># キャンプ</span>
-                                
-                                <span class="tag"># アウトドア</span>
-                                
-                                <span class="tag"># レビュー</span>
-                                
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 col-lg-4 post-item" data-category="sea" data-tags="海水浴,ダイビング,魚突き,日記">
-                    <div class="card post-card h-100" data-href="posts/2024-09-29-いつもの海に行きます.html">
-                        <div class="card-body d-flex flex-column">
-                            <div class="mb-2">
-                                
-                                <span class="badge bg-primary category-badge">sea</span>
-                                
-                            </div>
-                            <h5 class="card-title text-dark">
-                                いつもの海に行きます
-                            </h5>
-                            
-                            <p class="card-text text-muted">いつもの海でダイビング・魚突きを楽しみました。カンパチとクロダイを捕獲し、水温27度の快適な海での体験記。</p>
-                            
-                            <div class="post-meta mb-2">
-                                <small>
-                                    <i class="bi bi-calendar3"></i> 2024-09-29
-                                </small>
-                            </div>
-                            
-                            <div class="mt-auto">
-                                
-                                <span class="tag"># 海水浴</span>
-                                
-                                <span class="tag"># ダイビング</span>
-                                
-                                <span class="tag"># 魚突き</span>
-                                
-                                <span class="tag"># 日記</span>
-                                
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 col-lg-4 post-item" data-category="mountain-guide" data-tags="登山,日本アルプス,百名山,山岳ガイド">
-                    <div class="card post-card h-100" data-href="posts/2024-09-04-japanese-alps-complete-guide.html">
-                        <div class="card-body d-flex flex-column">
-                            <div class="mb-2">
-                                
-                                <span class="badge bg-primary category-badge">mountain-guide</span>
-                                
-                            </div>
-                            <h5 class="card-title text-dark">
-                                日本アルプス登山完全ガイド - 全山制覇への道
-                            </h5>
-                            
-                            <p class="card-text text-muted">日本アルプス全41山の完全ガイド。北アルプス、中央アルプス、南アルプスの全山を網羅した登山情報データベース。</p>
-                            
-                            <div class="post-meta mb-2">
-                                <small>
-                                    <i class="bi bi-calendar3"></i> 2024-09-04
-                                </small>
-                            </div>
-                            
-                            <div class="mt-auto">
-                                
-                                <span class="tag"># 登山</span>
-                                
-                                <span class="tag"># 日本アルプス</span>
-                                
-                                <span class="tag"># 百名山</span>
-                                
-                                <span class="tag"># 山岳ガイド</span>
-                                
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 col-lg-4 post-item" data-category="sea" data-tags="海水浴,旅行,石垣島,ダイビング,魚突き,日記">
-                    <div class="card post-card h-100" data-href="posts/2024-08-29-石垣島へ.html">
-                        <div class="card-body d-flex flex-column">
-                            <div class="mb-2">
-                                
-                                <span class="badge bg-primary category-badge">sea</span>
-                                
-                            </div>
-                            <h5 class="card-title text-dark">
-                                石垣島へ
-                            </h5>
-                            
-                            <p class="card-text text-muted">石垣島での釣りと海水浴の旅行記。御神崎灯台、川平湾、米原海水浴場でシュノーケリングやスピアフィッシングを楽しみました。</p>
-                            
-                            <div class="post-meta mb-2">
-                                <small>
-                                    <i class="bi bi-calendar3"></i> 2024-08-29
-                                </small>
-                            </div>
-                            
-                            <div class="mt-auto">
-                                
-                                <span class="tag"># 海水浴</span>
-                                
-                                <span class="tag"># 旅行</span>
-                                
-                                <span class="tag"># 石垣島</span>
-                                
-                                <span class="tag"># ダイビング</span>
-                                
-                                <span class="tag"># 魚突き</span>
-                                
-                                <span class="tag"># 日記</span>
-                                
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 col-lg-4 post-item" data-category="sea" data-tags="海水浴,ダイビング,コウイカ,日記">
-                    <div class="card post-card h-100" data-href="posts/2024-06-22-そろそろ快適な海です.html">
-                        <div class="card-body d-flex flex-column">
-                            <div class="mb-2">
-                                
-                                <span class="badge bg-primary category-badge">sea</span>
-                                
-                            </div>
-                            <h5 class="card-title text-dark">
-                                そろそろ快適な海です
-                            </h5>
-                            
-                            <p class="card-text text-muted">水温22度の快適な海でダイビング。5mの深さで大きなコウイカを発見し、観察を楽しみました。</p>
-                            
-                            <div class="post-meta mb-2">
-                                <small>
-                                    <i class="bi bi-calendar3"></i> 2024-06-22
-                                </small>
-                            </div>
-                            
-                            <div class="mt-auto">
-                                
-                                <span class="tag"># 海水浴</span>
-                                
-                                <span class="tag"># ダイビング</span>
-                                
-                                <span class="tag"># コウイカ</span>
-                                
-                                <span class="tag"># 日記</span>
-                                
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 col-lg-4 post-item" data-category="sea" data-tags="海水浴,ダイビング,日本海,メバル,魚突き,日記">
-                    <div class="card post-card h-100" data-href="posts/2021-10-30-日本海へ魚を探しに行きます.html">
-                        <div class="card-body d-flex flex-column">
-                            <div class="mb-2">
-                                
-                                <span class="badge bg-primary category-badge">sea</span>
-                                
-                            </div>
-                            <h5 class="card-title text-dark">
-                                日本海へ魚を探しに行きます
-                            </h5>
-                            
-                            <p class="card-text text-muted">水温21度の日本海でダイビング。1時間泳いで寒くなったため昼食で温まり、その後メバルを捕獲しました。</p>
-                            
-                            <div class="post-meta mb-2">
-                                <small>
-                                    <i class="bi bi-calendar3"></i> 2021-10-30
-                                </small>
-                            </div>
-                            
-                            <div class="mt-auto">
-                                
-                                <span class="tag"># 海水浴</span>
-                                
-                                <span class="tag"># ダイビング</span>
-                                
-                                <span class="tag"># 日本海</span>
-                                
-                                <span class="tag"># メバル</span>
-                                
-                                <span class="tag"># 魚突き</span>
-                                
-                                <span class="tag"># 日記</span>
-                                
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 col-lg-4 post-item" data-category="sea" data-tags="海水浴,ダイビング,魚突き,カサゴ,イカ,イシダイ,日記">
-                    <div class="card post-card h-100" data-href="posts/2021-09-07-最近のはやりのポイントへ行きます.html">
-                        <div class="card-body d-flex flex-column">
-                            <div class="mb-2">
-                                
-                                <span class="badge bg-primary category-badge">sea</span>
-                                
-                            </div>
-                            <h5 class="card-title text-dark">
-                                最近のはやりのポイントへ行きます
-                            </h5>
-                            
-                            <p class="card-text text-muted">水温27度の海で多様な魚種を捕獲。カサゴ、イカ、イシダイ、ボラ、ササノハベラなど豊富な釣果の記録。</p>
-                            
-                            <div class="post-meta mb-2">
-                                <small>
-                                    <i class="bi bi-calendar3"></i> 2021-09-07
-                                </small>
-                            </div>
-                            
-                            <div class="mt-auto">
-                                
-                                <span class="tag"># 海水浴</span>
-                                
-                                <span class="tag"># ダイビング</span>
-                                
-                                <span class="tag"># 魚突き</span>
-                                
-                                <span class="tag"># カサゴ</span>
-                                
-                                <span class="tag"># イカ</span>
-                                
-                                <span class="tag"># イシダイ</span>
-                                
-                                <span class="tag"># 日記</span>
-                                
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 col-lg-4 post-item" data-category="sea" data-tags="海水浴,ダイビング,イカ,メバル,日記">
-                    <div class="card post-card h-100" data-href="posts/2021-09-01-今日もまた海.html">
-                        <div class="card-body d-flex flex-column">
-                            <div class="mb-2">
-                                
-                                <span class="badge bg-primary category-badge">sea</span>
-                                
-                            </div>
-                            <h5 class="card-title text-dark">
-                                今日もまた海
-                            </h5>
-                            
-                            <p class="card-text text-muted">水温29度の暖かい海でダイビング。イカを捕獲し、メバルなど様々な海洋生物を観察しました。</p>
-                            
-                            <div class="post-meta mb-2">
-                                <small>
-                                    <i class="bi bi-calendar3"></i> 2021-09-01
-                                </small>
-                            </div>
-                            
-                            <div class="mt-auto">
-                                
-                                <span class="tag"># 海水浴</span>
-                                
-                                <span class="tag"># ダイビング</span>
-                                
-                                <span class="tag"># イカ</span>
-                                
-                                <span class="tag"># メバル</span>
-                                
-                                <span class="tag"># 日記</span>
-                                
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 col-lg-4 post-item" data-category="sea" data-tags="海水浴,ダイビング,日本海,魚突き,日記">
-                    <div class="card post-card h-100" data-href="posts/2021-08-28-今日もまた日本海に行きます.html">
-                        <div class="card-body d-flex flex-column">
-                            <div class="mb-2">
-                                
-                                <span class="badge bg-primary category-badge">sea</span>
-                                
-                            </div>
-                            <h5 class="card-title text-dark">
-                                今日もまた、日本海に行きます
-                            </h5>
-                            
-                            <p class="card-text text-muted">水温28度の日本海でダイビング。ウェイトが重すぎて沈みやすかったですが、食べごろサイズの石モノを2匹捕獲。</p>
-                            
-                            <div class="post-meta mb-2">
-                                <small>
-                                    <i class="bi bi-calendar3"></i> 2021-08-28
-                                </small>
-                            </div>
-                            
-                            <div class="mt-auto">
-                                
-                                <span class="tag"># 海水浴</span>
-                                
-                                <span class="tag"># ダイビング</span>
-                                
-                                <span class="tag"># 日本海</span>
-                                
-                                <span class="tag"># 魚突き</span>
-                                
-                                <span class="tag"># 日記</span>
-                                
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 col-lg-4 post-item" data-category="sea" data-tags="海水浴,ダイビング,日本海,カサゴ,ボラ,魚突き,日記">
-                    <div class="card post-card h-100" data-href="posts/2021-08-09-またまた日本海へ.html">
-                        <div class="card-body d-flex flex-column">
-                            <div class="mb-2">
-                                
-                                <span class="badge bg-primary category-badge">sea</span>
-                                
-                            </div>
-                            <h5 class="card-title text-dark">
-                                またまた日本海へ
-                            </h5>
-                            
-                            <p class="card-text text-muted">水温30度の暖かい海でダイビング・魚突き。小さなカサゴをリリースし、ボラを捕獲して食用にしました。</p>
-                            
-                            <div class="post-meta mb-2">
-                                <small>
-                                    <i class="bi bi-calendar3"></i> 2021-08-09
-                                </small>
-                            </div>
-                            
-                            <div class="mt-auto">
-                                
-                                <span class="tag"># 海水浴</span>
-                                
-                                <span class="tag"># ダイビング</span>
-                                
-                                <span class="tag"># 日本海</span>
-                                
-                                <span class="tag"># カサゴ</span>
-                                
-                                <span class="tag"># ボラ</span>
-                                
-                                <span class="tag"># 魚突き</span>
-                                
-                                <span class="tag"># 日記</span>
-                                
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 col-lg-4 post-item" data-category="sea" data-tags="海水浴,ダイビング,太平洋,タカノハガイ,コブダイ,イスズミ,魚突き,日記">
-                    <div class="card post-card h-100" data-href="posts/2021-02-10-太平洋に魚を捕まえに行く.html">
-                        <div class="card-body d-flex flex-column">
-                            <div class="mb-2">
-                                
-                                <span class="badge bg-primary category-badge">sea</span>
-                                
-                            </div>
-                            <h5 class="card-title text-dark">
-                                太平洋に魚を捕まえに行く
-                            </h5>
-                            
-                            <p class="card-text text-muted">水温16度の太平洋でダイビング・魚突き。タカノハガイ3匹、コブダイ1匹、イスズミ1匹を捕獲しました。</p>
-                            
-                            <div class="post-meta mb-2">
-                                <small>
-                                    <i class="bi bi-calendar3"></i> 2021-02-10
-                                </small>
-                            </div>
-                            
-                            <div class="mt-auto">
-                                
-                                <span class="tag"># 海水浴</span>
-                                
-                                <span class="tag"># ダイビング</span>
-                                
-                                <span class="tag"># 太平洋</span>
-                                
-                                <span class="tag"># タカノハガイ</span>
-                                
-                                <span class="tag"># コブダイ</span>
-                                
-                                <span class="tag"># イスズミ</span>
-                                
-                                <span class="tag"># 魚突き</span>
-                                
-                                <span class="tag"># 日記</span>
-                                
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 col-lg-4 post-item" data-category="sea" data-tags="海水浴,ダイビング,メバル,ウミタナゴ,魚突き,日記">
-                    <div class="card post-card h-100" data-href="posts/2020-12-11-魚を捕まえる.html">
-                        <div class="card-body d-flex flex-column">
-                            <div class="mb-2">
-                                
-                                <span class="badge bg-primary category-badge">sea</span>
-                                
-                            </div>
-                            <h5 class="card-title text-dark">
-                                魚を捕まえる
-                            </h5>
-                            
-                            <p class="card-text text-muted">水温16度、気温8度の寒い海でダイビング。小さなメバル2匹とウミタナゴ1匹を捕獲。約1.5時間の海水浴体験。</p>
-                            
-                            <div class="post-meta mb-2">
-                                <small>
-                                    <i class="bi bi-calendar3"></i> 2020-12-11
-                                </small>
-                            </div>
-                            
-                            <div class="mt-auto">
-                                
-                                <span class="tag"># 海水浴</span>
-                                
-                                <span class="tag"># ダイビング</span>
-                                
-                                <span class="tag"># メバル</span>
-                                
-                                <span class="tag"># ウミタナゴ</span>
-                                
-                                <span class="tag"># 魚突き</span>
-                                
-                                <span class="tag"># 日記</span>
-                                
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 col-lg-4 post-item" data-category="sea" data-tags="海水浴,ダイビング,敦賀,メバル,ウミタナゴ,魚突き,料理,日記">
-                    <div class="card post-card h-100" data-href="posts/2020-11-26-魚を捕まえる.html">
-                        <div class="card-body d-flex flex-column">
-                            <div class="mb-2">
-                                
-                                <span class="badge bg-primary category-badge">sea</span>
-                                
-                            </div>
-                            <h5 class="card-title text-dark">
-                                魚を捕まえる
-                            </h5>
-                            
-                            <p class="card-text text-muted">敦賀で魚釣り・ダイビング。メバル2匹とウミタナゴ1匹を捕獲後、携帯コンロで調理して味わいました。</p>
-                            
-                            <div class="post-meta mb-2">
-                                <small>
-                                    <i class="bi bi-calendar3"></i> 2020-11-26
-                                </small>
-                            </div>
-                            
-                            <div class="mt-auto">
-                                
-                                <span class="tag"># 海水浴</span>
-                                
-                                <span class="tag"># ダイビング</span>
-                                
-                                <span class="tag"># 敦賀</span>
-                                
-                                <span class="tag"># メバル</span>
-                                
-                                <span class="tag"># ウミタナゴ</span>
-                                
-                                <span class="tag"># 魚突き</span>
-                                
-                                <span class="tag"># 料理</span>
-                                
-                                <span class="tag"># 日記</span>
-                                
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 col-lg-4 post-item" data-category="sea" data-tags="海水浴,魚突き,器材,メンテナンス,チョッキ銛,日記">
-                    <div class="card post-card h-100" data-href="posts/2020-10-28-チョッキ銛の銛先.html">
-                        <div class="card-body d-flex flex-column">
-                            <div class="mb-2">
-                                
-                                <span class="badge bg-primary category-badge">sea</span>
-                                
-                            </div>
-                            <h5 class="card-title text-dark">
-                                チョッキ銛の銛先
-                            </h5>
-                            
-                            <p class="card-text text-muted">チョッキ銛のライン交換作業。1mmダイニーマコードを八の字結びで取り付け、消耗品の定期メンテナンス記録。</p>
-                            
-                            <div class="post-meta mb-2">
-                                <small>
-                                    <i class="bi bi-calendar3"></i> 2020-10-28
-                                </small>
-                            </div>
-                            
-                            <div class="mt-auto">
-                                
-                                <span class="tag"># 海水浴</span>
-                                
-                                <span class="tag"># 魚突き</span>
-                                
-                                <span class="tag"># 器材</span>
-                                
-                                <span class="tag"># メンテナンス</span>
-                                
-                                <span class="tag"># チョッキ銛</span>
-                                
-                                <span class="tag"># 日記</span>
-                                
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 col-lg-4 post-item" data-category="sea" data-tags="海水浴,ダイビング,イシダイ,メバル,魚突き,料理,日記">
-                    <div class="card post-card h-100" data-href="posts/2020-10-19-イシダイとメバルを捕まえました.html">
-                        <div class="card-body d-flex flex-column">
-                            <div class="mb-2">
-                                
-                                <span class="badge bg-primary category-badge">sea</span>
-                                
-                            </div>
-                            <h5 class="card-title text-dark">
-                                イシダイとメバルを捕まえました
-                            </h5>
-                            
-                            <p class="card-text text-muted">水温22度の海でダイビング・魚突き。イシダイとメバルを捕獲し、塩焼きで調理。イシダイの食感は鯛より締まっていました。</p>
-                            
-                            <div class="post-meta mb-2">
-                                <small>
-                                    <i class="bi bi-calendar3"></i> 2020-10-19
-                                </small>
-                            </div>
-                            
-                            <div class="mt-auto">
-                                
-                                <span class="tag"># 海水浴</span>
-                                
-                                <span class="tag"># ダイビング</span>
-                                
-                                <span class="tag"># イシダイ</span>
-                                
-                                <span class="tag"># メバル</span>
-                                
-                                <span class="tag"># 魚突き</span>
-                                
-                                <span class="tag"># 料理</span>
-                                
-                                <span class="tag"># 日記</span>
-                                
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-            
-            <!-- Empty state -->
-            <div id="emptyState" class="text-center py-5" style="display: none;">
-                <i class="bi bi-search display-1 text-muted"></i>
-                <h4 class="mt-3 text-muted">記事が見つかりませんでした</h4>
-                <p class="text-muted">別のキーワードで検索してみてください</p>
-            </div>
-        </section>
-    </main>
+    <!-- No Results Message -->
+    <div id="noResults" class="text-center py-5" style="display: none;">
+        <i class="bi bi-search display-1 text-muted"></i>
+        <h3 class="text-muted mt-3">該当する記事が見つかりません</h3>
+        <p class="text-muted">検索条件を変更してお試しください</p>
+    </div>
+</main>
+
 
     <!-- Footer -->
     <footer class="py-4">
@@ -831,235 +718,152 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     
-    <!-- Custom JS -->
-    <script>
-        // Global variables for search
-        let searchIndex;
-        let searchDocuments;
+    
+<script>
+// Global Search Implementation
+let searchIndex;
+let searchDocuments = [];
+
+// Load search index
+fetch('search-index.json')
+    .then(response => response.json())
+    .then(data => {
+        searchDocuments = data;
+        searchIndex = lunr(function () {
+            this.field('title', { boost: 10 });
+            this.field('description', { boost: 5 });
+            this.field('tags', { boost: 3 });
+            this.field('category', { boost: 2 });
+            this.field('content');
+            this.ref('id');
+
+            data.forEach(doc => this.add(doc));
+        });
+    })
+    .catch(err => console.error('Failed to load search index:', err));
+
+// Global search functionality
+const globalSearch = document.getElementById('globalSearch');
+const searchResults = document.getElementById('searchResults');
+
+globalSearch.addEventListener('input', function(e) {
+    const query = e.target.value.trim();
+    
+    if (query.length < 2) {
+        searchResults.style.display = 'none';
+        return;
+    }
+    
+    if (!searchIndex) {
+        searchResults.innerHTML = '<div class="search-result-item">検索インデックスを読み込み中...</div>';
+        searchResults.style.display = 'block';
+        return;
+    }
+    
+    try {
+        const results = searchIndex.search(query + '*').slice(0, 10);
         
-        // Initialize search
-        async function initializeSearch() {
-            try {
-                // Load search index
-                const response = await fetch('search-index.json');
-                searchDocuments = await response.json();
-                
-                // Build Lunr index
-                searchIndex = lunr(function() {
-                    this.ref('id');
-                    this.field('title', { boost: 10 });
-                    this.field('description', { boost: 5 });
-                    this.field('content', { boost: 1 });
-                    this.field('tags', { boost: 3 });
-                    this.field('category', { boost: 2 });
-                    
-                    searchDocuments.forEach(function(doc) {
-                        this.add(doc);
-                    }, this);
-                });
-                
-                console.log('Search index loaded with', searchDocuments.length, 'documents');
-            } catch (error) {
-                console.error('Failed to load search index:', error);
-            }
-        }
-        
-        // Perform search
-        function performSearch(query) {
-            if (!searchIndex || !query.trim()) {
-                hideSearchResults();
-                return;
-            }
-            
-            try {
-                const results = searchIndex.search(query);
-                displaySearchResults(results, query);
-            } catch (error) {
-                console.error('Search error:', error);
-                hideSearchResults();
-            }
-        }
-        
-        // Display search results
-        function displaySearchResults(results, query) {
-            const searchResultsContainer = document.getElementById('searchResults');
-            
-            if (results.length === 0) {
-                searchResultsContainer.innerHTML = '<div class="search-result-item text-muted">検索結果が見つかりませんでした</div>';
-                searchResultsContainer.style.display = 'block';
-                return;
-            }
-            
-            const resultHtml = results.slice(0, 10).map(result => {
+        if (results.length === 0) {
+            searchResults.innerHTML = '<div class="search-result-item">該当する記事が見つかりません</div>';
+        } else {
+            searchResults.innerHTML = results.map(result => {
                 const doc = searchDocuments.find(d => d.id === result.ref);
                 if (!doc) return '';
                 
-                const highlightedTitle = highlightText(doc.title, query);
-                const highlightedContent = highlightText(doc.content.substring(0, 150) + '...', query);
-                
                 return `
-                    <div class="search-result-item" onclick="window.location.href='${doc.url}'">
-                        <div class="fw-bold">${highlightedTitle}</div>
-                        <div class="text-muted small mb-1">${doc.category} • ${doc.date}</div>
-                        <div class="text-secondary">${highlightedContent}</div>
-                        ${doc.tags ? `<div class="mt-1">${doc.tags.split(' ').map(tag => `<span class="badge bg-light text-dark me-1">${tag}</span>`).join('')}</div>` : ''}
-                    </div>
+                    <a href="posts/${doc.id}.html" class="search-result-item">
+                        <div class="search-result-title">${highlightText(doc.title, query)}</div>
+                        <div class="search-result-meta">
+                            <span class="badge bg-secondary">${doc.category}</span>
+                            <span class="ms-2">${doc.date}</span>
+                        </div>
+                        <div class="search-result-excerpt">${highlightText(doc.description.substring(0, 150), query)}...</div>
+                    </a>
                 `;
             }).join('');
-            
-            searchResultsContainer.innerHTML = resultHtml;
-            searchResultsContainer.style.display = 'block';
         }
         
-        // Highlight text
-        function highlightText(text, query) {
-            if (!query.trim()) return text;
-            
-            const regex = new RegExp(`(${escapeRegExp(query)})`, 'gi');
-            return text.replace(regex, '<span class="search-highlight">$1</span>');
+        searchResults.style.display = 'block';
+    } catch (error) {
+        console.error('Search error:', error);
+        searchResults.innerHTML = '<div class="search-result-item">検索エラーが発生しました</div>';
+        searchResults.style.display = 'block';
+    }
+});
+
+// Hide search results when clicking outside
+document.addEventListener('click', function(e) {
+    if (!globalSearch.contains(e.target) && !searchResults.contains(e.target)) {
+        searchResults.style.display = 'none';
+    }
+});
+
+// Highlight search terms
+function highlightText(text, query) {
+    if (!query) return text;
+    const regex = new RegExp(`(${query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi');
+    return text.replace(regex, '<span class="search-highlight">$1</span>');
+}
+
+// Local search and filtering
+const localSearch = document.getElementById('localSearch');
+const filterButtons = document.querySelectorAll('.filter-btn');
+const postCards = document.querySelectorAll('.post-card');
+const noResults = document.getElementById('noResults');
+const postsContainer = document.getElementById('postsContainer');
+
+let currentCategory = 'all';
+
+// Filter functionality
+filterButtons.forEach(button => {
+    button.addEventListener('click', function() {
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        this.classList.add('active');
+        currentCategory = this.dataset.category;
+        applyFilters();
+    });
+});
+
+// Set initial active filter
+document.getElementById('filterAll').classList.add('active');
+
+// Local search functionality
+localSearch.addEventListener('input', applyFilters);
+
+function applyFilters() {
+    const searchTerm = localSearch.value.toLowerCase();
+    let visibleCount = 0;
+    
+    postCards.forEach(card => {
+        const category = card.dataset.category;
+        const title = card.dataset.title;
+        const description = card.dataset.description;
+        const tags = card.dataset.tags;
+        
+        const categoryMatch = currentCategory === 'all' || category === currentCategory;
+        const searchMatch = searchTerm === '' || 
+            title.includes(searchTerm) || 
+            description.includes(searchTerm) || 
+            tags.includes(searchTerm);
+        
+        if (categoryMatch && searchMatch) {
+            card.style.display = 'block';
+            visibleCount++;
+        } else {
+            card.style.display = 'none';
         }
-        
-        // Escape regex special characters
-        function escapeRegExp(string) {
-            return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-        }
-        
-        // Hide search results
-        function hideSearchResults() {
-            const searchResultsContainer = document.getElementById('searchResults');
-            searchResultsContainer.style.display = 'none';
-        }
-        
-        // Local filter functionality
-        const searchInput = document.getElementById('searchInput');
-        const postsContainer = document.getElementById('postsContainer');
-        const emptyState = document.getElementById('emptyState');
-        const filterButtons = document.querySelectorAll('.filter-btn');
-        
-        let currentFilter = 'all';
-        
-        // Search function
-        function searchPosts() {
-            const searchTerm = searchInput.value.toLowerCase();
-            const posts = document.querySelectorAll('.post-item');
-            let visibleCount = 0;
-            
-            posts.forEach(post => {
-                const title = post.querySelector('.card-title').textContent.toLowerCase();
-                const description = post.querySelector('.card-text')?.textContent.toLowerCase() || '';
-                const tags = post.dataset.tags.toLowerCase();
-                const category = post.dataset.category.toLowerCase();
-                
-                const matchesSearch = title.includes(searchTerm) || 
-                                    description.includes(searchTerm) || 
-                                    tags.includes(searchTerm) ||
-                                    category.includes(searchTerm);
-                                    
-                const matchesFilter = currentFilter === 'all' || 
-                                    category === currentFilter ||
-                                    tags.includes(currentFilter);
-                
-                if (matchesSearch && matchesFilter) {
-                    post.style.display = 'block';
-                    visibleCount++;
-                } else {
-                    post.style.display = 'none';
-                }
-            });
-            
-            // Show/hide empty state
-            if (visibleCount === 0) {
-                emptyState.style.display = 'block';
-                postsContainer.style.display = 'none';
-            } else {
-                emptyState.style.display = 'none';
-                postsContainer.style.display = 'flex';
-            }
-        }
-        
-        // Filter function
-        function filterPosts(category) {
-            currentFilter = category;
-            
-            // Update button states
-            filterButtons.forEach(btn => {
-                btn.classList.remove('btn-primary');
-                btn.classList.add('btn-outline-primary');
-            });
-            
-            event.target.classList.remove('btn-outline-primary');
-            event.target.classList.add('btn-primary');
-            
-            searchPosts();
-        }
-        
-        // Card click functionality
-        function setupCardClicks() {
-            const cards = document.querySelectorAll('.post-card[data-href]');
-            cards.forEach(card => {
-                card.addEventListener('click', function(e) {
-                    // Prevent default if clicking on a link or button inside the card
-                    if (e.target.tagName === 'A' || e.target.tagName === 'BUTTON') {
-                        return;
-                    }
-                    
-                    const href = this.getAttribute('data-href');
-                    if (href) {
-                        window.location.href = href;
-                    }
-                });
-                
-                // Add keyboard navigation
-                card.addEventListener('keydown', function(e) {
-                    if (e.key === 'Enter' || e.key === ' ') {
-                        e.preventDefault();
-                        const href = this.getAttribute('data-href');
-                        if (href) {
-                            window.location.href = href;
-                        }
-                    }
-                });
-                
-                // Make cards focusable for accessibility
-                card.setAttribute('tabindex', '0');
-            });
-        }
-        
-        // Event listeners
-        searchInput.addEventListener('input', searchPosts);
-        filterButtons.forEach(btn => {
-            btn.addEventListener('click', () => filterPosts(btn.dataset.filter));
-        });
-        
-        // Global search event listeners
-        const globalSearchInput = document.getElementById('globalSearchInput');
-        const clearSearchButton = document.getElementById('clearSearch');
-        
-        globalSearchInput.addEventListener('input', function() {
-            const query = this.value;
-            if (query.length >= 2) {
-                performSearch(query);
-            } else {
-                hideSearchResults();
-            }
-        });
-        
-        clearSearchButton.addEventListener('click', function() {
-            globalSearchInput.value = '';
-            hideSearchResults();
-        });
-        
-        // Hide search results when clicking outside
-        document.addEventListener('click', function(event) {
-            const searchContainer = document.querySelector('.search-container');
-            if (!searchContainer.contains(event.target)) {
-                hideSearchResults();
-            }
-        });
-        
-        // Initialize search and card clicks
-        initializeSearch();
-        setupCardClicks();
-    </script>
+    });
+    
+    // Show/hide no results message
+    if (visibleCount === 0) {
+        postsContainer.style.display = 'none';
+        noResults.style.display = 'block';
+    } else {
+        postsContainer.style.display = 'flex';
+        noResults.style.display = 'none';
+    }
+}
+</script>
+
 </body>
 </html>

@@ -1,499 +1,263 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Junpei Wada's Blog</title>
-    <meta name="description" content="技術、登山、旅行などについてのブログ">
-    
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- Bootstrap Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
-    
-    <!-- Lunr.js for search -->
-    <script src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script>
-    
-    <!-- Custom CSS -->
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans JP', sans-serif;
-            line-height: 1.6;
-            background-color: #f8f9fa;
-        }
-        
-        .navbar-brand {
-            font-weight: 600;
-            font-size: 1.5rem;
-        }
-        
-        .hero-section {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 4rem 0;
-            margin-bottom: 2rem;
-        }
-        
-        .post-card {
-            transition: transform 0.2s, box-shadow 0.2s;
-            border: none;
-            margin-bottom: 2rem;
-            cursor: pointer;
-        }
-        
-        .post-card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-        }
-        
-        .post-meta {
-            color: #6c757d;
-            font-size: 0.9rem;
-        }
-        
-        .tag {
-            background-color: #e9ecef;
-            color: #495057;
-            padding: 0.25rem 0.5rem;
-            border-radius: 0.375rem;
-            text-decoration: none;
-            font-size: 0.875rem;
-            margin-right: 0.5rem;
-            margin-bottom: 0.5rem;
-            display: inline-block;
-        }
-        
-        .tag:hover {
-            background-color: #dee2e6;
-            color: #495057;
-            text-decoration: none;
-        }
-        
-        .category-badge {
-            font-size: 0.8rem;
-            padding: 0.375rem 0.75rem;
-        }
-        
-        footer {
-            background-color: #fff;
-            margin-top: 3rem;
-            border-top: 1px solid #dee2e6;
-        }
-        
-        .search-box {
-            margin-bottom: 2rem;
-        }
-        
-        .filter-buttons {
-            margin-bottom: 2rem;
-        }
-        
-        .filter-btn {
-            margin-right: 0.5rem;
-            margin-bottom: 0.5rem;
-        }
-        
-        .search-results {
-            background-color: #fff;
-            border: 1px solid #dee2e6;
-            border-radius: 0.375rem;
-            box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-            max-height: 400px;
-            overflow-y: auto;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            right: 0;
-            z-index: 1000;
-            display: none;
-        }
-        
-        .search-result-item {
-            padding: 0.75rem 1rem;
-            border-bottom: 1px solid #f8f9fa;
-            cursor: pointer;
-            transition: background-color 0.15s;
-        }
-        
-        .search-result-item:hover {
-            background-color: #f8f9fa;
-        }
-        
-        .search-result-item:last-child {
-            border-bottom: none;
-        }
-        
-        .search-highlight {
-            background-color: #fff3cd;
-            padding: 0.125rem 0.25rem;
-            border-radius: 0.25rem;
-        }
-        
-        .search-container {
-            position: relative;
-        }
-    </style>
-</head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top border-bottom">
-        <div class="container">
-            <a class="navbar-brand" href="/">Junpei Wada's Blog</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#posts">記事</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://junpeiwada.com" target="_blank">Main Site</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://junpeiwada.github.io/mountain-info/" target="_blank">Mountain Info</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+{% extends "base.html" %}
 
-    <!-- Hero Section -->
-    <section class="hero-section">
-        <div class="container text-center">
-            <h1 class="display-4 fw-bold mb-4">Junpei Wada's Blog</h1>
-            <p class="lead mb-4">技術、登山、旅行、そして日々の発見について</p>
-            <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <p>ソフトウェア開発、山登り、旅行記録など、様々なトピックについて書いています。</p>
-                </div>
-            </div>
-        </div>
-    </section>
+{% block title %}Junpei Wada's Blog{% endblock %}
+{% block description %}技術、登山、旅行などについてのブログ{% endblock %}
 
-    <!-- Main Content -->
-    <main class="container">
-        <!-- Search and Filter -->
+{% block body_class %} class="index"{% endblock %}
+
+{% block extra_head %}
+<!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+
+<!-- Lunr.js for search -->
+<script src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script>
+{% endblock %}
+
+{% block main_content %}
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container">
         <div class="row">
-            <div class="col-12">
-                <div class="search-container">
-                    <div class="input-group mb-3">
-                        <span class="input-group-text"><i class="bi bi-search"></i></span>
-                        <input type="text" id="globalSearchInput" class="form-control" placeholder="全記事から検索 (タイトル・本文・タグ)...">
-                        <button class="btn btn-outline-secondary" type="button" id="clearSearch">
-                            <i class="bi bi-x-lg"></i>
-                        </button>
-                    </div>
-                    <div id="searchResults" class="search-results"></div>
-                </div>
-                <div class="search-box">
-                    <input type="text" id="searchInput" class="form-control" placeholder="表示中の記事をフィルタ...">
-                </div>
-                <div class="filter-buttons">
-                    <button type="button" class="btn btn-outline-primary filter-btn" data-filter="all">すべて</button>
-                    <button type="button" class="btn btn-outline-secondary filter-btn" data-filter="tech">技術</button>
-                    <button type="button" class="btn btn-outline-secondary filter-btn" data-filter="travel">旅行</button>
-                    <button type="button" class="btn btn-outline-secondary filter-btn" data-filter="mountain">登山</button>
-                    <button type="button" class="btn btn-outline-secondary filter-btn" data-filter="life">日記</button>
-                </div>
+            <div class="col-lg-8 mx-auto text-center">
+                <h1 class="hero-title">Junpei Wada's Blog</h1>
+                <p class="hero-subtitle">技術・登山・旅行について書いています</p>
             </div>
         </div>
+    </div>
+</section>
 
-        <!-- Posts Section -->
-        <section id="posts">
-            <div class="row" id="postsContainer">
-                {% for post in posts %}
-                <div class="col-md-6 col-lg-4 post-item" data-category="{{ post.category }}" data-tags="{{ post.tags|join(',') }}">
-                    <div class="card post-card h-100" data-href="posts/{{ post.filename }}">
-                        <div class="card-body d-flex flex-column">
-                            <div class="mb-2">
-                                {% if post.category %}
-                                <span class="badge bg-primary category-badge">{{ post.category }}</span>
-                                {% endif %}
-                            </div>
-                            <h5 class="card-title text-dark">
-                                {{ post.title }}
-                            </h5>
-                            {% if post.description %}
-                            <p class="card-text text-muted">{{ post.description }}</p>
-                            {% endif %}
-                            <div class="post-meta mb-2">
-                                <small>
-                                    <i class="bi bi-calendar3"></i> {{ post.date }}
-                                </small>
-                            </div>
-                            {% if post.tags %}
-                            <div class="mt-auto">
-                                {% for tag in post.tags %}
-                                <span class="tag"># {{ tag }}</span>
-                                {% endfor %}
-                            </div>
-                            {% endif %}
-                        </div>
-                    </div>
-                </div>
-                {% endfor %}
-            </div>
-            
-            <!-- Empty state -->
-            <div id="emptyState" class="text-center py-5" style="display: none;">
-                <i class="bi bi-search display-1 text-muted"></i>
-                <h4 class="mt-3 text-muted">記事が見つかりませんでした</h4>
-                <p class="text-muted">別のキーワードで検索してみてください</p>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="py-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <p class="mb-0">&copy; 2024 Junpei Wada. All rights reserved.</p>
-                </div>
-                <div class="col-md-6 text-md-end">
-                    <p class="mb-0">
-                        <a href="https://github.com/Junpeiwada" class="text-decoration-none me-3">GitHub</a>
-                        <a href="https://junpeiwada.com" class="text-decoration-none">Website</a>
-                    </p>
-                </div>
+<main class="container my-5">
+    <!-- Global Search Section -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="search-container">
+                <input type="text" id="globalSearch" class="form-control form-control-lg" 
+                       placeholder="全記事から検索 (タイトル・本文・タグ)..." autocomplete="off">
+                <div id="searchResults" class="search-results"></div>
             </div>
         </div>
-    </footer>
+    </div>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
-    <!-- Custom JS -->
-    <script>
-        // Global variables for search
-        let searchIndex;
-        let searchDocuments;
-        
-        // Initialize search
-        async function initializeSearch() {
-            try {
-                // Load search index
-                const response = await fetch('search-index.json');
-                searchDocuments = await response.json();
-                
-                // Build Lunr index
-                searchIndex = lunr(function() {
-                    this.ref('id');
-                    this.field('title', { boost: 10 });
-                    this.field('description', { boost: 5 });
-                    this.field('content', { boost: 1 });
-                    this.field('tags', { boost: 3 });
-                    this.field('category', { boost: 2 });
+    <!-- Filter Section -->
+    <div class="filter-section">
+        <div class="row">
+            <div class="col-md-8">
+                <h5 class="mb-3"><i class="bi bi-funnel"></i> フィルタ</h5>
+                <div class="mb-3">
+                    <button class="btn btn-outline-primary filter-btn" data-category="all" id="filterAll">
+                        全て ({{ posts|length }})
+                    </button>
+                    <button class="btn btn-outline-success filter-btn" data-category="mountain-guide">
+                        山岳ガイド
+                    </button>
+                    <button class="btn btn-outline-info filter-btn" data-category="sea">
+                        海・釣り
+                    </button>
+                    <button class="btn btn-outline-warning filter-btn" data-category="gear">
+                        ギア・道具
+                    </button>
+                    <button class="btn btn-outline-danger filter-btn" data-category="tech">
+                        技術
+                    </button>
+                    <button class="btn btn-outline-secondary filter-btn" data-category="travel">
+                        旅行
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h5 class="mb-3"><i class="bi bi-search"></i> ローカル検索</h5>
+                <input type="text" id="localSearch" class="form-control" placeholder="表示中の記事を検索...">
+            </div>
+        </div>
+    </div>
+
+    <!-- Posts Grid -->
+    <div class="row" id="postsContainer">
+        {% for post in posts %}
+        <div class="col-lg-4 col-md-6 mb-4 post-card" data-category="{{ post.category }}" data-tags="{{ post.tags|join(' ')|lower }}" data-title="{{ post.title|lower }}" data-description="{{ post.description|lower }}">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body d-flex flex-column">
+                    <div class="mb-2">
+                        <span class="badge bg-primary rounded-pill">{{ post.category }}</span>
+                        <small class="text-muted float-end">{{ post.date }}</small>
+                    </div>
                     
-                    searchDocuments.forEach(function(doc) {
-                        this.add(doc);
-                    }, this);
-                });
-                
-                console.log('Search index loaded with', searchDocuments.length, 'documents');
-            } catch (error) {
-                console.error('Failed to load search index:', error);
-            }
-        }
+                    <h5 class="card-title">
+                        <a href="posts/{{ post.filename }}" class="text-decoration-none">{{ post.title }}</a>
+                    </h5>
+                    
+                    <p class="card-text">{{ post.description }}</p>
+                    
+                    {% if post.tags %}
+                    <div class="mb-3 mt-auto">
+                        {% for tag in post.tags %}
+                        <span class="tag">{{ tag }}</span>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+                    
+                    <div class="mt-auto">
+                        <a href="posts/{{ post.filename }}" class="btn btn-outline-primary btn-sm">続きを読む</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <!-- No Results Message -->
+    <div id="noResults" class="text-center py-5" style="display: none;">
+        <i class="bi bi-search display-1 text-muted"></i>
+        <h3 class="text-muted mt-3">該当する記事が見つかりません</h3>
+        <p class="text-muted">検索条件を変更してお試しください</p>
+    </div>
+</main>
+{% endblock %}
+
+{% block extra_scripts %}
+<script>
+// Global Search Implementation
+let searchIndex;
+let searchDocuments = [];
+
+// Load search index
+fetch('search-index.json')
+    .then(response => response.json())
+    .then(data => {
+        searchDocuments = data;
+        searchIndex = lunr(function () {
+            this.field('title', { boost: 10 });
+            this.field('description', { boost: 5 });
+            this.field('tags', { boost: 3 });
+            this.field('category', { boost: 2 });
+            this.field('content');
+            this.ref('id');
+
+            data.forEach(doc => this.add(doc));
+        });
+    })
+    .catch(err => console.error('Failed to load search index:', err));
+
+// Global search functionality
+const globalSearch = document.getElementById('globalSearch');
+const searchResults = document.getElementById('searchResults');
+
+globalSearch.addEventListener('input', function(e) {
+    const query = e.target.value.trim();
+    
+    if (query.length < 2) {
+        searchResults.style.display = 'none';
+        return;
+    }
+    
+    if (!searchIndex) {
+        searchResults.innerHTML = '<div class="search-result-item">検索インデックスを読み込み中...</div>';
+        searchResults.style.display = 'block';
+        return;
+    }
+    
+    try {
+        const results = searchIndex.search(query + '*').slice(0, 10);
         
-        // Perform search
-        function performSearch(query) {
-            if (!searchIndex || !query.trim()) {
-                hideSearchResults();
-                return;
-            }
-            
-            try {
-                const results = searchIndex.search(query);
-                displaySearchResults(results, query);
-            } catch (error) {
-                console.error('Search error:', error);
-                hideSearchResults();
-            }
-        }
-        
-        // Display search results
-        function displaySearchResults(results, query) {
-            const searchResultsContainer = document.getElementById('searchResults');
-            
-            if (results.length === 0) {
-                searchResultsContainer.innerHTML = '<div class="search-result-item text-muted">検索結果が見つかりませんでした</div>';
-                searchResultsContainer.style.display = 'block';
-                return;
-            }
-            
-            const resultHtml = results.slice(0, 10).map(result => {
+        if (results.length === 0) {
+            searchResults.innerHTML = '<div class="search-result-item">該当する記事が見つかりません</div>';
+        } else {
+            searchResults.innerHTML = results.map(result => {
                 const doc = searchDocuments.find(d => d.id === result.ref);
                 if (!doc) return '';
                 
-                const highlightedTitle = highlightText(doc.title, query);
-                const highlightedContent = highlightText(doc.content.substring(0, 150) + '...', query);
-                
                 return `
-                    <div class="search-result-item" onclick="window.location.href='${doc.url}'">
-                        <div class="fw-bold">${highlightedTitle}</div>
-                        <div class="text-muted small mb-1">${doc.category} • ${doc.date}</div>
-                        <div class="text-secondary">${highlightedContent}</div>
-                        ${doc.tags ? `<div class="mt-1">${doc.tags.split(' ').map(tag => `<span class="badge bg-light text-dark me-1">${tag}</span>`).join('')}</div>` : ''}
-                    </div>
+                    <a href="posts/${doc.id}.html" class="search-result-item">
+                        <div class="search-result-title">${highlightText(doc.title, query)}</div>
+                        <div class="search-result-meta">
+                            <span class="badge bg-secondary">${doc.category}</span>
+                            <span class="ms-2">${doc.date}</span>
+                        </div>
+                        <div class="search-result-excerpt">${highlightText(doc.description.substring(0, 150), query)}...</div>
+                    </a>
                 `;
             }).join('');
-            
-            searchResultsContainer.innerHTML = resultHtml;
-            searchResultsContainer.style.display = 'block';
         }
         
-        // Highlight text
-        function highlightText(text, query) {
-            if (!query.trim()) return text;
-            
-            const regex = new RegExp(`(${escapeRegExp(query)})`, 'gi');
-            return text.replace(regex, '<span class="search-highlight">$1</span>');
+        searchResults.style.display = 'block';
+    } catch (error) {
+        console.error('Search error:', error);
+        searchResults.innerHTML = '<div class="search-result-item">検索エラーが発生しました</div>';
+        searchResults.style.display = 'block';
+    }
+});
+
+// Hide search results when clicking outside
+document.addEventListener('click', function(e) {
+    if (!globalSearch.contains(e.target) && !searchResults.contains(e.target)) {
+        searchResults.style.display = 'none';
+    }
+});
+
+// Highlight search terms
+function highlightText(text, query) {
+    if (!query) return text;
+    const regex = new RegExp(`(${query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi');
+    return text.replace(regex, '<span class="search-highlight">$1</span>');
+}
+
+// Local search and filtering
+const localSearch = document.getElementById('localSearch');
+const filterButtons = document.querySelectorAll('.filter-btn');
+const postCards = document.querySelectorAll('.post-card');
+const noResults = document.getElementById('noResults');
+const postsContainer = document.getElementById('postsContainer');
+
+let currentCategory = 'all';
+
+// Filter functionality
+filterButtons.forEach(button => {
+    button.addEventListener('click', function() {
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        this.classList.add('active');
+        currentCategory = this.dataset.category;
+        applyFilters();
+    });
+});
+
+// Set initial active filter
+document.getElementById('filterAll').classList.add('active');
+
+// Local search functionality
+localSearch.addEventListener('input', applyFilters);
+
+function applyFilters() {
+    const searchTerm = localSearch.value.toLowerCase();
+    let visibleCount = 0;
+    
+    postCards.forEach(card => {
+        const category = card.dataset.category;
+        const title = card.dataset.title;
+        const description = card.dataset.description;
+        const tags = card.dataset.tags;
+        
+        const categoryMatch = currentCategory === 'all' || category === currentCategory;
+        const searchMatch = searchTerm === '' || 
+            title.includes(searchTerm) || 
+            description.includes(searchTerm) || 
+            tags.includes(searchTerm);
+        
+        if (categoryMatch && searchMatch) {
+            card.style.display = 'block';
+            visibleCount++;
+        } else {
+            card.style.display = 'none';
         }
-        
-        // Escape regex special characters
-        function escapeRegExp(string) {
-            return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-        }
-        
-        // Hide search results
-        function hideSearchResults() {
-            const searchResultsContainer = document.getElementById('searchResults');
-            searchResultsContainer.style.display = 'none';
-        }
-        
-        // Local filter functionality
-        const searchInput = document.getElementById('searchInput');
-        const postsContainer = document.getElementById('postsContainer');
-        const emptyState = document.getElementById('emptyState');
-        const filterButtons = document.querySelectorAll('.filter-btn');
-        
-        let currentFilter = 'all';
-        
-        // Search function
-        function searchPosts() {
-            const searchTerm = searchInput.value.toLowerCase();
-            const posts = document.querySelectorAll('.post-item');
-            let visibleCount = 0;
-            
-            posts.forEach(post => {
-                const title = post.querySelector('.card-title').textContent.toLowerCase();
-                const description = post.querySelector('.card-text')?.textContent.toLowerCase() || '';
-                const tags = post.dataset.tags.toLowerCase();
-                const category = post.dataset.category.toLowerCase();
-                
-                const matchesSearch = title.includes(searchTerm) || 
-                                    description.includes(searchTerm) || 
-                                    tags.includes(searchTerm) ||
-                                    category.includes(searchTerm);
-                                    
-                const matchesFilter = currentFilter === 'all' || 
-                                    category === currentFilter ||
-                                    tags.includes(currentFilter);
-                
-                if (matchesSearch && matchesFilter) {
-                    post.style.display = 'block';
-                    visibleCount++;
-                } else {
-                    post.style.display = 'none';
-                }
-            });
-            
-            // Show/hide empty state
-            if (visibleCount === 0) {
-                emptyState.style.display = 'block';
-                postsContainer.style.display = 'none';
-            } else {
-                emptyState.style.display = 'none';
-                postsContainer.style.display = 'flex';
-            }
-        }
-        
-        // Filter function
-        function filterPosts(category) {
-            currentFilter = category;
-            
-            // Update button states
-            filterButtons.forEach(btn => {
-                btn.classList.remove('btn-primary');
-                btn.classList.add('btn-outline-primary');
-            });
-            
-            event.target.classList.remove('btn-outline-primary');
-            event.target.classList.add('btn-primary');
-            
-            searchPosts();
-        }
-        
-        // Card click functionality
-        function setupCardClicks() {
-            const cards = document.querySelectorAll('.post-card[data-href]');
-            cards.forEach(card => {
-                card.addEventListener('click', function(e) {
-                    // Prevent default if clicking on a link or button inside the card
-                    if (e.target.tagName === 'A' || e.target.tagName === 'BUTTON') {
-                        return;
-                    }
-                    
-                    const href = this.getAttribute('data-href');
-                    if (href) {
-                        window.location.href = href;
-                    }
-                });
-                
-                // Add keyboard navigation
-                card.addEventListener('keydown', function(e) {
-                    if (e.key === 'Enter' || e.key === ' ') {
-                        e.preventDefault();
-                        const href = this.getAttribute('data-href');
-                        if (href) {
-                            window.location.href = href;
-                        }
-                    }
-                });
-                
-                // Make cards focusable for accessibility
-                card.setAttribute('tabindex', '0');
-            });
-        }
-        
-        // Event listeners
-        searchInput.addEventListener('input', searchPosts);
-        filterButtons.forEach(btn => {
-            btn.addEventListener('click', () => filterPosts(btn.dataset.filter));
-        });
-        
-        // Global search event listeners
-        const globalSearchInput = document.getElementById('globalSearchInput');
-        const clearSearchButton = document.getElementById('clearSearch');
-        
-        globalSearchInput.addEventListener('input', function() {
-            const query = this.value;
-            if (query.length >= 2) {
-                performSearch(query);
-            } else {
-                hideSearchResults();
-            }
-        });
-        
-        clearSearchButton.addEventListener('click', function() {
-            globalSearchInput.value = '';
-            hideSearchResults();
-        });
-        
-        // Hide search results when clicking outside
-        document.addEventListener('click', function(event) {
-            const searchContainer = document.querySelector('.search-container');
-            if (!searchContainer.contains(event.target)) {
-                hideSearchResults();
-            }
-        });
-        
-        // Initialize search and card clicks
-        initializeSearch();
-        setupCardClicks();
-    </script>
-</body>
-</html>
+    });
+    
+    // Show/hide no results message
+    if (visibleCount === 0) {
+        postsContainer.style.display = 'none';
+        noResults.style.display = 'block';
+    } else {
+        postsContainer.style.display = 'flex';
+        noResults.style.display = 'none';
+    }
+}
+</script>
+{% endblock %}
