@@ -3,7 +3,10 @@
     "allow": [
       "Bash(git add:*)",
       "Bash(git commit:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Read(/Users/junpeiwada/Downloads/Photos-1-001 (3)/**)",
+      "Read(/Users/junpeiwada/Downloads/Photos-1-001 (3)/**)",
+      "Read(/Users/junpeiwada/Downloads/Photos-1-001 (3)/**)"
     ],
     "deny": [],
     "ask": []
