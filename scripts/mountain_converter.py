@@ -78,6 +78,7 @@ class MountainConverter:
             'content': content,
             'area': self.get_mountain_area(file_path),
             'elevation': self.extract_elevation(content),
+            'elevation_gain': self.extract_elevation_gain(content),
             'is_hyakumeizan': self.is_hyakumeizan(content),
             'difficulty': self.extract_difficulty(content),
             'duration': self.extract_duration(content),
@@ -102,6 +103,22 @@ class MountainConverter:
         elevation_match = re.search(r'標高.*?(\d{1,4})m', content)
         if elevation_match:
             return int(elevation_match.group(1))
+        return None
+    
+    def extract_elevation_gain(self, content):
+        """Extract elevation gain from content"""
+        # Look for 獲得標高: XXXm pattern
+        elevation_gain_match = re.search(r'獲得標高.*?(\d{1,4})m', content)
+        if elevation_gain_match:
+            return int(elevation_gain_match.group(1))
+        
+        # Look for pattern like (登山口XXXm→山頂XXXm)
+        range_match = re.search(r'(\d{1,4})m.*?→.*?(\d{1,4})m', content)
+        if range_match:
+            start_elevation = int(range_match.group(1))
+            end_elevation = int(range_match.group(2))
+            return end_elevation - start_elevation
+        
         return None
     
     def is_hyakumeizan(self, content):
@@ -182,6 +199,7 @@ class MountainConverter:
             'name': mountain_data['name'],
             'area': mountain_data['area'],
             'elevation': mountain_data['elevation'] or '不明',
+            'elevation_gain': mountain_data['elevation_gain'] or '不明',
             'prefecture': mountain_data['prefecture'] or '不明',
             'hyakumeizan': '○' if mountain_data['is_hyakumeizan'] else '',
             'difficulty': '★' * (mountain_data['difficulty'] or 0) if mountain_data['difficulty'] else '不明',
@@ -316,6 +334,7 @@ class MountainConverter:
             <tr>
                 <th>山名</th>
                 <th>標高</th>
+                <th>獲得標高</th>
                 <th>山域</th>
                 <th>所在地</th>
                 <th>百名山</th>
@@ -329,9 +348,14 @@ class MountainConverter:
         for mountain in mountains_summary:
             # Create link to individual mountain page (same directory)
             mountain_link = f'<a href="{mountain["filename"]}" class="text-decoration-none"><strong>{mountain["name"]}</strong></a>'
+            # Format elevation and elevation gain
+            elevation = f"{mountain['elevation']}m" if mountain['elevation'] != '不明' else '不明'
+            elevation_gain = f"{mountain['elevation_gain']}m" if mountain['elevation_gain'] != '不明' else '不明'
+            
             content += f"""            <tr data-area="{mountain['area']}" data-hyakumeizan="{mountain['hyakumeizan']}">
                 <td>{mountain_link}</td>
-                <td>{mountain['elevation']}m</td>
+                <td>{elevation}</td>
+                <td>{elevation_gain}</td>
                 <td><span class="badge bg-secondary">{mountain['area']}</span></td>
                 <td>{mountain['prefecture']}</td>
                 <td>{mountain['hyakumeizan']}</td>
