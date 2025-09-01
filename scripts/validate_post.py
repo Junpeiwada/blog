@@ -146,8 +146,9 @@ class PostValidator:
                 found_h1 = True
                 break
                 
-        if not found_h1:
-            self.warning("記事にH1見出し（# タイトル）がありません")
+        # H1見出しはテンプレートのタイトルがあるため不要
+        # if not found_h1:
+        #     self.warning("記事にH1見出し（# タイトル）がありません")
             
         # 最低限のコンテンツ長チェック
         content_without_frontmatter = content.split('---', 2)[2] if '---' in content else content
