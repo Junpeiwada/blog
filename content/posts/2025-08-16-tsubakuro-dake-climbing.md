@@ -10,6 +10,12 @@ description: "北アルプス燕岳（2,763m）1泊2日登山の体験記。辛�
 
 結論から言うと、辛い登山道を乗り越えた先に待っている絶景は本当に素晴らしく、燕山荘での宿泊体験も含めて最高の山行となりました。特に表銀座コースから見る槍ヶ岳の雄姿は圧巻でした。
 
+## 動画で見る燕岳登山
+
+今回の登山の様子を動画でまとめましたので、まずはこちらをご覧ください。記事では伝えきれない山の雰囲気や絶景を感じていただけると思います。
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ty3CS3eNpGU?si=example" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 ## 事前準備：駐車場予約で冷や汗
 
 登山前日、実は大きな問題が発生していました。燕岳登山口である中房温泉の駐車場事情を甘く見ていたんです。
