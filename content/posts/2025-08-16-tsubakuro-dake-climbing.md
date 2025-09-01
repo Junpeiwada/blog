@@ -14,7 +14,9 @@ description: "北アルプス燕岳（2,763m）1泊2日登山の体験記。辛�
 
 今回の登山の様子を動画でまとめましたので、まずはこちらをご覧ください。記事では伝えきれない山の雰囲気や絶景を感じていただけると思います。
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ty3CS3eNpGU?si=example" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%; margin: 1rem 0;">
+<iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 8px;" src="https://www.youtube.com/embed/ty3CS3eNpGU" title="燕岳登山動画" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
 
 ## 事前準備：駐車場予約で冷や汗
 
