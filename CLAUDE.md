@@ -167,6 +167,35 @@ blog/
 - **画像サイズ**: Web表示に適したサイズ（推奨1920px以下）
 - **ファイル形式**: JPG（写真）、PNG（スクリーンショット）を推奨
 
+## YouTube動画埋め込みルール
+
+### 標準埋め込み形式
+記事内にYouTube動画を埋め込む際は、以下の形式を使用する。この形式により、写真と同じ幅でレスポンシブ表示される。
+
+```html
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%; margin: 1rem 0;">
+<iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 8px;" src="https://www.youtube.com/embed/VIDEO_ID" title="動画タイトル" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+```
+
+### スタイリング仕様
+- **幅**: `width: 100%` で親要素の幅いっぱい（写真と同じ）
+- **アスペクト比**: `padding-bottom: 56.25%` で16:9比率を維持
+- **角丸**: `border-radius: 8px` で写真と同じスタイル
+- **マージン**: `margin: 1rem 0` で写真と同じ上下間隔
+- **レスポンシブ**: 全デバイスで適切に表示
+
+### 使用例
+```markdown
+## 動画で見る燕岳登山
+
+今回の登山の様子を動画でまとめましたので、まずはこちらをご覧ください。
+
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%; margin: 1rem 0;">
+<iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 8px;" src="https://www.youtube.com/embed/ty3CS3eNpGU" title="燕岳登山動画" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+```
+
 ## 記事の種類と表示ルール
 
 ### カテゴリ別表示ルール
