@@ -17,7 +17,7 @@ description: "最近購入したモーラナイフ4本（コンパニオンシ�
 3. **BUCK(バック) 狩猟ナイフ セルカーク Selkirk 863BRS-B**
 4. **モーラナイフ コンパニオン ヘビーデューティー ステンレス**
 
-![購入したモーラナイフ4本のコレクション](images/morakniv-collection-2025-09-01.heic)
+![購入したモーラナイフ4本のコレクション](../images/morakniv-collection-2025-09-01.heic)
 *購入した4本のモーラナイフとBUCK狩猟ナイフ*
 
 ## スカンジグラインドの素晴らしさ
@@ -55,7 +55,7 @@ description: "最近購入したモーラナイフ4本（コンパニオンシ�
 
 ### 3. BUCK(バック) 狩猟ナイフ セルカーク Selkirk 863BRS-B
 
-![BUCKセルカークナイフの詳細画像](images/buck-selkirk-knife-2025-09-01.heic)
+![BUCKセルカークナイフの詳細画像](../images/buck-selkirk-knife-2025-09-01.heic)
 *BUCK セルカーク 863BRS-B - アメリカ製の信頼性の高い狩猟ナイフ*
 
 **用途**: 狩猟・アウトドア汎用
