@@ -43,7 +43,13 @@ blog/
 │   ├── build.py               # サイト生成（CSS/画像コピー含む）
 │   ├── deploy.py              # 統合デプロイ
 │   ├── validate_post.py       # 記事検証スクリプト
+│   ├── remove_duplicate_titles.py  # H1タイトル重複除去ツール
 │   └── mountain_converter.py  # 山岳データ変換（一回限り使用）
+├── .vscode/                    # VSCode設定（ローカル環境用、gitignore対象）
+│   ├── tasks.json             # ビルド・デプロイタスク定義
+│   └── keybindings.json       # キーボードショートカット設定
+├── package.json                # npm設定・スクリプト定義
+├── Write記事個性.md            # 記事作成ガイドライン（shi3zテイスト準拠）
 ├── requirements.txt            # Python依存関係
 ├── venv/                       # Python仮想環境
 └── .gitignore                  # Git除外設定
@@ -174,7 +180,29 @@ blog/
 
 ## 開発コマンド
 
-### 基本コマンド
+### npm スクリプト（推奨）
+```bash
+# メインコマンド：ビルド + GitHub Pages公開
+npm run ビルドして公開
+
+# ビルドのみ（HTML生成）
+npm run build
+
+# ローカルサーバー起動（プレビュー用）
+npm run serve
+
+# 開発モード（ビルド → サーバー起動）
+npm run dev
+
+# 記事検証
+npm run validate
+
+# エイリアス
+npm run deploy    # = npm run ビルドして公開
+npm run publish   # = npm run ビルドして公開
+```
+
+### Python 直接実行（従来方法）
 ```bash
 # 仮想環境アクティベート
 source venv/bin/activate
@@ -194,6 +222,14 @@ python scripts/deploy.py --build-only
 # ステータス確認
 python scripts/deploy.py --status
 ```
+
+### VSCode統合
+- **コマンドパレット**: `Cmd+Shift+P` → `Tasks: Run Task`
+- **ショートカット**: 
+  - `Cmd+Shift+B`: ビルド
+  - `Cmd+Shift+D`: デプロイ
+  - `Cmd+Shift+S`: サーバー起動
+- **NPMスクリプトビュー**: エクスプローラーから直接実行
 
 ### Git操作
 ```bash
@@ -481,11 +517,35 @@ python scripts/validate_post.py content/posts/記事名.md --info
 - 画像パス存在確認
 - カテゴリ表示予測
 
+## タイトル重複問題と解決方法
+
+### 問題
+記事のMarkdown内にH1タイトル（`# タイトル名`）があると、テンプレートのタイトルと重複表示される問題がありました。
+
+### 解決方法
+**scripts/remove_duplicate_titles.py**スクリプトで一括修正済み。
+
+### 記事作成時の注意
+- **記事内にH1タイトルを書かない**
+- フロントマターの`title`のみ使用
+- テンプレートが自動的にタイトル表示
+
+### 既存記事の修正
+```bash
+# H1タイトル重複チェック・除去（必要時のみ）
+python scripts/remove_duplicate_titles.py
+```
+
+### 記事作成ガイドライン
+**Write記事個性.md**を参照。shi3zblogテイストに基づく記事スタイルを定義。
+
 ## 重要な注意事項
 
 1. **山岳ガイドは特別記事**: 通常のブログフローとは別管理
-2. **記事追加は簡単**: Markdownファイル作成 → デプロイスクリプト実行
-3. **自動化重視**: 手動HTML編集は避け、スクリプト経由で更新
+2. **記事追加は簡単**: Markdownファイル作成 → `npm run ビルドして公開`
+3. **自動化重視**: 手動HTML編集は避け、npmスクリプト経由で更新
 4. **GitHub Pages**: /docs フォルダから自動デプロイ
 5. **検索機能**: 記事追加時に自動でインデックス更新
 6. **CSS/アセット管理**: assets/ディレクトリで一元管理、自動コピー
+7. **タイトル管理**: 記事内のH1タイトル使用禁止、フロントマターのみ
+8. **VSCode統合**: タスク・npm統合で効率的な開発環境
