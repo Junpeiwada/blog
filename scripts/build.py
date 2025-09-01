@@ -160,12 +160,12 @@ class BlogBuilder:
             reverse=True
         )
         
-        # Prepare posts data for template - show mountain-guide and sea categories in card list
+        # Prepare posts data for template - exclude only individual mountain posts
         posts_for_template = []
         for post in sorted_posts:
             category = post['metadata']['category']
-            # Show mountain-guide and sea categories in main card list
-            if category in ['mountain-guide', 'sea']:
+            # Exclude only individual mountain posts from main card list
+            if category != 'mountain':
                 posts_for_template.append({
                     'title': post['metadata']['title'],
                     'date': post['metadata']['date'],
