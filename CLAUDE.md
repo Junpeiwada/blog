@@ -24,16 +24,25 @@ blog/
 │   ├── 2024-09-04-japanese-alps-complete-guide.md  # メイン山岳ガイド
 │   ├── 2024-09-05-槍ヶ岳-guide.md                # 個別山岳記事
 │   └── 2024-XX-XX-new-post.md                    # 通常ブログ記事
+├── assets/                     # 静的アセット（開発時）
+│   └── css/
+│       └── style.css          # メインスタイルシート
+├── images/                     # ソース画像（開発時）
 ├── docs/                       # GitHub Pages出力（自動生成）
 │   ├── index.html             # ブログトップページ
-│   └── posts/                 # 記事HTMLファイル
-├── templates/                  # HTMLテンプレート
-│   ├── base.html              # 共通レイアウト
-│   ├── post.html              # 記事テンプレート
-│   └── index.html             # 一覧テンプレート
+│   ├── posts/                 # 記事HTMLファイル
+│   ├── assets/                # 静的アセット（自動生成）
+│   │   └── css/
+│   │       └── style.css      # コピーされたCSS
+│   └── images/                # コピーされた画像
+├── templates/                  # HTMLテンプレート（Jinja2継承システム）
+│   ├── base.html              # 親テンプレート（共通レイアウト）
+│   ├── post.html              # 記事テンプレート（base.html継承）
+│   └── index.html             # 一覧テンプレート（base.html継承）
 ├── scripts/                    # ビルドスクリプト
-│   ├── build.py               # サイト生成
+│   ├── build.py               # サイト生成（CSS/画像コピー含む）
 │   ├── deploy.py              # 統合デプロイ
+│   ├── validate_post.py       # 記事検証スクリプト
 │   └── mountain_converter.py  # 山岳データ変換（一回限り使用）
 ├── requirements.txt            # Python依存関係
 ├── venv/                       # Python仮想環境
@@ -414,6 +423,64 @@ MarkupSafe==3.0.2  # HTMLエスケープ
 2. **記事内容確認**: Markdown記法の問題チェック
 3. **文字エンコーディング**: UTF-8確認
 
+## CSS・テンプレートシステム（2025年9月更新）
+
+### テンプレート継承システム
+**Jinja2テンプレート継承**を活用した効率的な管理システム:
+
+#### 構成
+- **`base.html`**: 親テンプレート（共通レイアウト）
+- **`post.html`**: 記事ページ（base.html継承）  
+- **`index.html`**: トップページ（base.html継承）
+
+#### 利点
+- **共通部分の一元管理**: ナビゲーション、フッター、CSS読み込みなど
+- **メンテナンス性向上**: 共通部分の変更は1箇所のみ
+- **コード重複削除**: DRY原則に基づく効率的な構造
+
+### CSS外部化システム
+
+#### ディレクトリ構造
+```
+blog/
+├── assets/css/style.css        # ソースCSS（開発時）
+└── docs/assets/css/style.css   # 公開用CSS（自動生成）
+```
+
+#### 改修前後の比較
+**改修前**: 各HTMLに約80行のインラインCSS埋め込み
+**改修後**: 1行のCSS読み込みリンクのみ
+
+#### パフォーマンス向上
+1. **ファイルサイズ削減**: 各HTMLから約3KB削減
+2. **ブラウザキャッシュ**: CSSファイルの独立キャッシュ
+3. **並列読み込み**: HTML/CSS同時ダウンロード
+4. **メンテナンス性**: CSS変更時は1ファイルのみ修正
+
+#### 自動化プロセス
+1. `assets/css/style.css` でスタイル編集
+2. `python scripts/build.py` 実行
+3. 自動的に `docs/assets/css/` にコピー
+4. テンプレートが正しいパスで参照
+
+### 記事検証スクリプト
+
+#### 使用方法
+```bash
+# 基本検証
+python scripts/validate_post.py content/posts/記事名.md
+
+# 表示予測付き検証
+python scripts/validate_post.py content/posts/記事名.md --info
+```
+
+#### 検証項目
+- ファイル名形式（YYYY-MM-DD-title.md）
+- フロントマター構文
+- 必須フィールド（title, date, category, description）
+- 画像パス存在確認
+- カテゴリ表示予測
+
 ## 重要な注意事項
 
 1. **山岳ガイドは特別記事**: 通常のブログフローとは別管理
@@ -421,3 +488,4 @@ MarkupSafe==3.0.2  # HTMLエスケープ
 3. **自動化重視**: 手動HTML編集は避け、スクリプト経由で更新
 4. **GitHub Pages**: /docs フォルダから自動デプロイ
 5. **検索機能**: 記事追加時に自動でインデックス更新
+6. **CSS/アセット管理**: assets/ディレクトリで一元管理、自動コピー
