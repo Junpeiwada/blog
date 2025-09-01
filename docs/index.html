@@ -12,6 +12,9 @@
     <!-- Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
     
+    <!-- Lunr.js for search -->
+    <script src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script>
+    
     <!-- Custom CSS -->
     <style>
         body {
@@ -90,6 +93,46 @@
             margin-right: 0.5rem;
             margin-bottom: 0.5rem;
         }
+        
+        .search-results {
+            background-color: #fff;
+            border: 1px solid #dee2e6;
+            border-radius: 0.375rem;
+            box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+            max-height: 400px;
+            overflow-y: auto;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            display: none;
+        }
+        
+        .search-result-item {
+            padding: 0.75rem 1rem;
+            border-bottom: 1px solid #f8f9fa;
+            cursor: pointer;
+            transition: background-color 0.15s;
+        }
+        
+        .search-result-item:hover {
+            background-color: #f8f9fa;
+        }
+        
+        .search-result-item:last-child {
+            border-bottom: none;
+        }
+        
+        .search-highlight {
+            background-color: #fff3cd;
+            padding: 0.125rem 0.25rem;
+            border-radius: 0.25rem;
+        }
+        
+        .search-container {
+            position: relative;
+        }
     </style>
 </head>
 <body>
@@ -134,8 +177,18 @@
         <!-- Search and Filter -->
         <div class="row">
             <div class="col-12">
+                <div class="search-container">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text"><i class="bi bi-search"></i></span>
+                        <input type="text" id="globalSearchInput" class="form-control" placeholder="全記事から検索 (タイトル・本文・タグ)...">
+                        <button class="btn btn-outline-secondary" type="button" id="clearSearch">
+                            <i class="bi bi-x-lg"></i>
+                        </button>
+                    </div>
+                    <div id="searchResults" class="search-results"></div>
+                </div>
                 <div class="search-box">
-                    <input type="text" id="searchInput" class="form-control" placeholder="記事を検索...">
+                    <input type="text" id="searchInput" class="form-control" placeholder="表示中の記事をフィルタ...">
                 </div>
                 <div class="filter-buttons">
                     <button type="button" class="btn btn-outline-primary filter-btn" data-filter="all">すべて</button>
@@ -742,7 +795,104 @@
     
     <!-- Custom JS -->
     <script>
-        // Search functionality
+        // Global variables for search
+        let searchIndex;
+        let searchDocuments;
+        
+        // Initialize search
+        async function initializeSearch() {
+            try {
+                // Load search index
+                const response = await fetch('search-index.json');
+                searchDocuments = await response.json();
+                
+                // Build Lunr index
+                searchIndex = lunr(function() {
+                    this.ref('id');
+                    this.field('title', { boost: 10 });
+                    this.field('description', { boost: 5 });
+                    this.field('content', { boost: 1 });
+                    this.field('tags', { boost: 3 });
+                    this.field('category', { boost: 2 });
+                    
+                    searchDocuments.forEach(function(doc) {
+                        this.add(doc);
+                    }, this);
+                });
+                
+                console.log('Search index loaded with', searchDocuments.length, 'documents');
+            } catch (error) {
+                console.error('Failed to load search index:', error);
+            }
+        }
+        
+        // Perform search
+        function performSearch(query) {
+            if (!searchIndex || !query.trim()) {
+                hideSearchResults();
+                return;
+            }
+            
+            try {
+                const results = searchIndex.search(query);
+                displaySearchResults(results, query);
+            } catch (error) {
+                console.error('Search error:', error);
+                hideSearchResults();
+            }
+        }
+        
+        // Display search results
+        function displaySearchResults(results, query) {
+            const searchResultsContainer = document.getElementById('searchResults');
+            
+            if (results.length === 0) {
+                searchResultsContainer.innerHTML = '<div class="search-result-item text-muted">検索結果が見つかりませんでした</div>';
+                searchResultsContainer.style.display = 'block';
+                return;
+            }
+            
+            const resultHtml = results.slice(0, 10).map(result => {
+                const doc = searchDocuments.find(d => d.id === result.ref);
+                if (!doc) return '';
+                
+                const highlightedTitle = highlightText(doc.title, query);
+                const highlightedContent = highlightText(doc.content.substring(0, 150) + '...', query);
+                
+                return `
+                    <div class="search-result-item" onclick="window.location.href='${doc.url}'">
+                        <div class="fw-bold">${highlightedTitle}</div>
+                        <div class="text-muted small mb-1">${doc.category} • ${doc.date}</div>
+                        <div class="text-secondary">${highlightedContent}</div>
+                        ${doc.tags ? `<div class="mt-1">${doc.tags.split(' ').map(tag => `<span class="badge bg-light text-dark me-1">${tag}</span>`).join('')}</div>` : ''}
+                    </div>
+                `;
+            }).join('');
+            
+            searchResultsContainer.innerHTML = resultHtml;
+            searchResultsContainer.style.display = 'block';
+        }
+        
+        // Highlight text
+        function highlightText(text, query) {
+            if (!query.trim()) return text;
+            
+            const regex = new RegExp(`(${escapeRegExp(query)})`, 'gi');
+            return text.replace(regex, '<span class="search-highlight">$1</span>');
+        }
+        
+        // Escape regex special characters
+        function escapeRegExp(string) {
+            return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        }
+        
+        // Hide search results
+        function hideSearchResults() {
+            const searchResultsContainer = document.getElementById('searchResults');
+            searchResultsContainer.style.display = 'none';
+        }
+        
+        // Local filter functionality
         const searchInput = document.getElementById('searchInput');
         const postsContainer = document.getElementById('postsContainer');
         const emptyState = document.getElementById('emptyState');
@@ -843,7 +993,34 @@
             btn.addEventListener('click', () => filterPosts(btn.dataset.filter));
         });
         
-        // Initialize card clicks
+        // Global search event listeners
+        const globalSearchInput = document.getElementById('globalSearchInput');
+        const clearSearchButton = document.getElementById('clearSearch');
+        
+        globalSearchInput.addEventListener('input', function() {
+            const query = this.value;
+            if (query.length >= 2) {
+                performSearch(query);
+            } else {
+                hideSearchResults();
+            }
+        });
+        
+        clearSearchButton.addEventListener('click', function() {
+            globalSearchInput.value = '';
+            hideSearchResults();
+        });
+        
+        // Hide search results when clicking outside
+        document.addEventListener('click', function(event) {
+            const searchContainer = document.querySelector('.search-container');
+            if (!searchContainer.contains(event.target)) {
+                hideSearchResults();
+            }
+        });
+        
+        // Initialize search and card clicks
+        initializeSearch();
         setupCardClicks();
     </script>
 </body>
