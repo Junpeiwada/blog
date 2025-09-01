@@ -327,8 +327,8 @@ class MountainConverter:
 """
         
         for mountain in mountains_summary:
-            # Create link to individual mountain page
-            mountain_link = f'<a href="posts/{mountain["filename"]}" class="text-decoration-none"><strong>{mountain["name"]}</strong></a>'
+            # Create link to individual mountain page (same directory)
+            mountain_link = f'<a href="{mountain["filename"]}" class="text-decoration-none"><strong>{mountain["name"]}</strong></a>'
             content += f"""            <tr data-area="{mountain['area']}" data-hyakumeizan="{mountain['hyakumeizan']}">
                 <td>{mountain_link}</td>
                 <td>{mountain['elevation']}m</td>
