@@ -246,8 +246,26 @@ class BlogBuilder:
         except Exception as e:
             print(f"Error building index page: {e}")
         
+        # Copy images directory to docs
+        self.copy_images()
+        
         print(f"\nBuild complete! Generated {len(posts_data)} posts")
         print(f"Output directory: {self.docs_dir}")
+    
+    def copy_images(self):
+        """Copy images directory to docs"""
+        import shutil
+        
+        images_src = self.root_dir / "images"
+        images_dest = self.docs_dir / "images"
+        
+        if images_src.exists():
+            if images_dest.exists():
+                shutil.rmtree(images_dest)
+            shutil.copytree(images_src, images_dest)
+            print(f"Copied images from {images_src} to {images_dest}")
+        else:
+            print("No images directory found to copy")
     
     def serve_local(self, port=8000):
         """Serve the site locally for testing"""
