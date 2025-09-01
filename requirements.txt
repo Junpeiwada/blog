@@ -3,4 +3,3 @@ markdown==3.8.2
 pyyaml==6.0.2
 pygments==2.19.2
 MarkupSafe==3.0.2
-beautifulsoup4==4.12.3
