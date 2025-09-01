@@ -187,38 +187,6 @@ class BlogBuilder:
         print(f"Built index page with {len(posts_for_template)} posts")
         return output_path
     
-    def build_search_index(self, posts_data):
-        """Build search index JSON for Lunr.js"""
-        search_documents = []
-        
-        for post in posts_data:
-            # Extract text content from HTML
-            from bs4 import BeautifulSoup
-            soup = BeautifulSoup(post['content'], 'html.parser')
-            text_content = soup.get_text(strip=True)
-            
-            # Prepare document for search index
-            doc = {
-                'id': post['filename'].replace('.html', ''),
-                'title': post['metadata']['title'],
-                'content': text_content[:1000],  # Limit content length
-                'description': post['metadata']['description'],
-                'category': post['metadata']['category'],
-                'tags': ' '.join(post['metadata']['tags']) if post['metadata']['tags'] else '',
-                'date': str(post['metadata']['date']),
-                'url': f"posts/{post['filename']}"
-            }
-            
-            search_documents.append(doc)
-        
-        # Write search index JSON
-        search_index_path = self.docs_dir / 'search-index.json'
-        with open(search_index_path, 'w', encoding='utf-8') as f:
-            json.dump(search_documents, f, ensure_ascii=False, indent=2)
-        
-        print(f"Built search index with {len(search_documents)} documents")
-        return search_index_path
-    
     def clean_docs_dir(self):
         """Clean the docs directory"""
         if self.docs_dir.exists():
@@ -278,12 +246,6 @@ class BlogBuilder:
         except Exception as e:
             print(f"Error building index page: {e}")
         
-        # Build search index
-        print("\nBuilding search index...")
-        try:
-            self.build_search_index(posts_data)
-        except Exception as e:
-            print(f"Error building search index: {e}")
         
         # Copy images directory to docs
         self.copy_images()

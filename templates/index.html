@@ -8,9 +8,6 @@
 {% block extra_head %}
 <!-- Bootstrap Icons -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
-
-<!-- Lunr.js for search -->
-<script src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script>
 {% endblock %}
 
 {% block main_content %}
@@ -27,16 +24,6 @@
 </section>
 
 <main class="container my-5">
-    <!-- Global Search Section -->
-    <div class="row mb-4">
-        <div class="col-12">
-            <div class="search-container">
-                <input type="text" id="globalSearch" class="form-control form-control-lg" 
-                       placeholder="全記事から検索 (タイトル・本文・タグ)..." autocomplete="off">
-                <div id="searchResults" class="search-results"></div>
-            </div>
-        </div>
-    </div>
 
     <!-- Filter Section -->
     <div class="filter-section">
@@ -116,91 +103,6 @@
 
 {% block extra_scripts %}
 <script>
-// Global Search Implementation
-let searchIndex;
-let searchDocuments = [];
-
-// Load search index
-fetch('search-index.json')
-    .then(response => response.json())
-    .then(data => {
-        searchDocuments = data;
-        searchIndex = lunr(function () {
-            this.field('title', { boost: 10 });
-            this.field('description', { boost: 5 });
-            this.field('tags', { boost: 3 });
-            this.field('category', { boost: 2 });
-            this.field('content');
-            this.ref('id');
-
-            data.forEach(doc => this.add(doc));
-        });
-    })
-    .catch(err => console.error('Failed to load search index:', err));
-
-// Global search functionality
-const globalSearch = document.getElementById('globalSearch');
-const searchResults = document.getElementById('searchResults');
-
-globalSearch.addEventListener('input', function(e) {
-    const query = e.target.value.trim();
-    
-    if (query.length < 2) {
-        searchResults.style.display = 'none';
-        return;
-    }
-    
-    if (!searchIndex) {
-        searchResults.innerHTML = '<div class="search-result-item">検索インデックスを読み込み中...</div>';
-        searchResults.style.display = 'block';
-        return;
-    }
-    
-    try {
-        const results = searchIndex.search(query + '*').slice(0, 10);
-        
-        if (results.length === 0) {
-            searchResults.innerHTML = '<div class="search-result-item">該当する記事が見つかりません</div>';
-        } else {
-            searchResults.innerHTML = results.map(result => {
-                const doc = searchDocuments.find(d => d.id === result.ref);
-                if (!doc) return '';
-                
-                return `
-                    <a href="posts/${doc.id}.html" class="search-result-item">
-                        <div class="search-result-title">${highlightText(doc.title, query)}</div>
-                        <div class="search-result-meta">
-                            <span class="badge bg-secondary">${doc.category}</span>
-                            <span class="ms-2">${doc.date}</span>
-                        </div>
-                        <div class="search-result-excerpt">${highlightText(doc.description.substring(0, 150), query)}...</div>
-                    </a>
-                `;
-            }).join('');
-        }
-        
-        searchResults.style.display = 'block';
-    } catch (error) {
-        console.error('Search error:', error);
-        searchResults.innerHTML = '<div class="search-result-item">検索エラーが発生しました</div>';
-        searchResults.style.display = 'block';
-    }
-});
-
-// Hide search results when clicking outside
-document.addEventListener('click', function(e) {
-    if (!globalSearch.contains(e.target) && !searchResults.contains(e.target)) {
-        searchResults.style.display = 'none';
-    }
-});
-
-// Highlight search terms
-function highlightText(text, query) {
-    if (!query) return text;
-    const regex = new RegExp(`(${query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi');
-    return text.replace(regex, '<span class="search-highlight">$1</span>');
-}
-
 // Local search and filtering
 const localSearch = document.getElementById('localSearch');
 const filterButtons = document.querySelectorAll('.filter-btn');
