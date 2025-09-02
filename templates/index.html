@@ -1,0 +1,165 @@
+{% extends "base.html" %}
+
+{% block title %}chrono-compass --traillog{% endblock %}
+{% block description %}技術、登山、旅行などについてのブログ{% endblock %}
+
+{% block body_class %} class="index"{% endblock %}
+
+{% block extra_head %}
+<!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+{% endblock %}
+
+{% block main_content %}
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h1 class="hero-title">chrono-compass --traillog</h1>
+                <p class="hero-subtitle">技術・登山・旅行について書いています</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<main class="container my-5">
+
+    <!-- Filter Section -->
+    <div class="filter-section">
+        <div class="row">
+            <div class="col-md-8">
+                <h5 class="mb-3"><i class="bi bi-funnel"></i> フィルタ</h5>
+                <div class="mb-3">
+                    <button class="btn btn-outline-primary filter-btn" data-category="all" id="filterAll">
+                        全て ({{ posts|length }})
+                    </button>
+                    <button class="btn btn-outline-info filter-btn" data-category="sea">
+                        海・釣り
+                    </button>
+                    <button class="btn btn-outline-warning filter-btn" data-category="gear">
+                        ギア・道具
+                    </button>
+                    <button class="btn btn-outline-danger filter-btn" data-category="tech">
+                        技術
+                    </button>
+                    <button class="btn btn-outline-secondary filter-btn" data-category="travel">
+                        旅行
+                    </button>
+                    <button class="btn btn-outline-dark filter-btn" data-category="climbing">
+                        山登り
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h5 class="mb-3"><i class="bi bi-search"></i> ローカル検索</h5>
+                <input type="text" id="localSearch" class="form-control" placeholder="表示中の記事を検索...">
+            </div>
+        </div>
+    </div>
+
+    <!-- Posts Grid -->
+    <div class="row" id="postsContainer">
+        {% for post in posts %}
+        <div class="col-lg-4 col-md-6 mb-4 post-card" data-category="{{ post.category }}" data-tags="{{ post.tags|join(' ')|lower }}" data-title="{{ post.title|lower }}" data-description="{{ post.description|lower }}">
+            <div class="card h-100 shadow-sm{% if post.featured_image %} card-with-image{% endif %}"{% if post.featured_image %} style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3)), url('{{ post.featured_image }}'); background-size: cover; background-position: center;"{% endif %}>
+                <div class="card-body d-flex flex-column{% if post.featured_image %} text-white{% endif %}">
+                    <div class="mb-2">
+                        <span class="badge bg-primary rounded-pill">{{ post.category }}</span>
+                        <small class="text-muted float-end">{{ post.date }}</small>
+                    </div>
+                    
+                    <h5 class="card-title">
+                        <a href="posts/{{ post.filename }}" class="text-decoration-none{% if post.featured_image %} text-white{% endif %}">{{ post.title }}</a>
+                    </h5>
+                    
+                    <p class="card-text">{{ post.description }}</p>
+                    
+                    {% if post.tags %}
+                    <div class="mb-3 mt-auto">
+                        {% for tag in post.tags %}
+                        <span class="tag">{{ tag }}</span>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+                    
+                    <div class="mt-auto">
+                        <a href="posts/{{ post.filename }}" class="btn btn-outline-primary btn-sm">続きを読む</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <!-- No Results Message -->
+    <div id="noResults" class="text-center py-5" style="display: none;">
+        <i class="bi bi-search display-1 text-muted"></i>
+        <h3 class="text-muted mt-3">該当する記事が見つかりません</h3>
+        <p class="text-muted">検索条件を変更してお試しください</p>
+    </div>
+</main>
+{% endblock %}
+
+{% block extra_scripts %}
+<script>
+// Local search and filtering
+const localSearch = document.getElementById('localSearch');
+const filterButtons = document.querySelectorAll('.filter-btn');
+const postCards = document.querySelectorAll('.post-card');
+const noResults = document.getElementById('noResults');
+const postsContainer = document.getElementById('postsContainer');
+
+let currentCategory = 'all';
+
+// Filter functionality
+filterButtons.forEach(button => {
+    button.addEventListener('click', function() {
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        this.classList.add('active');
+        currentCategory = this.dataset.category;
+        applyFilters();
+    });
+});
+
+// Set initial active filter
+document.getElementById('filterAll').classList.add('active');
+
+// Local search functionality
+localSearch.addEventListener('input', applyFilters);
+
+function applyFilters() {
+    const searchTerm = localSearch.value.toLowerCase();
+    let visibleCount = 0;
+    
+    postCards.forEach(card => {
+        const category = card.dataset.category;
+        const title = card.dataset.title;
+        const description = card.dataset.description;
+        const tags = card.dataset.tags;
+        
+        const categoryMatch = currentCategory === 'all' || category === currentCategory;
+        const searchMatch = searchTerm === '' || 
+            title.includes(searchTerm) || 
+            description.includes(searchTerm) || 
+            tags.includes(searchTerm);
+        
+        if (categoryMatch && searchMatch) {
+            card.style.display = 'block';
+            visibleCount++;
+        } else {
+            card.style.display = 'none';
+        }
+    });
+    
+    // Show/hide no results message
+    if (visibleCount === 0) {
+        postsContainer.style.display = 'none';
+        noResults.style.display = 'block';
+    } else {
+        postsContainer.style.display = 'flex';
+        noResults.style.display = 'none';
+    }
+}
+</script>
+{% endblock %}
