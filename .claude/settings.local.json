@@ -10,7 +10,8 @@
       "WebSearch",
       "Bash(source:*)",
       "Bash(python:*)",
-      "Bash(gtimeout:*)"
+      "Bash(gtimeout:*)",
+      "Bash(mkdir:*)"
     ],
     "deny": [],
     "ask": []

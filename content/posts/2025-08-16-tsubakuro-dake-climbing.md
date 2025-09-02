@@ -4,8 +4,10 @@ date: 2025-08-16
 category: climbing
 tags: [登山, 北アルプス, 燕岳, 山小屋泊, 表銀座, 槍ヶ岳]
 description: "北アルプス燕岳（2,763m）1泊2日登山の体験記。辛い階段登山から絶景稜線、燕山荘での快適な宿泊、星景撮影まで。表銀座コースの魅力を詳しくレポート。"
-featured_image: "images/2025-08-16-tsubakuro-01.jpg"
+featured_image: "https://lh3.googleusercontent.com/pw/AP1GczNOGF4y474k77Wr8v2M316hnH1Q3xgDMATWhzygx1i50fD4t8ucpYTui7f4uQMdfGC54FBtq2DoZhaRBqeIvEING6S7-wkrKdV_beuBAB8rPBApNc3nYPlxne2s_y-ebkP4Xl59Z7r1tFJImnZcs1WdCg=s1621?authuser=0"
 ---
+
+<!-- 元のGoogle Photosリンク: https://photos.google.com/share/AF1QipP-CxjgseSALYqWJDb-hZ3QeCGokR_zdLikjbrspRjzj7d7rsPpCwtKlVIcXKnBvg?key=alRYalpJNVdlVXlwd21zaUpYbEZfVGRKTmZVX25B -->
 
 最近、北アルプスにどっぷりハマってしまった私です。今回は比較的アクセスしやすく、初心者でも挑戦しやすいと評判の「北アルプスの女王」燕岳（つばくろだけ、2,763m）に1泊2日で挑戦してきました。
 
@@ -27,18 +29,18 @@ featured_image: "images/2025-08-16-tsubakuro-01.jpg"
 
 ギリギリのタイミングでなんとか1台分確保できましたが、本当に冷や汗ものでした。北アルプスの人気コースを甘く見てはいけませんね。皆さんも燕岳を計画される際は、必ず事前の駐車場予約をお忘れなく！
 
-![駐車場からの風景](../images/2025-08-16-tsubakuro-01.jpg)
-*早朝の中房温泉駐車場。この時点でワクワクが止まりません*
+![中房温泉登山案内所](https://lh3.googleusercontent.com/pw/AP1GczPUYuxDNev2EOolYZ1ZVaGQ1tQa8dCFDiYKNU_oOrpHBpYhtdiCWMUE2jE-n2ixPStuN6X5fG3-JZCoJGDFPWAUGGVttugZlHKdomlMu4cny-h3LiwmycrJiut1FGu7wKVzr2nqZ2r9sl4PqtzZLWEjCg=s1621?authuser=0)
+*中房温泉の登山案内所。ここから北アルプスの女王・燕岳への挑戦が始まります*
 
 ## 登山開始：心が折れそうな階段地獄
 
 朝6時40分、中房温泉の登山口から登山開始です。燕岳への登山道は「合戦尾根」というルートで、序盤から中盤にかけては階段の連続。しかも樹林帯なので景色もほとんど変わらず、正直なところ単調でした。
 
-![登山道の階段](../images/2025-08-16-tsubakuro-02.jpg)
-*ひたすら続く階段。この時点では「なんでこんなに辛いんだ...」と心が折れそうに*
+![登山開始地点](https://lh3.googleusercontent.com/pw/AP1GczNOGF4y474k77Wr8v2M316hnH1Q3xgDMATWhzygx1i50fD4t8ucpYTui7f4uQMdfGC54FBtq2DoZhaRBqeIvEING6S7-wkrKdV_beuBAB8rPBApNc3nYPlxne2s_y-ebkP4Xl59Z7r1tFJImnZcs1WdCg=s1621?authuser=0)
+*登山口で準備を整える登山者たち。いよいよ燕岳への道のりが始まります*
 
-![森林の中の登山道](../images/2025-08-16-tsubakuro-03.jpg)
-*延々と続く樹林帯。景色の変化がなくて、精神的にもきつかったです*
+![槍ヶ岳の美しい展望](https://lh3.googleusercontent.com/pw/AP1GczN7jdIhtqZNke-yEyRErgx9N6698MRDscvXRt76bUe_VDwHgeBSrVqa6buK9tabGS_UU6F6oOCvd08nJAmvsC7zI3sLhqBnAWJCrPm6XV4pb7sG2iMWqMEXjUqqZixa8DvqFlVW0lkKMcFrEuKqC_QBoQ=s1621?authuser=0)
+*遠くに見える槍ヶ岳の美しい山容。この景色が見えた瞬間、疲れが吹き飛びました*
 
 ただ、登山は辛いことばかりではありません。途中でようやく視界が開ける場所に到着し、遠くに北アルプスの山々が見えてきた時の感動は今でも忘れられません。
 
@@ -46,89 +48,113 @@ featured_image: "images/2025-08-16-tsubakuro-01.jpg"
 
 合戦小屋を過ぎ、樹林帯を抜けて稜線に出た瞬間、それまでの辛さが一気に吹き飛びました。目の前に広がったのは、まさに別世界の絶景。
 
-![表銀座の稜線](../images/2025-08-16-tsubakuro-04.jpg)
-*ドローンから撮影した表銀座の稜線。この景色を見た瞬間、すべての辛さが報われました*
+![燕岳山頂での記念撮影](https://lh3.googleusercontent.com/pw/AP1GczOgqBI5CbPkh1lcpLH_NXTKqaKHL7-Nf5p-hZPubsJUoTtXycKp7jNU1bmovD4S0RggMdafS_F5sZevZhQQZn8rO5nKbTnS0E0NYoHzogPNKZloy8blqitBgSNuHET9Y5_JqNomctX5icWfuN4QqqwfzQ=s1621?authuser=0)
+*燕岳山頂での記念撮影。「北アルプスの女王」と呼ばれるだけのことはあり、絢麗な花岗岩の岩峰が印象的でした*
 
 特に印象的だったのが、表銀座コースの向こうに堂々とそびえる槍ヶ岳の姿です。あの特徴的な槍の穂先が、雲一つない青空にくっきりと浮かんでいる様子は本当にかっこよくて、しばらく見とれてしまいました。
 
-![昼食休憩](../images/2025-08-16-tsubakuro-05.HEIC)
-*稜線での昼食休憩。この景色を見ながらの食事は格別でした*
+![燕岳山頂の花岗岩風景](https://lh3.googleusercontent.com/pw/AP1GczNAvNKFb-7u8GP0C4ANfGBwF8jgo3lJNnUUQv3K_JDETnk1fcf_Gj_2-7y1K3IdQNHRFdIJHcB4KkmB3NBYv4eNGXZM40q21L1J9v6mr5ZDlnACCVkDrreq2e4vCkJvBcPOb_IvxvIIKsTFgN1NrDL94A=s1621?authuser=0)
+*燕岳を特徴付ける花岗岩の奇岩。白い岩と青い空のコントラストが美しいです*
 
-![午後の山岳風景](../images/2025-08-16-tsubakuro-06.jpg)
-*午後の太陽に照らされた北アルプスの山々。光と影のコントラストが美しい*
+![雲海に浮かぶ山稜線](https://lh3.googleusercontent.com/pw/AP1GczOlIgYpzCmTAwxMv9ng5YI0tFEHB57PAzPxILKShJug_1LT5LiJHwnQoL3hV4iX_5N54YxSJbml8w-MG3ST_KCYOxvJ2HD6oZF2qYXfxZdlDMElvEMqFLVbh1qFozEv9Zbjz0XrRFaf_bkxgQumMXBHoA=s1621?authuser=0)
+*雲海に浮かぶ美しい山稜線。まさに天空の世界を歩いているような感覚でした*
 
 ## 燕山荘到着：山小屋とは思えない快適さ
 
 夕方、ついに本日の目的地である燕山荘に到着しました。事前に「燕山荘は山小屋とは思えないほど設備が整っている」という話は聞いていましたが、実際に体験してみると本当にその通りでした。
 
-![夕方の燕山荘](../images/2025-08-16-tsubakuro-07.jpg)
-*夕日に照らされる燕山荘。この時間の景色は本当に幻想的でした*
+![緑の稜線と雲海の絶景](https://lh3.googleusercontent.com/pw/AP1GczOrD68iudYq-WFcxfGMFIkiO4kVxbXX9B9u9REr-UbmawULGoNBmAwXGG1EXVo-ty5phPZz6PjMA9_O-a_h_mrIIcU-fFBmHvbtcMRTjsmHnZQlBjCmk0KgqNhmn8XIlkOknxu_pnzSsXXo4jaAT-0Q_A=s1621?authuser=0)
+*緑の稜線と雲海の絶景。燕岳へ継く美しい道のりは、本当に天空の世界でした*
 
-![ドローン夕景撮影](../images/2025-08-16-tsubakuro-08.jpg)
-*夕方のドローン撮影。燕山荘と燕岳の美しいシルエット*
+![燕岳そのものの美しい稜線](https://lh3.googleusercontent.com/pw/AP1GczMf17q8eTs0ZLEGyTV_0hVs1qXmkx_aaRwDFbEQ0UVZ8aWTMsXCMSdUjolxQkS6HYkOJqkNusnLZr0egiOpnB_RVtDG0-HqL8lWpeSKv49vIniRlWA9yOGKqn7_3RzanezqbY35J4LXgHYTgtWWqGzolQ=s1621?authuser=0)
+*燕岳そのものの美しい稜線。雲の上での稜線歩きは本当に特別な体験でした*
 
 燕山荘で特に印象的だったのは、スタッフの方々の丁寧な対応と、他の山小屋ではよくある「いびき問題」がほとんどなかったことです。多くの山小屋では大部屋で雑魚寝となり、隣の人のいびきで眠れないなんてことがよくありますが、燕山荘では比較的快適に眠ることができました。
 
-![燕山荘での夕食](../images/2025-08-16-tsubakuro-09.jpg)
-*燕山荘での夕食風景。山小屋とは思えない豊富なメニューに感激*
+![雄大な山稜線の展望](https://lh3.googleusercontent.com/pw/AP1GczPqcGco-vTSLoSFR3BEIYZi3dTtl7xKXg80cD9QBWvL72CvHJw9GQfua8q9WFVoOK-TQYrq6I_qz3qgh87XS7xvDbzPfpNNvPo6C_7axlJ5BEEM0baXYoh4s16p3m8SrnVBxx1wNTDkhLALxnXEPpVGoA=s1621?authuser=0)
+*雄大な山稜線の展望。このスケールの景色が眼前に広がる絶景は、本当に感動的でした*
 
-![夕食後の憩い](../images/2025-08-16-tsubakuro-10.jpg)
-*夕食後、他の登山者の方々との語らいも山小屋泊の楽しみの一つ*
+![早朝の燕岳山頂へ向かう道](https://lh3.googleusercontent.com/pw/AP1GczNpKRNVSSIgO2VYAKZzVX2XveRmHYG9f-0IT9hYSuCRg6qSko1--ulceujI6GfhQ0oUTVNG7rzq12OqU_5Bli5iWokbvj1QZUsDbe4vOruC0Nwx7Hh6QXf8VNERKHow5xaNwQkR0GEO41ET2NriUi6Yeg=s1621?authuser=0)
+*早朝の燕岳山頂へ向かう道。稜線上の繊細な登山道が遠くまで続いているのが見えます*
 
 ## 星景撮影：半月の難しさを痛感
 
 日が沈んだ後は、お楽しみの星景撮影タイムです。ただ、この日は半月だったため、月明かりが明るすぎて思うような星景写真が撮れないという問題がありました。
 
-![夜の星景](../images/2025-08-16-tsubakuro-11.jpg)
-*半月の夜空。星はそれなりに見えますが、写真撮影には少し厳しい条件でした*
+![表銀座からの山岳展望](https://lh3.googleusercontent.com/pw/AP1GczMqsLWpkBuxgG5npz6MLlMvfs_hBBprvK917rOu9cKEe0-FQ-koHY_s8alRUlp5ufuM7-q8g1b2I-J0fthrk6JEU3PSsfMRGA95jmrayeGs6f_x8zDMPhMTXc0MJJn0QYswjEtDW_4hFe88j7BEdUH5Bw=s1621?authuser=0)
+*表銀座からの山岳展望。遠くの山々まで美しく見渡せる絶景ポイントでした*
 
 星景撮影を本格的にやるなら、やはり新月期を狙うべきだと改めて実感しました。とはいえ、標高2,700m近い稜線から見上げる夜空は、都市部では絶対に見ることのできない美しさがありました。
 
-![深夜の星景](../images/2025-08-16-tsubakuro-12.jpg)
-*深夜1時過ぎの星空。時間が遅くなるにつれて、月も傾いてより多くの星が見えるように*
+![燕岳山頂付近の花岗岩地形](https://lh3.googleusercontent.com/pw/AP1GczNuQwJrCRuOQ3bA07MqgUIxrDPC1l8aR2fI5iUxU7uA3RO1qvejgOu7sAI3Y3j6WWLQvgSlzWaghtuYRBhHkcCTIgLF30LnHouqRZ7pOQZsu3Jpz7m2anSirA6lBUshxGwld8kXwSeMTw0FLHFp3tHYiA=s1621?authuser=0)
+*燕岳山頂付近の花岗岩地形。特徴的な白い岩肯が印象的で、「北アルプスの女王」と呼ばれる所以です*
 
 ## 朝の絶景：感動のご来光タイム
 
 翌朝は4時30分に起床し、ご来光を見るために燕岳山頂付近へ向かいました。早朝の山の空気は本当に清々しく、徐々に明けていく空の色の変化を楽しむことができました。
 
-![夜明け前](../images/2025-08-16-tsubakuro-13.jpg)
-*夜明け前の静寂な瞬間。この時間帯の山は本当に神秘的です*
+![燕岳周辺の山々の展望](https://lh3.googleusercontent.com/pw/AP1GczN5PDNwyoFrECU8G43l_mnHf8qrkvp2OlcrJV3vhu-u1YygkGG6vY8Rzpd68aI-I8Bv3CkcsRCRn9pAqmEgrpol2XWyDN_XImi6sJZFjJNNbZiF32LSV2OvQMeSo_YgphhdGkLjQRGN3D5oCLHlDOykAA=s1621?authuser=0)
+*燕岳周辺の山々の展望。稜線歩きの魅力とは、このような360度の絶景を楽しめることです*
 
-![朝焼け](../images/2025-08-16-tsubakuro-14.jpg)
-*朝焼けに染まる北アルプスの山々。この瞬間のために早起きした甲斐がありました*
+![燕岳への最後の登り](https://lh3.googleusercontent.com/pw/AP1GczPlpvlliAHDh3Bgr0TdvQ5Xcfu_EBEE4o_f5g3NgG_JbX2Bx6Lo_VTrOkuSyrJmZwVixkhLJsj98U9oKFcXuxiZk1hG6Hg2wwz5sdnoR60JynL_rFktC2VYXxx_adBaV1YLGljkTNCoaqieviVrxQYzDQ=s1621?authuser=0)
+*燕岳への最後の登り。稜線上の登山道から山頂を目指します*
 
-![ご来光の瞬間](../images/2025-08-16-tsubakuro-15.jpg)
-*ついに太陽が顔を出した瞬間！この感動は言葉では表現できません*
+![燕岳山頂の実際の景色](https://lh3.googleusercontent.com/pw/AP1GczN5cPRFGhgPaWG2uR-fG15UstIUT3V2AEDIAK3XVoFbO-0bZCN2vp6Ezn4sCzI78HPHyJMz5Osoa8PMd3Ykd_PcbNOjQDqawIgCcLt-ptFo3OVYvpJ5tyBbVjCns_UNrQJctt3wC9iSoPfBnRqX45EgqQ=s1621?authuser=0)
+*燕岳山頂の実際の景色。花岗岩の白い岩肯が美しく、まさに「女王」の名にふさわしい山容です*
 
-![朝日に照らされた槍ヶ岳](../images/2025-08-16-tsubakuro-16.jpg)
-*朝日に照らされた槍ヶ岳。改めてその美しい姿に見とれてしまいました*
+![燕岳からの大パノラマ](https://lh3.googleusercontent.com/pw/AP1GczOCezl_pgzo7AjXMH4HYtdCSOyfbmdKnrzPMyPHuBZX2jA6AY2gjwq4apqIfJFIPXEFrxtb48LfLbJnTllJcfcXQs2I7_0qNCo7f_SYusj_EH9GIbkLZBaDLJC8xgxDuyv3hUJcy0LGxT-xtHRurbSGfQ=s1621?authuser=0)
+*燕岳からの大パノラマ。この角度から見る北アルプスの山々はまさに圧巻です*
 
-![朝のドローン撮影](../images/2025-08-16-tsubakuro-17.jpg)
-*朝のドローン撮影。この時間の光は本当に美しく、撮影には最高の条件でした*
+![表銀座からの槍ヶ岳展望](https://lh3.googleusercontent.com/pw/AP1GczMygs5cNaHO2P3_6EsvwNnvtIYu_ThDVHs2rso2Gs-qo5RDyuPJn8VagJ0pDN_zG9AyGfg29tntq-iG_WZ_yhLUnT3JqAyOh-uFgXI2wSTANWsm8-DIKjlvnx7ltQ6pxiwpxPHPcOq7ts5ZW3DeCIyh3g=s1621?authuser=0)
+*表銀座からの槍ヶ岳展望。あの特徴的な槍の穂先が、雲一つない青空にくっきりと浮かんでいました*
 
-![朝日と雲海](../images/2025-08-16-tsubakuro-18.jpg)
-*下界には雲海が広がり、まさに雲の上の世界。山登りの醍醐味を堪能*
+![燕岳の独特な岩場景色](https://lh3.googleusercontent.com/pw/AP1GczOh6-Ytt8UbJ-dp-jq-Z1kMODDfmj_5iYUBqP8nYW4VxR84jTd2zapTYXqR63n4c4qdR1nkyRH2t7oYURg6HXT1tAfv3-yaGHicaCnmGEt8y3-vTT-mLh985y9YsG9u2gq58J8dHD-9Hd54i1cH1Aav5w=s1621?authuser=0)
+*燕岳の独特な岩場景色。花岗岩特有の白い岩と青空の美しいコントラストが印象的でした*
 
-![燕岳山頂付近](../images/2025-08-16-tsubakuro-19.jpg)
-*燕岳山頂付近の花崗岩の巨岩。この独特の景観も燕岳の魅力の一つです*
+![燕岳からの最高の景色](https://lh3.googleusercontent.com/pw/AP1GczOtSPhidzarxGQoIaBc7i7g_Q9zxgAvbx-7HsbVOBXLeY3ahu9u-TxAsRwXqY3OLLjxob4dqkGw43j3HhaX3UBW1RfSdzY72jcv8UWifzr2NfWJdlro4v6oEyCR-Dpj4YnUOFNI0XplrRk7yfVIbqSviQ=s1621?authuser=0)
+*燕岳からの最高の景色。この360度のパノラマ展望こそが、多くの登山者を魅了する理由です*
 
 ## 下山：疲労との戦い
 
 朝の絶景を十分に堪能した後は、いよいよ下山開始です。正直なところ、この時点で足にはかなりの疲労が蓄積していて、「早く下りたい」という気持ちが先行していました。
 
-![下山準備](../images/2025-08-16-tsubakuro-20.jpg)
-*下山前の燕山荘。名残惜しいですが、現実に戻る時間です*
+![下山準備と山頂への思い](https://lh3.googleusercontent.com/pw/AP1GczPa_9z8Fmk3bYrXleJ1369zct7eYdw_Acrs1EExlHhEL_QUCR9zdIyA8v834fDKfOBm_hkEHMwCIfG56GQNV1g_jd8Qqbyghh9EApCSEDnMBXX5bCF8n-kU9hbGN9sA_JN9-qlcnfiY4Y9VCyfdeekCMA=s1621?authuser=0)
+*下山準備と山頂への思い。美しい景色とのお別れの時間がやってきました*
 
-![下山途中の風景](../images/2025-08-16-tsubakuro-21.jpg)
-*下山途中で振り返った燕岳。「また来るからね」という気持ちを込めて*
+![最終的な山々の展望](https://lh3.googleusercontent.com/pw/AP1GczPR4snw1XmXCeOuULyVgvkZkKsjhPfg14ImXKOAJhX-pycWVeLHCu0oTjvF9_nslMiZw8FtShKDW7CgWVj6LlBTvJQ_Oun4c7DXUxIOhbRU_WeOsvy6adQSvKNwDi8tBMjISO6XLuOvQLk6kyaiPxaE9A=s1621?authuser=0)
+*最終的な山々の展望。この景色を心に刻み、下界へと向かいました*
 
 下山は想像以上に大変で、特に膝への負担が重く、途中で何度も休憩を取りながらの下山となりました。上りの時には気付かなかった足元の岩や根っこが、疲れた状態では結構な障害に感じられるんですね。
 
-![最後の燕岳](../images/2025-08-16-tsubakuro-22.jpg)
-*駐車場に戻る前の最後の燕岳。本当にお疲れさまでした*
+![燕岳周辺の線状風景](https://lh3.googleusercontent.com/pw/AP1GczMtJ_cRPQ8M08Y-NLB5jUOTOIbcXPyPHVr7H5YFevbA-cb90RFA7pQVTSX_t8Q0WSc4u8SkMhvEewKatYvbhrrhJhrKGD6SzR46mR_d4w6OmYzz51lcUtjV6ewe-BhapYQ8_443xSLMJW7nrTWF6GB7dg=s1621?authuser=0)
+*燕岳周辺の線状風景。このスケールの山稜線が、北アルプスの壮大さを物語っています*
 
-![最終ドローン撮影](../images/2025-08-16-tsubakuro-23.jpg)
-*下山完了後の最後のドローン撮影。達成感と共に、次回への意欲も湧いてきます*
+![燕岳での終日の景色](https://lh3.googleusercontent.com/pw/AP1GczP8rXNdL6fUfKnyN73T57tmTwBFOGQXRllm-UzrKPtV03y0b1cbuxAX41og27gqC5wdy_MjPEYjsWDD_H8VGKAzYcpF54nL3S8Lzwu-T9_nWosdzNH-rBzojGgmq366MzWNJDFK2o6Q7fNrmSk_ECRNUQ=s1621?authuser=0)
+*燕岳での終日の景色。本当に美しい一日で、この景色は一生心に残るでしょう*
+
+![燕岳の特徴的な岩峰風景](https://lh3.googleusercontent.com/pw/AP1GczMDbiagTPwLgu3BK2FxtPWOTrVthdCu-oNO3TxsfJe9po5cmgpjuJ1vyuEz1awmS-hJhzX88weE4t4sGQ5frCtHzUHkrc-jKkWfY9HFmkMymadw3zIEsQPAHvlH1CpAHgvfJoJbc9gjcnYcWBCw7KjxJw=s1621?authuser=0)
+*燕岳の特徴的な岩峰風景。花岗岩の白い岩肯が、青空との対比でより一層美しく見えます*
+
+![大自然の中での素晴らしい瞬間](https://lh3.googleusercontent.com/pw/AP1GczO-gA8R9uOrA7zTwcFVuD7_9DYEI4QrED4FZXFowsOIG0cQVY4YZJtTkveAWHmH7yhiHwEISk6oHlCuwl9va64yzqq5d5fIdG78UqgCl1RUc__j6q8PfEo4nK1ytMqxS-xgGDIkwgbeSkPVihZcWxbwLQ=s1621?authuser=0)
+*大自然の中での素晴らしい瞬間。このような景色を見るために、また山に来たいと思います*
+
+![稜線からのパノラマ展望](https://lh3.googleusercontent.com/pw/AP1GczORlvdZDdZAdU8aZu5U-XuyaeQl3UsRsfZPzRbzDNqmANH1rDElOdtUh38vQA_hwmhUPEK-q3C1YvWO2aUL8WveD1oaRU6w0EC52SzPPLNhs5NeCNsYvr8We-Fy2UaqQ_Z4xxe3pYutp2XmNzHPHEVdWQ=s1621?authuser=0)
+*稜線からのパノラマ展望。このような雄大な景色を見るために登山を続けているのです*
+
+![燕岳での幸せな時間](https://lh3.googleusercontent.com/pw/AP1GczM2843AACWIBJ9N0Z9TS1Mq4V-LG8lmdu0yjrIBljCm_xXYKpdE_nOBU2nbyZLMu_Artbe6RbKYmAwAoNaeQPY6Mw0hMvBXyNwNf9Cd7EpddNZ0OWkOZ6211gUMU_CGp18DgRuT-Lsxr1XlT0V0qDOoXQ=s1621?authuser=0)
+*燕岳での幸せな時間。遠くの山々を眺めながら、心からリラックスできました*
+
+![朝の美しい光に包まれた燕岳](https://lh3.googleusercontent.com/pw/AP1GczPfYnkPPQE9NcWpHk-LlwHfN6dvu6wu8S1LWao45LbnN_aKx8uIyXlhyh5gNWt8lemqACujhGJ4T9uR9ZQpytUKDHNuZ_J-HibFoO6k7xGXjbnlUW-e-1UcIIeEgfUEwTHHFhky35QfswYjqLgwdgWAdw=s1621?authuser=0)
+*朝の美しい光に包まれた燕岳。このような一日の始まりは、本当に特別でした*
+
+![平和な朝の燕岳](https://lh3.googleusercontent.com/pw/AP1GczPTyMWGppFEvApWQ7YoCyj4O-Dq_zhyO70vAIXLtfqWzg-o8HqSzgwvOXlnRhgAHq4LSU3x16W2LwYqFjZnb6HudFwAdeK5EHA5ewffUDtmVPHO9vY7bSpnzhSj8NxjU9Bd4KTMU-dk8NbVKCSEN0I8vg=s1621?authuser=0)
+*平和な朝の燕岳。静寂な空気の中で、心からリラックスできる時間でした*
+
+![北アルプス全体を見渡す大展望](https://lh3.googleusercontent.com/pw/AP1GczNFbSN7Ky95Zwv0t_ZDY8CZBMHqDT6jyYU1TIl_8xcNyaiTmc3st2diNzP2JKrF0l8UcxXxKcw7c_v8i0_dpFR4en8NEJ0ReSz8QeGfGdMBtCgm4R4qO70OYzJh5ZrxjELzB0dev2lyWTI-Z-Qae7vzVQ=s1621?authuser=0)
+*北アルプス全体を見渡す大展望。この壮大な景色を見ると、なぜ多くの人が山に魅力を感じるのかがよく分かります*
+
+![燕岳から見える山々の詳細](https://lh3.googleusercontent.com/pw/AP1GczNFbSN7Ky95Zwv0t_ZDY8CZBMHqDT6jyYU1TIl_8xcNyaiTmc3st2diNzP2JKrF0l8UcxXxKcv8i0_dpFR4en8NEJ0ReSz8QeGfGdMBtCgm4R4qO70OYzJh5ZrxjELzB0dev2lyWTI-Z-Qae7vzVQ=s1621?authuser=0)
+*燕岳から見える山々の詳細。Mt.Tsubakuro（燕岳）から360度のパノラマが楽しめ、すべての山に名前が表示されている贅沢な景色です*
 
 ## まとめ：北アルプス入門に最適な山
 
