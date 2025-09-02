@@ -10,29 +10,56 @@ GitHub Pagesを使った個人ブログサイト。日本アルプス登山完�
 - **リポジトリ**: https://github.com/Junpeiwada/blog
 - **技術**: Python + Jinja2 + Bootstrap + GitHub Pages
 
-## 重要な基本ルール
+## 🚨 記事作成時の必須チェックリスト
 
-### 1. 記事作成時の必須事項
-**画像がある記事には必ずfeatured_imageを設定する**: 記事に画像が含まれる場合は、フロントマターに`featured_image`フィールドを追加し、記事の代表画像のURLを設定してください。これはカード表示やSEO対策のために重要です。
+**記事作成を依頼された際は、必ず以下を確認・実行してください：**
 
-### 2. タイトル管理
-**記事内にH1タイトル（# タイトル）は使用禁止**: フロントマターの`title`のみ使用してください。テンプレートが自動的にタイトルを表示します。
+### ✅ 記事作成前の確認
+1. **画像URL抽出**: Google Photos URLが提供されている場合
+   ```bash
+   python scripts/google_photos_extractor.py "共有URL" --headless
+   ```
 
-### 3. 日本語対応
+2. **画像内容確認**: Claude Codeが画像を読み取って内容を把握し記事に反映するため
+   ```bash
+   python scripts/download_images_for_review.py --clean [URL群]
+   # → scripts/tmp/に保存された画像をReadツールで内容分析
+   ```
+
+### ✅ 記事作成時の必須ルール
+- **ファイル名**: `YYYY-MM-DD-article-title.md` 形式厳守
+- **H1タイトル禁止**: 記事内に `# タイトル` は使用しない
+- **featured_image必須**: 画像がある記事には必ず設定
+- **Google Photos元URL記録**: コメントで元リンクを必ず記録
+  ```markdown
+  <!-- 元のGoogle Photosリンク: https://photos.app.goo.gl/... -->
+  ```
+
+### ✅ 記事完成後の必須確認
+- フロントマター必須項目：`title`, `date`, `category`, `description`, `featured_image`
+- 画像参照パス：`![説明](../images/ファイル名.jpg)` または Google Photos直接URL
+- ビルド・公開：`npm run ビルドして公開`
+
+### 🔄 日本語対応
 すべてのコミュニケーション、ファイル作成、コメントは日本語で行ってください。
 
 ## クイックスタート
 
-### 新記事作成から公開まで
+### 記事作成の基本フロー（要チェックリスト確認）
 ```bash
 # 1. 環境準備
 cd /Users/junpeiwada/Documents/Project/blog
 source venv/bin/activate
 
-# 2. 記事作成
+# 2. 画像処理（提供されている場合）
+python scripts/google_photos_extractor.py "共有URL" --headless
+python scripts/download_images_for_review.py --clean [URL群]
+# Claude Codeが画像内容を読み取り、記事作成に反映
+
+# 3. 記事作成（必須チェックリスト準拠）
 # content/posts/YYYY-MM-DD-article-title.md を作成
 
-# 3. ビルド・公開
+# 4. ビルド・公開
 npm run ビルドして公開
 ```
 
