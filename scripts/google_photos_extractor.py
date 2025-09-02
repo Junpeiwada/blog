@@ -39,6 +39,12 @@ from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.keys import Keys
 
 
+# 待機時間設定
+DEFAULT_WAIT_TIME = 6  # デフォルト待機時間（秒）
+MAX_WAIT_TIME = 15     # 最大待機時間（秒）
+SMALL_IMAGE_WAIT = 3   # 小さい画像用の短縮待機時間（秒）
+
+
 def setup_driver(headless=False):
     """WebDriverの初期化とセットアップ"""
     print("ChromeDriverをセットアップ中...")
