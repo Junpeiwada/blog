@@ -28,6 +28,7 @@ Google Photos画像URL取得ツール
 import time
 import re
 import sys
+from datetime import datetime, timedelta
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.service import Service
@@ -43,6 +44,53 @@ from selenium.webdriver.common.keys import Keys
 DEFAULT_WAIT_TIME = 6  # デフォルト待機時間（秒）
 MAX_WAIT_TIME = 15     # 最大待機時間（秒）
 SMALL_IMAGE_WAIT = 3   # 小さい画像用の短縮待機時間（秒）
+
+
+def create_progress_bar(current, total, width=40):
+    """プログレスバーを作成"""
+    percent = (current / total) * 100
+    filled = int((current / total) * width)
+    bar = '█' * filled + '░' * (width - filled)
+    return f"[{bar}] {percent:.1f}% ({current}/{total})"
+
+
+def format_time_duration(seconds):
+    """秒数を読みやすい時間形式に変換"""
+    if seconds < 60:
+        return f"{int(seconds)}秒"
+    elif seconds < 3600:
+        minutes = int(seconds // 60)
+        secs = int(seconds % 60)
+        return f"{minutes}分{secs}秒"
+    else:
+        hours = int(seconds // 3600)
+        minutes = int((seconds % 3600) // 60)
+        return f"{hours}時間{minutes}分"
+
+
+def print_progress_report(current, total, successful, failed, start_time):
+    """進捗状況を詳細に報告"""
+    progress_bar = create_progress_bar(current, total)
+    
+    # 経過時間とETA計算
+    elapsed = time.time() - start_time
+    if current > 0:
+        avg_time_per_item = elapsed / current
+        remaining_items = total - current
+        eta_seconds = avg_time_per_item * remaining_items
+        eta_str = format_time_duration(eta_seconds)
+    else:
+        eta_str = "計算中..."
+    
+    elapsed_str = format_time_duration(elapsed)
+    success_rate = (successful / current * 100) if current > 0 else 0
+    
+    # 進捗報告を表示
+    print(f"\n📊 === 進捗状況レポート ===")
+    print(f"   {progress_bar}")
+    print(f"   ✅ 成功: {successful}個  ❌ 失敗: {failed}個  📈 成功率: {success_rate:.1f}%")
+    print(f"   ⏱️ 経過時間: {elapsed_str}  🎯 残り予想時間: {eta_str}")
+    print(f"   {'=' * 50}")
 
 
 def setup_driver(headless=False):
@@ -117,6 +165,43 @@ def scroll_and_load_all_images(driver, max_attempts=10):
     return google_bg_divs
 
 
+def wait_for_image_load(driver, timeout=MAX_WAIT_TIME):
+    """画像の読み込み完了を待機"""
+    try:
+        wait = WebDriverWait(driver, timeout)
+        # 大きなimg要素が完全に読み込まれるまで待機
+        wait.until(
+            lambda d: any(
+                img.get_attribute('complete') == 'true' and 
+                img.size['width'] > 500
+                for img in d.find_elements(By.CSS_SELECTOR, "img[src*='googleusercontent.com']")
+            )
+        )
+        return True
+    except Exception as e:
+        print(f"   ⏰ 画像読み込み待機タイムアウト: {e}")
+        return False
+
+
+def estimate_wait_time(element):
+    """要素のサイズから適切な待機時間を推定"""
+    try:
+        size = element.size
+        width = size.get('width', 0)
+        height = size.get('height', 0)
+        
+        # サムネイルサイズから元画像の大きさを推定
+        if width < 200 or height < 200:
+            return SMALL_IMAGE_WAIT  # 小さい画像：3秒
+        elif width > 400 or height > 400:
+            return DEFAULT_WAIT_TIME + 3  # 大きい画像：9秒
+        else:
+            return DEFAULT_WAIT_TIME  # 中程度：6秒
+    except Exception as e:
+        print(f"   📏 サイズ推定エラー: {e}")
+        return DEFAULT_WAIT_TIME
+
+
 def extract_background_image_url(element):
     """背景画像のURLを抽出"""
     try:
@@ -138,13 +223,26 @@ def click_and_get_full_url(driver, element, index):
         # 元のURLを取得
         original_url = extract_background_image_url(element)
         
+        # 画像サイズから適切な待機時間を推定
+        estimated_wait = estimate_wait_time(element)
+        print(f"   ⏱️ 推定待機時間: {estimated_wait}秒")
+        
         # 要素が見える位置までスクロール
         driver.execute_script("arguments[0].scrollIntoView();", element)
         time.sleep(1)
         
         # クリック実行
         ActionChains(driver).move_to_element(element).click().perform()
-        time.sleep(3)
+        
+        # インテリジェント待機（画像読み込み完了を監視）
+        print(f"   🔍 画像読み込み完了を監視中...")
+        load_success = wait_for_image_load(driver, estimated_wait)
+        
+        if not load_success:
+            print(f"   ⚠️ 監視タイムアウト、追加待機: {DEFAULT_WAIT_TIME}秒")
+            time.sleep(DEFAULT_WAIT_TIME)
+        else:
+            print(f"   ✅ 画像読み込み完了を検知")
         
         # 拡大表示された画像を取得
         full_image_url = None
@@ -157,9 +255,10 @@ def click_and_get_full_url(driver, element, index):
                 size = img.size
                 if src and size['width'] > 500:  # 大きな画像を探す
                     full_image_url = src
+                    print(f"   📸 フル画像サイズ: {size['width']}x{size['height']}")
                     break
-        except:
-            pass
+        except Exception as e:
+            print(f"   ⚠️ フル画像取得エラー: {e}")
         
         # ESCで拡大表示を閉じる
         ActionChains(driver).send_keys(Keys.ESCAPE).perform()
@@ -219,8 +318,11 @@ def extract_google_photos_urls(share_url, headless=False):
         total_images = len(image_elements)
         print(f"\n🎯 全{total_images}個の画像を処理開始")
         
-        # 各画像のURLを取得
+        # 進捗追跡用変数
         extracted_urls = []
+        successful_count = 0
+        failed_count = 0
+        start_time = time.time()
         
         for i, element in enumerate(image_elements, 1):
             try:
@@ -233,25 +335,49 @@ def extract_google_photos_urls(share_url, headless=False):
                     # URL正規化
                     normalized_url = normalize_image_url(full_url)
                     extracted_urls.append(normalized_url)
+                    successful_count += 1
                     
                     print(f"✅ URL取得成功")
                     print(f"🔗 {normalized_url}")
                 else:
+                    failed_count += 1
                     print(f"❌ URL取得失敗")
+                
+                # 5個ごとに進捗報告
+                if i % 5 == 0 or i == total_images:
+                    print_progress_report(i, total_images, successful_count, failed_count, start_time)
                 
                 time.sleep(2)  # 次の画像処理前に待機
                 
             except Exception as e:
+                failed_count += 1
                 print(f"❌ 画像 {i} 処理エラー: {e}")
+                
+                # エラーでも進捗報告
+                if i % 5 == 0 or i == total_images:
+                    print_progress_report(i, total_images, successful_count, failed_count, start_time)
                 continue
         
-        # 結果表示
+        # 最終結果表示
+        total_time = time.time() - start_time
+        total_time_str = format_time_duration(total_time)
+        final_success_rate = (successful_count / total_images * 100) if total_images > 0 else 0
+        
         print("\n" + "=" * 60)
-        print(f"🎉 処理完了: {len(extracted_urls)}個のURL取得")
+        print(f"🎉 全処理完了！")
+        print("=" * 60)
+        print(f"📊 最終統計:")
+        print(f"   📸 処理画像数: {total_images}個")
+        print(f"   ✅ 成功: {successful_count}個")
+        print(f"   ❌ 失敗: {failed_count}個")
+        print(f"   📈 最終成功率: {final_success_rate:.1f}%")
+        print(f"   ⏱️ 総処理時間: {total_time_str}")
+        print(f"   ⚡ 平均処理時間/画像: {total_time/total_images:.1f}秒" if total_images > 0 else "")
         print("=" * 60)
         
+        print(f"\n📋 取得成功URL一覧 ({len(extracted_urls)}個):")
         for i, url in enumerate(extracted_urls, 1):
-            print(f"{i}. {url}")
+            print(f"{i:2d}. {url}")
         
         return extracted_urls
         
