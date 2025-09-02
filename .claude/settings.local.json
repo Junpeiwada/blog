@@ -7,7 +7,8 @@
       "Read(/Users/junpeiwada/Downloads/Photos-1-001 (3)/**)",
       "Read(/Users/junpeiwada/Downloads/Photos-1-001 (3)/**)",
       "Read(/Users/junpeiwada/Downloads/Photos-1-001 (3)/**)",
-      "WebSearch"
+      "WebSearch",
+      "WebFetch(domain:photos.google.com)"
     ],
     "deny": [],
     "ask": []
