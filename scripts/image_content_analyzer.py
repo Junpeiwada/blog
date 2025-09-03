@@ -19,19 +19,23 @@ Google Photos抽出済みURLからEXIF分析・記事構成提案
 import sys
 import requests
 import io
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, date, time as dtime
 from PIL import Image
 from PIL.ExifTags import TAGS, GPSTAGS
 import json
 import argparse
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import time
+import csv
+import yaml
 
 
 class ImageContentAnalyzer:
     def __init__(self, topic_hint="", verbose=True):
         self.topic_hint = topic_hint
         self.verbose = verbose
+        # captions: {url or index(str): caption str}
+        self.captions = {}
         
     def get_exif_data(self, image_url):
         """単一画像からEXIF情報を取得"""
@@ -271,13 +275,12 @@ class ImageContentAnalyzer:
                 result = self.get_exif_data(url)
                 results.append(result)
                 time.sleep(0.5)  # レート制限対策
-        
-        # 成功した画像を撮影時刻でソート
+        # 既定では撮影時刻でソート。ただし外側で手動割当を行う場合に並び替えたいケースがあるため、
+        # 呼び出し側で必要に応じて再ソート（または入力順へ再配置）してください。
         def sort_key(item):
             if 'error' in item or not item.get('datetime'):
                 return datetime.max
             return item['datetime']
-        
         results.sort(key=sort_key)
         
         success_count = len([r for r in results if 'error' not in r])
@@ -547,6 +550,9 @@ class ImageContentAnalyzer:
             if img.get('datetime'):
                 dt = img['datetime']
                 output.append(f"- **撮影日時**: {dt.strftime('%Y年%m月%d日 %H時%M分%S秒')}")
+            elif img.get('assumed_datetime'):
+                dt = img['assumed_datetime']
+                output.append(f"- **仮撮影日時**: {dt.strftime('%Y年%m月%d日 %H時%M分%S秒')}")
             
             if img.get('camera_make') and img.get('camera_model'):
                 output.append(f"- **カメラ**: {img['camera_make']} {img['camera_model']}")
@@ -571,9 +577,199 @@ class ImageContentAnalyzer:
                 output.append(f"- **GPS座標**: {gps['latitude']:.6f}, {gps['longitude']:.6f}")
                 output.append(f"- **Google Maps**: [地図で確認](https://www.google.com/maps?q={gps['latitude']},{gps['longitude']})")
             
+            # キャプション
+            if img.get('caption'):
+                output.append(f"- **キャプション**: {img['caption']}")
+            
             output.append("")
         
         return "\n".join(output)
+
+    # ========= ここから EXIFなし前提の拡張ユーティリティ =========
+    def load_captions(self, captions_path):
+        """CSVまたはYAMLからキャプションを読み込み、self.captionsに格納"""
+        mapping = {}
+        if not captions_path:
+            return mapping
+        try:
+            if captions_path.lower().endswith(('.yml', '.yaml')):
+                with open(captions_path, 'r', encoding='utf-8') as f:
+                    data = yaml.safe_load(f)
+                if isinstance(data, dict):
+                    # {url or index: caption}
+                    for k, v in data.items():
+                        mapping[str(k)] = v
+                elif isinstance(data, list):
+                    # - {url: ..., caption: ...}
+                    for item in data:
+                        if not isinstance(item, dict):
+                            continue
+                        if 'url' in item and 'caption' in item:
+                            mapping[item['url']] = item['caption']
+                        elif 'index' in item and 'caption' in item:
+                            mapping[str(item['index'])] = item['caption']
+            elif captions_path.lower().endswith('.csv'):
+                with open(captions_path, 'r', encoding='utf-8') as f:
+                    reader = csv.DictReader(f)
+                    for row in reader:
+                        # columns: url, caption OR index, caption
+                        if row.get('url') and row.get('caption'):
+                            mapping[row['url']] = row['caption']
+                        elif row.get('index') and row.get('caption'):
+                            mapping[str(row['index'])] = row['caption']
+            else:
+                # プレーンテキスト: 行ごとキャプション、indexベース
+                with open(captions_path, 'r', encoding='utf-8') as f:
+                    for i, line in enumerate(f, 1):
+                        caption = line.strip()
+                        if caption:
+                            mapping[str(i)] = caption
+        except Exception as e:
+            if self.verbose:
+                print(f"   ⚠️ キャプション読み込み失敗: {e}")
+        self.captions = mapping
+        return mapping
+
+    def apply_captions(self, images_in_order):
+        """self.captionsをimagesへ付与。URL優先、なければindex(1-based)で照合"""
+        for idx, img in enumerate(images_in_order, 1):
+            cap = self.captions.get(img.get('url')) or self.captions.get(str(idx))
+            if cap:
+                img['caption'] = cap
+
+    def parse_sequential_time(self, arg_value):
+        """--sequential-time 形式 'start=HH:MM,step=5m' を解析"""
+        if not arg_value:
+            return None, None
+        pairs = [p.strip() for p in arg_value.split(',') if p.strip()]
+        start_s = None
+        step_s = None
+        for p in pairs:
+            if '=' in p:
+                k, v = p.split('=', 1)
+                k = k.strip()
+                v = v.strip()
+                if k == 'start':
+                    start_s = v
+                elif k == 'step':
+                    step_s = v
+            else:
+                # 位置引数的に start, step の順とみなす
+                if not start_s:
+                    start_s = p
+                elif not step_s:
+                    step_s = p
+        start_time = None
+        if start_s:
+            try:
+                hh, mm = start_s.split(':')
+                start_time = dtime(hour=int(hh), minute=int(mm))
+            except Exception:
+                pass
+        step_td = None
+        if step_s:
+            # 例: 5m, 30s, 2h
+            try:
+                unit = step_s[-1].lower()
+                num = int(step_s[:-1])
+                if unit == 'm':
+                    step_td = timedelta(minutes=num)
+                elif unit == 's':
+                    step_td = timedelta(seconds=num)
+                elif unit == 'h':
+                    step_td = timedelta(hours=num)
+            except Exception:
+                pass
+        return start_time, step_td
+
+    def parse_breakpoints(self, arg_value):
+        """--breakpoints '3,7,12' → [3,7,12] (1-based index, その位置で区切る)"""
+        if not arg_value:
+            return []
+        try:
+            arr = [int(x.strip()) for x in arg_value.split(',') if x.strip()]
+            return [x for x in arr if x > 0]
+        except Exception:
+            return []
+
+    def assign_sequential_datetimes(self, images_in_order, assume_date=None, start_time=None, step=None):
+        """日時が無い画像に対して順次に仮日時を割当てる"""
+        if assume_date is None:
+            base_date = date.today()
+        else:
+            base_date = assume_date
+        if start_time is None:
+            start_time = dtime(hour=12, minute=0)
+        if step is None:
+            step = timedelta(minutes=1)
+        base_dt = datetime.combine(base_date, start_time)
+        i_missing = 0
+        for idx, img in enumerate(images_in_order):
+            if not img.get('datetime'):
+                assigned = base_dt + step * i_missing
+                img['datetime'] = assigned
+                img['assumed_datetime'] = assigned
+                img['datetime_str'] = assigned.strftime('%Y:%m:%d %H:%M:%S')
+                i_missing += 1
+
+    def _suggest_manual_structure(self, images_in_order, n_sections=None, breakpoints=None):
+        """手動セクション分割。breakpoints優先。n_sectionsは均等割り。"""
+        total = len(images_in_order)
+        if total == 0:
+            return None
+        sections = []
+        # 決定ロジック
+        if breakpoints:
+            sorted_bp = sorted([bp for bp in breakpoints if 0 < bp < total])
+            indices = [0] + sorted_bp + [total]
+            ranges = [(indices[i], indices[i+1]) for i in range(len(indices)-1)]
+        elif n_sections and n_sections > 0:
+            q, r = divmod(total, n_sections)
+            ranges = []
+            start = 0
+            for i in range(n_sections):
+                count = q + (1 if i < r else 0)
+                end = start + count
+                ranges.append((start, end))
+                start = end
+        else:
+            # フォールバック: 既存の基本構成に委ねる
+            return self._suggest_basic_structure(images_in_order)
+
+        for i, (s, e) in enumerate(ranges, 1):
+            imgs = images_in_order[s:e]
+            if not imgs:
+                continue
+            # 時刻表示
+            times = [im.get('datetime') for im in imgs if im.get('datetime')]
+            if times:
+                tlabel = f"{min(times).strftime('%H:%M')}頃"
+                duration = self._calculate_group_duration(imgs)
+            else:
+                tlabel = '時刻不明'
+                duration = None
+            sections.append({
+                'title': f'セクション{i}',
+                'time': tlabel,
+                'images': [im['url'] for im in imgs],
+                'image_count': len(imgs),
+                'duration': duration
+            })
+
+        structure = {
+            'type': 'manual',
+            'suggested_date': (images_in_order[0].get('datetime') or datetime.now()).strftime('%Y-%m-%d'),
+            'time_range': self._compute_time_range(images_in_order),
+            'total_images': total,
+            'sections': sections
+        }
+        return structure
+
+    def _compute_time_range(self, images):
+        times = [img.get('datetime') for img in images if img.get('datetime')]
+        if len(times) >= 2:
+            return f"{min(times).strftime('%H:%M')} - {max(times).strftime('%H:%M')}"
+        return '時刻情報なし'
     
     def generate_blog_template(self, structure, topic=""):
         """ブログ記事のテンプレート生成"""
@@ -617,6 +813,12 @@ def main():
     parser.add_argument('--output', choices=['markdown', 'json'], default='markdown', help='出力形式')
     parser.add_argument('--parallel', action='store_true', default=True, help='並行処理を使用')
     parser.add_argument('--quiet', action='store_true', help='詳細出力を抑制')
+    # D) EXIF無し前提のオプション
+    parser.add_argument('--assume-date', help='撮影日を仮定 (YYYY-MM-DD)')
+    parser.add_argument('--sequential-time', help="入力順に仮時刻を割当て (例: 'start=09:00,step=5m')")
+    parser.add_argument('--sections', type=int, help='セクション数で均等分割')
+    parser.add_argument('--breakpoints', help="手動区切り位置 (1-based, 例: '3,7,12')")
+    parser.add_argument('--captions', help='キャプション定義ファイル (CSV/YAML/テキスト)')
     
     args = parser.parse_args()
     
@@ -635,24 +837,50 @@ def main():
     )
     
     try:
+        # キャプションの読み込み（任意）
+        if args.captions:
+            analyzer.load_captions(args.captions)
+
         # 画像分析
         results = analyzer.analyze_multiple_images(args.urls, parallel=args.parallel)
+
+        # 入力順へ再配置（キャプションや手動分割・仮時刻のため）
+        url_to_item = {r.get('url'): r for r in results}
+        images_in_order = [url_to_item.get(u, {'url': u, 'error': 'missing result'}) for u in args.urls]
+
+        # 仮日付/仮時刻割当
+        assume_dt = None
+        if args.assume_date:
+            try:
+                assume_dt = datetime.strptime(args.assume_date, '%Y-%m-%d').date()
+            except Exception:
+                print('⚠️ --assume-date は YYYY-MM-DD 形式で指定してください（例: 2023-08-15）')
+        start_time, step_td = analyzer.parse_sequential_time(args.sequential_time) if args.sequential_time else (None, None)
+        if assume_dt or start_time or step_td:
+            analyzer.assign_sequential_datetimes(images_in_order, assume_date=assume_dt, start_time=start_time, step=step_td)
+
+        # キャプション付与
+        analyzer.apply_captions(images_in_order)
         
         # 記事構成提案
         structure = None
         if args.suggest_structure:
-            structure = analyzer.suggest_blog_structure(results)
+            if args.breakpoints or args.sections:
+                bps = analyzer.parse_breakpoints(args.breakpoints) if args.breakpoints else []
+                structure = analyzer._suggest_manual_structure(images_in_order, n_sections=args.sections, breakpoints=bps)
+            else:
+                structure = analyzer.suggest_blog_structure(results)
         
         # 出力生成
         if args.output == 'json':
             output_data = {
-                'images': results,
+                'images': images_in_order,
                 'structure': structure
             }
             print(json.dumps(output_data, indent=2, ensure_ascii=False, default=str))
         else:
-            # Markdownレポート
-            report = analyzer.generate_markdown_report(results, structure)
+            # Markdownレポート（入力順）
+            report = analyzer.generate_markdown_report(images_in_order, structure)
             print("\n" + "=" * 60)
             print("📋 分析結果")
             print("=" * 60)
