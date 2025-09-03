@@ -11,6 +11,8 @@ python download_images_for_review.py --from-file urls.txt
 - 複数の画像URLを並列ダウンロード
 - scripts/tmp/に連番で保存
 - 画像サイズと形式を表示
+- EXIF撮影日時の自動抽出
+- 画像分析MDファイルの自動生成
 - 重複チェック
 - エラーハンドリング
 """
@@ -21,9 +23,33 @@ import requests
 import argparse
 from pathlib import Path
 from PIL import Image
+from PIL.ExifTags import TAGS
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from urllib.parse import urlparse
 import hashlib
+from datetime import datetime
+
+def extract_exif_datetime(image_path):
+    """EXIF情報から撮影日時を抽出"""
+    try:
+        with Image.open(image_path) as img:
+            exif_data = img.getexif()
+            if not exif_data:
+                return None
+            
+            # DateTimeOriginalを優先的に取得（36867番タグ）
+            datetime_str = exif_data.get(36867)  # DateTimeOriginal
+            if not datetime_str:
+                datetime_str = exif_data.get(306)  # DateTime
+            
+            if datetime_str:
+                try:
+                    return datetime.strptime(datetime_str, "%Y:%m:%d %H:%M:%S")
+                except ValueError:
+                    return None
+            return None
+    except Exception:
+        return None
 
 def download_image(url, output_path, index):
     """単一画像をダウンロード"""
@@ -49,10 +75,17 @@ def download_image(url, output_path, index):
                 format_name = img.format
                 file_size = len(response.content)
                 
+                # EXIF日時情報を抽出
+                exif_datetime = extract_exif_datetime(output_path)
+                
                 print(f"   ✅ 保存完了: {output_path.name}")
                 print(f"   📐 サイズ: {width}×{height}px")
                 print(f"   📝 形式: {format_name}")
                 print(f"   📁 ファイルサイズ: {file_size:,}バイト")
+                if exif_datetime:
+                    print(f"   📅 撮影日時: {exif_datetime.strftime('%Y-%m-%d %H:%M:%S')}")
+                else:
+                    print(f"   📅 撮影日時: 取得できませんでした")
                 
                 return {
                     'index': index,
@@ -62,6 +95,7 @@ def download_image(url, output_path, index):
                     'height': height,
                     'format': format_name,
                     'size': file_size,
+                    'datetime': exif_datetime,
                     'success': True,
                     'error': None
                 }
@@ -90,12 +124,121 @@ def generate_filename(url, index):
     url_hash = hashlib.md5(url.encode()).hexdigest()[:8]
     return f"review_image_{index:02d}_{url_hash}.jpg"
 
+def generate_analysis_md(results, article_title=""):
+    """画像分析MDファイルを生成"""
+    # 有効な結果のみフィルタ
+    valid_results = [r for r in results if r['success'] and 'datetime' in r]
+    
+    if not valid_results:
+        return None
+    
+    # 日時情報がある画像を抽出
+    timed_results = [r for r in valid_results if r.get('datetime')]
+    
+    # 日時でソート
+    if timed_results:
+        timed_results.sort(key=lambda x: x['datetime'])
+        earliest_date = timed_results[0]['datetime']
+        latest_date = timed_results[-1]['datetime']
+        suggested_date = earliest_date.strftime('%Y-%m-%d')
+        time_range = f"{earliest_date.strftime('%H:%M')} - {latest_date.strftime('%H:%M')}"
+        
+        # ファイル名決定（記事タイトルがない場合は日付ベース）
+        if article_title:
+            # 簡単なスラッグ化
+            slug = article_title.lower().replace(' ', '-').replace('　', '-')
+            # 日本語文字を簡略化
+            import re
+            slug = re.sub(r'[^\w\-]', '', slug)[:30]  # 最初の30文字
+        else:
+            slug = "article"
+        
+        filename = f"image_analysis_{suggested_date}-{slug}.md"
+    else:
+        # 日時情報がない場合
+        suggested_date = datetime.now().strftime('%Y-%m-%d')
+        time_range = "不明"
+        filename = f"image_analysis_{suggested_date}-article.md"
+    
+    # MDコンテンツを生成
+    content = f"""# 画像分析レポート - {article_title or '記事'}
+
+**作成日**: {datetime.now().strftime('%Y年%m月%d日')}  
+**対象画像数**: {len(valid_results)}枚  
+**撮影日時付き画像**: {len(timed_results)}枚
+
+## 📅 時系列情報
+
+- **推奨記事日付**: {suggested_date}
+- **撮影時間帯**: {time_range}
+"""
+
+    if timed_results:
+        duration_hours = (latest_date - earliest_date).total_seconds() / 3600
+        content += f"- **撮影期間**: 約{duration_hours:.1f}時間\n"
+    
+    content += """
+## 📷 画像詳細情報
+
+"""
+    
+    # 画像ごとの詳細情報
+    for result in valid_results:
+        datetime_str = "取得できませんでした"
+        if result.get('datetime'):
+            datetime_str = result['datetime'].strftime('%Y-%m-%d %H:%M:%S')
+        
+        content += f"""### 画像 {result['index']}: {result['path'].name}
+
+- **撮影日時**: {datetime_str}
+- **画像サイズ**: {result['width']}×{result['height']}px
+- **形式**: {result['format']}
+- **ファイルサイズ**: {result['size']:,}バイト
+- **URL**: `{result['url']}`
+- **内容説明**: [Claude Codeで画像確認後に記入]
+- **記事での使用予定**: [セクション名を記入]
+
+"""
+    
+    content += """## ✅ 記事作成チェックリスト
+
+### 📸 画像処理
+- [x] Google Photos URL抽出完了
+- [x] 画像分析MD作成（時刻情報含む）
+- [ ] 各画像の内容説明記入完了
+- [ ] 時系列確認済み
+
+### 📝 記事作成  
+- [ ] 日付: 推奨日付を記事に設定 (`{suggested_date}`)
+- [ ] タイトル: 内容に合致したタイトル作成
+- [ ] カテゴリ: 標準7カテゴリから選択
+- [ ] featured_image: 代表画像を設定
+- [ ] Google Photos元URL記録
+
+### ✅ 最終確認
+- [ ] 画像と記事内容の整合性確認
+- [ ] フロントマター必須項目完備
+- [ ] ビルド・公開実行
+
+## 📝 記事作成メモ
+
+[記事作成時の気づきや重要事項をここに記録]
+
+---
+
+**このファイルは記事作成の品質管理資料として保持されます**
+"""
+    
+    return filename, content
+
 def main():
     parser = argparse.ArgumentParser(description="記事作成用画像ダウンロードツール")
     parser.add_argument('urls', nargs='*', help='ダウンロードする画像URL')
     parser.add_argument('--from-file', help='URLリストファイルから読み込み')
     parser.add_argument('--clean', action='store_true', help='ダウンロード前にtmpディレクトリをクリア')
     parser.add_argument('--max-workers', type=int, default=5, help='並列ダウンロード数（デフォルト: 5）')
+    parser.add_argument('--article-title', help='記事タイトル（画像分析MDファイル名に使用）')
+    parser.add_argument('--generate-analysis', action='store_true', default=True, help='画像分析MDファイルを生成（デフォルト: True）')
     
     args = parser.parse_args()
     
@@ -169,6 +312,8 @@ def main():
                 print(f"  {result['index']:2d}. {result['path'].name}")
                 print(f"      📐 {result['width']}×{result['height']}px ({result['format']})")
                 print(f"      💾 {result['size']:,}バイト")
+                if result.get('datetime'):
+                    print(f"      📅 {result['datetime'].strftime('%Y-%m-%d %H:%M:%S')}")
             else:
                 print(f"  {result['index']:2d}. {result['path'].name} (詳細情報取得失敗)")
     
@@ -176,6 +321,41 @@ def main():
         print("\n❌ ダウンロード失敗画像:")
         for result in failed:
             print(f"  {result['index']:2d}. {result['error']}")
+    
+    # 画像分析MDファイル生成
+    if args.generate_analysis and successful:
+        print("\n============================================================")
+        print("📝 画像分析MDファイル生成中...")
+        print("============================================================")
+        
+        analysis_result = generate_analysis_md(successful, args.article_title or "")
+        if analysis_result:
+            filename, content = analysis_result
+            analysis_path = output_dir / filename
+            
+            try:
+                with open(analysis_path, 'w', encoding='utf-8') as f:
+                    f.write(content)
+                print(f"✅ 画像分析MDファイル作成完了: {filename}")
+                print(f"📁 パス: {analysis_path}")
+                
+                # 時系列サマリーを表示
+                timed_results = [r for r in successful if r.get('datetime')]
+                if timed_results:
+                    timed_results.sort(key=lambda x: x['datetime'])
+                    earliest = timed_results[0]['datetime']
+                    latest = timed_results[-1]['datetime']
+                    print(f"📅 推奨記事日付: {earliest.strftime('%Y-%m-%d')}")
+                    print(f"⏰ 撮影時間帯: {earliest.strftime('%H:%M')} - {latest.strftime('%H:%M')}")
+                    
+                    duration = (latest - earliest).total_seconds() / 3600
+                    if duration > 0:
+                        print(f"⏱️ 撮影期間: {duration:.1f}時間")
+                
+            except Exception as e:
+                print(f"❌ 画像分析MDファイル作成エラー: {e}")
+        else:
+            print("⚠️ 画像分析MDファイルの生成をスキップしました（有効な画像がありません）")
     
     print(f"\n💡 画像確認方法:")
     print(f"ls -la {output_dir}/review_image_*")

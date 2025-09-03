@@ -36,7 +36,7 @@ featured_image: "https://lh3.googleusercontent.com/pw/AP1GczNQYVE2JezwJ0Vj4zHv7g
 
 ![銀色のフエフキダイ](https://lh3.googleusercontent.com/pw/AP1GczNj4EAtru7-LrsM_HL3SreZnTtdOHI34JbYMN6CyUYhLAprqb2ygw1ytaEyG7WEvvyjqpQpVDOhiSiFMOpqgI3C2PxXY4_Cw1Gg4QXVzMIsg53Rw0azdgRvpLm0em3SJOEbfFMGt-QyLkKTmx7yPwnUzw=s1621?authuser=0)
 
-結構深いところまで潜って、何匹かの魚を捕獲することができました。まずは銀色に輝くフエフキダイ系の美しい魚。30cmほどのサイズで、引きも楽しめました。
+結構深いところまで潜って、何匹かの魚を捕獲することができました。まずは銀色に輝くイスズミの美しい魚。30cmほどのサイズで、引きも楽しめました。
 
 ## 念願のアカジンミーバイとの出会い！
 
@@ -46,9 +46,9 @@ featured_image: "https://lh3.googleusercontent.com/pw/AP1GczNQYVE2JezwJ0Vj4zHv7g
 
 アカジンミーバイは沖縄南部の海域でしか見ることができない貴重な魚で、しかもかなりの大型です。これは本当に嬉しい成果でした。
 
-![青い斑点が美しいアオブダイ](https://lh3.googleusercontent.com/pw/AP1GczMeN2SOY7DJOoCyBbG7E-cSKzkspusrDRH9WUqkcA7tAqZ2F0nH83pnUFHRQMlyKUz_98ZwQfIiZCp99OuAtGOvDWW29tbnoSjXD62UZ_Y-qDDoArF1JpjQYlGZ3cUzdowTTQyp5jYEC9o2b4-0iaA1gQ=s1621?authuser=0)
+![青い斑点が美しいチョウチョウコショウダイ](https://lh3.googleusercontent.com/pw/AP1GczMeN2SOY7DJOoCyBbG7E-cSKzkspusrDRH9WUqkcA7tAqZ2F0nH83pnUFHRQMlyKUz_98ZwQfIiZCp99OuAtGOvDWW29tbnoSjXD62UZ_Y-qDDoArF1JpjQYlGZ3cUzdowTTQyp5jYEC9o2b4-0iaA1gQ=s1621?authuser=0)
 
-さらに、青い斑点が印象的なアオブダイも捕獲。50cm以上ある立派なサイズで、見た目も非常に美しい魚です。
+さらに、青い斑点が印象的なチョウチョウコショウダイも捕獲。50cm以上ある立派なサイズで、見た目も非常に美しい魚です。
 
 ![複数のハタ科魚類](https://lh3.googleusercontent.com/pw/AP1GczNQYVE2JezwJ0Vj4zHv7gL11RaydyRNvmuiUS4XdWcYWnrB6zUiRS-2P_Yw1FtAB3rabp6DpCdv53XrYUkWPzgf2PtmDxbL30RjPhsKqywGutGdT8-y3H2v5ho02Tm1YNC3rcg6sn_mOagKLYYMfW8vxw=s1621?authuser=0)
 
@@ -81,7 +81,7 @@ featured_image: "https://lh3.googleusercontent.com/pw/AP1GczNQYVE2JezwJ0Vj4zHv7g
 石垣島でのスピアフィッシング体験は期待を遥かに超える素晴らしいものでした。特に：
 
 - **アカジンミーバイの捕獲成功** - 沖縄南部でしか獲れない高級魚との出会い
-- **多種多様な魚種** - クマノミ、フエフキダイ、アオブダイなど豊富な魚種
+- **多種多様な魚種** - クマノミ、イスズミ、チョウチョウコショウダイなど豊富な魚種
 - **絶品グルメ** - 本場のソーキそばと新鮮魚介の天ぷら
 - **美しい自然** - 澄んだ海と満天の星空
 
