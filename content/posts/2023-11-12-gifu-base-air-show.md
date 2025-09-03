@@ -1,8 +1,8 @@
 ---
-title: "岐阜基地航空祭2023 - テスト機カラーリングと迫力の飛行展示"
+title: "岐阜基地航空祭2023 - テスト機カラーリングと迫力の展示飛行"
 date: 2023-11-12
 category: "旅行記"
-description: "岐阜基地航空祭での特徴的なテスト機カラーリングの航空機と、ブルーインパルスの素晴らしい飛行展示を楽しんできました。南側ポジションでの撮影のコツも紹介。"
+description: "岐阜基地航空祭での特徴的なテスト機カラーリングの航空機と、ブルーインパルスの素晴らしい展示飛行を楽しんできました。南側ポジションでの撮影のコツも紹介。"
 featured_image: "https://lh3.googleusercontent.com/pw/AP1GczO0S5r381LmnOp1q0DKSjUaLuHruZGSCo4IZiTngjHuBjHC08PGFaK8MIR3CBidDfL7j91rZ9TuQYsj7dlOKMc5O7knEHTRTq8N4iVnJ7ONZ1lac8iQLQvr7Tv7nHAL5fJucYwkyFwXU28ceNwVIF2jUQ=s1621?authuser=0"
 ---
 
@@ -44,7 +44,7 @@ F-2戦闘機501号機の美しい単体飛行です。この機体は岐阜基�
 
 ## ブルーインパルスの華麗な演技
 
-航空祭のハイライトは何と言ってもブルーインパルスの飛行展示でした。
+航空祭のハイライトは何と言ってもブルーインパルスの展示飛行でした。
 
 ![ブルーインパルスのスモークライン](https://lh3.googleusercontent.com/pw/AP1GczPJt_M9te-ByQrUecJs1rdUoME6ZK-1PfpbqBcDHpdR11S00rvInnFYh5NHQ-xxQoRLxzmCePFHcnPMsn_QFoqdxH0XCs9IZOQ1eXI1SPl2sqKFcyNUO3otCnK4oXNHkTR_tIerDVZwg2l6lwZzruh9vQ=s1621?authuser=0)
 
@@ -54,7 +54,7 @@ F-2戦闘機501号機の美しい単体飛行です。この機体は岐阜基�
 
 ![ブルーインパルス機の地上展示](https://lh3.googleusercontent.com/pw/AP1GczMta_hSxa94cdz1WW8AKaZgpAku3fxW_U6uY0IZVSwsyPGa3EEG1Q33Pbr_3jrtMmAaLUBOtuZg12h8mR9kOmgN5K6S3OBtNf6SClu5ZEAgh_FBA86AaHvxUSCGxLwBbuurFiq4sSou6A7n99oCG9lixg=s1621?authuser=0)
 
-午前中の飛行展示後は、基地南側の通路から入って地上展示を見学しました。この写真はブルーインパルス仕様のT-4練習機で、機体番号686、「26-5686」の表記が確認できます。「Blue Impulse」の文字も機体に美しく描かれています。
+午前中の展示飛行後は、基地南側の通路から入って地上展示を見学しました。この写真はブルーインパルス仕様のT-4練習機で、機体番号686、「26-5686」の表記が確認できます。「Blue Impulse」の文字も機体に美しく描かれています。
 
 背景には多くの見学者が写っており、航空祭の盛況ぶりが伝わってきます。近距離で機体の細部を観察でき、普段は見ることのできない角度からの写真撮影も楽しめました。
 
