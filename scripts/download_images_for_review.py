@@ -63,14 +63,18 @@ def extract_exif_datetime(image_path):
         except Exception:
             return None
 
-def generate_hdr_url(original_url, width, height):
-    """通常URLをHDR対応URLに変換"""
+def generate_hdr_url(original_url, width, height, target_width=800):
+    """800px幅基準でHDR対応URLを生成"""
     try:
+        # アスペクト比を計算
+        aspect_ratio = height / width
+        target_height = int(target_width * aspect_ratio)
+        
         # s1621パラメーターをHDR対応パラメーターに変更
         if '=s1621?authuser=0' in original_url:
-            return original_url.replace('=s1621?authuser=0', f'=w{width}-h{height}-s-no-gm?authuser=0')
+            return original_url.replace('=s1621?authuser=0', f'=w{target_width}-h{target_height}-s-no-gm?authuser=0')
         elif '=s1621' in original_url:
-            return original_url.replace('=s1621', f'=w{width}-h{height}-s-no-gm')
+            return original_url.replace('=s1621', f'=w{target_width}-h{target_height}-s-no-gm')
         else:
             return original_url
     except Exception as e:
@@ -115,32 +119,31 @@ def download_image(url, output_path, index):
                 
                 # HDR版の試行
                 hdr_url = generate_hdr_url(url, width, height)
+                final_url = url  # 最終的に使用するURL
+                
                 if hdr_url != url:  # HDR URLが生成された場合
                     print(f"   🌟 HDR版を試行中...")
                     try:
                         hdr_response = requests.get(hdr_url, headers=headers, timeout=30)
                         hdr_response.raise_for_status()
                         
-                        # HDR版のサイズと品質をチェック
+                        # HDR版で上書き（ファイルサイズに関係なく品質優先）
+                        with open(output_path, 'wb') as f:
+                            f.write(hdr_response.content)
+                        
+                        # HDR版の画像情報を再取得
                         hdr_size = len(hdr_response.content)
-                        if hdr_size > file_size:  # HDR版の方が大きい場合
-                            # HDR版で上書き
-                            with open(output_path, 'wb') as f:
-                                f.write(hdr_response.content)
-                            
-                            # HDR版の画像情報を再取得
-                            with Image.open(output_path) as hdr_img:
-                                hdr_width, hdr_height = hdr_img.size
-                                hdr_format = hdr_img.format
-                            
-                            print(f"   ✨ HDR版で更新: {hdr_width}×{hdr_height}px, {hdr_size:,}バイト")
-                            
-                            # HDR情報で結果を更新
-                            width, height = hdr_width, hdr_height
-                            format_name = hdr_format
-                            file_size = hdr_size
-                        else:
-                            print(f"   📷 通常版を維持（HDR版: {hdr_size:,}バイト ≤ 通常版: {file_size:,}バイト）")
+                        with Image.open(output_path) as hdr_img:
+                            hdr_width, hdr_height = hdr_img.size
+                            hdr_format = hdr_img.format
+                        
+                        print(f"   ✨ HDR版で更新: {hdr_width}×{hdr_height}px, {hdr_size:,}バイト")
+                        
+                        # HDR情報で結果を更新
+                        width, height = hdr_width, hdr_height
+                        format_name = hdr_format
+                        file_size = hdr_size
+                        final_url = hdr_url  # HDR URLを記録
                     except Exception as hdr_e:
                         print(f"   📷 HDR版取得失敗、通常版を維持: {hdr_e}")
                 else:
@@ -148,7 +151,7 @@ def download_image(url, output_path, index):
                 
                 return {
                     'index': index,
-                    'url': url,
+                    'url': final_url,
                     'path': output_path,
                     'width': width,
                     'height': height,
