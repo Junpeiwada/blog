@@ -34,20 +34,23 @@
                     <button class="btn btn-outline-primary filter-btn" data-category="all" id="filterAll">
                         全て ({{ posts|length }})
                     </button>
-                    <button class="btn btn-outline-info filter-btn" data-category="sea">
+                    <button class="btn btn-outline-info filter-btn" data-category="ocean">
                         海・釣り
                     </button>
-                    <button class="btn btn-outline-warning filter-btn" data-category="gear">
+                    <button class="btn btn-outline-success filter-btn" data-category="登山・クライミング">
+                        山登り
+                    </button>
+                    <button class="btn btn-outline-secondary filter-btn" data-category="旅行記">
+                        旅行記
+                    </button>
+                    <button class="btn btn-outline-warning filter-btn" data-category="ギア・道具">
                         ギア・道具
                     </button>
-                    <button class="btn btn-outline-danger filter-btn" data-category="tech">
-                        技術
+                    <button class="btn btn-outline-danger filter-btn" data-category="クラフト・DIY">
+                        クラフト・DIY
                     </button>
-                    <button class="btn btn-outline-secondary filter-btn" data-category="travel">
-                        旅行
-                    </button>
-                    <button class="btn btn-outline-dark filter-btn" data-category="climbing">
-                        山登り
+                    <button class="btn btn-outline-dark filter-btn" data-category="山岳ガイド">
+                        山岳ガイド
                     </button>
                 </div>
             </div>
@@ -128,6 +131,16 @@ document.getElementById('filterAll').classList.add('active');
 // Local search functionality
 localSearch.addEventListener('input', applyFilters);
 
+// カテゴリマッピング - フィルタボタンと記事カテゴリの対応
+const categoryMapping = {
+    'ocean': ['海・潜水', '釣り'],           // 海・釣りボタンで海・潜水と釣りを表示
+    '登山・クライミング': ['登山・クライミング'],
+    '旅行記': ['旅行記'],
+    'ギア・道具': ['ギア・道具'],
+    'クラフト・DIY': ['クラフト・DIY'],
+    '山岳ガイド': ['山岳ガイド']
+};
+
 function applyFilters() {
     const searchTerm = localSearch.value.toLowerCase();
     let visibleCount = 0;
@@ -138,7 +151,14 @@ function applyFilters() {
         const description = card.dataset.description;
         const tags = card.dataset.tags;
         
-        const categoryMatch = currentCategory === 'all' || category === currentCategory;
+        // カテゴリマッチング（マッピング対応）
+        let categoryMatch = currentCategory === 'all';
+        if (!categoryMatch && categoryMapping[currentCategory]) {
+            categoryMatch = categoryMapping[currentCategory].includes(category);
+        } else if (!categoryMatch) {
+            categoryMatch = category === currentCategory;
+        }
+        
         const searchMatch = searchTerm === '' || 
             title.includes(searchTerm) || 
             description.includes(searchTerm) || 

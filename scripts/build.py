@@ -161,6 +161,9 @@ class BlogBuilder:
             reverse=True
         )
         
+        # Generate category statistics
+        category_stats = self.generate_category_stats(posts_data)
+        
         # Prepare posts data for template
         posts_for_template = []
         for post in sorted_posts:
@@ -176,7 +179,10 @@ class BlogBuilder:
             })
         
         # Render template
-        template_data = {'posts': posts_for_template}
+        template_data = {
+            'posts': posts_for_template,
+            'category_stats': category_stats
+        }
         html_content = template.render(template_data)
         
         # Write to file
@@ -185,7 +191,38 @@ class BlogBuilder:
             f.write(html_content)
         
         print(f"Built index page with {len(posts_for_template)} posts")
+        self.print_category_stats(category_stats)
         return output_path
+
+    def generate_category_stats(self, posts_data):
+        """Generate category statistics"""
+        stats = {}
+        for post in posts_data:
+            category = post['metadata']['category']
+            stats[category] = stats.get(category, 0) + 1
+        
+        return dict(sorted(stats.items(), key=lambda x: x[1], reverse=True))
+    
+    def print_category_stats(self, category_stats):
+        """Print category statistics to console"""
+        print("\n📊 カテゴリ別記事数統計:")
+        for category, count in category_stats.items():
+            print(f"   {category}: {count}記事")
+        print()
+        
+        # Check for consistency with CATEGORY_GUIDE.md
+        expected_categories = {
+            '海・潜水', '釣り', '登山・クライミング', 
+            '旅行記', 'ギア・道具', 'クラフト・DIY', '山岳ガイド'
+        }
+        actual_categories = set(category_stats.keys())
+        
+        if actual_categories - expected_categories:
+            print("⚠️  標準外カテゴリが見つかりました:")
+            for cat in actual_categories - expected_categories:
+                print(f"   - {cat}")
+            print("   → docs/CATEGORY_GUIDE.mdを確認してください")
+            print()
     
     def clean_docs_dir(self):
         """Clean the docs directory"""
