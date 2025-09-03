@@ -19,7 +19,7 @@
                     <span class="mx-2">•</span>
                     <i class="bi bi-tags"></i>
                     {% for tag in post.tags %}
-                    <span class="tag">{{ tag }}</span>
+                    <span class="tag clickable-tag">{{ tag }}</span>
                     {% endfor %}
                     {% endif %}
                 </div>
@@ -42,4 +42,41 @@
         </div>
     </div>
 </div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+// Tag click functionality for individual post pages
+document.addEventListener('DOMContentLoaded', function() {
+    const tags = document.querySelectorAll('.clickable-tag');
+    tags.forEach(tag => {
+        // Make tags look clickable
+        tag.style.cursor = 'pointer';
+        tag.style.transition = 'background-color 0.2s, color 0.2s';
+        
+        // Add hover effect
+        tag.addEventListener('mouseenter', function() {
+            tag.style.backgroundColor = '#0d6efd';
+            tag.style.color = 'white';
+        });
+        
+        tag.addEventListener('mouseleave', function() {
+            tag.style.backgroundColor = '#f8f9fa';
+            tag.style.color = '#6c757d';
+        });
+        
+        // Add click handler - navigate to index page with search
+        tag.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            
+            const tagText = tag.textContent.trim();
+            
+            // Navigate to index page with search parameter
+            const indexUrl = '../index.html';
+            window.location.href = indexUrl + '?search=' + encodeURIComponent(tagText);
+        });
+    });
+});
+</script>
 {% endblock %}

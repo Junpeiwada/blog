@@ -2,6 +2,7 @@
 title: "モーラナイフ コンパニオン フィッシング スケーラー 150 - 包丁並みの刃渡りを持つ万能フィッシングナイフ"
 date: 2025-09-03
 category: "ギア・道具"
+tags: [モーラナイフ, ナイフ, フィッシング, 旅行, アウトドア, レビュー]
 description: "モーラナイフの新作、コンパニオン フィッシング スケーラー 150をレビュー。150mmの長い刃渡りと鋭いスカンジグラインドが特徴的な、旅行先での魚捌き専用ナイフ。"
 featured_image: "https://lh3.googleusercontent.com/pw/AP1GczNp8LChjENBDmTT-DWwyXviL98w_Dc93M4OBQrYrlo6WWIsqEd5OEQhJsIT13e5R4KXN32bNgS3_OL0G3KO-fZAIXsBlOBe3y9xlw5vZDotMEq6Mnxh=s1621?authuser=0"
 ---

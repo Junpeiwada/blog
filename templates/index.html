@@ -181,5 +181,83 @@ function applyFilters() {
         noResults.style.display = 'none';
     }
 }
+
+// URL parameter handling - handle ?search= parameter from individual post pages
+document.addEventListener('DOMContentLoaded', function() {
+    // Check for search parameter in URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const searchParam = urlParams.get('search');
+    
+    if (searchParam) {
+        // Set the search input to the parameter value
+        localSearch.value = decodeURIComponent(searchParam);
+        
+        // Apply filters immediately
+        applyFilters();
+        
+        // Highlight the search box briefly to show it was auto-filled
+        localSearch.style.transition = 'box-shadow 0.3s, border-color 0.3s';
+        localSearch.style.boxShadow = '0 0 15px rgba(13, 110, 253, 0.3)';
+        localSearch.style.borderColor = '#0d6efd';
+        setTimeout(() => {
+            localSearch.style.boxShadow = '';
+            localSearch.style.borderColor = '';
+        }, 2000);
+        
+        // Scroll to results
+        setTimeout(() => {
+            document.getElementById('postsContainer').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 300);
+        
+        // Clean up URL without reloading the page
+        window.history.replaceState({}, document.title, window.location.pathname);
+    }
+});
+
+// Tag click functionality - tags are clickable and search for that tag
+document.addEventListener('DOMContentLoaded', function() {
+    // Add click handlers to all tag elements
+    const tags = document.querySelectorAll('.tag');
+    tags.forEach(tag => {
+        // Make tags look clickable
+        tag.style.cursor = 'pointer';
+        tag.style.transition = 'background-color 0.2s, color 0.2s';
+        
+        // Add hover effect
+        tag.addEventListener('mouseenter', function() {
+            tag.style.backgroundColor = '#0d6efd';
+            tag.style.color = 'white';
+        });
+        
+        tag.addEventListener('mouseleave', function() {
+            tag.style.backgroundColor = '#f8f9fa';
+            tag.style.color = '#6c757d';
+        });
+        
+        // Add click handler
+        tag.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            
+            const tagText = tag.textContent.trim();
+            
+            // Set the search input to the clicked tag
+            localSearch.value = tagText;
+            
+            // Apply filters with the new search term
+            applyFilters();
+            
+            // Scroll to top of results
+            document.getElementById('postsContainer').scrollIntoView({ behavior: 'smooth', block: 'start' });
+            
+            // Highlight the search box briefly
+            localSearch.style.transition = 'box-shadow 0.3s';
+            localSearch.style.boxShadow = '0 0 10px rgba(13, 110, 253, 0.5)';
+            setTimeout(() => {
+                localSearch.style.boxShadow = '';
+            }, 1000);
+        });
+    });
+});
 </script>
 {% endblock %}

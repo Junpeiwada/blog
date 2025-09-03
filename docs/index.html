@@ -96,7 +96,7 @@
     <!-- Posts Grid -->
     <div class="row" id="postsContainer">
         
-        <div class="col-lg-4 col-md-6 mb-4 post-card" data-category="ギア・道具" data-tags="" data-title="モーラナイフ コンパニオン フィッシング スケーラー 150 - 包丁並みの刃渡りを持つ万能フィッシングナイフ" data-description="モーラナイフの新作、コンパニオン フィッシング スケーラー 150をレビュー。150mmの長い刃渡りと鋭いスカンジグラインドが特徴的な、旅行先での魚捌き専用ナイフ。">
+        <div class="col-lg-4 col-md-6 mb-4 post-card" data-category="ギア・道具" data-tags="モーラナイフ ナイフ フィッシング 旅行 アウトドア レビュー" data-title="モーラナイフ コンパニオン フィッシング スケーラー 150 - 包丁並みの刃渡りを持つ万能フィッシングナイフ" data-description="モーラナイフの新作、コンパニオン フィッシング スケーラー 150をレビュー。150mmの長い刃渡りと鋭いスカンジグラインドが特徴的な、旅行先での魚捌き専用ナイフ。">
             <div class="card h-100 shadow-sm card-with-image" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3)), url('https://lh3.googleusercontent.com/pw/AP1GczNp8LChjENBDmTT-DWwyXviL98w_Dc93M4OBQrYrlo6WWIsqEd5OEQhJsIT13e5R4KXN32bNgS3_OL0G3KO-fZAIXsBlOBe3y9xlw5vZDotMEq6Mnxh=s1621?authuser=0'); background-size: cover; background-position: center;">
                 <div class="card-body d-flex flex-column text-white">
                     <div class="mb-2">
@@ -110,6 +110,22 @@
                     
                     <p class="card-text">モーラナイフの新作、コンパニオン フィッシング スケーラー 150をレビュー。150mmの長い刃渡りと鋭いスカンジグラインドが特徴的な、旅行先での魚捌き専用ナイフ。</p>
                     
+                    
+                    <div class="mb-3 mt-auto">
+                        
+                        <span class="tag">モーラナイフ</span>
+                        
+                        <span class="tag">ナイフ</span>
+                        
+                        <span class="tag">フィッシング</span>
+                        
+                        <span class="tag">旅行</span>
+                        
+                        <span class="tag">アウトドア</span>
+                        
+                        <span class="tag">レビュー</span>
+                        
+                    </div>
                     
                     
                     <div class="mt-auto">
@@ -1217,6 +1233,84 @@ function applyFilters() {
         noResults.style.display = 'none';
     }
 }
+
+// URL parameter handling - handle ?search= parameter from individual post pages
+document.addEventListener('DOMContentLoaded', function() {
+    // Check for search parameter in URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const searchParam = urlParams.get('search');
+    
+    if (searchParam) {
+        // Set the search input to the parameter value
+        localSearch.value = decodeURIComponent(searchParam);
+        
+        // Apply filters immediately
+        applyFilters();
+        
+        // Highlight the search box briefly to show it was auto-filled
+        localSearch.style.transition = 'box-shadow 0.3s, border-color 0.3s';
+        localSearch.style.boxShadow = '0 0 15px rgba(13, 110, 253, 0.3)';
+        localSearch.style.borderColor = '#0d6efd';
+        setTimeout(() => {
+            localSearch.style.boxShadow = '';
+            localSearch.style.borderColor = '';
+        }, 2000);
+        
+        // Scroll to results
+        setTimeout(() => {
+            document.getElementById('postsContainer').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 300);
+        
+        // Clean up URL without reloading the page
+        window.history.replaceState({}, document.title, window.location.pathname);
+    }
+});
+
+// Tag click functionality - tags are clickable and search for that tag
+document.addEventListener('DOMContentLoaded', function() {
+    // Add click handlers to all tag elements
+    const tags = document.querySelectorAll('.tag');
+    tags.forEach(tag => {
+        // Make tags look clickable
+        tag.style.cursor = 'pointer';
+        tag.style.transition = 'background-color 0.2s, color 0.2s';
+        
+        // Add hover effect
+        tag.addEventListener('mouseenter', function() {
+            tag.style.backgroundColor = '#0d6efd';
+            tag.style.color = 'white';
+        });
+        
+        tag.addEventListener('mouseleave', function() {
+            tag.style.backgroundColor = '#f8f9fa';
+            tag.style.color = '#6c757d';
+        });
+        
+        // Add click handler
+        tag.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            
+            const tagText = tag.textContent.trim();
+            
+            // Set the search input to the clicked tag
+            localSearch.value = tagText;
+            
+            // Apply filters with the new search term
+            applyFilters();
+            
+            // Scroll to top of results
+            document.getElementById('postsContainer').scrollIntoView({ behavior: 'smooth', block: 'start' });
+            
+            // Highlight the search box briefly
+            localSearch.style.transition = 'box-shadow 0.3s';
+            localSearch.style.boxShadow = '0 0 10px rgba(13, 110, 253, 0.5)';
+            setTimeout(() => {
+                localSearch.style.boxShadow = '';
+            }, 1000);
+        });
+    });
+});
 </script>
 
 </body>
