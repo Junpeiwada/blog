@@ -28,28 +28,40 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from urllib.parse import urlparse
 import hashlib
 from datetime import datetime
+import subprocess
 
 def extract_exif_datetime(image_path):
-    """EXIF情報から撮影日時を抽出"""
+    """EXIF情報から撮影日時を抽出（exiftoolを使用）"""
     try:
-        with Image.open(image_path) as img:
-            exif_data = img.getexif()
-            if not exif_data:
+        # exiftoolを使用してDateTimeOriginalのみを取得
+        result = subprocess.run(
+            ['exiftool', '-DateTimeOriginal', '-s3', str(image_path)],
+            capture_output=True,
+            text=True,
+            timeout=10
+        )
+        
+        if result.returncode == 0 and result.stdout.strip():
+            datetime_str = result.stdout.strip()
+            try:
+                # exiftoolの出力形式: "2022:06:03 18:42:29"
+                return datetime.strptime(datetime_str, "%Y:%m:%d %H:%M:%S")
+            except ValueError:
                 return None
-            
-            # DateTimeOriginalを優先的に取得（36867番タグ）
-            datetime_str = exif_data.get(36867)  # DateTimeOriginal
-            if not datetime_str:
-                datetime_str = exif_data.get(306)  # DateTime
-            
-            if datetime_str:
-                try:
-                    return datetime.strptime(datetime_str, "%Y:%m:%d %H:%M:%S")
-                except ValueError:
-                    return None
-            return None
-    except Exception:
+        
         return None
+    except (subprocess.TimeoutExpired, subprocess.SubprocessError, FileNotFoundError):
+        # exiftoolが利用できない場合はPILでフォールバック（削除しない）
+        try:
+            with Image.open(image_path) as img:
+                exif_data = img.getexif()
+                if exif_data:
+                    datetime_str = exif_data.get(36867)  # DateTimeOriginal only
+                    if datetime_str:
+                        return datetime.strptime(datetime_str, "%Y:%m:%d %H:%M:%S")
+            return None
+        except Exception:
+            return None
 
 def download_image(url, output_path, index):
     """単一画像をダウンロード"""
