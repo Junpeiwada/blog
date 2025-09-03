@@ -10,14 +10,14 @@ originDate: "2022-06-27"
 
 2022年6月27日、**美浜ボートレンタル**でボートをレンタルして海釣りに挑戦してきました。朝早くから夕方まで、約10時間の長時間釣行で素晴らしい釣果を上げることができました！
 
-## 早朝出船（5:36）
+## 早朝出船
 
 ![マリーナの桟橋](https://lh3.googleusercontent.com/pw/AP1GczPiVqbuJGS5Kf0z8f3BKpXNmCW-mu7Z6YEh-eUrhttDzwJ6FbNb437Xk8_QBGEBT4RqjYRdSFkgUROyY0DKJIm5Q9sLw1I5zxQbBoJfZKGx5hhxtHmB=s1621?authuser=0)
 *美浜ボートレンタルのマリーナ。山々を背景とした美しい風景*
 
-朝5時36分、まだ薄暗い中での出船です。ボートレンタルの受付を済ませ、いよいよ海へ。天気も良く、絶好の釣り日和でした。
+まだ薄暗い中での出船です。ボートレンタルの受付を済ませ、いよいよ海へ。天気も良く、絶好の釣り日和でした。
 
-## 釣り開始（5:57）
+## 釣り開始
 
 ![ボート上からの沖釣り風景](https://lh3.googleusercontent.com/pw/AP1GczNOcYSeRMPHG7QEXZ8NkC3z9piAzzDS3PbL9Tvr09k0ORIwDZqoJijLK8nirDdJ-nwU0dZj-IzKrWzwXt4Hw_2apc2cs_YSh8KIaEpx70f3mZho7frlb2dl1HEyD8LWJGBkD74MYBc6fqCwAr-bUSDosw=s1621?authuser=0)
 *遠くに島影が見える穏やかな海上での釣り風景*
@@ -71,14 +71,6 @@ originDate: "2022-06-27"
 「ヒラメ社員」という言葉があるのをご存知ですか？これは**上司の顔色ばかり見る人**の例え。海底で上しか見ていないヒラメの習性から生まれた、なんとも的確な比喩です。
 
 ## まとめ
-
-朝5時36分から夕方15時30分まで、約10時間の長時間釣行となりました。
-
-**時系列まとめ:**
-- **5:36** - 出船準備
-- **5:57** - 釣り開始
-- **7:59** - ボート装備確認
-- **15:30** - 釣果撮影・納竿
 
 美浜ボートレンタルの充実した設備と、粘り強い釣りで素晴らしい釣果を上げることができました。特に大型ヒラメは今回の釣行のハイライトでした！
 
