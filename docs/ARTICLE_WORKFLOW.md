@@ -7,6 +7,8 @@
 ### Step 1: 画像処理・分析
 Google Photos URLから自動的に画像分析と日時情報を抽出します。
 
+GoglePhotosから写真のurlの取得とダウンロードを行うPythonスクリプトがあります。以下に従って実行してください
+
 ```bash
 # Google Photos URL抽出
 python scripts/google_photos_extractor.py "共有URL" --headless
