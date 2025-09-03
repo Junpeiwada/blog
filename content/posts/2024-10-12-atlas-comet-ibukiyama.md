@@ -4,6 +4,7 @@ date: "2024-10-12"
 category: "旅行・アウトドア"
 description: "数十年に一度の明るいアトラス彗星を伊吹山から撮影。夕暮れから夜間にかけて、彗星が滋賀の街明かりの中に落ちていく美しい光景を記録しました。"
 featured_image: "https://lh3.googleusercontent.com/pw/AP1GczPjdnkLlEGi_FYv1BPEsGkLs6jzDq4AsUts_U-XLqEuCSroeuB5yIe8Ss00CcWqDK2kRrYSwApXzSqEng5gL41AE76r2t45QbeAricQRj2gjzoa--1sTh73-pSfmyyIYizRjIV1q6lmBhq4BmNbtsr7EA=s1621?authuser=0"
+tags: ["アトラス彗星", "天体観測", "天体撮影", "彗星", "伊吹山", "夜景撮影", "C/2023 A3"]
 ---
 
 <!-- 元のGoogle Photosリンク: https://photos.app.goo.gl/JXJvDBjLGzNujcAR8 -->
