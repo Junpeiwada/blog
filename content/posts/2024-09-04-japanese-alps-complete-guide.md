@@ -1,5 +1,5 @@
 ---
-category: mountain-guide
+category: "山岳ガイド"
 date: '2024-09-04'
 description: 日本アルプス全山の詳細な登山情報は専用サイトに移転しました。詳細なガイド情報は新しいサイトでご確認ください。
 featured: true

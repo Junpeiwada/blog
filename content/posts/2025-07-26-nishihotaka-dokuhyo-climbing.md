@@ -1,7 +1,7 @@
 ---
 title: "西穂独標1泊2日の山旅 - 新穂高ロープウェイから天空の稜線へ"
 date: 2025-07-26
-category: climbing
+category: "登山・クライミング"
 tags: [西穂高, 独標, 新穂高ロープウェイ, 西穂山荘, 星景写真, 北アルプス, 1泊2日, 天の川]
 description: "新穂高ロープウェイを使った西穂独標1泊2日の山旅。西穂山荘での山小屋泊、新月の夜の天の川撮影、ピラミッドピーク探索、下山後のソフトクリームまで、24枚の写真で綴る充実の山行記録。"
 featured_image: "https://lh3.googleusercontent.com/pw/AP1GczMvdznuIdqSKBA53eb7bYEQlyYg85N_KCxsR5l-VTa3eAkeVBHBFAnOm5nAWpnNhvZIctACK1eGcjbKqeA7EYKSPzXh_0UrHi_QLZ7-ZT7nKDYa57UPXbHkZpkeUD4emwMFiELIcoBA5JO_gV8VlYRrUg=w1621-h911-s-no-gm?authuser=0"

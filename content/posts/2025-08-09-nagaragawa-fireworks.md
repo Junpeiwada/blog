@@ -1,7 +1,7 @@
 ---
 title: "長良川花火大会2025 - 撮影席からの花火観覧記"
 date: 2025-08-09
-category: travel
+category: "旅行記"
 tags: [花火大会, 長良川, 岐阜, 撮影, イベント]
 description: "2025年第3回目となる『ぎふ長良川花火大会』。撮影席から幅600mの超ウルトラワイドスターマインを観覧してきました。"
 featured_image: "https://lh3.googleusercontent.com/pw/AP1GczOWpa79bTsuiAkjMXJEqdlO-bwrkK9s4q3ogcbrF1AQvjTrRW-P6ucM53no_UieDeLAw13Gyagu8h3cqqBLgd44QT5LKxSjMyRr2rwWkL7Qw_vplGEB=w1621-h911-s-no-gm?authuser=0"

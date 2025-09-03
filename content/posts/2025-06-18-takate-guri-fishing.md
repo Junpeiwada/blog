@@ -1,7 +1,7 @@
 ---
 title: "高手礁での船釣り体験記 - ナブラに遭遇、ジギングでブリを狙う"
 date: 2025-06-18
-category: travel
+category: "旅行記"
 tags: [釣り, 船釣り, ブリ, ジギング, 高手礁, うみんぴあ]
 description: "うみんぴあから船を借りて高手礁へ釣行。昼過ぎに湾口でナブラに遭遇し、ジギングで良型ブリをゲット。"
 featured_image: "https://lh3.googleusercontent.com/pw/AP1GczOkLHOSNdIPIETfG08FqcfwrtD-K_oiJNK-bx1KQA62_VxfVcWW15oRZMArB9zZiXqwRE0G9ZTWogC7H9rY82e6GLWUNiK5aYt3FlOdltQFbc5aoWxHuXyMI1ygIYQVjR3rpkJaqmWx3mm7OwFmEin0fQ=s1621?authuser=0"

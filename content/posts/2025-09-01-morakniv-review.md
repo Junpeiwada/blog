@@ -1,7 +1,7 @@
 ---
 title: "モーラナイフ購入レビュー：スカンジグラインドの魅力と4本の比較"
 date: 2025-09-01
-category: gear
+category: "ギア・道具"
 tags: [モーラナイフ, ナイフ, キャンプ, アウトドア, レビュー]
 description: "最近購入したモーラナイフ4本（コンパニオンシリーズとBUCK狩猟ナイフ）の詳細レビュー。スカンジグラインドの切れ味と研ぎやすさについて"
 featured_image: "https://lh3.googleusercontent.com/pw/AP1GczO8jVvY_uw2GmvpSAS-uPGvvj7_dVOG3K82LqRbYjTWsPzmx7x7PMiBykylAlIAMfSy7eYLRZjez5Ih3-UzNWX490418ckalY7sHnIVD8TKX8Ingn2lomo00oy6iP3sGEtdqdLpmHgUsfruB-WIORdKwg=s1621?authuser=0"

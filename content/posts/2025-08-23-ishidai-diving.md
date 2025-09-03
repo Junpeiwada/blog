@@ -1,7 +1,7 @@
 ---
 title: "8月23日 いつもの海で石鯛狙い"
 date: 2025-08-23
-category: fishing
+category: "釣り"
 tags: [石鯛, 海釣り, 魚突き, ダイビング]
 description: "水温32度の暑い海で石鯛を狙った1日。4キロウェイトでちょうど良い潜水でした。"
 featured_image: "images/2025-08-23-diving-01.jpg"

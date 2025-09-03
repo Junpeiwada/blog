@@ -1,7 +1,7 @@
 ---
 title: "初夏の海釣り - キジハタが接岸中の絶好タイミング"
 date: 2025-07-19
-category: fishing
+category: "釣り"
 tags: [海釣り, キジハタ, イシダイ, 初夏, 釣果]
 description: "初夏の海でキジハタが接岸中。水温も高く快適な釣り日和の中、キジハタやイシダイをキャッチした釣行記。"
 featured_image: "https://lh3.googleusercontent.com/pw/AP1GczPm6a3J0_HuOAfKg3xQEyVt3EzIthQvdZUb4-9psILG_PGeY6FD3coQxdqFkUO7eA5Mi4UiEt4P266zaOBP3yqPYgzoxi-4KxBCzT6PTCp15O5jXTmY=s1621?authuser=0"

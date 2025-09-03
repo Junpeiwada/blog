@@ -1,7 +1,7 @@
 ---
 title: "小浜湾釣行記 - わずかな釣果に終わった船釣り"
 date: 2025-03-10
-category: travel
+category: "旅行記"
 tags: [釣り, 船釣り, カサゴ, 小浜湾, うみんぴあ]
 description: "うみんぴあから船を借りて小浜湾へ釣りに出かけましたが、反応もほとんどなく、釣れたのはカサゴがほんのちょっとだけでした。"
 featured_image: "https://lh3.googleusercontent.com/pw/AP1GczOr5a3u4LLP_kbECMcV6LQmFWqP8wpZhzXCmC5mBpHzFdpEn9hT8tZ8DPnlKez8eWX0Q3Vgi0fwoyjyNIjdWI4jZsxwsN0gZ0J1i7PIJcDgXrnUMJ97AVbXYMUnmU8BUZp6fUgkqaD4m7sSg3HoNM1SgA=s1621?authuser=0"

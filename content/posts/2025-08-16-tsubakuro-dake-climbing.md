@@ -1,7 +1,7 @@
 ---
 title: "北アルプスの女王・燕岳（つばくろだけ）登山記 - 表銀座の絶景と燕山荘での贅沢な一夜"
 date: 2025-08-16
-category: climbing
+category: "登山・クライミング"
 tags: [登山, 北アルプス, 燕岳, 山小屋泊, 表銀座, 槍ヶ岳]
 description: "北アルプス燕岳（2,763m）1泊2日登山の体験記。辛い階段登山から絶景稜線、燕山荘での快適な宿泊、星景撮影まで。表銀座コースの魅力を詳しくレポート。"
 featured_image: "https://lh3.googleusercontent.com/pw/AP1GczNOGF4y474k77Wr8v2M316hnH1Q3xgDMATWhzygx1i50fD4t8ucpYTui7f4uQMdfGC54FBtq2DoZhaRBqeIvEING6S7-wkrKdV_beuBAB8rPBApNc3nYPlxne2s_y-ebkP4Xl59Z7r1tFJImnZcs1WdCg=s1621?authuser=0"

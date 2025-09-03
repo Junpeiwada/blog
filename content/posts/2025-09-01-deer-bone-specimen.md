@@ -1,7 +1,7 @@
 ---
 title: "鹿の骨格標本作りに挑戦：大腿骨の油抜きで苦戦中"
 date: 2025-09-01
-category: craft
+category: "クラフト・DIY"
 tags: [骨格標本, DIY, 自然標本, 工作, 実験]
 description: "友達からもらった鹿の下顎と大腿骨を使って骨格標本作りに挑戦。煮込み処理は順調だったものの、大腿骨の油抜きでアセトンでも効果なし。解決方法を模索中"
 featured_image: "https://lh3.googleusercontent.com/pw/AP1GczP-WHiETnrkkVje_dSX3wTRFq3vfEZltnB1Cqa0OdRV3GMkPVjFHypLuRLhBPyTpzFO6XCeY2M3S-SaW1IygDsX-O5gz02Ec9_RTF6jcVO4qTv7tjYqwVaR4CLRav6gFxKiOnLDQx-GInsOu_mXNQUHHA=s1621?authuser=0"
