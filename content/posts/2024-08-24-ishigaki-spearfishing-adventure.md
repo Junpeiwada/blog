@@ -34,25 +34,26 @@ featured_image: "https://lh3.googleusercontent.com/pw/AP1GczNQYVE2JezwJ0Vj4zHv7g
 
 ## 結構深いところで大漁！
 
-![銀色のフエフキダイ](https://lh3.googleusercontent.com/pw/AP1GczNj4EAtru7-LrsM_HL3SreZnTtdOHI34JbYMN6CyUYhLAprqb2ygw1ytaEyG7WEvvyjqpQpVDOhiSiFMOpqgI3C2PxXY4_Cw1Gg4QXVzMIsg53Rw0azdgRvpLm0em3SJOEbfFMGt-QyLkKTmx7yPwnUzw=s1621?authuser=0)
+![イスズミ](https://lh3.googleusercontent.com/pw/AP1GczNj4EAtru7-LrsM_HL3SreZnTtdOHI34JbYMN6CyUYhLAprqb2ygw1ytaEyG7WEvvyjqpQpVDOhiSiFMOpqgI3C2PxXY4_Cw1Gg4QXVzMIsg53Rw0azdgRvpLm0em3SJOEbfFMGt-QyLkKTmx7yPwnUzw=s1621?authuser=0)
 
-結構深いところまで潜って、何匹かの魚を捕獲することができました。まずは銀色に輝くイスズミの美しい魚。30cmほどのサイズで、引きも楽しめました。
+結構深いところまで潜って、何匹かの魚を捕獲することができました。まずは銀色に輝くイスズミの美しい魚。30cmほどのサイズでした。
+
+![おっきいチョウチョウコショウダイ](https://lh3.googleusercontent.com/pw/AP1GczMGWLbuNF6q7YdDg6Gp_Ya43gMYpfMuejJ7bbSPf1Yh_HTiGl7SsOY-s6Dnl9-tDUiT9RL-VZKHI4mbb-DGS6BJDuOqjnGm0Vn9HCgK0IK7bSHQEUVUNR8NLAcHboVLBvAmG-Kx4JF8mir9-oLecpLWQQ=s1621?authuser=0)
+
+さらに、フォルム印象的なチョウチョウコショウダイも捕獲。50cm以上ある立派なサイズで、見た目も非常に美しい魚です。
 
 ## 念願のアカジンミーバイとの出会い！
 
-![美しいアカジンミーバイ](https://lh3.googleusercontent.com/pw/AP1GczMGWLbuNF6q7YdDg6Gp_Ya43gMYpfMuejJ7bbSPf1Yh_HTiGl7SsOY-s6Dnl9-tDUiT9RL-VZKHI4mbb-DGS6BJDuOqjnGm0Vn9HCgK0IK7bSHQEUVUNR8NLAcHboVLBvAmG-Kx4JF8mir9-oLecpLWQQ=s1621?authuser=0)
+
+![美しいアカジンミーバイ](https://lh3.googleusercontent.com/pw/AP1GczMeN2SOY7DJOoCyBbG7E-cSKzkspusrDRH9WUqkcA7tAqZ2F0nH83pnUFHRQMlyKUz_98ZwQfIiZCp99OuAtGOvDWW29tbnoSjXD62UZ_Y-qDDoArF1JpjQYlGZ3cUzdowTTQyp5jYEC9o2b4-0iaA1gQ=s1621?authuser=0)
 
 そして今回の最大の興奮がこれ！念願のアカジンミーバイです。茶褐色の体に美しい斑点模様が特徴的なこの高級魚を発見した時は、本当にドキドキしました。のんびり泳いでいるところを何とか捕獲成功！
 
 アカジンミーバイは沖縄南部の海域でしか見ることができない貴重な魚で、しかもかなりの大型です。これは本当に嬉しい成果でした。
 
-![青い斑点が美しいチョウチョウコショウダイ](https://lh3.googleusercontent.com/pw/AP1GczMeN2SOY7DJOoCyBbG7E-cSKzkspusrDRH9WUqkcA7tAqZ2F0nH83pnUFHRQMlyKUz_98ZwQfIiZCp99OuAtGOvDWW29tbnoSjXD62UZ_Y-qDDoArF1JpjQYlGZ3cUzdowTTQyp5jYEC9o2b4-0iaA1gQ=s1621?authuser=0)
+![魚類](https://lh3.googleusercontent.com/pw/AP1GczNQYVE2JezwJ0Vj4zHv7gL11RaydyRNvmuiUS4XdWcYWnrB6zUiRS-2P_Yw1FtAB3rabp6DpCdv53XrYUkWPzgf2PtmDxbL30RjPhsKqywGutGdT8-y3H2v5ho02Tm1YNC3rcg6sn_mOagKLYYMfW8vxw=s1621?authuser=0)
 
-さらに、青い斑点が印象的なチョウチョウコショウダイも捕獲。50cm以上ある立派なサイズで、見た目も非常に美しい魚です。
 
-![複数のハタ科魚類](https://lh3.googleusercontent.com/pw/AP1GczNQYVE2JezwJ0Vj4zHv7gL11RaydyRNvmuiUS4XdWcYWnrB6zUiRS-2P_Yw1FtAB3rabp6DpCdv53XrYUkWPzgf2PtmDxbL30RjPhsKqywGutGdT8-y3H2v5ho02Tm1YNC3rcg6sn_mOagKLYYMfW8vxw=s1621?authuser=0)
-
-複数のハタ科の魚も同時に捕獲。一度に複数匹捕まえられた時の達成感は格別です。
 
 ## 一日の成果
 
