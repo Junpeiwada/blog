@@ -36,11 +36,11 @@ featured_image: "https://lh3.googleusercontent.com/pw/AP1GczPIwk-Ku8CzujUhQqV0Su
 
 午後12時52分、美しい赤い魚体のレンコダイが釣れました。この魚体の美しさは、鯛の仲間らしい紅色の美しさを持った立派な個体です。白いボートデッキの上で、鮮やかな赤色が一層際立って見えます。レンコダイは美味しい魚として知られており、この日の釣果のハイライトとなりました。
 
-## キジハタも好釣果
+## アオハタも好釣果
 
-![縞模様美しいキジハタ](https://lh3.googleusercontent.com/pw/AP1GczMHaAH5syFr-WuAKL8YU41UaBZFeN3-0hsVykASKF3rrNGFH56l4rjo32Kd2dVLOXwwkWw6WGQRuICJuvx9jw-Q9pVxXQ1gAio0DtifgEkIagljwlcExCeSQiNR7AtPnBOux7FmXgu5UqWp7CKHCJ9x8w=w800-h449-s-no-gm?authuser=0)
+![縞模様美しいアオハタ](https://lh3.googleusercontent.com/pw/AP1GczMHaAH5syFr-WuAKL8YU41UaBZFeN3-0hsVykASKF3rrNGFH56l4rjo32Kd2dVLOXwwkWw6WGQRuICJuvx9jw-Q9pVxXQ1gAio0DtifgEkIagljwlcExCeSQiNR7AtPnBOux7FmXgu5UqWp7CKHCJ9x8w=w800-h449-s-no-gm?authuser=0)
 
-午後1時17分、縞模様が美しいキジハタも釣り上げることができました。茶色と黄色の縞模様が特徴的で、根魚らしい堂々とした体格をしています。キジハタは美味しい魚として知られており、この日の釣果に更なる彩りを加えてくれました。
+午後1時17分、縞模様が美しいアオハタも釣り上げることができました。茶色と黄色の縞模様が特徴的で、根魚らしい堂々とした体格をしています。アオハタは美味しい魚として知られており、この日の釣果に更なる彩りを加えてくれました。
 
 ## 多彩な釣果に満足
 
@@ -57,7 +57,7 @@ featured_image: "https://lh3.googleusercontent.com/pw/AP1GczPIwk-Ku8CzujUhQqV0Su
 
 ![最後の釣果](https://lh3.googleusercontent.com/pw/AP1GczMmeHYsJIoG7g-4AHJR8HdotIoPsaQqpm5GtsngtxEQSklEUjLthZcXoM1SqwechjBOSx5IuWzaY6Q6T7PtyEO6czfQ2uCxRCENI1FMpc2mrOH4DLNSgOL5dByZ1HFfuhJwOYyF4yOsbbgKTgxCAZ4RXQ=w800-h449-s-no-gm?authuser=0)
 
-午後2時頃からは、さらに釣果が続きました。ヒラマサに始まり、シーバス、レンコダイ、キジハタと、多彩な魚種を次々と釣り上げることができました。この日はポツポツと魚が釣れ続け、最終的には食べるには多すぎるほどの豊富な釣果となりました。
+午後2時頃からは、さらに釣果が続きました。ヒラマサに始まり、シーバス、レンコダイ、アオハタと、多彩な魚種を次々と釣り上げることができました。この日はポツポツと魚が釣れ続け、最終的には食べるには多すぎるほどの豊富な釣果となりました。
 
 ## うみんぴあでの釣りの魅力
 
