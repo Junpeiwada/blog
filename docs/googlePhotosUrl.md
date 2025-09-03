@@ -50,6 +50,7 @@ HDR版 : =w800-h450-s-no-gm?authuser=0
 
 ### 1. URL取得戦略
 - **`google_photos_extractor.py`**: JavaScriptクリック + 7秒固定待機
+- **推奨実行方法**: `--headless` オプション使用（安定性向上）
 - **HDR対応**: 元サイズで取得後、適切なサイズに変換
 
 ### 2. 画像ダウンロード戦略  
