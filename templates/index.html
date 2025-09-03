@@ -56,7 +56,12 @@
             </div>
             <div class="col-md-4">
                 <h5 class="mb-3"><i class="bi bi-search"></i> ローカル検索</h5>
-                <input type="text" id="localSearch" class="form-control" placeholder="表示中の記事を検索...">
+                <div class="input-group">
+                    <input type="text" id="localSearch" class="form-control" placeholder="表示中の記事を検索...">
+                    <button class="btn btn-outline-secondary" type="button" id="clearSearch" style="display: none;">
+                        <i class="bi bi-x"></i>
+                    </button>
+                </div>
             </div>
         </div>
     </div>
@@ -108,12 +113,22 @@
 <script>
 // Local search and filtering
 const localSearch = document.getElementById('localSearch');
+const clearSearchBtn = document.getElementById('clearSearch');
 const filterButtons = document.querySelectorAll('.filter-btn');
 const postCards = document.querySelectorAll('.post-card');
 const noResults = document.getElementById('noResults');
 const postsContainer = document.getElementById('postsContainer');
 
 let currentCategory = 'all';
+
+// Clear search button visibility
+function updateClearButtonVisibility() {
+    if (localSearch.value.length > 0) {
+        clearSearchBtn.style.display = 'block';
+    } else {
+        clearSearchBtn.style.display = 'none';
+    }
+}
 
 // Filter functionality
 filterButtons.forEach(button => {
@@ -129,7 +144,18 @@ filterButtons.forEach(button => {
 document.getElementById('filterAll').classList.add('active');
 
 // Local search functionality
-localSearch.addEventListener('input', applyFilters);
+localSearch.addEventListener('input', function() {
+    updateClearButtonVisibility();
+    applyFilters();
+});
+
+// Clear search button functionality
+clearSearchBtn.addEventListener('click', function() {
+    localSearch.value = '';
+    updateClearButtonVisibility();
+    applyFilters();
+    localSearch.focus(); // Focus back to search field for better UX
+});
 
 // カテゴリマッピング - フィルタボタンと記事カテゴリの対応
 const categoryMapping = {
@@ -192,6 +218,9 @@ document.addEventListener('DOMContentLoaded', function() {
         // Set the search input to the parameter value
         localSearch.value = decodeURIComponent(searchParam);
         
+        // Update clear button visibility
+        updateClearButtonVisibility();
+        
         // Apply filters immediately
         applyFilters();
         
@@ -243,6 +272,9 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Set the search input to the clicked tag
             localSearch.value = tagText;
+            
+            // Update clear button visibility
+            updateClearButtonVisibility();
             
             // Apply filters with the new search term
             applyFilters();
