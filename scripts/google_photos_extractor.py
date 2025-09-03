@@ -41,9 +41,7 @@ from selenium.webdriver.common.keys import Keys
 
 
 # 待機時間設定
-DEFAULT_WAIT_TIME = 6  # デフォルト待機時間（秒）
-MAX_WAIT_TIME = 15     # 最大待機時間（秒）
-SMALL_IMAGE_WAIT = 3   # 小さい画像用の短縮待機時間（秒）
+HDR_WAIT_TIME = 7      # HDR画像処理用の固定待機時間（秒）
 
 
 def create_progress_bar(current, total, width=40):
@@ -165,41 +163,8 @@ def scroll_and_load_all_images(driver, max_attempts=10):
     return google_bg_divs
 
 
-def wait_for_image_load(driver, timeout=MAX_WAIT_TIME):
-    """画像の読み込み完了を待機"""
-    try:
-        wait = WebDriverWait(driver, timeout)
-        # 大きなimg要素が完全に読み込まれるまで待機
-        wait.until(
-            lambda d: any(
-                img.get_attribute('complete') == 'true' and 
-                img.size['width'] > 500
-                for img in d.find_elements(By.CSS_SELECTOR, "img[src*='googleusercontent.com']")
-            )
-        )
-        return True
-    except Exception as e:
-        print(f"   ⏰ 画像読み込み待機タイムアウト: {e}")
-        return False
 
 
-def estimate_wait_time(element):
-    """要素のサイズから適切な待機時間を推定"""
-    try:
-        size = element.size
-        width = size.get('width', 0)
-        height = size.get('height', 0)
-        
-        # サムネイルサイズから元画像の大きさを推定
-        if width < 200 or height < 200:
-            return SMALL_IMAGE_WAIT  # 小さい画像：3秒
-        elif width > 400 or height > 400:
-            return DEFAULT_WAIT_TIME + 3  # 大きい画像：9秒
-        else:
-            return DEFAULT_WAIT_TIME  # 中程度：6秒
-    except Exception as e:
-        print(f"   📏 サイズ推定エラー: {e}")
-        return DEFAULT_WAIT_TIME
 
 
 def extract_background_image_url(element):
@@ -216,33 +181,24 @@ def extract_background_image_url(element):
 
 
 def click_and_get_full_url(driver, element, index):
-    """画像をクリックして拡大表示、フルサイズURLを取得"""
+    """画像をクリックして拡大表示、フルサイズURLを取得（HDR対応）"""
     print(f"🖱️ 画像 {index} をクリック中...")
     
     try:
         # 元のURLを取得
         original_url = extract_background_image_url(element)
         
-        # 画像サイズから適切な待機時間を推定
-        estimated_wait = estimate_wait_time(element)
-        print(f"   ⏱️ 推定待機時間: {estimated_wait}秒")
-        
         # 要素が見える位置までスクロール
         driver.execute_script("arguments[0].scrollIntoView();", element)
         time.sleep(1)
         
-        # クリック実行
-        ActionChains(driver).move_to_element(element).click().perform()
+        # JavaScriptクリック実行（より確実な高解像度読み込み）
+        driver.execute_script("arguments[0].click();", element)
         
-        # インテリジェント待機（画像読み込み完了を監視）
-        print(f"   🔍 画像読み込み完了を監視中...")
-        load_success = wait_for_image_load(driver, estimated_wait)
-        
-        if not load_success:
-            print(f"   ⚠️ 監視タイムアウト、追加待機: {DEFAULT_WAIT_TIME}秒")
-            time.sleep(DEFAULT_WAIT_TIME)
-        else:
-            print(f"   ✅ 画像読み込み完了を検知")
+        # HDR画像処理待機（固定7秒）
+        print(f"   ⏰ HDR画像処理待機中: {HDR_WAIT_TIME}秒")
+        time.sleep(HDR_WAIT_TIME)
+        print(f"   ✅ 待機完了")
         
         # 拡大表示された画像を取得
         full_image_url = None
