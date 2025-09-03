@@ -20,11 +20,15 @@ GitHub Pagesを使った個人ブログサイト。日本アルプス登山完�
    python scripts/google_photos_extractor.py "共有URL" --headless
    ```
 
-2. **画像内容確認**: Claude Codeが画像を読み取って内容を把握し記事に反映するため
+2. **画像詳細分析（2段階プロセス）**: 画像と記事内容の正確性向上のため
    ```bash
    python scripts/download_images_for_review.py --clean [URL群]
-   # → scripts/tmp/に保存された画像をReadツールで内容分析
+   # → 詳細な画像分析ワークフロー実行（docs/IMAGE_ANALYSIS_WORKFLOW.md参照）
    ```
+   
+   **🔄 重要: 新しい2段階プロセス**
+   - **Phase 1**: 画像分析MDファイル作成（必須）
+   - **Phase 2**: 分析結果を基にした正確な記事作成
 
 ### ✅ 記事作成時の必須ルール
 - **ファイル名**: `YYYY-MM-DD-article-title.md` 形式厳守
@@ -42,6 +46,8 @@ GitHub Pagesを使った個人ブログサイト。日本アルプス登山完�
 ### ✅ 記事完成後の必須確認
 - フロントマター必須項目：`title`, `date`, `category`, `description`, `featured_image`
 - 画像参照パス：`![説明](../images/ファイル名.jpg)` または Google Photos直接URL
+- **画像分析品質チェック**: 画像内容と記事説明文の一致確認（docs/IMAGE_ANALYSIS_WORKFLOW.md のチェックリスト実行）
+- URL重複チェック: 同一画像URLの重複使用なし
 - ビルド・公開：`npm run ビルドして公開`
 
 ### 🔄 日本語対応
@@ -58,10 +64,10 @@ source venv/bin/activate
 # 2. 画像処理（提供されている場合）
 python scripts/google_photos_extractor.py "共有URL" --headless
 python scripts/download_images_for_review.py --clean [URL群]
-# Claude Codeが画像内容を読み取り、記事作成に反映
 
-# 3. 記事作成（必須チェックリスト準拠）
-# content/posts/YYYY-MM-DD-article-title.md を作成
+# 3. 2段階記事作成プロセス（画像品質向上）
+# Phase 1: 画像分析MDファイル作成（scripts/tmp/image_analysis_日付-記事名.md）
+# Phase 2: 分析結果を基にした記事作成（content/posts/YYYY-MM-DD-article-title.md）
 
 # 4. ビルド・公開
 npm run ビルドして公開
@@ -76,6 +82,11 @@ npm run ビルドして公開
 - 記事作成の5ステップ
 - テンプレートと記法
 - YouTube動画埋め込み
+
+**→ [画像分析ワークフロー](docs/IMAGE_ANALYSIS_WORKFLOW.md)** 🆕
+- 2段階記事作成プロセス
+- 画像と記事内容の正確性向上
+- 品質チェックリスト
 
 **→ [カテゴリ管理ガイド](docs/CATEGORY_GUIDE.md)**  
 - 標準カテゴリ一覧と分類基準
