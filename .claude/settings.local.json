@@ -11,7 +11,8 @@
       "Bash(source:*)",
       "Bash(python:*)",
       "Bash(gtimeout:*)",
-      "Bash(mkdir:*)"
+      "Bash(mkdir:*)",
+      "Bash(npm run:*)"
     ],
     "deny": [],
     "ask": []
