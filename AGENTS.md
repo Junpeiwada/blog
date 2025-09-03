@@ -1,5 +1,7 @@
 # Repository Guidelines
 
+Refer to `CLAUDE.md` for agent workflows and the Japanese response policy.
+
 ## Project Structure & Modules
 - `content/posts/`: Markdown sources (`YYYY-MM-DD-title.md`, with YAML frontmatter).
 - `templates/`: Jinja2 templates (`base.html`, `post.html`, `index.html`).
@@ -38,3 +40,7 @@
 - Use `venv` + `pip install -r requirements.txt`; Node >= 14 for npm scripts.
 - Large media: commit to `images/`; avoid external hotlinks when possible.
 
+## Agent-Specific Instructions
+- Read `CLAUDE.md` first; follow `docs/ARTICLE_WORKFLOW.md` for post creation.
+- Communicate in Japanese as required by `CLAUDE.md`.
+- Before publishing: `npm run validate` → `npm run serve` to preview.
