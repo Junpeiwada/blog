@@ -4,7 +4,7 @@ date: 2025-09-01
 category: "ギア・道具"
 tags: [モーラナイフ, ナイフ, キャンプ, アウトドア, レビュー]
 description: "最近購入したモーラナイフ4本（コンパニオンシリーズとBUCK狩猟ナイフ）の詳細レビュー。スカンジグラインドの切れ味と研ぎやすさについて"
-featured_image: "https://lh3.googleusercontent.com/pw/AP1GczO8jVvY_uw2GmvpSAS-uPGvvj7_dVOG3K82LqRbYjTWsPzmx7x7PMiBykylAlIAMfSy7eYLRZjez5Ih3-UzNWX490418ckalY7sHnIVD8TKX8Ingn2lomo00oy6iP3sGEtdqdLpmHgUsfruB-WIORdKwg=s1621?authuser=0"
+featured_image: "https://lh3.googleusercontent.com/pw/AP1GczO8jVvY_uw2GmvpSAS-uPGvvj7_dVOG3K82LqRbYjTWsPzmx7x7PMiBykylAlIAMfSy7eYLRZjez5Ih3-UzNWX490418ckalY7sHnIVD8TKX8Ingn2lomo00oy6iP3sGEtdqdLpmHgUsfruB-WIORdKwg=w800-h1066-s-no-gm?authuser=0"
 ---
 
 <!-- モーラナイフ写真: https://photos.app.goo.gl/zSZaH59H8htqxdwu7 -->
@@ -20,7 +20,7 @@ featured_image: "https://lh3.googleusercontent.com/pw/AP1GczO8jVvY_uw2GmvpSAS-uP
 3. **BUCK(バック) 狩猟ナイフ セルカーク Selkirk 863BRS-B**
 4. **モーラナイフ コンパニオン ヘビーデューティー ステンレス**
 
-![購入したモーラナイフ4本のコレクション](https://lh3.googleusercontent.com/pw/AP1GczO8jVvY_uw2GmvpSAS-uPGvvj7_dVOG3K82LqRbYjTWsPzmx7x7PMiBykylAlIAMfSy7eYLRZjez5Ih3-UzNWX490418ckalY7sHnIVD8TKX8Ingn2lomo00oy6iP3sGEtdqdLpmHgUsfruB-WIORdKwg=s1621?authuser=0)
+![購入したモーラナイフ4本のコレクション](https://lh3.googleusercontent.com/pw/AP1GczO8jVvY_uw2GmvpSAS-uPGvvj7_dVOG3K82LqRbYjTWsPzmx7x7PMiBykylAlIAMfSy7eYLRZjez5Ih3-UzNWX490418ckalY7sHnIVD8TKX8Ingn2lomo00oy6iP3sGEtdqdLpmHgUsfruB-WIORdKwg=w800-h1066-s-no-gm?authuser=0)
 *購入した4本のモーラナイフとBUCK狩猟ナイフ*
 
 ## スカンジグラインドって何がすごいの？
@@ -73,9 +73,9 @@ featured_image: "https://lh3.googleusercontent.com/pw/AP1GczO8jVvY_uw2GmvpSAS-uP
 
 ### 3. BUCK(バック) 狩猟ナイフ セルカーク Selkirk 863BRS-B
 
-![BUCKセルカークナイフの詳細画像](https://lh3.googleusercontent.com/pw/AP1GczOFe6q9UjCFpr4AW32S-WmMd-AaPcxv7F1bOWopwnX-coJJ0ap6BK96Y--gO4kyof4WYXvvU7ttyqRxxyZphrVuAWcpXoMuFLl3O_e_Pz-3R29_grP9Ec6PT6S30ui-mVi9qa56jBAr25CREoG8EV0Y4w=s1621?authuser=0)
+![BUCKセルカークナイフの詳細画像](https://lh3.googleusercontent.com/pw/AP1GczOFe6q9UjCFpr4AW32S-WmMd-AaPcxv7F1bOWopwnX-coJJ0ap6BK96Y--gO4kyof4WYXvvU7ttyqRxxyZphrVuAWcpXoMuFLl3O_e_Pz-3R29_grP9Ec6PT6S30ui-mVi9qa56jBAr25CREoG8EV0Y4w=w800-h1066-s-no-gm?authuser=0)
 
-![ナイフの詳細比較](https://lh3.googleusercontent.com/pw/AP1GczN1nB6abVqJc5i4Xe24QyVEdBiW6KrIsLuaPcvvLMa3x3G0YkScQKyIqfosa8KCXIa7A9_VTJhccX7ccIdP_K4fNlamFlnDqOEmrap9ofKZvHsngELQ2QW15CvVd_61fw4zabIfyRPHsIzIAGrp4JEbyg=s1621?authuser=0)
+![ナイフの詳細比較](https://lh3.googleusercontent.com/pw/AP1GczN1nB6abVqJc5i4Xe24QyVEdBiW6KrIsLuaPcvvLMa3x3G0YkScQKyIqfosa8KCXIa7A9_VTJhccX7ccIdP_K4fNlamFlnDqOEmrap9ofKZvHsngELQ2QW15CvVd_61fw4zabIfyRPHsIzIAGrp4JEbyg=w800-h1066-s-no-gm?authuser=0)
 *BUCK セルカーク 863BRS-B - アメリカ製の信頼性の高い狩猟ナイフ*
 
 **用途**: 狩猟・アウトドア汎用  

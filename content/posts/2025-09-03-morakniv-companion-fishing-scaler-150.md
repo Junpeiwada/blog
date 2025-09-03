@@ -4,7 +4,7 @@ date: 2025-09-03
 category: "ギア・道具"
 tags: [モーラナイフ, ナイフ, フィッシング, 旅行, アウトドア, レビュー]
 description: "モーラナイフの新作、コンパニオン フィッシング スケーラー 150をレビュー。150mmの長い刃渡りと鋭いスカンジグラインドが特徴的な、旅行先での魚捌き専用ナイフ。"
-featured_image: "https://lh3.googleusercontent.com/pw/AP1GczNp8LChjENBDmTT-DWwyXviL98w_Dc93M4OBQrYrlo6WWIsqEd5OEQhJsIT13e5R4KXN32bNgS3_OL0G3KO-fZAIXsBlOBe3y9xlw5vZDotMEq6Mnxh=s1621?authuser=0"
+featured_image: "https://lh3.googleusercontent.com/pw/AP1GczNp8LChjENBDmTT-DWwyXviL98w_Dc93M4OBQrYrlo6WWIsqEd5OEQhJsIT13e5R4KXN32bNgS3_OL0G3KO-fZAIXsBlOBe3y9xlw5vZDotMEq6Mnxh=w800-h1066-s-no-gm?authuser=0"
 ---
 
 <!-- 元のGoogle Photosリンク: https://photos.app.goo.gl/a1qNeCqCgpqdzpa76 -->
@@ -13,7 +13,7 @@ featured_image: "https://lh3.googleusercontent.com/pw/AP1GczNp8LChjENBDmTT-DWwyX
 
 モーラナイフの新しいコンパニオン フィッシング スケーラー 150を手に入れました。これまでのモーラナイフとは一味違う、まさに「包丁に近い」サイズ感が印象的なナイフです。
 
-![モーラナイフ コンパニオン フィッシング スケーラー 150の全体像](https://lh3.googleusercontent.com/pw/AP1GczNp8LChjENBDmTT-DWwyXviL98w_Dc93M4OBQrYrlo6WWIsqEd5OEQhJsIT13e5R4KXN32bNgS3_OL0G3KO-fZAIXsBlOBe3y9xlw5vZDotMEq6Mnxh=s1621?authuser=0)
+![モーラナイフ コンパニオン フィッシング スケーラー 150の全体像](https://lh3.googleusercontent.com/pw/AP1GczNp8LChjENBDmTT-DWwyXviL98w_Dc93M4OBQrYrlo6WWIsqEd5OEQhJsIT13e5R4KXN32bNgS3_OL0G3KO-fZAIXsBlOBe3y9xlw5vZDotMEq6Mnxh=w800-h1066-s-no-gm?authuser=0)
 
 ## 特徴とスペック
 
@@ -23,7 +23,7 @@ featured_image: "https://lh3.googleusercontent.com/pw/AP1GczNp8LChjENBDmTT-DWwyX
 
 ### スカンジグラインドによる鋭い切れ味
 
-![スカンジグラインドの刃付けがよく分かる刃の部分](https://lh3.googleusercontent.com/pw/AP1GczPtqY5qeBpoDdcEv4ynrsziK9h0C5jwXS8iDnWhyBpvHN1qrhGA66aESpJbvExcfcXjqf6W2wvYyMNYRKyI2zMMOhr4i13hdUYPL7Q2uD8KqMciNkG7KyRIFwblWMD3Y6GTtLUxNTkrxSxUtJDiQ7xO5w=s1621?authuser=0)
+![スカンジグラインドの刃付けがよく分かる刃の部分](https://lh3.googleusercontent.com/pw/AP1GczPtqY5qeBpoDdcEv4ynrsziK9h0C5jwXS8iDnWhyBpvHN1qrhGA66aESpJbvExcfcXjqf6W2wvYyMNYRKyI2zMMOhr4i13hdUYPL7Q2uD8KqMciNkG7KyRIFwblWMD3Y6GTtLUxNTkrxSxUtJDiQ7xO5w=w800-h1066-s-no-gm?authuser=0)
 
 モーラナイフの代名詞とも言えるスカンジグラインドを採用。このシンプルな刃付けにより、大変鋭く切れ味の良い仕上がりとなっています。魚の身を傷めることなく、きれいに切り分けることが可能です。
 
@@ -33,7 +33,7 @@ featured_image: "https://lh3.googleusercontent.com/pw/AP1GczNp8LChjENBDmTT-DWwyX
 
 ## 他のモーラナイフとのサイズ比較
 
-![他のモーラナイフとの比較](https://lh3.googleusercontent.com/pw/AP1GczM4FGM5OY7BgzweFPzGWxyqfbr9FwVGWCC6NZ0q3u78lfv8TbW1tIOOPlQsfHU4w3tfh2v39czS4R8a4ifdPGkr_q50NL_SurLr2VVZ4OUnCXgfZRAY82lX2XkxECiVA2LqhAgVJgOjUcaiSF32XfH9Pg=s1621?authuser=0)
+![他のモーラナイフとの比較](https://lh3.googleusercontent.com/pw/AP1GczM4FGM5OY7BgzweFPzGWxyqfbr9FwVGWCC6NZ0q3u78lfv8TbW1tIOOPlQsfHU4w3tfh2v39czS4R8a4ifdPGkr_q50NL_SurLr2VVZ4OUnCXgfZRAY82lX2XkxECiVA2LqhAgVJgOjUcaiSF32XfH9Pg=w800-h1066-s-no-gm?authuser=0)
 
 他のモーラナイフと並べてみると、その刃渡りの長さは一目瞭然です。左から順に、従来のコンパニオンシリーズと比較すると、フィッシング スケーラー 150がいかに大きいかが分かります。
 
