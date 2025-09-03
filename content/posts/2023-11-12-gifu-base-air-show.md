@@ -1,6 +1,6 @@
 ---
-title: "岐阜基地航空祭2025 - テスト機カラーリングと迫力の飛行展示"
-date: 2025-09-03
+title: "岐阜基地航空祭2023 - テスト機カラーリングと迫力の飛行展示"
+date: 2023-11-12
 category: "旅行記"
 description: "岐阜基地航空祭での特徴的なテスト機カラーリングの航空機と、ブルーインパルスの素晴らしい飛行展示を楽しんできました。南側ポジションでの撮影のコツも紹介。"
 featured_image: "https://lh3.googleusercontent.com/pw/AP1GczO0S5r381LmnOp1q0DKSjUaLuHruZGSCo4IZiTngjHuBjHC08PGFaK8MIR3CBidDfL7j91rZ9TuQYsj7dlOKMc5O7knEHTRTq8N4iVnJ7ONZ1lac8iQLQvr7Tv7nHAL5fJucYwkyFwXU28ceNwVIF2jUQ=s1621?authuser=0"
