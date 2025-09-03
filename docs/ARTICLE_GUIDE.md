@@ -10,13 +10,21 @@ cd /Users/junpeiwada/Documents/Project/blog
 source venv/bin/activate
 ```
 
-### 2. 新記事作成
+### 2. 記事日付の決定
+**ユーザーが日付を明示した場合**: その日付を使用
+**ユーザーが日付を明示しない場合**: 写真から日付を特定
+- 画像分析ワークフローで撮影日を推定
+- EXIF情報から撮影日時を抽出
+- 画像内容から時期・季節を推定
+- 複数画像の時系列比較で最適な日付を決定
+
+### 3. 新記事作成
 ```bash
 # content/posts/ に新しいMarkdownファイルを作成
-# ファイル名: YYYY-MM-DD-article-title.md
+# ファイル名: YYYY-MM-DD-article-title.md（特定された日付を使用）
 ```
 
-### 3. サイトビルド・ローカル確認
+### 4. サイトビルド・ローカル確認
 ```bash
 # サイト生成
 python scripts/build.py
@@ -26,7 +34,7 @@ python scripts/build.py --serve
 # http://localhost:8000 でプレビュー可能
 ```
 
-### 4. デプロイ（推奨）
+### 5. デプロイ（推奨）
 ```bash
 # 統合デプロイ（ビルド + コミット + プッシュ）
 npm run ビルドして公開
@@ -38,7 +46,7 @@ git commit -m "新記事追加: 記事タイトル"
 git push origin main
 ```
 
-### 5. 公開確認
+### 6. 公開確認
 - GitHub Pagesは数分でデプロイ完了
 - https://junpeiwada.github.io/blog/ で確認
 
@@ -48,7 +56,7 @@ git push origin main
 ```yaml
 ---
 title: "記事のタイトル"
-date: 2024-XX-XX
+date: 2024-XX-XX  # 写真から特定された日付を使用
 category: tech  # tech, travel, life, etc.
 tags: [タグ1, タグ2, タグ3]
 description: "記事の簡潔な説明（SEO用）"
@@ -75,6 +83,7 @@ featured_image: "画像URL"  # 画像がある記事では必須
 - **記事内にH1タイトル（# タイトル）は使用禁止**: フロントマターの`title`のみ使用
 - **featured_image必須**: 画像がある記事には必ず設定
 - **ファイル名**: `YYYY-MM-DD-title.md` 形式を厳守
+- **日付**: ユーザーが明示しない場合は写真から特定された日付を使用
 
 ## カテゴリ別表示ルール
 
