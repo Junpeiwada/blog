@@ -255,6 +255,25 @@ python scripts/download_images_for_review.py --clean [抽出されたURL群]
 # Claude CodeのReadツールで内容確認し、記事作成
 ```
 
+## 📁 scripts/tmp ディレクトリ管理ポリシー
+
+### 重要: 自動削除は実行しない
+
+**管理方針**:
+- **保持理由**: 画像分析プロセスで生成される重要な作業ファイルを含む
+- **手動管理**: ユーザーが必要に応じて手動で整理・削除
+- **Claude Codeの対応**: 自動削除コマンドは実行しない
+
+**含まれるファイル**:
+- `review_image_XX_XXXX.jpg`: 記事作成用ダウンロード画像
+- `image_analysis_YYYY-MM-DD-article-name.md`: 詳細画像分析ファイル
+- その他一時的な作業ファイル
+
+**推奨管理方法**:
+- 重要な画像分析MDファイルは保持
+- 古いreview_imageファイルは適宜削除
+- 容量確保が必要な場合のみユーザー判断で整理
+
 ### 記事例（2025年8月の長良川花火大会）
 ```markdown
 ---

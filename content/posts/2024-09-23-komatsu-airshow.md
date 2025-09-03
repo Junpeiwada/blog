@@ -65,17 +65,17 @@ featured_image: "https://lh3.googleusercontent.com/pw/AP1GczNODR36Dub31dImZ1bW-x
 
 小松基地といえばF-15です。確かに「たくさんいる」という感じで、F-15の編隊飛行は圧巻でした。
 
-![F-2とF-15の混合編隊](https://lh3.googleusercontent.com/pw/AP1GczN9NPDQy2m5vHwMNb_Z50z9bXqG73XIOC6itdwk90z0Jg08sLG0-FS-ci17inivRrdir0xcLWbi1Lb0jqE8MRuVW55KUUaJp25RqPFJiiHsXU0Q-WAnyyPEU-HklwOhyF70hQi17Ua9Djq0OP8c4BhpWA=s1621?authuser=0)
+![F-15編隊飛行（特別塗装機含む）](https://lh3.googleusercontent.com/pw/AP1GczN9NPDQy2m5vHwMNb_Z50z9bXqG73XIOC6itdwk90z0Jg08sLG0-FS-ci17inivRrdir0xcLWbi1Lb0jqE8MRuVW55KUUaJp25RqPFJiiHsXU0Q-WAnyyPEU-HklwOhyF70hQi17Ua9Djq0OP8c4BhpWA=s1621?authuser=0)
 
-こちらは興味深い混合編隊飛行です。左側にF-2支援戦闘機（緑色迷彩塗装）、右側にF-15戦闘機2機という3機編隊で飛行していました。異なる機種が編隊を組む光景は珍しく、小松基地ならではの見どころでした。
+こちらは3機のF-15編隊飛行です。左側には特別な迷彩塗装（緑・茶・グレー系）を施したF-15、右側には通常のグレー塗装のF-15が2機という編成で飛行していました。同じ機種でも塗装の違いが印象的で、小松基地ならではの見どころでした。
 
 ![F-15四機編隊](https://lh3.googleusercontent.com/pw/AP1GczME7VEqbiM5mYISob7GmmS_YJUmKcClAsVU5v86ovYkbUSS9O2rCluVviyTguNFB3urDtoWFhJl9lv6czhl7UlD2tQiz1RtQvm-melUfAZXjQ194lUm9HIJtFdzgiihDuG8KzN5bvIfTEyFJgVfx5CQEQ=s1621?authuser=0)
 
 4機編隊でのフライト。この辺りのことはよくわからないのですが、とにかくF-15がたくさんいました。小松基地の第6航空団（だったと思います）の実力を感じさせる飛行でした。
 
-![F-15とF-2の大編隊](https://lh3.googleusercontent.com/pw/AP1GczNAnzgU0ipbQz-q64hJvOau8_iW46H2sgO_i-yZQnGHngTMoHQ0l2eEZQO-XdSGepIt0466dzL7jzK152SFksscBZ1kYqo8TLKS-6wiHtWa6qRxWFgJhYLErDZonSBHv3fvGPE1tk9vGwDjM5AT7OfIaA=s1621?authuser=0)
+![F-15大編隊（特別塗装機含む）](https://lh3.googleusercontent.com/pw/AP1GczNAnzgU0ipbQz-q64hJvOau8_iW46H2sgO_i-yZQnGHngTMoHQ0l2eEZQO-XdSGepIt0466dzL7jzK152SFksScBZ1kYqo8TLKS-6wiHtWa6qRxWFgJhYLErDZonSBHv3fvGPE1tk9vGwDjM5AT7OfIaA=s1621?authuser=0)
 
-そして圧巻の8機大編隊！上段4機、下段4機のV字型編隊で、中央にはF-2支援戦闘機も混じっています。変態飛行もすごくて、「大変態で飛んでかっこよかった」というのは確かにその通りでした。F-15の機動性を活かした飛行は見応え十分でした。
+そして圧巻の8機大編隊！上段4機、下段4機のV字型編隊で、全機F-15戦闘機による見事な編隊飛行です。中央列には特別塗装を施したF-15も含まれており、塗装の違いが編隊に彩りを添えています。F-15の機動性を活かした美しい編隊飛行は見応え十分でした。
 
 ## まとめ
 
