@@ -24,9 +24,9 @@ featured_image: "https://lh3.googleusercontent.com/pw/AP1GczO0S5r381LmnOp1q0DKSj
 
 この写真はF-15戦闘機がアフターバーナーを点火している瞬間を捉えたものです。オレンジ色の炎がエンジンノズルから吹き出している迫力ある光景でした。
 
-![T-4練習機の単体飛行](https://lh3.googleusercontent.com/pw/AP1GczMcT_b6EYYko6N4zTE_-lG0W2Y55OiffuXhMqsvQe5qs1ow8OFrLe63nBIHvvudiAKjkHeRSgq9TYl5EKiqn-E-cXCrXKtqXw6ilHYC1GDuLLkz13eeYknsAuJKP5WtNpO3IpyqpEuiLQQxqqtYny-iVA=s1621?authuser=0)
+![F-2戦闘機501号機の単体飛行](https://lh3.googleusercontent.com/pw/AP1GczMcT_b6EYYko6N4zTE_-lG0W2Y55OiffuXhMqsvQe5qs1ow8OFrLe63nBIHvvudiAKjkHeRSgq9TYl5EKiqn-E-cXCrXKtqXw6ilHYC1GDuLLkz13eeYknsAuJKP5WtNpO3IpyqpEuiLQQxqqtYny-iVA=s1621?authuser=0)
 
-T-4練習機の美しい単体飛行です。赤と白のカラーリングが青空に映えています。機体番号501が確認できる綺麗な角度で撮影できました。
+F-2戦闘機501号機の美しい単体飛行です。この機体は岐阜基地の飛行開発実験団に配属されている特別な実用試験機で、白を基調とし機体中心線と各翼端が赤で塗装された独特のカラーリングが特徴的です。これは試験時の姿勢視認性を高めるための実用的な理由から採用されており、量産型F-2の標準的な洋上迷彩（濃淡の青2色）とは全く異なります。岐阜基地にしか配備されていない唯一無二の存在として、航空ファンにとって非常に貴重な機体です。
 
 ## 編隊飛行の迫力
 
