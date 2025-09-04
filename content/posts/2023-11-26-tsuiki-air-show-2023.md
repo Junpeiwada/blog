@@ -69,6 +69,12 @@ featured_image: "https://lh3.googleusercontent.com/pw/AP1GczMVvOrTuB4vuOf51XL7rX
 
 どんどんF-2が飛んで、午後はブルーインパルス、F-2機動とメチャクチャもりあがります。
 
+当日の飛行展示の様子を動画でもご覧いただけます。
+
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%; margin: 1rem 0;">
+<iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 8px;" src="https://www.youtube.com/embed/OmfVH2S59_E" title="築城基地航空祭2023 飛行展示" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
 ![午後の飛行準備](https://lh3.googleusercontent.com/pw/AP1GczMx-4Zw25L73sj_W4STr-Yr7MHnTmG92FW3pw6g3ehES5M5_pFg-8gtPvgut5MJ73u6soaHKMohh8Khi1vGOa5fYl6bAXNjv4f6hD6r48cHfihHiqlFDh24cjgMrH0TNQK7QFPx9NgZ4PhPaTXUjC_2UA=s800-no-gm?authuser=0)
 
 ![展示飛行の開始](https://lh3.googleusercontent.com/pw/AP1GczPiYGafynsC-jPuMwCKnvNcvn-fJQrEWQeefNlkdv5mR7rsTB4F7m6gkjxB-WkfdST1fudGMJhlZ-sd6SPdAKyggjEDJEywGGBH_-bCqWyV1a20gV15232wzT3_LsxjEWJ0qEssOsiZOw-GvBRdmqPbyA=s800-no-gm?authuser=0)
