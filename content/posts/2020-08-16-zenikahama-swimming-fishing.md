@@ -10,21 +10,21 @@ google_photos_url: "https://photos.app.goo.gl/gaz5w13oLg6d41Ca8"
 
 ## 銭が浜海水浴場へ
 
-銭が浜海水浴場で初めての泳ぎ釣りに挑戦してきました、ライフジャケットを着用してテトラポッドの向こう側まで泳いでいきます。
+銭が浜海水浴場で初めての泳ぎ釣りに挑戦してきました。コンパクトな竿でのルアー釣りは初体験で、ライフジャケットを着用してテトラポッドの向こう側まで泳いでいきました。
 
 ![銭が浜海水浴場の全景](https://lh3.googleusercontent.com/pw/AP1GczMBArAAvvXb7OC55okihB8wDWovDZhLNT_1Ts6Ib3bGsSwbtk9YtfEJzQFMiGvftcY0AweUP8DfU5hEC9oS8ohrkWKhH-3eJwpV5lGTYHkirm4OJMT8WU5_lk4_JK_ghNM2OIS4i0Cr4GboxMIlhYxD-g=s800-no-gm?authuser=0)
 
-銭が浜は透明度が高く、青い海と岩礁が美しいスポットです。テトラポッドが設置された入り江では多くの人が海水浴を楽しんでいました。
+銭が浜は透明度が高く、岩礁が点在するスポットです。テトラポッドが設置された入り江では多くの人が海水浴を楽しんでいました。
 
 ## 豊富な海中環境
 
 ![色とりどりの魚群](https://lh3.googleusercontent.com/pw/AP1GczOC8JaOwDeya9j0_GMX8VOJeoE-Kni4-R3fkUzvGkzH0Vf4wDPRNuMmw-Bct2xhUpO-iPwL9dQeBHa8rekhlmIsK39LMwjCGOyXu7zZgXEmMw7EuUnObyubWttoCAJl2tISfPiqET0Td8DbjsX7bi3o3Q=s800-no-gm?authuser=0)
 
-海中では黄色い小魚（アジ）の大群が岩礁周りに群れており、透明度抜群の海中環境が広がっています。
+海中では黄色い小魚（アジ）の大群が岩礁周りに群れており、良好な透明度の海中環境でした。
 
 ![海底の岩礁と海藻](https://lh3.googleusercontent.com/pw/AP1GczMr-pyzOZDVjNgctamVBma22ToW8cdSBoQaBvgLRyqZs7yllhbtUnTXFbQwGP8RTWILvKN9-YXXwhK8b_zqB63LEyUuNO9v6JBVHmx_XLK3__38TMLvPiO7PYa51RptgINBfKrSwbrLbj8mRLLWnjiWhg=s800-no-gm?authuser=0)
 
-海底には黄金色の海藻が豊富に生育し、魚たちの隠れ場所となっています。カサゴも泳いでいるのを観察できました。カサゴの泳ぎ方や生態を間近で見ることができたのは貴重な体験でした。
+海底には黄金色の海藻が豊富に生育し、魚たちの隠れ場所となっています。カサゴも泳いでいるのを観察できました。カサゴの泳ぎ方や生態を間近で見ることができたのは良い体験でした。
 
 ## ダイビングポイントとしても人気
 
@@ -44,4 +44,6 @@ google_photos_url: "https://photos.app.goo.gl/gaz5w13oLg6d41Ca8"
 
 ## まとめ
 
-小さな竿での泳ぎ釣りは新鮮な体験でした。他の魚も釣ってみたい気持ちはありますが、美しい海中環境を楽しみながらの釣りは格別です。次回はもう少し大きな魚を狙ってみたいと思います。
+小さな竿での泳ぎ釣りは新鮮な体験でした。他の魚も釣ってみたい気持ちはありますが、海中環境を楽しみながらの釣りは思った以上に楽しめました。次回はもう少し大きな魚を狙ってみたいと思います。
+
+皆さんも泳ぎ釣りの経験があれば、ぜひ教えてください。この記事が少しでも参考になれば幸いです。
