@@ -8,8 +8,6 @@ featured_image: "https://lh3.googleusercontent.com/pw/AP1GczOgGrnjl0vWAPaH-RwUYR
 google_photos_url: "https://photos.app.goo.gl/NCcTs7rJonBoaaHYA"
 ---
 
-## 夏の沖縄スピアフィッシング開始
-
 さあ夏がやってまいりました！
 
 ![朝の海](https://lh3.googleusercontent.com/pw/AP1GczNKTSDFr7el5OyrVy3vARF0I-vaDu7634M22_JRTTrNYsgc8_Vu4aS1qwXzcTLn7-hl3I8JyGFy8CP3lVQXR3CXw-xlwC3g4V4z-SQnKb96DiUkn4Pv1eubHk7hSBF2Re_2rVbH8-WdQLpXJrWbwr__Fg=s800-no-gm?authuser=0)
