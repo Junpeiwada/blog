@@ -16,7 +16,7 @@ featured_image: "https://lh3.googleusercontent.com/pw/AP1GczPwKhoK4HJiSgw8q4szqU
 - **ウェットスーツ**: 1.5ミリのタッパー
 - **透明度**: 普通
 
-水温が高くて、魚の活性はそれほど高くありませんでした。でも、立派な石鯛を捕まえることができました。
+水温が高くて、魚の活性はそれほど高くありませんでした。でも、ちっちゃめの石鯛を何匹か捕まえることができました。
 
 ![水中で捕獲した石鯛](https://lh3.googleusercontent.com/pw/AP1GczPwKhoK4HJiSgw8q4szqUehT0h4DUvuv80d5Fory4vjMuSaP6M5hMIAdQHjoh-KF8LmLuusTXl0d6VdHAkA15Hsh8sntTm6zuzr0g7mlJ0l7LIw1kRmfB_P__SHRLCeWILyJcc_yHZNbyhi1L3NBZrhTA=s800-no-gm?authuser=0)
 
@@ -35,7 +35,7 @@ featured_image: "https://lh3.googleusercontent.com/pw/AP1GczPwKhoK4HJiSgw8q4szqU
 ## まとめ
 
 - 水温32度の暑い海
-- 美しい縞模様の石鯛を捕獲
+- ちっちゃめの石鯛を数匹捕獲
 - 塩焼きで美味しくいただきました
 - 4キロウェイトはほぼ適正、微調整の余地あり
 
