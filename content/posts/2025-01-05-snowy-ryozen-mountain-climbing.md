@@ -1,0 +1,90 @@
+---
+title: "雪の霊仙山登山記 - 鈴鹿山脈の急登と美しい雪景色"
+date: 2025-01-05
+category: "登山・クライミング"
+description: "雪に覆われた霊仙山への冬季登山記録。鈴鹿山脈特有の急登から頂上での絶景まで、限られた駐車スペースから始まる冬山の魅力をお届けします。"
+featured_image: "https://lh3.googleusercontent.com/pw/AP1GczO_BuRwG3GHiobCWlTg-XPuENxte1SwloVNNKjeTGhA18_LMDoiC_G2DqegQf3CpoVcry7iI9A-6lv9mx-SIY4Av9JwZ2GsFaMCj1b9DJI3sVmf_2QrINP7vpFsv7kElsO7vax9ilVrQvy3m7N44kbAEQ=s800-no-gm?authuser=0"
+---
+
+2025年1月5日、雪に覆われた霊仙山（1,084m）への登山に挑戦してきました。鈴鹿山脈の名峰の一つである霊仙山は、冬季になると美しい雪景色と伊吹山を望む絶景を楽しめる山として人気です。
+
+## 駐車場の争奪戦
+
+霊仙山の登山口となる駐車場は、わずか20台ほどしか収容できません。人気の山だけに、特に週末は早朝からの争奪戦となります。今回も朝早く到着したものの、すでに多くの車が停まっていました。
+
+![雪の登山道入口](https://lh3.googleusercontent.com/pw/AP1GczPTLsI5dBkyBQIIcNFPe-ptRG3C0c1xlPoncGLIt6CsyhJAD3wEusRFjBXgVoFepO2QdX_KTxcuHaHweO5IVxjhWkUEoUhAXSadex9dBzwGB0RgxVOc=s800-no-gm?authuser=0)
+
+## 鈴鹿山脈特有の急登
+
+午前8時41分、登山開始。霊仙山も他の鈴鹿山脈の山々と同様、序盤は非常に急な登りが待っています。雪が積もった登山道は滑りやすく、慎重に足を進めていきます。
+
+![雪の急登](https://lh3.googleusercontent.com/pw/AP1GczMlcZtOLOsqpIYmdZxgtZXbGvQi-Syw3uQYQXT2oPUIcwAsQNjIXBRe6lQLS0M7s6LBd5Pefhm6PwTMGUuUHRc1S-qVPrm7yjTL6gUF-xTp13SjW1OCxtASXiPVlsP_VoCKOJcjsZ5QZ6I6OHJ3C-hqcQ=s800-no-gm?authuser=0)
+
+この急登は心肺機能への負荷も大きく、適度な休憩を取りながら進みます。しかし、これが鈴鹿山脈の山々の魅力でもあります。最初が一番きつく、その後は穏やかな登りが続くのです。
+
+## 峰への到達と景色の変化
+
+急登を乗り越えて峰に出ると、一気に景色が開けてきます。午前10時27分頃、ようやく展望の効く場所に到達しました。
+
+![峰からの展望](https://lh3.googleusercontent.com/pw/AP1GczPaqE-Ou7_71RdzCBd_uIffkXmZ1Y7edbzxp8lAJ7JdnJTU8mqRJpC6QMmr9bYNJ61hKKhzOHJFnVaiQoc5Eu4mB89gs0SLKkbB0Ee4RXIP2_IxR64sIgZqVxjl7FgIQiwSkN0napd8ZN87oceVAEbAIQ=s800-no-gm?authuser=0)
+
+雪に覆われた山々の連なりが美しく、疲労も一瞬で吹き飛びます。ここからは比較的穏やかな登りとなり、歩きやすくなってきます。
+
+## 霊仙山頂上への最後の登り
+
+午前11時5分、頂上付近の展望地点に到着。ここからは琵琶湖方面の展望が素晴らしく開けています。
+
+![頂上付近の展望](https://lh3.googleusercontent.com/pw/AP1GczOl5CwVdyDZAAEuemWwlMUJhpzyD6VjmKTweymGuG53XcBVwSo6MViTtfVkSjbeE3HtTLIz100T_Yk0xyE9VJLGm7ujFpejW5f-DeyTcN-5LxY_6rkOsL_6Vro0s7Dh1akmB1DQbBpsPmI2013733TOkQ=s800-no-gm?authuser=0)
+
+遠くには琵琶湖も見え、冬の澄んだ空気のおかげで遠景まではっきりと見渡せます。青いジャケットを着た登山者も同じ景色を楽しんでいました。
+
+## 雪原の美しさ
+
+午後12時56分、霊仙山の特徴的な雪原に到達しました。
+
+![雪原の風景](https://lh3.googleusercontent.com/pw/AP1GczMKZ0V6wou19Pwk3i3OLBMjUHo58D0UiNZxeayDXA3ZgPVNvsqR9shRDthpx5WM3c7hQkM2k6r9Cj5OclAjF_Vt8JtoSju6vPGEXEOdxFDAdtA-BzQ5hscthsy52-kFBeAqbw25JAwXAFx1FF97DMkfxw=s800-no-gm?authuser=0)
+
+霊仙山の頂上付近は平坦な雪原が広がっており、まさに冬山の醍醐味を味わえる場所です。風の影響で雪が舞い上がる美しい光景も見ることができました。
+
+## 伊吹山の絶景
+
+午後1時23分、ついに伊吹山が見える絶好の展望地点に到達しました。
+
+![伊吹山の眺望](https://lh3.googleusercontent.com/pw/AP1GczO_BuRwG3GHiobCWlTg-XPuENxte1SwloVNNKjeTGhA18_LMDoiC_G2DqegQf3CpoVcry7iI9A-6lv9mx-SIY4Av9JwZ2GsFaMCj1b9DJI3sVmf_2QrINP7vpFsv7kElsO7vax9ilVrQvy3m7N44kbAEQ=s800-no-gm?authuser=0)
+
+霊仙山から見る伊吹山は本当にかっこいい！雪化粧した伊吹山の威風堂々とした姿は、まさに関西の名峰にふさわしい美しさです。遠くに見える登山者たちのシルエットが、スケール感を物語っています。
+
+## 霊仙山頂上到達
+
+午後1時25分、ついに霊仙山の頂上に到着しました！
+
+![霊仙山頂上](https://lh3.googleusercontent.com/pw/AP1GczPXJIyLh8c40NLQbmTG29pTtJY3bZSctz_DSfZaLItF01K4Y2cmqf0PAbSYU0jDE2u48EfClXhlqPsxhACGlLFF2BfAP6j4uLakMoOezdD_V1NePo3ZdKtK0VqR9A473fp_wfDjgFkM7my5Q4n_roJXTA=s800-no-gm?authuser=0)
+
+雪に覆われた頂上の標識が、登頂の達成感を物語っています。360度の展望が楽しめる素晴らしい頂上でした。
+
+![頂上での記念撮影](https://lh3.googleusercontent.com/pw/AP1GczM1nQqGTVEbjN9dVNWUgx_HXHGmBLXtfbaR5z9Ggbo7P0R-SIsB2DtlVycoMw21Pmoh7uS1fWe-77SHWWpSZCwUM_vwIRPvyw1Gg3AA__JND_l2uugFQO0orCpR9oSgY0F3qdI7uUQJTzl1fUWEvoXTxQ=s800-no-gm?authuser=0)
+
+頂上での記念撮影は登山の醍醐味の一つ。霊仙山の標識とともに、雪山登山の思い出を写真に収めることができました。
+
+## 帰路での眺望
+
+午後2時9分、下山途中でも美しい景色を楽しむことができました。
+
+![下山途中の眺望](https://lh3.googleusercontent.com/pw/AP1GczMIGuepOt6ylneShuuP5yKnPXggUJU7oYoCYWmQXoJgf_nOEikRzxs6G-WH54_4feKMlzGPugr6uR9tDK_hXn4Ud-imXv_CwyzWfTntjYnSnPt2Lp5cnGkskikV-AxFnXN2Hv84RsX0vgF3WaYWibMK2Q=s800-no-gm?authuser=0)
+
+帰り道から見る雪稜の美しさも格別です。霜氷に覆われた木々が白い世界を演出しており、冬山の静寂な美しさを堪能できました。
+
+## まとめ
+
+霊仙山は確かに序盤の急登が厳しい山ですが、それを乗り越えた先に待っている景色は格別でした。特に伊吹山の眺望は素晴らしく、冬の澄んだ空気の中での登山は心身ともにリフレッシュできる体験でした。
+
+駐車場の確保は早めの行動が必須ですが、それだけの価値がある山だと実感しています。鈴鹿山脈の山々はどれも序盤が急登という共通点がありますが、霊仙山もその例に漏れず、体力と気力が試される山でした。
+
+次回もまた雪の季節に訪れて、この美しい景色を楽しみたいと思います。
+
+**登山データ**
+- 登山日: 2025年1月5日
+- 天候: 晴れ時々曇り
+- 行動時間: 約5.5時間（08:41-14:09）
+- 標高: 1,084m
+- 登山口: 霊仙山登山口駐車場（約20台）
