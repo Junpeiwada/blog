@@ -10,7 +10,7 @@ google_photos_url: "https://photos.app.goo.gl/gaz5w13oLg6d41Ca8"
 
 ## 銭が浜海水浴場へ
 
-銭が浜海水浴場で初めての泳ぎ釣りに挑戦してきました。コンパクトな竿を使ったルアー釣りは初体験で、ライフジャケットを着用してテトラポッドの向こう側まで泳いでいきました。
+銭が浜海水浴場で初めての泳ぎ釣りに挑戦してきました、ライフジャケットを着用してテトラポッドの向こう側まで泳いでいきます。
 
 ![銭が浜海水浴場の全景](https://lh3.googleusercontent.com/pw/AP1GczMBArAAvvXb7OC55okihB8wDWovDZhLNT_1Ts6Ib3bGsSwbtk9YtfEJzQFMiGvftcY0AweUP8DfU5hEC9oS8ohrkWKhH-3eJwpV5lGTYHkirm4OJMT8WU5_lk4_JK_ghNM2OIS4i0Cr4GboxMIlhYxD-g=s800-no-gm?authuser=0)
 
@@ -20,7 +20,7 @@ google_photos_url: "https://photos.app.goo.gl/gaz5w13oLg6d41Ca8"
 
 ![色とりどりの魚群](https://lh3.googleusercontent.com/pw/AP1GczOC8JaOwDeya9j0_GMX8VOJeoE-Kni4-R3fkUzvGkzH0Vf4wDPRNuMmw-Bct2xhUpO-iPwL9dQeBHa8rekhlmIsK39LMwjCGOyXu7zZgXEmMw7EuUnObyubWttoCAJl2tISfPiqET0Td8DbjsX7bi3o3Q=s800-no-gm?authuser=0)
 
-海中では黄色い小魚（ネンブツダイやキビナゴ類）の大群が岩礁周りに群れており、透明度抜群の海中環境が広がっています。
+海中では黄色い小魚（アジ）の大群が岩礁周りに群れており、透明度抜群の海中環境が広がっています。
 
 ![海底の岩礁と海藻](https://lh3.googleusercontent.com/pw/AP1GczMr-pyzOZDVjNgctamVBma22ToW8cdSBoQaBvgLRyqZs7yllhbtUnTXFbQwGP8RTWILvKN9-YXXwhK8b_zqB63LEyUuNO9v6JBVHmx_XLK3__38TMLvPiO7PYa51RptgINBfKrSwbrLbj8mRLLWnjiWhg=s800-no-gm?authuser=0)
 
