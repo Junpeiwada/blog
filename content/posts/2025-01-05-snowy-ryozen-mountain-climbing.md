@@ -36,7 +36,7 @@ featured_image: "https://lh3.googleusercontent.com/pw/AP1GczO_BuRwG3GHiobCWlTg-X
 
 ![頂上付近の展望](https://lh3.googleusercontent.com/pw/AP1GczOl5CwVdyDZAAEuemWwlMUJhpzyD6VjmKTweymGuG53XcBVwSo6MViTtfVkSjbeE3HtTLIz100T_Yk0xyE9VJLGm7ujFpejW5f-DeyTcN-5LxY_6rkOsL_6Vro0s7Dh1akmB1DQbBpsPmI2013733TOkQ=s800-no-gm?authuser=0)
 
-遠くには琵琶湖も見え、冬の澄んだ空気のおかげで遠景まではっきりと見渡せます。青いジャケットを着た登山者も同じ景色を楽しんでいました。
+遠くには琵琶湖も見え、冬の澄んだ空気のおかげで遠景まではっきりと見渡せます。この絶景を前に、しばらく休憩しながら景色を楽しみました。
 
 ## 雪原の美しさ
 
