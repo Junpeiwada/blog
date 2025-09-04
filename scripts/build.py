@@ -21,7 +21,7 @@ class BlogBuilder:
             root_dir = Path(root_dir)
             
         self.root_dir = root_dir
-        self.content_dir = root_dir / "content" / "posts"
+        self.content_dir = root_dir / "posts"
         self.docs_dir = root_dir / "docs"
         self.posts_dir = root_dir / "docs" / "posts"
         self.templates_dir = root_dir / "templates"
@@ -248,7 +248,7 @@ class BlogBuilder:
         # Find all markdown files
         md_files = list(self.content_dir.glob('*.md'))
         if not md_files:
-            print("No markdown files found in content/posts/")
+            print("No markdown files found in posts/")
             return
         
         print(f"Found {len(md_files)} markdown files")

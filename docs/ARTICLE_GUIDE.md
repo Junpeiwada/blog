@@ -20,7 +20,7 @@ source venv/bin/activate
 
 ### 3. 新記事作成
 ```bash
-# content/posts/ に新しいMarkdownファイルを作成
+# posts/ に新しいMarkdownファイルを作成
 # ファイル名: YYYY-MM-DD-article-title.md（特定された日付を使用）
 ```
 
@@ -196,10 +196,10 @@ tags: [骨格標本, DIY, 自然標本, 工作, 実験]
 ### 検証スクリプトの使用
 ```bash
 # 基本検証
-python scripts/validate_post.py content/posts/記事名.md
+python scripts/validate_post.py posts/記事名.md
 
 # 表示予測付き検証
-python scripts/validate_post.py content/posts/記事名.md --info
+python scripts/validate_post.py posts/記事名.md --info
 ```
 
 ### 検証項目

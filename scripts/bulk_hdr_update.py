@@ -8,7 +8,7 @@ python bulk_hdr_update.py              # 実際の更新
 python bulk_hdr_update.py --file "記事ファイル名.md"  # 特定記事のみ
 
 機能:
-- content/posts/*.mdから=s1621パターンのURLを検出
+- posts/*.mdから=s1621パターンのURLを検出
 - 各URLから実際の画像サイズを取得
 - 800px幅基準でHDR URLを生成
 - 記事ファイル内のURLを一括置換
@@ -44,7 +44,7 @@ def convert_url_to_s800_no_gm(original_url):
 
 def scan_markdown_files(target_file=None):
     """Markdownファイルをスキャンして変換対象のGoogle Photos URLを抽出"""
-    content_dir = Path("content/posts")
+    content_dir = Path("posts")
     
     if target_file:
         files = [content_dir / target_file]
@@ -101,7 +101,7 @@ def process_urls_to_s800(urls):
 
 def update_markdown_files(file_urls, url_mapping, dry_run=False):
     """Markdownファイル内のURLを更新"""
-    content_dir = Path("content/posts")
+    content_dir = Path("posts")
     updated_files = 0
     total_replacements = 0
     

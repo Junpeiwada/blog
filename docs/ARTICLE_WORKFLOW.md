@@ -31,7 +31,7 @@ python scripts/download_images_for_review.py --clean [URL群] --article-title "�
 3. 各画像の内容を確認（Read tool使用）
 4. **📸 重要**: 画像分析MDのURL（`s1000-no-gm`最適化版）をそのまま記事に使用
 5. 時系列と内容に基づいて記事作成
-6. `content/posts/YYYY-MM-DD-article-title.md`で保存
+6. `posts/YYYY-MM-DD-article-title.md`で保存
 
 ### Step 3: 品質チェック・公開
 チェックリストに従って最終確認し公開します。
@@ -56,7 +56,7 @@ npm run ビルドして公開
 - [ ] featured_image: 代表画像を設定
 - [ ] 最適化URL使用: 画像分析MDの`s1000-no-gm`URLを記事に使用
 - [ ] H1タイトル未使用（H2から開始）
-- [ ] ファイルパス: `content/posts/YYYY-MM-DD-title.md`に正しく保存
+- [ ] ファイルパス: `posts/YYYY-MM-DD-title.md`に正しく保存
 
 ### ✅ 最終確認
 - [ ] 画像と記事内容の整合性確認

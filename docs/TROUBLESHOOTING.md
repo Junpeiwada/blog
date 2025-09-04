@@ -323,7 +323,7 @@ grep -n "}" assets/css/style.css | wc -l  # 終了ブレース数
 python scripts/build.py --verbose
 
 # 特定記事のみビルド
-python scripts/build.py --single content/posts/2024-01-01-test.md
+python scripts/build.py --single posts/2024-01-01-test.md
 ```
 
 ### 2. ローカルサーバーでテスト

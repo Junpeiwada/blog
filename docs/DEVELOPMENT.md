@@ -6,7 +6,7 @@
 
 ```
 blog/
-├── content/posts/              # Markdownソースファイル
+├── posts/                      # Markdownソースファイル
 │   ├── 2024-09-04-japanese-alps-complete-guide.md  # メイン山岳ガイド
 │   ├── 2024-09-05-槍ヶ岳-guide.md                # 個別山岳記事
 │   └── 2024-XX-XX-new-post.md                    # 通常ブログ記事
@@ -216,7 +216,7 @@ blog/
 
 ### build.py の動作
 1. **テンプレート読み込み**: Jinja2テンプレートを初期化
-2. **記事解析**: content/posts/ の全Markdownファイルを処理
+2. **記事解析**: posts/ の全Markdownファイルを処理
 3. **HTML生成**: 記事ごとにHTMLファイル生成
 4. **インデックス生成**: トップページ（記事一覧）生成
 5. **検索インデックス生成**: 全文検索用JSONファイル作成

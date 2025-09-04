@@ -198,7 +198,7 @@ docs/assets/css/style.css     # 公開用（自動コピー）
 #### 1. 記事処理
 ```python
 # 1. Markdownファイル読み込み
-for md_file in content/posts/:
+for md_file in posts/:
     # 2. フロントマター解析
     metadata = parse_frontmatter(md_file)
     

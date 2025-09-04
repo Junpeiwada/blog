@@ -3,7 +3,7 @@
 Refer to `CLAUDE.md` for agent workflows and the Japanese response policy.
 
 ## Project Structure & Modules
-- `content/posts/`: Markdown sources (`YYYY-MM-DD-title.md`, with YAML frontmatter).
+- `posts/`: Markdown sources (`YYYY-MM-DD-title.md`, with YAML frontmatter).
 - `templates/`: Jinja2 templates (`base.html`, `post.html`, `index.html`).
 - `scripts/`: Build/deploy/validate tools (Python).
 - `assets/` and `images/`: Source CSS and images (copied to `docs/`).
