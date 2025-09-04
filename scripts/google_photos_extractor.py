@@ -227,7 +227,7 @@ def click_and_get_full_url(driver, element, index):
         return extract_background_image_url(element)
 
 
-def normalize_image_url(url, target_size="s1621"):
+def normalize_image_url(url, target_size="s1600"):
     """画像URLのサイズパラメータを正規化"""
     if not url:
         return url

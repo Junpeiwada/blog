@@ -4,7 +4,7 @@ date: 2023-11-26
 category: "旅行記"
 tags: ["航空祭", "築城基地", "F-2戦闘機", "ブルーインパルス", "北九州", "自衛隊"]
 description: "2023年築城基地航空祭で見たF-2戦闘機の編隊飛行とブルーインパルスの迫力演技。早朝からの会場体験を写真と共に振り返る。"
-featured_image: "https://lh3.googleusercontent.com/pw/AP1GczMVvOrTuB4vuOf51XL7rXFwy13XztV-he3ryPFuc7E5Ga1Ql1AmX9gzg2KlPcA6crLCWmNJ3NRZU9Nb6dNJSGI4k6P20ihYcHId2_MzjSeGsr24957W2jXWJ-MNQYcESvUMJKJxsub1ep5j8-C_A1ipxg=s800-no-gm?authuser=0"
+featured_image: "https://lh3.googleusercontent.com/pw/AP1GczMVvOrTuB4vuOf51XL7rXFwy13XztV-he3ryPFuc7E5Ga1Ql1AmX9gzg2KlPcA6crLCWmNJ3NRZU9Nb6dNJSGI4k6P20ihYcHId2_MzjSeGsr24957W2jXWJ-MNQYcESvUMJKJxsub1ep5j8-C_A1ipxg=s1000-no-gm?authuser=0"
 ---
 <!-- Google Photos元URL: https://photos.app.goo.gl/pPzQuVTuNtpeJ2nD8 -->
 <!-- 前日予行写真: https://photos.app.goo.gl/HjZwMGX3x1BZo9Cz6 -->
@@ -25,13 +25,13 @@ featured_image: "https://lh3.googleusercontent.com/pw/AP1GczMVvOrTuB4vuOf51XL7rX
 
 いきなり飛んでます！かっこいい！
 
-![前日予行飛行1](https://lh3.googleusercontent.com/pw/AP1GczODKjLs9zT-IalPO09gUEC1wiNjhswBfkgoHGFL7lIEZm1VictrIVQmzImKcznj0v17CUwTXgwHvZhDjyoKcU7QOPUNxB47NCw2QO2OT6bBg6AMkCWmkDvBfX1HnR6-DlK69_tk9iyqOT7wPbjFak19jQ=s800-no-gm?authuser=0)
+![前日予行飛行1](https://lh3.googleusercontent.com/pw/AP1GczODKjLs9zT-IalPO09gUEC1wiNjhswBfkgoHGFL7lIEZm1VictrIVQmzImKcznj0v17CUwTXgwHvZhDjyoKcU7QOPUNxB47NCw2QO2OT6bBg6AMkCWmkDvBfX1HnR6-DlK69_tk9iyqOT7wPbjFak19jQ=s1000-no-gm?authuser=0)
 
-![前日予行飛行2](https://lh3.googleusercontent.com/pw/AP1GczOYQPikwWDmzgEaxLMKbeUXpsjegpNmWIKZ2Yxhnkn19RZSAr5nVAAzPbTFgQ__lvPoYN4HlZvtjkpMgU3kvaVBEMMB0bJYp3grSfGY-igkLDT2PQtsGskJ-VgFrWqiDxNVC09LbwyhWuszN0iJCKUKmA=s800-no-gm?authuser=0)
+![前日予行飛行2](https://lh3.googleusercontent.com/pw/AP1GczOYQPikwWDmzgEaxLMKbeUXpsjegpNmWIKZ2Yxhnkn19RZSAr5nVAAzPbTFgQ__lvPoYN4HlZvtjkpMgU3kvaVBEMMB0bJYp3grSfGY-igkLDT2PQtsGskJ-VgFrWqiDxNVC09LbwyhWuszN0iJCKUKmA=s1000-no-gm?authuser=0)
 
-![前日予行飛行3](https://lh3.googleusercontent.com/pw/AP1GczNEOuSrBRhIHuoJhIfHTjye-Flzu0-miO3t3fbWZEzQDUEedN8w-4JqohwBMosU5FimC3LHPUdW86PLg6vlrD-7MvkMPdwD1MFXOJdi75QKjQo_-YokquH-JvD1nBl7u-6HTlUqw9DrVh0nO3_7gBqm4g=s800-no-gm?authuser=0)
+![前日予行飛行3](https://lh3.googleusercontent.com/pw/AP1GczNEOuSrBRhIHuoJhIfHTjye-Flzu0-miO3t3fbWZEzQDUEedN8w-4JqohwBMosU5FimC3LHPUdW86PLg6vlrD-7MvkMPdwD1MFXOJdi75QKjQo_-YokquH-JvD1nBl7u-6HTlUqw9DrVh0nO3_7gBqm4g=s1000-no-gm?authuser=0)
 
-![前日予行飛行4](https://lh3.googleusercontent.com/pw/AP1GczPZxfDTXiod6qYBl1036cgqT1xPXOIaAkbiHwsq0sKh9wXxW377Zj7qwgTp_-wOay7SIKN7psPUYM1qu2dT-rNOwRvRo1lyb8Jn8V97R6uUoBKt8IJGCOsdeVCTIqcXDaHWRJx6eHwc9AlNmBDsoA1q2w=s800-no-gm?authuser=0)
+![前日予行飛行4](https://lh3.googleusercontent.com/pw/AP1GczPZxfDTXiod6qYBl1036cgqT1xPXOIaAkbiHwsq0sKh9wXxW377Zj7qwgTp_-wOay7SIKN7psPUYM1qu2dT-rNOwRvRo1lyb8Jn8V97R6uUoBKt8IJGCOsdeVCTIqcXDaHWRJx6eHwc9AlNmBDsoA1q2w=s1000-no-gm?authuser=0)
 
 
 いくつか写真をとったのちホテルに移動、明日に備えます。
@@ -40,32 +40,32 @@ featured_image: "https://lh3.googleusercontent.com/pw/AP1GczMVvOrTuB4vuOf51XL7rX
 
 当日は5:30より活動開始、築城基地へむかいます。
 
-![朝の基地周辺の混雑](https://lh3.googleusercontent.com/pw/AP1GczO3MAP1cwRW9wlgA7x62VIAh1vILVK3PLsRuXEWWfj264iTLuVdCYFWqi0EcvnC-TrwdVzIHP0olJwOfGD4Sw46rr5CokGZe4ybHnEBsXI-ift8SsLhtQJCgKRXaMxNI0EUkkHkXcw7j6Kr5ssMn5cBPw=s800-no-gm?authuser=0)
+![朝の基地周辺の混雑](https://lh3.googleusercontent.com/pw/AP1GczO3MAP1cwRW9wlgA7x62VIAh1vILVK3PLsRuXEWWfj264iTLuVdCYFWqi0EcvnC-TrwdVzIHP0olJwOfGD4Sw46rr5CokGZe4ybHnEBsXI-ift8SsLhtQJCgKRXaMxNI0EUkkHkXcw7j6Kr5ssMn5cBPw=s1000-no-gm?authuser=0)
 
-![早朝の準備風景](https://lh3.googleusercontent.com/pw/AP1GczPBPbcBJvdqQpRDZusbAfyM6-R1CEkELFp90huoloQ6efmFppFrXuODMD_V040Vsf1aZcj7MW8IkKdUdCtnCAhe0wKBhlIcvdQNhx4zJPcY1fhATWi5f_WPscH7khYYSJl1SeKZ6nov8xWpJWKHUjNeEQ=s800-no-gm?authuser=0)
+![早朝の準備風景](https://lh3.googleusercontent.com/pw/AP1GczPBPbcBJvdqQpRDZusbAfyM6-R1CEkELFp90huoloQ6efmFppFrXuODMD_V040Vsf1aZcj7MW8IkKdUdCtnCAhe0wKBhlIcvdQNhx4zJPcY1fhATWi5f_WPscH7khYYSJl1SeKZ6nov8xWpJWKHUjNeEQ=s1000-no-gm?authuser=0)
 
-![朝の会場の様子](https://lh3.googleusercontent.com/pw/AP1GczNkraE1LfpubxoafdwNTomCXcpdMAZCjafDbup8pub_Gy9BhhVM2JzOn4fljT7r2ygZSGvdXRPAUJaXWR6PJHNeMvi998KoymFC7svhpXm52PVQEK7x9oMwadhMlcuO01Qf9t50euJO5vZKedMzb9ReHA=s800-no-gm?authuser=0)
+![朝の会場の様子](https://lh3.googleusercontent.com/pw/AP1GczNkraE1LfpubxoafdwNTomCXcpdMAZCjafDbup8pub_Gy9BhhVM2JzOn4fljT7r2ygZSGvdXRPAUJaXWR6PJHNeMvi998KoymFC7svhpXm52PVQEK7x9oMwadhMlcuO01Qf9t50euJO5vZKedMzb9ReHA=s1000-no-gm?authuser=0)
 
-![基地内の展示機体](https://lh3.googleusercontent.com/pw/AP1GczPAgN9gjBMS3xVkNjQK2Gcdh7jLaB7xA9PPstTTecQ2fI9o6LDQprY3DFK-t6m2kTENugE5QRo7yFsHd_chM9IE2RYMRfOcekXqtEKlbuUrnV1BGl1hwW44jRBR7MZ7gIXgIaWbSxW_6ZS-VezLwQMeWQ=s800-no-gm?authuser=0)
+![基地内の展示機体](https://lh3.googleusercontent.com/pw/AP1GczPAgN9gjBMS3xVkNjQK2Gcdh7jLaB7xA9PPstTTecQ2fI9o6LDQprY3DFK-t6m2kTENugE5QRo7yFsHd_chM9IE2RYMRfOcekXqtEKlbuUrnV1BGl1hwW44jRBR7MZ7gIXgIaWbSxW_6ZS-VezLwQMeWQ=s1000-no-gm?authuser=0)
 
 
 いきなりすごい距離の航過飛行。
 
-![飛行展示開始](https://lh3.googleusercontent.com/pw/AP1GczPHWXpiG6tTS8HT1aXwPdHozflEaDNKGAF-NzRIdgrPbzrVeJHsVmziQH3G9a94-QHhEzLB71QDPg4_XiR0zcSKmkAxZObVS5sLH7cThxBQZlpunw4hylKa254G0RY8sGMaF8U9i162RtwDKsX2r0yjwg=s800-no-gm?authuser=0)
+![飛行展示開始](https://lh3.googleusercontent.com/pw/AP1GczPHWXpiG6tTS8HT1aXwPdHozflEaDNKGAF-NzRIdgrPbzrVeJHsVmziQH3G9a94-QHhEzLB71QDPg4_XiR0zcSKmkAxZObVS5sLH7cThxBQZlpunw4hylKa254G0RY8sGMaF8U9i162RtwDKsX2r0yjwg=s1000-no-gm?authuser=0)
 
-![午前の飛行デモ](https://lh3.googleusercontent.com/pw/AP1GczOIehPMj-0ulRjtqU_4pIH1kIAHLBREUY0TUaXnBhSOczz9zdeehlTNQXpov1R1P9iK5G54dKsDVGxm5_NCLcU0MgPLbkZRm7_hfc1wkbEEbcHvJs61fjGr3G-SMx5QTJ4HaETTJWZsubtiOn_xdU-uPg=s800-no-gm?authuser=0)
-
-
-
-![F-2戦闘機編隊](https://lh3.googleusercontent.com/pw/AP1GczMVvOrTuB4vuOf51XL7rXFwy13XztV-he3ryPFuc7E5Ga1Ql1AmX9gzg2KlPcA6crLCWmNJ3NRZU9Nb6dNJSGI4k6P20ihYcHId2_MzjSeGsr24957W2jXWJ-MNQYcESvUMJKJxsub1ep5j8-C_A1ipxg=s800-no-gm?authuser=0)
+![午前の飛行デモ](https://lh3.googleusercontent.com/pw/AP1GczOIehPMj-0ulRjtqU_4pIH1kIAHLBREUY0TUaXnBhSOczz9zdeehlTNQXpov1R1P9iK5G54dKsDVGxm5_NCLcU0MgPLbkZRm7_hfc1wkbEEbcHvJs61fjGr3G-SMx5QTJ4HaETTJWZsubtiOn_xdU-uPg=s1000-no-gm?authuser=0)
 
 
 
-![F-2の単機飛行](https://lh3.googleusercontent.com/pw/AP1GczOPwTWtjeBgSMS5yQaiatkFVzdG7cbR8DGFsMZWI31UFrgdIoaTAAyN-5NBZkkXzAnWcBK3asZZv2eQ1uzqMcsbsbHVdHr1w0KMKFVOCom3wmscZ-0z-NgCPNRwSaLam2-ODEQOtbENQRLedyPupwWhig=s800-no-gm?authuser=0)
+![F-2戦闘機編隊](https://lh3.googleusercontent.com/pw/AP1GczMVvOrTuB4vuOf51XL7rXFwy13XztV-he3ryPFuc7E5Ga1Ql1AmX9gzg2KlPcA6crLCWmNJ3NRZU9Nb6dNJSGI4k6P20ihYcHId2_MzjSeGsr24957W2jXWJ-MNQYcESvUMJKJxsub1ep5j8-C_A1ipxg=s1000-no-gm?authuser=0)
 
-![機動飛行の様子](https://lh3.googleusercontent.com/pw/AP1GczMwK255SMHFQDfuAxaNWcr96fMU82qnwr5u6gxiu8EGWa3RrTegooLVoaNlFR6nOrBflQ5EmMVKze_WMqNl3qunJNWCNLe1k5jO2lB6taTnqUUKKyx_j5S4EG9h5d9nExoY4de3CeDqtoSwcYdhZWfz0g=s800-no-gm?authuser=0)
 
-![午前の展示飛行](https://lh3.googleusercontent.com/pw/AP1GczNNvBu9JFLmLOzR-z3U-FcFYOkJJYSdyW9vvVQeeQ4gLHXdUEsIfJoJn0jEj2H0H5cigdPyIcnsXQIvAbrJPQ2qcDj8cXt9O8tAU8R4ui5CdixJ2l45lI70NJJgcpmV7HDmhDWBjp472r5ZMWzZTeTR0Q=s800-no-gm?authuser=0)
+
+![F-2の単機飛行](https://lh3.googleusercontent.com/pw/AP1GczOPwTWtjeBgSMS5yQaiatkFVzdG7cbR8DGFsMZWI31UFrgdIoaTAAyN-5NBZkkXzAnWcBK3asZZv2eQ1uzqMcsbsbHVdHr1w0KMKFVOCom3wmscZ-0z-NgCPNRwSaLam2-ODEQOtbENQRLedyPupwWhig=s1000-no-gm?authuser=0)
+
+![機動飛行の様子](https://lh3.googleusercontent.com/pw/AP1GczMwK255SMHFQDfuAxaNWcr96fMU82qnwr5u6gxiu8EGWa3RrTegooLVoaNlFR6nOrBflQ5EmMVKze_WMqNl3qunJNWCNLe1k5jO2lB6taTnqUUKKyx_j5S4EG9h5d9nExoY4de3CeDqtoSwcYdhZWfz0g=s1000-no-gm?authuser=0)
+
+![午前の展示飛行](https://lh3.googleusercontent.com/pw/AP1GczNNvBu9JFLmLOzR-z3U-FcFYOkJJYSdyW9vvVQeeQ4gLHXdUEsIfJoJn0jEj2H0H5cigdPyIcnsXQIvAbrJPQ2qcDj8cXt9O8tAU8R4ui5CdixJ2l45lI70NJJgcpmV7HDmhDWBjp472r5ZMWzZTeTR0Q=s1000-no-gm?authuser=0)
 
 どんどんF-2が飛んで、午後はブルーインパルス、F-2機動とメチャクチャもりあがります。
 
@@ -75,29 +75,29 @@ featured_image: "https://lh3.googleusercontent.com/pw/AP1GczMVvOrTuB4vuOf51XL7rX
 <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 8px;" src="https://www.youtube.com/embed/OmfVH2S59_E" title="築城基地航空祭2023 飛行展示" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
-![午後の飛行準備](https://lh3.googleusercontent.com/pw/AP1GczMx-4Zw25L73sj_W4STr-Yr7MHnTmG92FW3pw6g3ehES5M5_pFg-8gtPvgut5MJ73u6soaHKMohh8Khi1vGOa5fYl6bAXNjv4f6hD6r48cHfihHiqlFDh24cjgMrH0TNQK7QFPx9NgZ4PhPaTXUjC_2UA=s800-no-gm?authuser=0)
+![午後の飛行準備](https://lh3.googleusercontent.com/pw/AP1GczMx-4Zw25L73sj_W4STr-Yr7MHnTmG92FW3pw6g3ehES5M5_pFg-8gtPvgut5MJ73u6soaHKMohh8Khi1vGOa5fYl6bAXNjv4f6hD6r48cHfihHiqlFDh24cjgMrH0TNQK7QFPx9NgZ4PhPaTXUjC_2UA=s1000-no-gm?authuser=0)
 
-![展示飛行の開始](https://lh3.googleusercontent.com/pw/AP1GczPiYGafynsC-jPuMwCKnvNcvn-fJQrEWQeefNlkdv5mR7rsTB4F7m6gkjxB-WkfdST1fudGMJhlZ-sd6SPdAKyggjEDJEywGGBH_-bCqWyV1a20gV15232wzT3_LsxjEWJ0qEssOsiZOw-GvBRdmqPbyA=s800-no-gm?authuser=0)
+![展示飛行の開始](https://lh3.googleusercontent.com/pw/AP1GczPiYGafynsC-jPuMwCKnvNcvn-fJQrEWQeefNlkdv5mR7rsTB4F7m6gkjxB-WkfdST1fudGMJhlZ-sd6SPdAKyggjEDJEywGGBH_-bCqWyV1a20gV15232wzT3_LsxjEWJ0qEssOsiZOw-GvBRdmqPbyA=s1000-no-gm?authuser=0)
 
-![ブルーインパルスの編隊飛行](https://lh3.googleusercontent.com/pw/AP1GczNmXbsRWlFXFJAuYA9tNKB1_Rvcn6mTpNKQNU8iSuVR8F70Ul68mSAH_8VJ9ru2inonEMpQA8eZnG7DT2O1tBRXxV6ckAOS_cqn3QZ8LAiU7t4gn0Zw_15tyVuEeXP6RtaWTZVb2wmnEsBCKevaJGv_8w=s800-no-gm?authuser=0)
+![ブルーインパルスの編隊飛行](https://lh3.googleusercontent.com/pw/AP1GczNmXbsRWlFXFJAuYA9tNKB1_Rvcn6mTpNKQNU8iSuVR8F70Ul68mSAH_8VJ9ru2inonEMpQA8eZnG7DT2O1tBRXxV6ckAOS_cqn3QZ8LAiU7t4gn0Zw_15tyVuEeXP6RtaWTZVb2wmnEsBCKevaJGv_8w=s1000-no-gm?authuser=0)
 
-![ブルーインパルスの曲技](https://lh3.googleusercontent.com/pw/AP1GczPrQrTg2Er13n75K1fVhXvCIgTH99QjnUq6voPn-sJkwrJ5HPr0eiAObCM5PGEbivvnaWbh-W6dkeM9dYe5LKyFzfZDf48yOyU3ByqArKLG0Lf8q4ihT5LMQagPJfQclUzUIAmMm2UuD5AO0rmxYUcxlQ=s800-no-gm?authuser=0)
+![ブルーインパルスの曲技](https://lh3.googleusercontent.com/pw/AP1GczPrQrTg2Er13n75K1fVhXvCIgTH99QjnUq6voPn-sJkwrJ5HPr0eiAObCM5PGEbivvnaWbh-W6dkeM9dYe5LKyFzfZDf48yOyU3ByqArKLG0Lf8q4ihT5LMQagPJfQclUzUIAmMm2UuD5AO0rmxYUcxlQ=s1000-no-gm?authuser=0)
 
-![午後のデモ飛行](https://lh3.googleusercontent.com/pw/AP1GczNCoH5M2E_ne2i2JVyyKDJh_SlHIq03uofh5IaRhsUT3OPqYtutjRNruumGmSHmUwJ97u3tuCWrZNOrht3KDTbS7Zyk1armrRCK9GO81Trwvu41XnxhebGICOtZCjL5BV6CkmsrSwmzs24hmPbJwxubKA=s800-no-gm?authuser=0)
+![午後のデモ飛行](https://lh3.googleusercontent.com/pw/AP1GczNCoH5M2E_ne2i2JVyyKDJh_SlHIq03uofh5IaRhsUT3OPqYtutjRNruumGmSHmUwJ97u3tuCWrZNOrht3KDTbS7Zyk1armrRCK9GO81Trwvu41XnxhebGICOtZCjL5BV6CkmsrSwmzs24hmPbJwxubKA=s1000-no-gm?authuser=0)
 
-![午後の展示飛行2](https://lh3.googleusercontent.com/pw/AP1GczM2KzUJjgZHtdrOWZ-UHABW2Uv8m23r0IuFjBODf1otodz3c-xYvWDaCjxjPf7uiiJkZ8djk2GMayExAdUFQk31Ymyu-aPU-RdgDAU4kYmzZ_9aPUm21NsZYbENJgBIBWQ3ySwbxE0ODPaZ5-gXXY-SDQ=s800-no-gm?authuser=0)
+![午後の展示飛行2](https://lh3.googleusercontent.com/pw/AP1GczM2KzUJjgZHtdrOWZ-UHABW2Uv8m23r0IuFjBODf1otodz3c-xYvWDaCjxjPf7uiiJkZ8djk2GMayExAdUFQk31Ymyu-aPU-RdgDAU4kYmzZ_9aPUm21NsZYbENJgBIBWQ3ySwbxE0ODPaZ5-gXXY-SDQ=s1000-no-gm?authuser=0)
 
-![午後の飛行展示](https://lh3.googleusercontent.com/pw/AP1GczMUaDCRM1bQBGLelAyEtQbPjvF07HbPQtRkMujbtERyEK5RX3l8dPPuQpDUrJqn2d7iuuKtZWTcuvW9meqfi_DvGnYsbeRK8aL-PzZTzGJs0H8HImLbqE0TpRrVcmXO5Gk91mZSSTirWBxyLwXeVZF7nQ=s800-no-gm?authuser=0)
+![午後の飛行展示](https://lh3.googleusercontent.com/pw/AP1GczMUaDCRM1bQBGLelAyEtQbPjvF07HbPQtRkMujbtERyEK5RX3l8dPPuQpDUrJqn2d7iuuKtZWTcuvW9meqfi_DvGnYsbeRK8aL-PzZTzGJs0H8HImLbqE0TpRrVcmXO5Gk91mZSSTirWBxyLwXeVZF7nQ=s1000-no-gm?authuser=0)
 
-![最終飛行](https://lh3.googleusercontent.com/pw/AP1GczNFhRQiYjCFosMRzqQm9ZsDCvkSXuQzmgI-5RLOw-r4fMeUzgp7G0IHemjMSCidpcaB48ujF0jLS1eINFHDQUfc4YCkphOr95mCJAFtXTiFXfj6weOx4xPYo3MDyyFHAaVqQHZKVMorgoatJduGBM17cw=s800-no-gm?authuser=0)
+![最終飛行](https://lh3.googleusercontent.com/pw/AP1GczNFhRQiYjCFosMRzqQm9ZsDCvkSXuQzmgI-5RLOw-r4fMeUzgp7G0IHemjMSCidpcaB48ujF0jLS1eINFHDQUfc4YCkphOr95mCJAFtXTiFXfj6weOx4xPYo3MDyyFHAaVqQHZKVMorgoatJduGBM17cw=s1000-no-gm?authuser=0)
 
-![記念撮影](https://lh3.googleusercontent.com/pw/AP1GczMu5QmxBOZEgpkJf8p4E4IbTVM2Hgb8v22v_r__KphLBl-o82YZi1gSV57gh9O6T-SaIpFXcfMWG5oFgzyWx_s3A7H7p8o_yEzbsQFlKYx9KtHS41T5pKb-6RCFCyXlgCBDnodT0kDkGFIi8uMWg5FUBA=s800-no-gm?authuser=0)
+![記念撮影](https://lh3.googleusercontent.com/pw/AP1GczMu5QmxBOZEgpkJf8p4E4IbTVM2Hgb8v22v_r__KphLBl-o82YZi1gSV57gh9O6T-SaIpFXcfMWG5oFgzyWx_s3A7H7p8o_yEzbsQFlKYx9KtHS41T5pKb-6RCFCyXlgCBDnodT0kDkGFIi8uMWg5FUBA=s1000-no-gm?authuser=0)
 
-![地上展示の機体](https://lh3.googleusercontent.com/pw/AP1GczPCFNM-rah9rF07x0nbYse0AuLpD-rxXtc1S7CZKs3vGaGfYfsBg5Bg7WXbQO0MILrHPLPQG-Nl-ePoit15iiKt3ETi3wSBEhkQnG8q0Siquglj35QgGeJbLo86oSOPS01F5InBpN4jC5uZgdvwH83Q9Q=s800-no-gm?authuser=0)
+![地上展示の機体](https://lh3.googleusercontent.com/pw/AP1GczPCFNM-rah9rF07x0nbYse0AuLpD-rxXtc1S7CZKs3vGaGfYfsBg5Bg7WXbQO0MILrHPLPQG-Nl-ePoit15iiKt3ETi3wSBEhkQnG8q0Siquglj35QgGeJbLo86oSOPS01F5InBpN4jC5uZgdvwH83Q9Q=s1000-no-gm?authuser=0)
 
-![会場の様子](https://lh3.googleusercontent.com/pw/AP1GczMVEMqCnm2Yltbw6URpvlX3oxgif8E6ibZfGln1VU9oaM3sBy5TV0IVIDpLAE0gQqkHttal5RRM16uM41cMHXg3Y3v2_BTzGzqfyBY793wE5lpG-Tth7h_CY3sRwe1m32Ssv-oNVkI-UJ7T7XeJ_x1jFQ=s800-no-gm?authuser=0)
+![会場の様子](https://lh3.googleusercontent.com/pw/AP1GczMVEMqCnm2Yltbw6URpvlX3oxgif8E6ibZfGln1VU9oaM3sBy5TV0IVIDpLAE0gQqkHttal5RRM16uM41cMHXg3Y3v2_BTzGzqfyBY793wE5lpG-Tth7h_CY3sRwe1m32Ssv-oNVkI-UJ7T7XeJ_x1jFQ=s1000-no-gm?authuser=0)
 
-![午後の帰路](https://lh3.googleusercontent.com/pw/AP1GczOt4Qo3nMCdC6sx5ttgNbM04bruiYrxQOfTvLuPPIMSywsYbjikwABD7sxMnsnzDqjDpHdAUBmP9WRGISUEhDem56iAK97eGiAm6H-n4qPRRUWqRhuAafRALo1sEHg4OMkvfzaq1MJAr-Q7_Q-dCg25EA=s800-no-gm?authuser=0)
+![午後の帰路](https://lh3.googleusercontent.com/pw/AP1GczOt4Qo3nMCdC6sx5ttgNbM04bruiYrxQOfTvLuPPIMSywsYbjikwABD7sxMnsnzDqjDpHdAUBmP9WRGISUEhDem56iAK97eGiAm6H-n4qPRRUWqRhuAafRALo1sEHg4OMkvfzaq1MJAr-Q7_Q-dCg25EA=s1000-no-gm?authuser=0)
 
 帰りは激混雑、電車は1時間まちの満員でしたが、絶対的に素晴らしい・・・また築城に行きたいです。
 

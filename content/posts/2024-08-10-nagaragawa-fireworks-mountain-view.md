@@ -3,7 +3,7 @@ title: "山の上から眺める長良川花火大会 - 超望遠で捉えた特
 date: "2024-08-10"
 category: "旅行記"
 description: "長良川花火大会を山の上の眺望ポイントから超望遠レンズで撮影。いつもと違うアングルで楽しむ花火の魅力と、カメラマンたちとの出会いを記録した特別な夜。"
-featured_image: "https://lh3.googleusercontent.com/pw/AP1GczO0VGSw3enP9_d4M9ErxVSWdMk4R-gSb1aEjqbdwOi_DcQpMMwRs9Gt5BcvWNAi0D2kc4atiiCiq5oQKB0fkf3ffHWOIpd0crgxdCTV73LuDDKSZ9m1dFZpIBq1s5MB3cA8dWgkbvp0Vf4dVy_w39tFKg=s800-no-gm?authuser=0"
+featured_image: "https://lh3.googleusercontent.com/pw/AP1GczO0VGSw3enP9_d4M9ErxVSWdMk4R-gSb1aEjqbdwOi_DcQpMMwRs9Gt5BcvWNAi0D2kc4atiiCiq5oQKB0fkf3ffHWOIpd0crgxdCTV73LuDDKSZ9m1dFZpIBq1s5MB3cA8dWgkbvp0Vf4dVy_w39tFKg=s1000-no-gm?authuser=0"
 ---
 
 <!-- 元のGoogle Photosリンク: https://photos.app.goo.gl/n2gpgWDkUmhcwrSr9 -->
@@ -14,7 +14,7 @@ featured_image: "https://lh3.googleusercontent.com/pw/AP1GczO0VGSw3enP9_d4M9ErxV
 
 超望遠レンズでの花火撮影となると、やはり高度と距離が重要になります。長良川の花火がしっかりと見える山を探して、いくつかの候補地を検討した結果、今回のポイントに決めました。
 
-![山道の様子](https://lh3.googleusercontent.com/pw/AP1GczNjC4Idpx818Vmj1GJF9gzDYkiypmmHR7UNBzJxDllsIhhhIw5zAnFYPsgAkfswCqCUtv4T8bYdsUYwUabeX3xDLwCwPHGm-EMdTvBRAiNr4TnGYpOl=s800-no-gm?authuser=0)
+![山道の様子](https://lh3.googleusercontent.com/pw/AP1GczNjC4Idpx818Vmj1GJF9gzDYkiypmmHR7UNBzJxDllsIhhhIw5zAnFYPsgAkfswCqCUtv4T8bYdsUYwUabeX3xDLwCwPHGm-EMdTvBRAiNr4TnGYpOl=s1000-no-gm?authuser=0)
 
 登山道は整備されており、機材を持参しての移動もそれほど困難ではありませんでした。
 
@@ -22,9 +22,9 @@ featured_image: "https://lh3.googleusercontent.com/pw/AP1GczO0VGSw3enP9_d4M9ErxV
 
 花火大会が始まる前の黄昏時、山の上からは岐阜市街地の素晴らしい眺望が広がっていました。
 
-![黄昏の岐阜市街地](https://lh3.googleusercontent.com/pw/AP1GczMW4HKgNPJl_-_eBqO1VI2EKPKy18BQCxH4kO3vK7i4xSQ0LpdKB90ntvG_hpBh431fCE8DgMICgHWz619vCXKCQTBz9_S2EcwyURvr3lt76eUIaqQli4W9z0JVoR5N7RT1kPCTd0atciJO7YP1rgbL_A=s800-no-gm?authuser=0)
+![黄昏の岐阜市街地](https://lh3.googleusercontent.com/pw/AP1GczMW4HKgNPJl_-_eBqO1VI2EKPKy18BQCxH4kO3vK7i4xSQ0LpdKB90ntvG_hpBh431fCE8DgMICgHWz619vCXKCQTBz9_S2EcwyURvr3lt76eUIaqQli4W9z0JVoR5N7RT1kPCTd0atciJO7YP1rgbL_A=s1000-no-gm?authuser=0)
 
-![夕焼けの市街地俯瞰](https://lh3.googleusercontent.com/pw/AP1GczMS8FJ0EmuBklo0twsuHIQJEq2mYZPIN-5nnp9DlzNbMkcuJMXfiOiA_1qiityRABGkig3iTp-Wh-ArfC4wCDFQxzGxlhikeQXT0sxKWjdPrStcjQFhnf5X0EvyduAuCK7X9eSIQbArY3bpYkbAdYu5Ow=s800-no-gm?authuser=0)
+![夕焼けの市街地俯瞰](https://lh3.googleusercontent.com/pw/AP1GczMS8FJ0EmuBklo0twsuHIQJEq2mYZPIN-5nnp9DlzNbMkcuJMXfiOiA_1qiityRABGkig3iTp-Wh-ArfC4wCDFQxzGxlhikeQXT0sxKWjdPrStcjQFhnf5X0EvyduAuCK7X9eSIQbArY3bpYkbAdYu5Ow=s1000-no-gm?authuser=0)
 
 長良川が蛇行しながら市街地を縫って流れる様子が一望できます。このロケーションなら、花火と市街地の夜景を一緒に収められそうです。
 
@@ -36,15 +36,15 @@ featured_image: "https://lh3.googleusercontent.com/pw/AP1GczO0VGSw3enP9_d4M9ErxV
 
 そして、いよいよ花火大会が始まりました。山の上からの超望遠撮影は初めての挑戦でしたが、期待以上の結果を得ることができました。
 
-![長良川花火大会 1](https://lh3.googleusercontent.com/pw/AP1GczO0VGSw3enP9_d4M9ErxVSWdMk4R-gSb1aEjqbdwOi_DcQpMMwRs9Gt5BcvWNAi0D2kc4atiiCiq5oQKB0fkf3ffHWOIpd0crgxdCTV73LuDDKSZ9m1dFZpIBq1s5MB3cA8dWgkbvp0Vf4dVy_w39tFKg=s800-no-gm?authuser=0)
+![長良川花火大会 1](https://lh3.googleusercontent.com/pw/AP1GczO0VGSw3enP9_d4M9ErxVSWdMk4R-gSb1aEjqbdwOi_DcQpMMwRs9Gt5BcvWNAi0D2kc4atiiCiq5oQKB0fkf3ffHWOIpd0crgxdCTV73LuDDKSZ9m1dFZpIBq1s5MB3cA8dWgkbvp0Vf4dVy_w39tFKg=s1000-no-gm?authuser=0)
 
-![長良川花火大会 2](https://lh3.googleusercontent.com/pw/AP1GczPkcT5t_yoPFVHjAKRKsw58C4b7EDIKn04SteEMgQp48e6tw1L5Mfmdr2ROzu5o_obiG9aXRAekwt3swjDY4CltukaNM8kM4k14Cj1aYlYPdPSEqmHFH1mDKAbuP8ebys728NS1M0enzYGSSHF-q6IKyA=s800-no-gm?authuser=0)
+![長良川花火大会 2](https://lh3.googleusercontent.com/pw/AP1GczPkcT5t_yoPFVHjAKRKsw58C4b7EDIKn04SteEMgQp48e6tw1L5Mfmdr2ROzu5o_obiG9aXRAekwt3swjDY4CltukaNM8kM4k14Cj1aYlYPdPSEqmHFH1mDKAbuP8ebys728NS1M0enzYGSSHF-q6IKyA=s1000-no-gm?authuser=0)
 
-![長良川花火大会 3](https://lh3.googleusercontent.com/pw/AP1GczMKrcn0E1qGMubI_RcbmvHM4VVr3-2EJXiYzsyxYS1pR0r3zBOrAzXEOQSSKTy7jMqOnXG39el2XDWm14E_-DiA0FO6I43fWltU0z3Hsxf4jj_hy38qS5JemZUTOOgDTAOTfRv2G4w69nf8kzFaWy6_FA=s800-no-gm?authuser=0)
+![長良川花火大会 3](https://lh3.googleusercontent.com/pw/AP1GczMKrcn0E1qGMubI_RcbmvHM4VVr3-2EJXiYzsyxYS1pR0r3zBOrAzXEOQSSKTy7jMqOnXG39el2XDWm14E_-DiA0FO6I43fWltU0z3Hsxf4jj_hy38qS5JemZUTOOgDTAOTfRv2G4w69nf8kzFaWy6_FA=s1000-no-gm?authuser=0)
 
-![長良川花火大会 4](https://lh3.googleusercontent.com/pw/AP1GczMFPipSutojovs2HmVctZie8DCBrMGJ390T7Uv0AIYEYwyJtJk8cYs-V3w1Buin7dhKvKmvKKsleZyMDGeyFGVMFzhuJrSfoyEIHb1YwDqtTQzax4-z=s800-no-gm?authuser=0)
+![長良川花火大会 4](https://lh3.googleusercontent.com/pw/AP1GczMFPipSutojovs2HmVctZie8DCBrMGJ390T7Uv0AIYEYwyJtJk8cYs-V3w1Buin7dhKvKmvKKsleZyMDGeyFGVMFzhuJrSfoyEIHb1YwDqtTQzax4-z=s1000-no-gm?authuser=0)
 
-![長良川花火大会 5](https://lh3.googleusercontent.com/pw/AP1GczPNoCKkRqEZLHiTfx6yNolTz6vzElhMavawL44KOtlq2EmIfMlx40-ztTARXTpYlwDRP031W0vVmB6XEohc9O-PwqB-vwo0TAsYXHYFZd2Jp11YZCcPuZigi9NAx5pSvlq_w4FRmDUbsY3V_vir8yh-LA=s800-no-gm?authuser=0)
+![長良川花火大会 5](https://lh3.googleusercontent.com/pw/AP1GczPNoCKkRqEZLHiTfx6yNolTz6vzElhMavawL44KOtlq2EmIfMlx40-ztTARXTpYlwDRP031W0vVmB6XEohc9O-PwqB-vwo0TAsYXHYFZd2Jp11YZCcPuZigi9NAx5pSvlq_w4FRmDUbsY3V_vir8yh-LA=s1000-no-gm?authuser=0)
 
 ## 撮影結果と感想
 

@@ -4,7 +4,7 @@ date: 2025-09-01
 category: "クラフト・DIY"
 tags: [骨格標本, DIY, 自然標本, 工作, 実験]
 description: "友達からもらった鹿の下顎と大腿骨を使って骨格標本作りに挑戦。煮込み処理は順調だったものの、大腿骨の油抜きでアセトンでも効果なし。解決方法を模索中"
-featured_image: "https://lh3.googleusercontent.com/pw/AP1GczP-WHiETnrkkVje_dSX3wTRFq3vfEZltnB1Cqa0OdRV3GMkPVjFHypLuRLhBPyTpzFO6XCeY2M3S-SaW1IygDsX-O5gz02Ec9_RTF6jcVO4qTv7tjYqwVaR4CLRav6gFxKiOnLDQx-GInsOu_mXNQUHHA=s800-no-gm?authuser=0"
+featured_image: "https://lh3.googleusercontent.com/pw/AP1GczP-WHiETnrkkVje_dSX3wTRFq3vfEZltnB1Cqa0OdRV3GMkPVjFHypLuRLhBPyTpzFO6XCeY2M3S-SaW1IygDsX-O5gz02Ec9_RTF6jcVO4qTv7tjYqwVaR4CLRav6gFxKiOnLDQx-GInsOu_mXNQUHHA=s1000-no-gm?authuser=0"
 ---
 
 骨格標本作りについて、最近質問されることがあります。
@@ -19,16 +19,16 @@ featured_image: "https://lh3.googleusercontent.com/pw/AP1GczP-WHiETnrkkVje_dSX3w
 - **鹿の下顎**
 - **鹿の大腿骨**
 
-![鹿の骨材料全体](https://lh3.googleusercontent.com/pw/AP1GczNQq8kQhtiM66_sdusf6K8fyknguT9VT5K4wv4I1NXy1w6hJSUGy5VEaiy983ZF7ui4OryyvL9q51AzXESrWYHX88p5kqEwGKCQk2cioErx270Calfv=s800-no-gm?authuser=0)
+![鹿の骨材料全体](https://lh3.googleusercontent.com/pw/AP1GczNQq8kQhtiM66_sdusf6K8fyknguT9VT5K4wv4I1NXy1w6hJSUGy5VEaiy983ZF7ui4OryyvL9q51AzXESrWYHX88p5kqEwGKCQk2cioErx270Calfv=s1000-no-gm?authuser=0)
 *処理前の材料 - 生の状態の大腿骨*
 
-![煮込み処理中](https://lh3.googleusercontent.com/pw/AP1GczO9h06c_obRy7J_kPs_PmFublmQ2Ujj4G0sYlRwIJrOrMf4ZulF585cW4sFmNZPzxxnXSZmzORiF22BWZxjuMTQVMYeAyzrqRmu3YuKSbnYlCEjZoQL4jH5qG2cysa46ZiODPoDSdLvMrHI7vk0shgbVQ=s800-no-gm?authuser=0)
+![煮込み処理中](https://lh3.googleusercontent.com/pw/AP1GczO9h06c_obRy7J_kPs_PmFublmQ2Ujj4G0sYlRwIJrOrMf4ZulF585cW4sFmNZPzxxnXSZmzORiF22BWZxjuMTQVMYeAyzrqRmu3YuKSbnYlCEjZoQL4jH5qG2cysa46ZiODPoDSdLvMrHI7vk0shgbVQ=s1000-no-gm?authuser=0)
 *煮込み処理中の様子 - 骨から肉を除去中*
 
 どちらも立派な大きさで、骨格標本作りの練習には十分な材料でした。
 個人的には、こうした自然の材料をいただけることに本当に感謝しています。
 
-![下顎標本の途中経過](https://lh3.googleusercontent.com/pw/AP1GczP-WHiETnrkkVje_dSX3wTRFq3vfEZltnB1Cqa0OdRV3GMkPVjFHypLuRLhBPyTpzFO6XCeY2M3S-SaW1IygDsX-O5gz02Ec9_RTF6jcVO4qTv7tjYqwVaR4CLRav6gFxKiOnLDQx-GInsOu_mXNQUHHA=s800-no-gm?authuser=0)
+![下顎標本の途中経過](https://lh3.googleusercontent.com/pw/AP1GczP-WHiETnrkkVje_dSX3wTRFq3vfEZltnB1Cqa0OdRV3GMkPVjFHypLuRLhBPyTpzFO6XCeY2M3S-SaW1IygDsX-O5gz02Ec9_RTF6jcVO4qTv7tjYqwVaR4CLRav6gFxKiOnLDQx-GInsOu_mXNQUHHA=s1000-no-gm?authuser=0)
 *下顎標本の途中経過 - 煮込み処理後の状態*
 
 ## 処理の流れ
@@ -41,7 +41,7 @@ featured_image: "https://lh3.googleusercontent.com/pw/AP1GczP-WHiETnrkkVje_dSX3w
 この作業は思った以上にうまくいき、大部分の肉は綺麗に取れました。
 下顎に関しては、かなり満足のいく仕上がりになっています。
 
-![標本制作の途中経過](https://lh3.googleusercontent.com/pw/AP1GczNNvi0VQTQeISZ3psIEeKFSqUC8MLjLs344coG41pChBRfLHP5LrTVtpxJDzSsBxPCP-h6bfn9jILXDjHCLzIYLPFuouyGsGvNFa-TqxcwNMYxo9-yzz7UurvmtPcRfyEQrW9K71ujA9HWK42gT9Gmg_g=s800-no-gm?authuser=0)
+![標本制作の途中経過](https://lh3.googleusercontent.com/pw/AP1GczNNvi0VQTQeISZ3psIEeKFSqUC8MLjLs344coG41pChBRfLHP5LrTVtpxJDzSsBxPCP-h6bfn9jILXDjHCLzIYLPFuouyGsGvNFa-TqxcwNMYxo9-yzz7UurvmtPcRfyEQrW9K71ujA9HWK42gT9Gmg_g=s1000-no-gm?authuser=0)
 *標本制作の途中経過 - 各部位を整理した状態*
 
 ### 2. 大腿骨の油抜き問題
@@ -54,7 +54,7 @@ featured_image: "https://lh3.googleusercontent.com/pw/AP1GczP-WHiETnrkkVje_dSX3w
 - しかし、ほとんど効果なし
 - 油の染み出しは相変わらず続いている状態
 
-![アセトン処理中の標本](https://lh3.googleusercontent.com/pw/AP1GczPLXaExUR1xYBHN1gN8LxS39ZioQHPpJQ8cWFClMslsn2bnYeUlVdS8_j-AbP7yTrc0P1IEGm0sOXxIOkwtSEVGf86hfI_o7JgmfmQL8c1k-EnxQjIKZKdOubM-7mTZl_3hqkNVSH8Yi4gUnokXYa-4ug=s800-no-gm?authuser=0)
+![アセトン処理中の標本](https://lh3.googleusercontent.com/pw/AP1GczPLXaExUR1xYBHN1gN8LxS39ZioQHPpJQ8cWFClMslsn2bnYeUlVdS8_j-AbP7yTrc0P1IEGm0sOXxIOkwtSEVGf86hfI_o7JgmfmQL8c1k-EnxQjIKZKdOubM-7mTZl_3hqkNVSH8Yi4gUnokXYa-4ug=s1000-no-gm?authuser=0)
 *アセトン処理中の標本 - 容器でのアセトン浸漬処理*
 
 ## 現在の状況と困っていること
@@ -96,10 +96,10 @@ featured_image: "https://lh3.googleusercontent.com/pw/AP1GczP-WHiETnrkkVje_dSX3w
 2. **温度管理**：安全な範囲で少し温度を上げて試す
 3. **専門家への相談**：博物館や標本制作業者に問い合わせ
 
-![標本の整理状況](https://lh3.googleusercontent.com/pw/AP1GczPVE56AmPT2vPWGtnbdQRbFLziMI4l3quUU8Kyiirzh1weypeDLOaUayRz0B3Gk-sm769Yqds8Lz_jD-2-YXBGITtLJcUChY0zFrcZzLp6geA6_7PBPgBulvDuCvDDA3l0AVX5fJ_eJVmHL9UI2ZmLYuA=s800-no-gm?authuser=0)
+![標本の整理状況](https://lh3.googleusercontent.com/pw/AP1GczPVE56AmPT2vPWGtnbdQRbFLziMI4l3quUU8Kyiirzh1weypeDLOaUayRz0B3Gk-sm769Yqds8Lz_jD-2-YXBGITtLJcUChY0zFrcZzLp6geA6_7PBPgBulvDuCvDDA3l0AVX5fJ_eJVmHL9UI2ZmLYuA=s1000-no-gm?authuser=0)
 *標本の整理状況 - バットに整理された途中経過*
 
-![下顎標本の詳細](https://lh3.googleusercontent.com/pw/AP1GczMVTDlZh68Pm3s2Wumz2oJgqiH_mRaN1DqNpfcYcZ1JoHaF5y3V3iESXf2P_ZWPyitd2b5ETYzTj0JQUn2GDfFZHukBJEHG_pcmsC4e9Gbn4f2EuP5RggC4pugBRhmnPocNuMYg0y5ndcuGXPcwIxGmBg=s800-no-gm?authuser=0)
+![下顎標本の詳細](https://lh3.googleusercontent.com/pw/AP1GczMVTDlZh68Pm3s2Wumz2oJgqiH_mRaN1DqNpfcYcZ1JoHaF5y3V3iESXf2P_ZWPyitd2b5ETYzTj0JQUn2GDfFZHukBJEHG_pcmsC4e9Gbn4f2EuP5RggC4pugBRhmnPocNuMYg0y5ndcuGXPcwIxGmBg=s1000-no-gm?authuser=0)
 *下顎標本の詳細 - 歯の状態も確認できる途中経過*
 
 ## まとめ

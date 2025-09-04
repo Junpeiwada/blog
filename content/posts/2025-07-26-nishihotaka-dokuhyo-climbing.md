@@ -4,7 +4,7 @@ date: 2025-07-26
 category: "登山・クライミング"
 tags: [西穂高, 独標, 新穂高ロープウェイ, 西穂山荘, 星景写真, 北アルプス, 1泊2日, 天の川]
 description: "新穂高ロープウェイを使った西穂独標1泊2日の山旅。西穂山荘での山小屋泊、新月の夜の天の川撮影、ピラミッドピーク探索、下山後のソフトクリームまで、24枚の写真で綴る充実の山行記録。"
-featured_image: "https://lh3.googleusercontent.com/pw/AP1GczMvdznuIdqSKBA53eb7bYEQlyYg85N_KCxsR5l-VTa3eAkeVBHBFAnOm5nAWpnNhvZIctACK1eGcjbKqeA7EYKSPzXh_0UrHi_QLZ7-ZT7nKDYa57UPXbHkZpkeUD4emwMFiELIcoBA5JO_gV8VlYRrUg=s800-no-gm?authuser=0"
+featured_image: "https://lh3.googleusercontent.com/pw/AP1GczMvdznuIdqSKBA53eb7bYEQlyYg85N_KCxsR5l-VTa3eAkeVBHBFAnOm5nAWpnNhvZIctACK1eGcjbKqeA7EYKSPzXh_0UrHi_QLZ7-ZT7nKDYa57UPXbHkZpkeUD4emwMFiELIcoBA5JO_gV8VlYRrUg=s1000-no-gm?authuser=0"
 ---
 
 <!-- 元のGoogle Photosリンク: https://photos.app.goo.gl/8EQsuVrWeceeTLD98 -->
@@ -22,13 +22,13 @@ featured_image: "https://lh3.googleusercontent.com/pw/AP1GczMvdznuIdqSKBA53eb7bY
 
 ## 1日目：早朝の新穂高温泉から出発
 
-![新穂高温泉駐車場からの北アルプス](https://lh3.googleusercontent.com/pw/AP1GczM-M8m0XEuL5UpEUri5dMuC3BEOgSGm8wfjscyObp_OT4MiLX5B-bNL5fcaE7za8LaAbuBvM4QKEHo8CVRz4uYw7TkkyrVTnhwEFRZ5wtEgrVlHzeEDYu4XWSU1aI_Z4x2N7MeA7CibHKG6hOcLCebtyw=s800-no-gm?authuser=0)
+![新穂高温泉駐車場からの北アルプス](https://lh3.googleusercontent.com/pw/AP1GczM-M8m0XEuL5UpEUri5dMuC3BEOgSGm8wfjscyObp_OT4MiLX5B-bNL5fcaE7za8LaAbuBvM4QKEHo8CVRz4uYw7TkkyrVTnhwEFRZ5wtEgrVlHzeEDYu4XWSU1aI_Z4x2N7MeA7CibHKG6hOcLCebtyw=s1000-no-gm?authuser=0)
 
 朝7時28分、新穂高温泉の駐車場に到着。澄み切った青空の下、北アルプスの山々が美しいシルエットを描いています。これから始まる1泊2日の西穂独標への旅への期待が高まります。
 
 ### 新穂高ロープウェイで天空の登山口へ
 
-![新穂高ロープウェイ駅舎](https://lh3.googleusercontent.com/pw/AP1GczNAvHoZ1OAWGSDwx9x_jlVznVwR0gX5SaWo0LBHVHwMhJrz_4tGeIcvdiYPo5FEXKyyKj52ubLDwu9B1MscXw1V_jwi3y2nV0R9DsJhcqwPH9FrgF6rXLG2YEuJ6ntghsJSUlB0tT_fmDMWEgmt7I8vmQ=s800-no-gm?authuser=0)
+![新穂高ロープウェイ駅舎](https://lh3.googleusercontent.com/pw/AP1GczNAvHoZ1OAWGSDwx9x_jlVznVwR0gX5SaWo0LBHVHwMhJrz_4tGeIcvdiYPo5FEXKyyKj52ubLDwu9B1MscXw1V_jwi3y2nV0R9DsJhcqwPH9FrgF6rXLG2YEuJ6ntghsJSUlB0tT_fmDMWEgmt7I8vmQ=s1000-no-gm?authuser=0)
 
 7時58分、新穂高ロープウェイ駅舎前にて。新穂高温泉（1,090m）から新穂高ロープウェイに乗車します。日本唯一の2階建てゴンドラで、わずか十数分で西穂高口駅（2,156m）へ。1,066mの標高差を一気に駆け上がる爽快感は格別です。
 
@@ -36,59 +36,59 @@ featured_image: "https://lh3.googleusercontent.com/pw/AP1GczMvdznuIdqSKBA53eb7bY
 
 ### 西穂山荘への樹林帯ルート
 
-![樹林帯の木道](https://lh3.googleusercontent.com/pw/AP1GczMYEIMTCCBCGGRwezg4ouAGsTAaFeVJLYiFKMK1jmbNZSsJGMhDIGEBZslXfl2ph7qn3TjGKDCHQaUQzflC8Y8zWTbaCuJkhut6qn0cLXN0wBBtls1M18jhemqItwRn0_kptEXmZnZrYHC7Gjk3CdPhgw=s800-no-gm?authuser=0)
+![樹林帯の木道](https://lh3.googleusercontent.com/pw/AP1GczMYEIMTCCBCGGRwezg4ouAGsTAaFeVJLYiFKMK1jmbNZSsJGMhDIGEBZslXfl2ph7qn3TjGKDCHQaUQzflC8Y8zWTbaCuJkhut6qn0cLXN0wBBtls1M18jhemqItwRn0_kptEXmZnZrYHC7Gjk3CdPhgw=s1000-no-gm?authuser=0)
 
 8時58分の樹林帯。西穂高口駅から西穂山荘までは約1時間10分の樹林帯歩き。よく整備された木道が続き、針葉樹林の中を緩やかな傾斜で登っていきます。朝の静寂な森の中での穏やかなひとときです。
 
-![岩場の登山道](https://lh3.googleusercontent.com/pw/AP1GczN4cqlvqeDAplj_A1_075pRcfII4LWd3-DykMs6nB72ka8y6ISSNKnN2-h4bweUKy6St_OqlvQJmvWBlfBBYk7CTr9GPdXHXYbBCsMk7jSG5p_ks0R4ZJ5eOGc7fcGRRLRGupQNYp-xzt667KI5KNl1wQ=s800-no-gm?authuser=0)
+![岩場の登山道](https://lh3.googleusercontent.com/pw/AP1GczN4cqlvqeDAplj_A1_075pRcfII4LWd3-DykMs6nB72ka8y6ISSNKnN2-h4bweUKy6St_OqlvQJmvWBlfBBYk7CTr9GPdXHXYbBCsMk7jSG5p_ks0R4ZJ5eOGc7fcGRRLRGupQNYp-xzt667KI5KNl1wQ=s1000-no-gm?authuser=0)
 
 9時29分、標高が上がるにつれて岩場が現れ始めます。他の登山者グループと一緒に、慎重に岩場を登っていきます。森林限界に近づくにつれて、徐々に北アルプスの本格的な山岳風景が現れてきます。
 
 ### 西穂山荘到着と絶景パノラマ
 
-![西穂山荘からの絶景](https://lh3.googleusercontent.com/pw/AP1GczMvdznuIdqSKBA53eb7bYEQlyYg85N_KCxsR5l-VTa3eAkeVBHBFAnOm5nAWpnNhvZIctACK1eGcjbKqeA7EYKSPzXh_0UrHi_QLZ7-ZT7nKDYa57UPXbHkZpkeUD4emwMFiELIcoBA5JO_gV8VlYRrUg=s800-no-gm?authuser=0)
+![西穂山荘からの絶景](https://lh3.googleusercontent.com/pw/AP1GczMvdznuIdqSKBA53eb7bYEQlyYg85N_KCxsR5l-VTa3eAkeVBHBFAnOm5nAWpnNhvZIctACK1eGcjbKqeA7EYKSPzXh_0UrHi_QLZ7-ZT7nKDYa57UPXbHkZpkeUD4emwMFiELIcoBA5JO_gV8VlYRrUg=s1000-no-gm?authuser=0)
 
 10時42分、西穂山荘（標高2,367m）に到着。眼下に広がる緑の山々、遠くまで続く稜線、そして北アルプスの雄大な景観を一望できる良い展望です。
 
-![山荘周辺の風景](https://lh3.googleusercontent.com/pw/AP1GczNFl-q_JONYZnanuqXVd3RTVxdZzjd6-rbWyinafXmivk1mnV9KUrTBMJ3j2WkqyAA0oFodH-eSJh1QCD7J8tk1oQHh6GT1LobyW7W_-77SJlrUN2eW5pfRDd8BXUBFeBjm_n8xwh_fy7kXYEUs7wyPqA=s800-no-gm?authuser=0)
+![山荘周辺の風景](https://lh3.googleusercontent.com/pw/AP1GczNFl-q_JONYZnanuqXVd3RTVxdZzjd6-rbWyinafXmivk1mnV9KUrTBMJ3j2WkqyAA0oFodH-eSJh1QCD7J8tk1oQHh6GT1LobyW7W_-77SJlrUN2eW5pfRDd8BXUBFeBjm_n8xwh_fy7kXYEUs7wyPqA=s1000-no-gm?authuser=0)
 
 11時32分、西穂山荘周辺でチェックインと休憩。西穂山荘は北アルプス南部で唯一の通年営業山小屋。定員300名の大きな山荘で、設備も充実しています。この標高での通年営業は貴重な存在です。
 
 ### 昼食と午後の準備
 
-![昼食・休憩時間](https://lh3.googleusercontent.com/pw/AP1GczPdQBJ3S3JBunaKYsiMIQeXcTyfcjOeno79F1T7yqaqCmCWjqllnjp3XV-LoNEMVOn5-c-sA6wf5t_aYMwnYDCw_La0oYGcnUd0wBM5BtxEeRERuKWbWq0aYkMnET3FUqyu5Eoi_rDT8C7GvA81tuHegw=s800-no-gm?authuser=0)
+![昼食・休憩時間](https://lh3.googleusercontent.com/pw/AP1GczPdQBJ3S3JBunaKYsiMIQeXcTyfcjOeno79F1T7yqaqCmCWjqllnjp3XV-LoNEMVOn5-c-sA6wf5t_aYMwnYDCw_La0oYGcnUd0wBM5BtxEeRERuKWbWq0aYkMnET3FUqyu5Eoi_rDT8C7GvA81tuHegw=s1000-no-gm?authuser=0)
 
 12時51分、山荘での昼食と休憩。午後からの西穂独標へのアタックに向けて、しっかりとエネルギーを補給します。
 
 ### 午後：西穂独標へのアタック開始
 
-![午後の登山開始](https://lh3.googleusercontent.com/pw/AP1GczNF6OGLJ0RlgN07FbOX5oqD1TlO7wiZbjUCsXBN3nUkvjnKamMHPHd2d2IFeO4-QAFG4HuwlC59nUYYkixNGpPVMzPhLfspGti0WWUf71ObxoYmUNDLBXvzA86-6-IK9scarMJWBqFxiz3irk3waAimsA=s800-no-gm?authuser=0)
+![午後の登山開始](https://lh3.googleusercontent.com/pw/AP1GczNF6OGLJ0RlgN07FbOX5oqD1TlO7wiZbjUCsXBN3nUkvjnKamMHPHd2d2IFeO4-QAFG4HuwlC59nUYYkixNGpPVMzPhLfspGti0WWUf71ObxoYmUNDLBXvzA86-6-IK9scarMJWBqFxiz3irk3waAimsA=s1000-no-gm?authuser=0)
 
 15時12分、午後からいよいよ西穂独標（2,701m）を目指します。西穂山荘から丸山（2,452m）を経て、約1時間の行程です。
 
-![西穂独標への登り](https://lh3.googleusercontent.com/pw/AP1GczPdQ0XAqGXGEQL1-7hZ_uq6QPgphoDViOQW2zNOFmDazh-2eVQYikekHfVLYsINiQQZs4ClZ2plFi7SA9WHh21Z4hutOCrNogbJarA2iikO2_HcQXLjYBFbWI6Ue39F7FgldjxWHDnGfbha-LZ2HI0oWA=s800-no-gm?authuser=0)
+![西穂独標への登り](https://lh3.googleusercontent.com/pw/AP1GczPdQ0XAqGXGEQL1-7hZ_uq6QPgphoDViOQW2zNOFmDazh-2eVQYikekHfVLYsINiQQZs4ClZ2plFi7SA9WHh21Z4hutOCrNogbJarA2iikO2_HcQXLjYBFbWI6Ue39F7FgldjxWHDnGfbha-LZ2HI0oWA=s1000-no-gm?authuser=0)
 
 15時38分、森林限界を超えると、北アルプスの稜線らしい岩稜帯が始まります。
 
-![独標への道のり](https://lh3.googleusercontent.com/pw/AP1GczMdTwlakp7jRLWuJZjHXGz7_gR1twHadGu6jCRYDd_k1EWLXS35IM3M9UzuAgO0LEkZgR3_21HJcxCi-xDS8JRbnfE4FWnSISacKvGIPtAoZ6QCdEEUns1y4sQwB6i-tJiN6919eGIPjOgq8KY8uj94nQ=s800-no-gm?authuser=0)
+![独標への道のり](https://lh3.googleusercontent.com/pw/AP1GczMdTwlakp7jRLWuJZjHXGz7_gR1twHadGu6jCRYDd_k1EWLXS35IM3M9UzuAgO0LEkZgR3_21HJcxCi-xDS8JRbnfE4FWnSISacKvGIPtAoZ6QCdEEUns1y4sQwB6i-tJiN6919eGIPjOgq8KY8uj94nQ=s1000-no-gm?authuser=0)
 
 15時40分、西穂独標は「独立標高点」の意味で、地図作成時の測量ポイント。正式な山名ではありませんが、多くの登山者にとって重要な目標地点です。独標からの展望は見応えがあり、穂高連峰の主稜線が一望でき、眼下には上高地、遠くには槍ヶ岳の尖峰が見えます。
 
 ### 夕方の山岳風景
 
-![夕方の風景](https://lh3.googleusercontent.com/pw/AP1GczMLLxCEO4vCYs8JHM822x5sKOW_qOtv-m9cYikWUeg5oLIc6nGhWCs99hJjCYwk7gy1GwK3Uk51nyrEO1aF8KurMOM8SDe-QMter1y21UiGuoxRwvsCoZuJd-MeA5XvEN6WGBsNEt5u98Brc_p32pp-Ow=s800-no-gm?authuser=0)
+![夕方の風景](https://lh3.googleusercontent.com/pw/AP1GczMLLxCEO4vCYs8JHM822x5sKOW_qOtv-m9cYikWUeg5oLIc6nGhWCs99hJjCYwk7gy1GwK3Uk51nyrEO1aF8KurMOM8SDe-QMter1y21UiGuoxRwvsCoZuJd-MeA5XvEN6WGBsNEt5u98Brc_p32pp-Ow=s1000-no-gm?authuser=0)
 
 17時19分、夕方の山岳風景。独標から西穂山荘に戻り、夕暮れ時の美しい山々を眺めます。
 
 ### 夕暮れの山荘
 
-![夕暮れ時](https://lh3.googleusercontent.com/pw/AP1GczPzTCVTVjPj6SGkrpLx5O_X4f5AkRhZyHXhc14PORhUDuWW9oQ5qNPkkUJR0bNZO34hNGgDgPBYdkm1B9gNn5a55UN8PGkwTmVQsTt_TMQOiyAsMMZD5ke9XgEMHrr8VzhSgIRSOu4_-Cdg1ziOZ5Lx9g=s800-no-gm?authuser=0)
+![夕暮れ時](https://lh3.googleusercontent.com/pw/AP1GczPzTCVTVjPj6SGkrpLx5O_X4f5AkRhZyHXhc14PORhUDuWW9oQ5qNPkkUJR0bNZO34hNGgDgPBYdkm1B9gNn5a55UN8PGkwTmVQsTt_TMQOiyAsMMZD5ke9XgEMHrr8VzhSgIRSOu4_-Cdg1ziOZ5Lx9g=s1000-no-gm?authuser=0)
 
 19時26分、夕暮れ時の山荘。日が沈み始め、これから新月の夜の天の川撮影に向けて準備を始めます。
 
 ## 1日目深夜：新月の天の川撮影
 
-![深夜の星空撮影](https://lh3.googleusercontent.com/pw/AP1GczMmAWu6J4Ktv1iqYM-iuXL3Q2PX88O4mxK2XxSBJ9SSDNO_z47KfppYIGKDdyq0Vtue2lLYWxBUpp6EmKYDX02blLnKX5-LgWKQUHgV7klVakZ5mWoBQWJK8bTY92NepGHBwER4VzaWqVNjgng6csbuMg=s800-no-gm?authuser=0)
+![深夜の星空撮影](https://lh3.googleusercontent.com/pw/AP1GczMmAWu6J4Ktv1iqYM-iuXL3Q2PX88O4mxK2XxSBJ9SSDNO_z47KfppYIGKDdyq0Vtue2lLYWxBUpp6EmKYDX02blLnKX5-LgWKQUHgV7klVakZ5mWoBQWJK8bTY92NepGHBwER4VzaWqVNjgng6csbuMg=s1000-no-gm?authuser=0)
 
 7月27日0時12分、深夜の天の川撮影。今回は新月のタイミングを狙って山行を計画しました。月明かりのない夜は、星景写真撮影には最適な条件です。深夜、西穂山荘から少し離れた場所で天の川撮影にチャレンジ。標高2,367mの澄んだ空気の中、肉眼でもはっきりと見える天の川が夜空を横切っています。
 
@@ -96,19 +96,19 @@ featured_image: "https://lh3.googleusercontent.com/pw/AP1GczMvdznuIdqSKBA53eb7bY
 
 ## 2日目：夜明け前から日の出まで
 
-![夜明け前](https://lh3.googleusercontent.com/pw/AP1GczM_gEewmHvj2TmYaZG35YFH_ss5R5_e2WCQyOeq6ulAGWtU1o0sPPg99RrKVlyveE058whxMJpiwUky-KpwUq5k13snrHKXiuPoIbZtS5xxV6KC3f-Hhkaonwtmk10JQBmBhWsUKLlDLCvESNE1EcbJKA=s800-no-gm?authuser=0)
+![夜明け前](https://lh3.googleusercontent.com/pw/AP1GczM_gEewmHvj2TmYaZG35YFH_ss5R5_e2WCQyOeq6ulAGWtU1o0sPPg99RrKVlyveE058whxMJpiwUky-KpwUq5k13snrHKXiuPoIbZtS5xxV6KC3f-Hhkaonwtmk10JQBmBhWsUKLlDLCvESNE1EcbJKA=s1000-no-gm?authuser=0)
 
 4時56分、夜明け前の空。星空から徐々に朝の光が差し込み始める、山の朝の特別な時間です。
 
-![朝の風景](https://lh3.googleusercontent.com/pw/AP1GczPtdaarXjXj3IsbKEPmEdBSh5bxhqqKTKvjIFNBWQP-UNA7hSu-oolgEMbYtshapx-4FX8vr_OWbxozpcWH3RTRVU3-O_UEGKaaXM12PyzbGx1mlMjtSZS7TpPcR0FzXsuznYkQPQuFeif0BnJdPgmIDQ=s800-no-gm?authuser=0)
+![朝の風景](https://lh3.googleusercontent.com/pw/AP1GczPtdaarXjXj3IsbKEPmEdBSh5bxhqqKTKvjIFNBWQP-UNA7hSu-oolgEMbYtshapx-4FX8vr_OWbxozpcWH3RTRVU3-O_UEGKaaXM12PyzbGx1mlMjtSZS7TpPcR0FzXsuznYkQPQuFeif0BnJdPgmIDQ=s1000-no-gm?authuser=0)
 
 5時26分、朝の風景。山荘周辺の風景が朝日に照らされ始めます。
 
-![日の出準備](https://lh3.googleusercontent.com/pw/AP1GczMh_-J5c-Pa4jm6Z8pkYE-LKDz_8iNYJbe6wCw-dghcGV9cisdXxoaiPm9v1DvdRDB_PGTWKRmEkjH-BtUc29lQ9snkoJsSOlbc2b9Sr7Hdvubh5ucBXRCZkOSbl2ZZCCWuUWN67qNON7RRePU-t23m-A=s800-no-gm?authuser=0)
+![日の出準備](https://lh3.googleusercontent.com/pw/AP1GczMh_-J5c-Pa4jm6Z8pkYE-LKDz_8iNYJbe6wCw-dghcGV9cisdXxoaiPm9v1DvdRDB_PGTWKRmEkjH-BtUc29lQ9snkoJsSOlbc2b9Sr7Hdvubh5ucBXRCZkOSbl2ZZCCWuUWN67qNON7RRePU-t23m-A=s1000-no-gm?authuser=0)
 
 5時30分、日の出を迎える準備。山荘から日の出撮影の最適な場所へ移動します。
 
-![日の出](https://lh3.googleusercontent.com/pw/AP1GczN9RNRrI_lieRxUZSGxNmEmrpWh6Wt6Way3n5utYVdSdwoq6lTqsrssUHMjcaWfovXZpFVkOv83y5MZprQyt6v170bJTfr7cLJOe_jL4sULeWrcoDZb5jVCcGsFH9WcDAwGmFQ0apYXeKaF_T_fnusd5w=s800-no-gm?authuser=0)
+![日の出](https://lh3.googleusercontent.com/pw/AP1GczN9RNRrI_lieRxUZSGxNmEmrpWh6Wt6Way3n5utYVdSdwoq6lTqsrssUHMjcaWfovXZpFVkOv83y5MZprQyt6v170bJTfr7cLJOe_jL4sULeWrcoDZb5jVCcGsFH9WcDAwGmFQ0apYXeKaF_T_fnusd5w=s1000-no-gm?authuser=0)
 
 5時43分、ついに日の出を迎えます。標高2,367mから見る日の出は圧倒的な美しさです。
 
@@ -116,23 +116,23 @@ featured_image: "https://lh3.googleusercontent.com/pw/AP1GczMvdznuIdqSKBA53eb7bY
 
 ### 朝の下山開始
 
-![朝の下山開始](https://lh3.googleusercontent.com/pw/AP1GczOb0mGDGgzxAJh-1phvQU9jSzmXTEzy14njRJUsBQJfCrGUnpQ0uJ-wzuvhF1keF0U4XJ3Afjyqox-m4uYfMbAVQUdVJdWeBWXo-W_A8nyfpWLnrSu7lbPzNGJfOsXhTFntYlcv5-Q1ztKmD2WnMON2YQ=s800-no-gm?authuser=0)
+![朝の下山開始](https://lh3.googleusercontent.com/pw/AP1GczOb0mGDGgzxAJh-1phvQU9jSzmXTEzy14njRJUsBQJfCrGUnpQ0uJ-wzuvhF1keF0U4XJ3Afjyqox-m4uYfMbAVQUdVJdWeBWXo-W_A8nyfpWLnrSu7lbPzNGJfOsXhTFntYlcv5-Q1ztKmD2WnMON2YQ=s1000-no-gm?authuser=0)
 
 6時59分、朝食後、下山を開始します。朝の清々しい空気の中での下山は格別です。
 
-![下山途中](https://lh3.googleusercontent.com/pw/AP1GczO6AInxHFpusuun2jIhaZiKvoWdYaPt3g66g20fMStYF3e_P3qeg9p38w-ZFmhOx4fWz59APUbKrhZZG6s8nuQNRTro57Zu5C5MY0dCSei6BzgRY_CYLNS2ONCdUoFsnWi3h3XXmY2lSHTAt7WECLEOtw=s800-no-gm?authuser=0)
+![下山途中](https://lh3.googleusercontent.com/pw/AP1GczO6AInxHFpusuun2jIhaZiKvoWdYaPt3g66g20fMStYF3e_P3qeg9p38w-ZFmhOx4fWz59APUbKrhZZG6s8nuQNRTro57Zu5C5MY0dCSei6BzgRY_CYLNS2ONCdUoFsnWi3h3XXmY2lSHTAt7WECLEOtw=s1000-no-gm?authuser=0)
 
 7時20分、下山途中の風景。朝の光が山々を美しく照らしています。
 
-![下山中の風景](https://lh3.googleusercontent.com/pw/AP1GczM7fdKQTmw4uOw02UqhhqMByewcBI3E-BTrF-QgV981CsaL9yJBGXuEaLm8URHF1kXrztxakZCWPbaZB_-xRueReBUiPhHgTImJz78HxWljlQvERtD3jjgw9tPBuaMaXK6cB_g0P3v7pUC9B7t0zBq1vQ=s800-no-gm?authuser=0)
+![下山中の風景](https://lh3.googleusercontent.com/pw/AP1GczM7fdKQTmw4uOw02UqhhqMByewcBI3E-BTrF-QgV981CsaL9yJBGXuEaLm8URHF1kXrztxakZCWPbaZB_-xRueReBUiPhHgTImJz78HxWljlQvERtD3jjgw9tPBuaMaXK6cB_g0P3v7pUC9B7t0zBq1vQ=s1000-no-gm?authuser=0)
 
 7時46分、下山中の風景。樹林帯を通って西穂高口駅に向かいます。
 
-![下山終盤](https://lh3.googleusercontent.com/pw/AP1GczNbbrmBZWPC77R3uYkl_k2i_w2tg2YJVsAw5vNZFyUytQaDViDbVPdLju9Ya_amXt3oFxJmko7IRUt7ofgjTR8mNkKv81CzXixpZcv25YtfhC-kkY5MdyKXlWwL08-NbnB0PunmQ30eA1GeFi0VSHz-Uw=s800-no-gm?authuser=0)
+![下山終盤](https://lh3.googleusercontent.com/pw/AP1GczNbbrmBZWPC77R3uYkl_k2i_w2tg2YJVsAw5vNZFyUytQaDViDbVPdLju9Ya_amXt3oFxJmko7IRUt7ofgjTR8mNkKv81CzXixpZcv25YtfhC-kkY5MdyKXlWwL08-NbnB0PunmQ30eA1GeFi0VSHz-Uw=s1000-no-gm?authuser=0)
 
 8時16分、下山終盤。西穂高口駅がもう目の前です。
 
-![下山完了](https://lh3.googleusercontent.com/pw/AP1GczOPLziCRc-2Rcwu_sM1-MyElAPwCK4obwkBnDf7pkk0c2orFeFMZVFSniDz3fs58_Aap54OVY66SmhX7IoNlubuSYEZYinXcqppclkPpLCuRzsVT37j0QpHhU3J4DbKlmGEWidH_KJDpid536I1_0KBKw=s800-no-gm?authuser=0)
+![下山完了](https://lh3.googleusercontent.com/pw/AP1GczOPLziCRc-2Rcwu_sM1-MyElAPwCK4obwkBnDf7pkk0c2orFeFMZVFSniDz3fs58_Aap54OVY66SmhX7IoNlubuSYEZYinXcqppclkPpLCuRzsVT37j0QpHhU3J4DbKlmGEWidH_KJDpid536I1_0KBKw=s1000-no-gm?authuser=0)
 
 8時45分、下山完了。新穂高ロープウェイ西穂高口駅に戻ってきました。
 
@@ -144,11 +144,11 @@ featured_image: "https://lh3.googleusercontent.com/pw/AP1GczMvdznuIdqSKBA53eb7bY
 
 ### 下山後の楽しみ：新穂高でソフトクリーム
 
-![新穂高ロープウェイ売店](https://lh3.googleusercontent.com/pw/AP1GczOYYEQEvZG2y_59_qw8IXlk4zKUbPi5nDEDi8X2AhhVIQ6ScqhHBKu0MjvX1yexP1tDxADlr-ATaBn11LxTfWHftj9Y7o0KdLGD5wvCfWpkqk_W41gH7AOpPXeRAzGRIDPOKUgzuI0OiokZT2lZ_jFHwA=s800-no-gm?authuser=0)
+![新穂高ロープウェイ売店](https://lh3.googleusercontent.com/pw/AP1GczOYYEQEvZG2y_59_qw8IXlk4zKUbPi5nDEDi8X2AhhVIQ6ScqhHBKu0MjvX1yexP1tDxADlr-ATaBn11LxTfWHftj9Y7o0KdLGD5wvCfWpkqk_W41gH7AOpPXeRAzGRIDPOKUgzuI0OiokZT2lZ_jFHwA=s1000-no-gm?authuser=0)
 
 12時53分、新穂高ロープウェイの売店にて。下山後の楽しみといえば、やはり地元のソフトクリーム。様々な飛騨の特産品が並ぶ中、登山の疲れを癒してくれる甘いひとときです。
 
-![下山後のソフトクリーム](https://lh3.googleusercontent.com/pw/AP1GczNOfbnDHI_0LzdciZnBrYyPhO3HgltbwcDitLk1L6Yn-1TRhPkmP09YyvuSyOj6_WNuvG-NWQXJRFH3Q2Fu21cfuDUnbe4Vdn7nnrxVpZgeBBm4qzgTZMqSpwVg06mJihL_-wbtmoprWV90bUp3W5Bz-Q=s800-no-gm?authuser=0)
+![下山後のソフトクリーム](https://lh3.googleusercontent.com/pw/AP1GczNOfbnDHI_0LzdciZnBrYyPhO3HgltbwcDitLk1L6Yn-1TRhPkmP09YyvuSyOj6_WNuvG-NWQXJRFH3Q2Fu21cfuDUnbe4Vdn7nnrxVpZgeBBm4qzgTZMqSpwVg06mJihL_-wbtmoprWV90bUp3W5Bz-Q=s1000-no-gm?authuser=0)
 
 12時56分、お目当てのソフトクリーム。登山で疲れた体に、ひんやりとした甘さが心地よく染み渡ります。29時間を超える山旅の締めくくりにふさわしい、ささやかな贅沢です。
 

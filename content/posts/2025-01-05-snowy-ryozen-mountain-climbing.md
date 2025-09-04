@@ -3,7 +3,7 @@ title: "雪の霊仙山登山記 - 鈴鹿山脈の急登と雪景色"
 date: 2025-01-05
 category: "登山・クライミング"
 description: "雪に覆われた霊仙山への冬季登山記録。鈴鹿山脈特有の急登から頂上での展望まで、限られた駐車スペースから始まる冬山登山の様子をお届けします。"
-featured_image: "https://lh3.googleusercontent.com/pw/AP1GczO_BuRwG3GHiobCWlTg-XPuENxte1SwloVNNKjeTGhA18_LMDoiC_G2DqegQf3CpoVcry7iI9A-6lv9mx-SIY4Av9JwZ2GsFaMCj1b9DJI3sVmf_2QrINP7vpFsv7kElsO7vax9ilVrQvy3m7N44kbAEQ=s800-no-gm?authuser=0"
+featured_image: "https://lh3.googleusercontent.com/pw/AP1GczO_BuRwG3GHiobCWlTg-XPuENxte1SwloVNNKjeTGhA18_LMDoiC_G2DqegQf3CpoVcry7iI9A-6lv9mx-SIY4Av9JwZ2GsFaMCj1b9DJI3sVmf_2QrINP7vpFsv7kElsO7vax9ilVrQvy3m7N44kbAEQ=s1000-no-gm?authuser=0"
 ---
 
 2025年1月5日、雪に覆われた霊仙山（1,084m）への登山に挑戦してきました。鈴鹿山脈の名峰の一つである霊仙山は、冬季になると雪景色と伊吹山を望む展望を楽しめる山として人気です。
@@ -12,13 +12,13 @@ featured_image: "https://lh3.googleusercontent.com/pw/AP1GczO_BuRwG3GHiobCWlTg-X
 
 霊仙山の登山口となる駐車場は、わずか20台ほどしか収容できません。人気の山だけに、特に週末は早朝からの争奪戦となります。今回も朝早く到着したものの、すでに多くの車が停まっていました。
 
-![雪の登山道入口](https://lh3.googleusercontent.com/pw/AP1GczPTLsI5dBkyBQIIcNFPe-ptRG3C0c1xlPoncGLIt6CsyhJAD3wEusRFjBXgVoFepO2QdX_KTxcuHaHweO5IVxjhWkUEoUhAXSadex9dBzwGB0RgxVOc=s800-no-gm?authuser=0)
+![雪の登山道入口](https://lh3.googleusercontent.com/pw/AP1GczPTLsI5dBkyBQIIcNFPe-ptRG3C0c1xlPoncGLIt6CsyhJAD3wEusRFjBXgVoFepO2QdX_KTxcuHaHweO5IVxjhWkUEoUhAXSadex9dBzwGB0RgxVOc=s1000-no-gm?authuser=0)
 
 ## 鈴鹿山脈特有の急登
 
 午前8時41分、登山開始。霊仙山も他の鈴鹿山脈の山々と同様、序盤は非常に急な登りが待っています。雪が積もった登山道は滑りやすく、慎重に足を進めていきます。
 
-![雪の急登](https://lh3.googleusercontent.com/pw/AP1GczMlcZtOLOsqpIYmdZxgtZXbGvQi-Syw3uQYQXT2oPUIcwAsQNjIXBRe6lQLS0M7s6LBd5Pefhm6PwTMGUuUHRc1S-qVPrm7yjTL6gUF-xTp13SjW1OCxtASXiPVlsP_VoCKOJcjsZ5QZ6I6OHJ3C-hqcQ=s800-no-gm?authuser=0)
+![雪の急登](https://lh3.googleusercontent.com/pw/AP1GczMlcZtOLOsqpIYmdZxgtZXbGvQi-Syw3uQYQXT2oPUIcwAsQNjIXBRe6lQLS0M7s6LBd5Pefhm6PwTMGUuUHRc1S-qVPrm7yjTL6gUF-xTp13SjW1OCxtASXiPVlsP_VoCKOJcjsZ5QZ6I6OHJ3C-hqcQ=s1000-no-gm?authuser=0)
 
 この急登は心肺機能への負荷も大きく、適度な休憩を取りながら進みます。しかし、これが鈴鹿山脈の山々の魅力でもあります。最初が一番きつく、その後は穏やかな登りが続くのです。
 
@@ -26,7 +26,7 @@ featured_image: "https://lh3.googleusercontent.com/pw/AP1GczO_BuRwG3GHiobCWlTg-X
 
 急登を乗り越えて峰に出ると、一気に景色が開けてきます。午前10時27分頃、ようやく展望の効く場所に到達しました。
 
-![峰からの展望](https://lh3.googleusercontent.com/pw/AP1GczPaqE-Ou7_71RdzCBd_uIffkXmZ1Y7edbzxp8lAJ7JdnJTU8mqRJpC6QMmr9bYNJ61hKKhzOHJFnVaiQoc5Eu4mB89gs0SLKkbB0Ee4RXIP2_IxR64sIgZqVxjl7FgIQiwSkN0napd8ZN87oceVAEbAIQ=s800-no-gm?authuser=0)
+![峰からの展望](https://lh3.googleusercontent.com/pw/AP1GczPaqE-Ou7_71RdzCBd_uIffkXmZ1Y7edbzxp8lAJ7JdnJTU8mqRJpC6QMmr9bYNJ61hKKhzOHJFnVaiQoc5Eu4mB89gs0SLKkbB0Ee4RXIP2_IxR64sIgZqVxjl7FgIQiwSkN0napd8ZN87oceVAEbAIQ=s1000-no-gm?authuser=0)
 
 雪に覆われた山々の連なりが印象的で、疲労も和らぎます。ここからは比較的穏やかな登りとなり、歩きやすくなってきます。
 
@@ -34,7 +34,7 @@ featured_image: "https://lh3.googleusercontent.com/pw/AP1GczO_BuRwG3GHiobCWlTg-X
 
 午前11時5分、頂上付近の展望地点に到着。ここからは琵琶湖方面の展望がよく開けています。
 
-![頂上付近の展望](https://lh3.googleusercontent.com/pw/AP1GczOl5CwVdyDZAAEuemWwlMUJhpzyD6VjmKTweymGuG53XcBVwSo6MViTtfVkSjbeE3HtTLIz100T_Yk0xyE9VJLGm7ujFpejW5f-DeyTcN-5LxY_6rkOsL_6Vro0s7Dh1akmB1DQbBpsPmI2013733TOkQ=s800-no-gm?authuser=0)
+![頂上付近の展望](https://lh3.googleusercontent.com/pw/AP1GczOl5CwVdyDZAAEuemWwlMUJhpzyD6VjmKTweymGuG53XcBVwSo6MViTtfVkSjbeE3HtTLIz100T_Yk0xyE9VJLGm7ujFpejW5f-DeyTcN-5LxY_6rkOsL_6Vro0s7Dh1akmB1DQbBpsPmI2013733TOkQ=s1000-no-gm?authuser=0)
 
 遠くには琵琶湖も見え、冬の澄んだ空気のおかげで遠景まではっきりと見渡せます。この展望を前に、しばらく休憩しながら景色を楽しみました。
 
@@ -42,7 +42,7 @@ featured_image: "https://lh3.googleusercontent.com/pw/AP1GczO_BuRwG3GHiobCWlTg-X
 
 午後12時56分、霊仙山の特徴的な雪原に到達しました。
 
-![雪原の風景](https://lh3.googleusercontent.com/pw/AP1GczMKZ0V6wou19Pwk3i3OLBMjUHo58D0UiNZxeayDXA3ZgPVNvsqR9shRDthpx5WM3c7hQkM2k6r9Cj5OclAjF_Vt8JtoSju6vPGEXEOdxFDAdtA-BzQ5hscthsy52-kFBeAqbw25JAwXAFx1FF97DMkfxw=s800-no-gm?authuser=0)
+![雪原の風景](https://lh3.googleusercontent.com/pw/AP1GczMKZ0V6wou19Pwk3i3OLBMjUHo58D0UiNZxeayDXA3ZgPVNvsqR9shRDthpx5WM3c7hQkM2k6r9Cj5OclAjF_Vt8JtoSju6vPGEXEOdxFDAdtA-BzQ5hscthsy52-kFBeAqbw25JAwXAFx1FF97DMkfxw=s1000-no-gm?authuser=0)
 
 霊仙山の頂上付近は平坦な雪原が広がっており、まさに冬山の醍醐味を味わえる場所です。風の影響で雪が舞い上がる印象的な光景も見ることができました。
 
@@ -50,7 +50,7 @@ featured_image: "https://lh3.googleusercontent.com/pw/AP1GczO_BuRwG3GHiobCWlTg-X
 
 午後1時23分、伊吹山が見える展望地点に到達しました。
 
-![伊吹山の眺望](https://lh3.googleusercontent.com/pw/AP1GczO_BuRwG3GHiobCWlTg-XPuENxte1SwloVNNKjeTGhA18_LMDoiC_G2DqegQf3CpoVcry7iI9A-6lv9mx-SIY4Av9JwZ2GsFaMCj1b9DJI3sVmf_2QrINP7vpFsv7kElsO7vax9ilVrQvy3m7N44kbAEQ=s800-no-gm?authuser=0)
+![伊吹山の眺望](https://lh3.googleusercontent.com/pw/AP1GczO_BuRwG3GHiobCWlTg-XPuENxte1SwloVNNKjeTGhA18_LMDoiC_G2DqegQf3CpoVcry7iI9A-6lv9mx-SIY4Av9JwZ2GsFaMCj1b9DJI3sVmf_2QrINP7vpFsv7kElsO7vax9ilVrQvy3m7N44kbAEQ=s1000-no-gm?authuser=0)
 
 霊仙山から見る伊吹山は印象的でした。雪化粧した伊吹山の威容のある姿は、さすが関西の名峰という余裕を感じさせました。遠くに見える登山者たちのシルエットが、スケール感を物語っています。
 
@@ -58,11 +58,11 @@ featured_image: "https://lh3.googleusercontent.com/pw/AP1GczO_BuRwG3GHiobCWlTg-X
 
 午後1時25分、霊仙山の頂上に到着しました。
 
-![霊仙山頂上](https://lh3.googleusercontent.com/pw/AP1GczPXJIyLh8c40NLQbmTG29pTtJY3bZSctz_DSfZaLItF01K4Y2cmqf0PAbSYU0jDE2u48EfClXhlqPsxhACGlLFF2BfAP6j4uLakMoOezdD_V1NePo3ZdKtK0VqR9A473fp_wfDjgFkM7my5Q4n_roJXTA=s800-no-gm?authuser=0)
+![霊仙山頂上](https://lh3.googleusercontent.com/pw/AP1GczPXJIyLh8c40NLQbmTG29pTtJY3bZSctz_DSfZaLItF01K4Y2cmqf0PAbSYU0jDE2u48EfClXhlqPsxhACGlLFF2BfAP6j4uLakMoOezdD_V1NePo3ZdKtK0VqR9A473fp_wfDjgFkM7my5Q4n_roJXTA=s1000-no-gm?authuser=0)
 
 雪に覆われた頂上の標識が、登頂の達成感を物語っています。360度の展望が楽しめる頂上でした。
 
-![頂上での記念撮影](https://lh3.googleusercontent.com/pw/AP1GczM1nQqGTVEbjN9dVNWUgx_HXHGmBLXtfbaR5z9Ggbo7P0R-SIsB2DtlVycoMw21Pmoh7uS1fWe-77SHWWpSZCwUM_vwIRPvyw1Gg3AA__JND_l2uugFQO0orCpR9oSgY0F3qdI7uUQJTzl1fUWEvoXTxQ=s800-no-gm?authuser=0)
+![頂上での記念撮影](https://lh3.googleusercontent.com/pw/AP1GczM1nQqGTVEbjN9dVNWUgx_HXHGmBLXtfbaR5z9Ggbo7P0R-SIsB2DtlVycoMw21Pmoh7uS1fWe-77SHWWpSZCwUM_vwIRPvyw1Gg3AA__JND_l2uugFQO0orCpR9oSgY0F3qdI7uUQJTzl1fUWEvoXTxQ=s1000-no-gm?authuser=0)
 
 頂上での記念撮影は登山の醍醐味の一つ。霊仙山の標識とともに、雪山登山の思い出を写真に収めることができました。
 

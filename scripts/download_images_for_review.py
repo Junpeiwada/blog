@@ -64,11 +64,15 @@ def extract_exif_datetime(image_path):
             return None
 
 def generate_optimized_url(original_url):
-    """s1621をs800-no-gmに変換（大幅簡素化）"""
-    if '=s1621?authuser=0' in original_url:
-        return original_url.replace('=s1621?authuser=0', '=s800-no-gm?authuser=0')
+    """s1600をs1000-no-gmに変換（大幅簡素化）"""
+    if '=s1600?authuser=0' in original_url:
+        return original_url.replace('=s1600?authuser=0', '=s1000-no-gm?authuser=0')
+    elif '=s1600' in original_url:
+        return original_url.replace('=s1600', '=s1000-no-gm')
+    elif '=s1621?authuser=0' in original_url:
+        return original_url.replace('=s1621?authuser=0', '=s1000-no-gm?authuser=0')
     elif '=s1621' in original_url:
-        return original_url.replace('=s1621', '=s800-no-gm')
+        return original_url.replace('=s1621', '=s1000-no-gm')
     else:
         return original_url
 
