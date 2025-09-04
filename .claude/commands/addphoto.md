@@ -39,6 +39,8 @@
 
 ```bash
 # 1. URL抽出
+google_photos_extractor.pyは写真の枚数によって非常に時間がかかるのでタイムアウトを15分程度に設定して実行を待つ必要があります。
+
 python scripts/google_photos_extractor.py "$ARGUMENTS" --headless
 
 # 2. 画像ダウンロード・分析（一時的に追加写真として）

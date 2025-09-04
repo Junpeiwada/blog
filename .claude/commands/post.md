@@ -45,11 +45,14 @@
 Google Photos URLが含まれている場合は、以下の手順で処理します：
 
 1. Google Photos URL抽出
+
+google_photos_extractor.pyは写真の枚数によって非常に時間がかかるのでタイムアウトを15分程度に設定して実行を待つ必要があります。
+
 ```bash
 python scripts/google_photos_extractor.py "提供されたURL" --headless
 ```
 
-2. 画像ダウンロード・分析
+1. 画像ダウンロード・分析
 ```bash
 python scripts/download_images_for_review.py --clean [URL群] --article-title "記事タイトル"
 ```
