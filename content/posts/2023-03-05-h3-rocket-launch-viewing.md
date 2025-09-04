@@ -36,6 +36,12 @@ featured_image: "https://lh3.googleusercontent.com/pw/AP1GczPu3s7fXQKvLKEXoAuPp2
 
 ## H3ロケット打ち上げ当日
 
+打ち上げの様子を動画でもご覧いただけます。
+
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%; margin: 1rem 0;">
+<iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 8px;" src="https://www.youtube.com/embed/hZXS0cBJzz4" title="H3ロケット試作1号機打ち上げ動画" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
 ![H3ロケット打ち上げ](https://lh3.googleusercontent.com/pw/AP1GczPu3s7fXQKvLKEXoAuPp2WNpMC3ysM9oWZSxwkbtD07k7TIXiNbdNdKPjUkQTeoPDmCsxOJBgcK-o7un1Wz1ECA5R4PM2Qw0J5mgjX2TVTZxrOA8D9JZOINRDaJHIURdO2KTZcAOidxHdNqznnN7__1XA=s800-no-gm?authuser=0)
 
 そしてついに迎えた2023年3月7日10時38分。H3ロケット試作1号機が打ち上げられる瞬間を捉えた貴重な写真です。山の向こうに立つロケットから巨大な白煙が立ち上り、歴史的な瞬間の始まりを告げています。
