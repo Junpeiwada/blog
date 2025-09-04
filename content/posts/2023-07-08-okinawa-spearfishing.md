@@ -1,9 +1,9 @@
 ---
-title: "沖縄夏のスピアフィッシング - カンモンハタからトガリエビスまで"
+title: "沖縄の夏 - カンモンハタからトガリエビスまで"
 date: 2023-07-08
 category: "海・潜水"
 tags: ["沖縄", "スピアフィッシング", "素潜り", "海釣り", "ハタ", "イラブチャー"]
-description: "沖縄で夏のスピアフィッシング。水温29度の海でカンモンハタやイラブチャー、トガリエビスを獲得した一日の記録。"
+description: "沖縄で夏。水温29度の海でカンモンハタやイラブチャー、トガリエビスを獲得した一日の記録。"
 featured_image: "https://lh3.googleusercontent.com/pw/AP1GczNKTSDFr7el5OyrVy3vARF0I-vaDu7634M22_JRTTrNYsgc8_Vu4aS1qwXzcTLn7-hl3I8JyGFy8CP3lVQXR3CXw-xlwC3g4V4z-SQnKb96DiUkn4Pv1eubHk7hSBF2Re_2rVbH8-WdQLpXJrWbwr__Fg=s800-no-gm?authuser=0"
 google_photos_url: "https://photos.app.goo.gl/NCcTs7rJonBoaaHYA"
 ---
