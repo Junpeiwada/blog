@@ -2,7 +2,7 @@
 title: "H3ロケット試作1号機打ち上げ見学記"
 date: 2023-03-05
 category: "旅行記"
-description: "H3ロケット試作1号機の打ち上げを見学するため種子島を訪れた体験記。打ち上げまでの準備から当日の感動まで、貴重な体験をお届けします。"
+description: "H3ロケット試作1号機の打ち上げを見学するため種子島を訪れた体験記。打ち上げまでの準備から当日の様子まで、実際の体験をお届けします。"
 featured_image: "https://lh3.googleusercontent.com/pw/AP1GczPu3s7fXQKvLKEXoAuPp2WNpMC3ysM9oWZSxwkbtD07k7TIXiNbdNdKPjUkQTeoPDmCsxOJBgcK-o7un1Wz1ECA5R4PM2Qw0J5mgjX2TVTZxrOA8D9JZOINRDaJHIURdO2KTZcAOidxHdNqznnN7__1XA=s800-no-gm?authuser=0"
 ---
 
@@ -46,7 +46,7 @@ featured_image: "https://lh3.googleusercontent.com/pw/AP1GczPu3s7fXQKvLKEXoAuPp2
 
 ![H3ロケット打ち上げ](https://lh3.googleusercontent.com/pw/AP1GczPu3s7fXQKvLKEXoAuPp2WNpMC3ysM9oWZSxwkbtD07k7TIXiNbdNdKPjUkQTeoPDmCsxOJBgcK-o7un1Wz1ECA5R4PM2Qw0J5mgjX2TVTZxrOA8D9JZOINRDaJHIURdO2KTZcAOidxHdNqznnN7__1XA=s800-no-gm?authuser=0)
 
-そしてついに迎えた2023年3月7日10時38分。H3ロケット試作1号機が打ち上げられる瞬間を捉えた貴重な写真です。山の向こうに立つロケットから巨大な白煙が立ち上り、歴史的な瞬間の始まりを告げています。
+そしてついに迎えた2023年3月7日10時38分。H3ロケット試作1号機が打ち上げられる瞬間を捉えた写真です。山の向こうに立つロケットから巨大な白煙が立ち上り、打ち上げの始まりを告げています。
 
 ![H3ロケット上昇中](https://lh3.googleusercontent.com/pw/AP1GczNSIjmsEybYx4hKo-DUiuxoa1UMy2ZP6fZ7f2kPka8EuJPUSbrBA-a19hoRf2Xef46Muh8zYmKAigBDizI1K6tpWoE-nt_QGnq_mKhR6Q8YOQ7hzYayAJ4utsIGu8Hinb1BsS0WGovkmdwk5iEcchuhfQ=s800-no-gm?authuser=0)
 
@@ -54,11 +54,11 @@ featured_image: "https://lh3.googleusercontent.com/pw/AP1GczPu3s7fXQKvLKEXoAuPp2
 
 ![H3ロケット最終段階](https://lh3.googleusercontent.com/pw/AP1GczMtrfF4YL94vY3bx1Z8COOL39LoWnENMU321iEpTpUuGnlR4XFHJPfqd6XHC6p35WhBxYaLp_Is_rpiisjr77ycNlBo2d7talC6AyNOodLbSQ0AXMHGmOLdrBt8-Y5f3yY48Ns9_V4MyIhlKB3WvH4jOw=s800-no-gm?authuser=0)
 
-打ち上げは計画通りに始まりました。ロケットは力強く空に向かって上昇し、素晴らしい光景を見せてくれました。しかし、残念ながら2段目エンジンが点火せず、最終的には指令破壊という結果となりました。
+打ち上げは計画通りに始まりました。ロケットは力強く空に向かって上昇し、見応えのある光景を見せてくれました。しかし、残念ながら2段目エンジンが点火せず、最終的には指令破壊という結果となりました。
 
 ## 振り返りと感想
 
-H3ロケット試作1号機の打ち上げは技術的には成功とは言えない結果となりましたが、この歴史的瞬間を目の当たりにできたことは、人生で忘れることのできない貴重な体験となりました。
+H3ロケット試作1号機の打ち上げは技術的には成功とは言えない結果となりましたが、この瞬間を目の当たりにできたことは、印象に残る体験となりました。
 
 宇宙開発には常に困難が伴います。しかし、だからこそ技術者たちの挑戦と努力には深い敬意を感じます。JAXAのチームにとって、この体験は次の成功への重要なステップとなるでしょう。
 
