@@ -13,13 +13,13 @@ GoglePhotosから写真のurlの取得とダウンロードを行うPythonスク
 # Google Photos URL抽出
 python scripts/google_photos_extractor.py "共有URL" --headless
 
-# 画像ダウンロード・分析（自動でEXIF日時抽出・分析MD生成）
+# 画像ダウンロード・分析（自動でEXIF日時抽出・最適化URL生成・分析MD生成）
 python scripts/download_images_for_review.py --clean [URL群] --article-title "記事タイトル"
 ```
 
 **Step 1の出力**:
 - `scripts/tmp/review_image_XX_HASH.jpg` - ダウンロードされた画像
-- `scripts/tmp/image_analysis_YYYY-MM-DD-slug.md` - **時刻情報付き画像分析MD**
+- `scripts/tmp/image_analysis_YYYY-MM-DD-slug.md` - **時刻情報+最適化URL付き画像分析MD**
 
 ### Step 2: 記事作成
 画像分析MDファイルの情報を参照して記事を作成します。
@@ -28,8 +28,9 @@ python scripts/download_images_for_review.py --clean [URL群] --article-title "�
 1. `scripts/tmp/image_analysis_*.md`を読み取り
 2. 推奨記事日付・時系列情報を確認
 3. 各画像の内容を確認（Read tool使用）
-4. 時系列と内容に基づいて記事作成
-5. `content/posts/YYYY-MM-DD-article-title.md`で保存
+4. **📸 重要**: 画像分析MDのURL（`s800-no-gm`最適化版）をそのまま記事に使用
+5. 時系列と内容に基づいて記事作成
+6. `content/posts/YYYY-MM-DD-article-title.md`で保存
 
 ### Step 3: 品質チェック・公開
 チェックリストに従って最終確認し公開します。
@@ -52,7 +53,7 @@ npm run ビルドして公開
 - [ ] タイトル: 内容に合致したタイトル作成
 - [ ] カテゴリ: [標準7カテゴリ](CATEGORY_GUIDE.md)から選択
 - [ ] featured_image: 代表画像を設定
-- [ ] Google Photos元URL記録
+- [ ] 最適化URL使用: 画像分析MDの`s800-no-gm`URLを記事に使用
 - [ ] H1タイトル未使用（H2から開始）
 
 ### ✅ 最終確認
@@ -90,6 +91,7 @@ scripts/tmp/
 
 ### 画像分析MDの役割
 - **時刻情報記録**: 撮影日時と推奨記事日付
+- **最適化URL提供**: `s800-no-gm`形式の高品質・軽量URL ⭐
 - **画像詳細管理**: 各画像の説明と使用予定
 - **チェックリスト提供**: 作業漏れ防止
 - **品質管理資料**: 記事作成プロセスの記録
@@ -111,7 +113,7 @@ featured_image: "代表画像URL"
 - **H1禁止**: 記事内は`## H2`から開始
 - **時系列順**: 画像の撮影順に記事を構成
 - **画像説明**: 各画像に適切な説明文を付与
-- **元URL記録**: Google Photos元URLをコメントで保持
+- **最適化URL使用**: 画像分析MDの`s800-no-gm`URLを記事で使用 ⭐
 
 ## 🔧 カテゴリ分類
 
@@ -169,7 +171,26 @@ featured_image: "代表画像URL"
 ### Claude Code活用
 1. **Read tool活用** - 画像内容の正確な把握
 2. **分析MD参照** - 時刻情報と詳細データの活用
-3. **チェックリスト実行** - 作業漏れの防止
+3. **最適化URL使用** - 分析MDの`s800-no-gm`URLを記事にそのまま使用 ⭐
+4. **チェックリスト実行** - 作業漏れの防止
+
+## ⚠️ 重要な注意事項
+
+### 🔗 画像URL使用について
+**必須**: 記事作成時は画像分析MDファイルに記録された`s800-no-gm`形式のURLを使用してください。
+
+```markdown
+<!-- ❌ 間違い: 元のs1621URLや独自変換URL -->
+![画像説明](https://lh3.googleusercontent.com/pw/ABC123=s1621?authuser=0)
+
+<!-- ✅ 正解: 画像分析MDファイルのs800-no-gmURL -->
+![画像説明](https://lh3.googleusercontent.com/pw/ABC123=s800-no-gm?authuser=0)
+```
+
+**理由**: 
+- 高品質でアスペクト比保持
+- ファイルサイズ最適化済み
+- ブログ表示に最適なサイズ（800x800内）
 
 ---
 
