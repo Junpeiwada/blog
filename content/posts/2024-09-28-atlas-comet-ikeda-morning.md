@@ -1,7 +1,7 @@
 ---
 title: "池田山でアトラス彗星を追う - 肉眼では見えない天体をカメラで捉えた"
 date: "2024-09-28"
-category: "旅行・アウトドア"
+category: "旅行記"
 description: "地球に接近中のアトラス彗星を観測しに池田山へ。明け方の東の空で肉眼では確認できませんでしたが、カメラには美しい彗星の姿が写っていました。"
 featured_image: "https://lh3.googleusercontent.com/pw/AP1GczOEamamf7FTK0o23OBDyNJepAV3lw9VCpmDY3neIS8qt7zL98mFBzGSHmKWbtbiuHYVDqa-P86GT3qjFK-3nixMNBaYrX6Ehv-AZjul2VRjvHLLBT_o=s1000-no-gm?authuser=0"
 tags: ["アトラス彗星", "天体観測", "天体撮影", "彗星", "池田山", "明け方観測", "C/2023 A3", "長時間露光"]

@@ -1,7 +1,7 @@
 ---
 title: "三沢基地航空祭 - 米軍と自衛隊が織りなす国際的な航空ショー"
 date: "2024-09-08"
-category: "旅行・アウトドア"
+category: "旅行記"
 description: "F-16の機動飛行は中止となりましたが、米軍と自衛隊の航空機が一緒に展示される貴重な三沢基地航空祭。A-10やオスプレイなど他では見られない機体も見ることができました。"
 featured_image: "https://lh3.googleusercontent.com/pw/AP1GczNRRcHLahQclDzisfsNDK0PLIsZxP2qfzWpKuMlBFgG65itF6i-1EZCz0agk_QkdvEWnS-ZYMXAWLnTMnZxs6oy8peJuCClnbmdstAX7wp_1J8BP9sAWeCCoGdIkaKSs4_RENsptvAqsQtHd_uagoKKlA=s1000-no-gm?authuser=0"
 ---
