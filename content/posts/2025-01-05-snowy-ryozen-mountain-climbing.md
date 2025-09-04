@@ -70,7 +70,7 @@ featured_image: "https://lh3.googleusercontent.com/pw/AP1GczO_BuRwG3GHiobCWlTg-X
 
 午後2時9分、下山途中でも景色を楽しむことができました。
 
-![下山途中の眺望](https://lh3.googleusercontent.com/pw/AP1GczMIGuepOt6ylneShuuP5yKnPXggUJU7oYoCYWmQXoJgf_nOEikRzxs6G-WH54_4feKMlzGPugr6uR9tDK_hXn4Ud-imXv_CwyzWfTntjYnSnPt2Lp5cnGkskikV-AxFnXN2Hv84RsX0vgF3WaYWibMK2Q=s800-no-gm?authuser=0)
+![下山途中の眺望](https://lh3.googleusercontent.com/pw/AP1GczMIGuepOt6ylneShuuP5yKnPXggUJU7oYoCYWmQXoJgf_nOEikRzxs6G-WH54_4feKMlzGPugr6uR9tDK_hXn4Ud-imXv_CwyzWfTntjYnSnPt2Lp5cnGkskikV-AxFnXN2Hv84RsX0vgF3WaYWibMK2Q=s1000-no-gm?authuser=0)
 
 帰り道から見る雪稜もなかなか良い眺めでした。霜氷に覆われた木々が白い世界を演出しており、冬山の静寂な雰囲気を楽しむことができました。
 
