@@ -8,8 +8,6 @@ featured_image: "https://lh3.googleusercontent.com/pw/AP1GczOW-wCeXcq5e9zEA_pW75
 google_photos_url: "https://photos.app.goo.gl/WynBqYpNttwbty369"
 ---
 
-## 三重の遊漁船でイサキ釣りに挑戦
-
 今回は三重県の遊漁船に乗ってイサキ釣りに行ってきました。
 道具はすべてフルレンタルで、仕掛けも現地で購入という初心者でも参加しやすいスタイルでした。
 
