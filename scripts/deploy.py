@@ -43,7 +43,7 @@ class BlogDeployer:
         """Check if there are uncommitted changes"""
         success, output = self.run_command('git status --porcelain')
         if not success:
-            print(f"Error checking git status: {output}")
+            print(f"Git状態の確認でエラー: {output}")
             return False, []
         
         changes = [line.strip() for line in output.split('\n') if line.strip()]
@@ -73,75 +73,75 @@ class BlogDeployer:
         if not packages:
             return True
             
-        print(f"Installing missing packages: {', '.join(packages)}")
+        print(f"不足しているパッケージをインストール中: {', '.join(packages)}")
         cmd = f"pip install {' '.join(packages)}"
         success, output = self.run_command(cmd)
         
         if success:
-            print("Dependencies installed successfully")
+            print("依存関係のインストール完了")
             return True
         else:
-            print(f"Error installing dependencies: {output}")
+            print(f"依存関係のインストールでエラー: {output}")
             return False
     
     def build_site(self):
         """Build the blog site"""
-        print("Building blog site...")
+        print("ブログサイトをビルド中...")
         try:
             self.builder.build_all(clean=True)
-            print("Site build completed successfully")
+            print("サイトビルドが正常に完了しました")
             return True
         except Exception as e:
-            print(f"Error building site: {e}")
+            print(f"サイトビルドでエラー: {e}")
             return False
     
     def commit_changes(self, message=None):
         """Commit changes to git"""
         if message is None:
             timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-            message = f"Deploy blog site - {timestamp}"
+            message = f"ブログサイトデプロイ - {timestamp}"
         
-        print("Committing changes...")
+        print("変更をコミット中...")
         
         # Add all changes
         success, output = self.run_command('git add .')
         if not success:
-            print(f"Error adding changes: {output}")
+            print(f"変更の追加でエラー: {output}")
             return False
         
         # Commit changes
         success, output = self.run_command(f'git commit -m "{message}"')
         if not success:
             if "nothing to commit" in output:
-                print("No changes to commit")
+                print("コミットする変更がありません")
                 return True
             else:
-                print(f"Error committing changes: {output}")
+                print(f"変更のコミットでエラー: {output}")
                 return False
         
-        print("Changes committed successfully")
+        print("変更のコミットが完了しました")
         return True
     
     def push_changes(self):
         """Push changes to remote repository"""
-        print("Pushing changes to remote repository...")
+        print("リモートリポジトリに変更をプッシュ中...")
         
         success, output = self.run_command('git push origin main')
         if not success:
-            print(f"Error pushing changes: {output}")
+            print(f"変更のプッシュでエラー: {output}")
             return False
         
-        print("Changes pushed successfully")
+        print("変更のプッシュが完了しました")
         return True
     
     def deploy(self, commit=True, push=True, commit_message=None):
         """Full deployment process"""
-        print("Starting blog deployment...")
+        print("ブログデプロイを開始...")
         
         # Check dependencies
         missing_deps = self.check_dependencies()
         if missing_deps:
-            print(f"Missing dependencies: {', '.join(missing_deps)}")
+            print(f"不足している依存関係: {', '.join(missing_deps)}")
             if not self.install_dependencies(missing_deps):
                 return False
         
@@ -156,11 +156,11 @@ class BlogDeployer:
                 return False
             
             if changes:
-                print(f"Found {len(changes)} changed files:")
+                print(f"{len(changes)}個の変更ファイルを発見:")
                 for change in changes[:10]:  # Show first 10 changes
                     print(f"  {change}")
                 if len(changes) > 10:
-                    print(f"  ... and {len(changes) - 10} more files")
+                    print(f"  ... 他 {len(changes) - 10} ファイル")
                 
                 # Commit changes
                 if not self.commit_changes(commit_message):
@@ -171,52 +171,52 @@ class BlogDeployer:
                     if not self.push_changes():
                         return False
             else:
-                print("No changes to commit")
+                print("コミットする変更がありません")
         
-        print("\nDeployment completed successfully!")
-        print(f"Site will be available at: https://junpeiwada.github.io/blog/")
-        print("Note: GitHub Pages may take a few minutes to update")
+        print("\nデプロイが正常に完了しました！")
+        print(f"サイトURL: https://junpeiwada.github.io/blog/")
+        print("注意: GitHub Pagesの更新には数分かかる場合があります")
         
         return True
     
     def status(self):
         """Show deployment status"""
-        print("Blog deployment status:")
-        print(f"Root directory: {self.root_dir}")
-        print(f"Content directory: {self.builder.content_dir}")
-        print(f"Docs directory: {self.builder.docs_dir}")
+        print("ブログデプロイ状態:")
+        print(f"ルートディレクトリ: {self.root_dir}")
+        print(f"記事ディレクトリ: {self.builder.content_dir}")
+        print(f"出力ディレクトリ: {self.builder.docs_dir}")
         
         # Count markdown files
         md_files = list(self.builder.content_dir.glob('*.md'))
-        print(f"Markdown files: {len(md_files)}")
+        print(f"Markdownファイル数: {len(md_files)}個")
         
         # Count HTML files
         html_files = list(self.builder.posts_dir.glob('*.html'))
-        print(f"Generated HTML files: {len(html_files)}")
+        print(f"生成HTMLファイル数: {len(html_files)}個")
         
         # Check git status
         success, changes = self.check_git_status()
         if success:
             if changes:
-                print(f"Uncommitted changes: {len(changes)} files")
+                print(f"未コミット変更: {len(changes)}ファイル")
             else:
-                print("Git status: clean")
+                print("Git状態: クリーン")
         
         # Check dependencies
         missing_deps = self.check_dependencies()
         if missing_deps:
-            print(f"Missing dependencies: {', '.join(missing_deps)}")
+            print(f"不足している依存関係: {', '.join(missing_deps)}")
         else:
-            print("Dependencies: all installed")
+            print("依存関係: すべてインストール済み")
 
 def main():
     import argparse
     
-    parser = argparse.ArgumentParser(description='Deploy blog to GitHub Pages')
-    parser.add_argument('--build-only', action='store_true', help='Only build, don\'t commit or push')
-    parser.add_argument('--no-push', action='store_true', help='Commit but don\'t push')
-    parser.add_argument('--message', '-m', help='Commit message')
-    parser.add_argument('--status', action='store_true', help='Show deployment status')
+    parser = argparse.ArgumentParser(description='ブログをGitHub Pagesにデプロイ')
+    parser.add_argument('--build-only', action='store_true', help='ビルドのみ実行（コミット・プッシュしない）')
+    parser.add_argument('--no-push', action='store_true', help='コミットするがプッシュしない')
+    parser.add_argument('--message', '-m', help='コミットメッセージ')
+    parser.add_argument('--status', action='store_true', help='デプロイ状態を表示')
     
     args = parser.parse_args()
     
