@@ -19,13 +19,13 @@ https://lh3.googleusercontent.com/pw/{IMAGE_ID}={PARAMETERS}?authuser=0
 | パラメーター | 説明 | 例 | 用途 |
 |-------------|-----|----|----|
 | `s1621` | 簡易サイズ指定 | `=s1621` | 一辺最大1621pxで縦横比維持 |
-| `s800-no-gm` | **🌟推奨** アスペクト比保持800px収まり | `=s800-no-gm` | 800x800内・高品質・軽量 |
+| `s1000-no-gm` | **🌟推奨** アスペクト比保持800px収まり | `=s1000-no-gm` | 800x800内・高品質・軽量 |
 | `w{WIDTH}-h{HEIGHT}-s-no-gm` | HDR対応（非推奨） | `=w800-h450-s-no-gm` | 高品質・指定サイズ |
 | `w{WIDTH}-h{HEIGHT}` | 基本サイズ指定 | `=w800-h600` | 指定サイズに強制リサイズ |
 
 ### パラメーター詳細
 
-#### 🌟 `s800-no-gm` (推奨)
+#### 🌟 `s1000-no-gm` (推奨)
 - **`s800`**: 800x800ピクセル内に収まるサイズ指定
 - **`no-gm`**: 高品質処理フラグ
 - **利点**: アスペクト比自動保持・軽量・高速・高品質
@@ -33,7 +33,7 @@ https://lh3.googleusercontent.com/pw/{IMAGE_ID}={PARAMETERS}?authuser=0
 #### 品質・サイズ比較例
 ```
 旧方式: =s1621?authuser=0 (大きいが処理が重い)
-新方式: =s800-no-gm?authuser=0 (適切なサイズで高品質)
+新方式: =s1000-no-gm?authuser=0 (適切なサイズで高品質)
 ```
 
 ## 📊 実測データ
@@ -51,18 +51,18 @@ https://lh3.googleusercontent.com/pw/{IMAGE_ID}={PARAMETERS}?authuser=0
 ### 1. URL取得戦略
 - **`google_photos_extractor.py`**: JavaScriptクリック + 7秒固定待機
 - **推奨実行方法**: `--headless` オプション使用（安定性向上）
-- **新方式**: 元サイズで取得後、`s800-no-gm`に変換
+- **新方式**: 元サイズで取得後、`s1000-no-gm`に変換
 
 ### 2. 画像ダウンロード戦略（簡素化）
 - **`download_images_for_review.py`**: 
-  1. URLを`s800-no-gm`形式に変換
+  1. URLを`s1000-no-gm`形式に変換
   2. **1回のダウンロードで完了** ⭐
   3. 複雑なサイズ取得・再ダウンロード処理を廃止
 
 ### 3. 一括更新戦略
 - **`bulk_hdr_update.py`**: 既存記事の一括最適化
   1. 記事内`=s1621`パターン検出
-  2. **`=s800-no-gm`に直接変換** ⭐
+  2. **`=s1000-no-gm`に直接変換** ⭐
   3. サイズ取得処理を廃止
 
 ## 📐 新しい変換ルール（大幅簡素化）
@@ -70,18 +70,18 @@ https://lh3.googleusercontent.com/pw/{IMAGE_ID}={PARAMETERS}?authuser=0
 ### シンプル変換式
 ```python
 def generate_optimized_url(original_url):
-    """s1621をs800-no-gmに変換するだけ"""
+    """s1621をs1000-no-gmに変換するだけ"""
     if '=s1621?authuser=0' in original_url:
-        return original_url.replace('=s1621?authuser=0', '=s800-no-gm?authuser=0')
+        return original_url.replace('=s1621?authuser=0', '=s1000-no-gm?authuser=0')
     elif '=s1621' in original_url:
-        return original_url.replace('=s1621', '=s800-no-gm')
+        return original_url.replace('=s1621', '=s1000-no-gm')
     return original_url
 ```
 
 ### 変換例
 ```
 変換前: https://lh3.googleusercontent.com/pw/ABC123=s1621?authuser=0
-変換後: https://lh3.googleusercontent.com/pw/ABC123=s800-no-gm?authuser=0
+変換後: https://lh3.googleusercontent.com/pw/ABC123=s1000-no-gm?authuser=0
 ```
 
 **利点**: サイズ計算・アスペクト比計算が不要！
@@ -111,8 +111,8 @@ driver.execute_script("arguments[0].click();", element)  # JavaScriptクリッ�
 ```python
 # 新しいシンプル機能
 def generate_optimized_url(original_url):
-    """s1621をs800-no-gmに変換するだけの軽量処理"""
-    return original_url.replace('=s1621?authuser=0', '=s800-no-gm?authuser=0')
+    """s1621をs1000-no-gmに変換するだけの軽量処理"""
+    return original_url.replace('=s1621?authuser=0', '=s1000-no-gm?authuser=0')
 # 1回のダウンロードで完了、複雑な再処理なし
 ```
 
@@ -141,12 +141,12 @@ def generate_optimized_url(original_url):
 
 ### 新規記事作成時
 1. `google_photos_extractor.py`でURL取得（7秒待機・JavaScriptクリック）
-2. `download_images_for_review.py`で自動最適化（`s800-no-gm`変換）
+2. `download_images_for_review.py`で自動最適化（`s1000-no-gm`変換）
 3. **1回のダウンロードで高品質画像取得完了** ⭐
 
 ### 既存記事更新時
 1. `bulk_hdr_update.py --dry-run`で確認
-2. `bulk_hdr_update.py`で一括更新実行（`s800-no-gm`変換）
+2. `bulk_hdr_update.py`で一括更新実行（`s1000-no-gm`変換）
 
 ## ⚠️ 制限事項と対処法
 

@@ -62,7 +62,7 @@ python scripts/download_images_for_review.py --clean [URL群] --article-title "�
 
 1. `scripts/tmp/image_analysis_*.md`ファイルを確認
 2. EXIF情報から抽出された推奨記事日付を使用
-3. 画像の`s800-no-gm`最適化URLを記事に使用
+3. 画像の`s1000-no-gm`最適化URLを記事に使用
 4. 以下のテンプレートで記事を作成
 
 **記事テンプレート:**
@@ -73,14 +73,14 @@ date: [EXIF情報から決定された日付]
 category: "[7つの標準カテゴリから選択]"
 tags: [関連タグ3-6個]
 description: "[記事の簡潔な説明]"
-featured_image: "[代表画像のs800-no-gmURL]"
+featured_image: "[代表画像のs1000-no-gmURL]"
 ---
 
 ## [見出し]
 
 記事内容...
 
-![画像説明](画像分析MDファイルのs800-no-gmURL)
+![画像説明](画像分析MDファイルのs1000-no-gmURL)
 
 ```
 
@@ -92,7 +92,7 @@ featured_image: "[代表画像のs800-no-gmURL]"
 - [ ] タイトル: 内容に合致したタイトル作成  
 - [ ] カテゴリ: 7つの標準カテゴリから選択
 - [ ] featured_image: 代表画像を設定
-- [ ] 最適化URL使用: s800-no-gm URLを記事に使用
+- [ ] 最適化URL使用: s1000-no-gm URLを記事に使用
 - [ ] H1タイトル未使用（H2から開始）
 - [ ] 画像と記事内容の整合性確認
 - [ ] フロントマター必須項目完備

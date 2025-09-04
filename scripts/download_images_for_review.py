@@ -84,7 +84,7 @@ def download_image(url, output_path, index):
         # 最適化URLに変換してからダウンロード
         optimized_url = generate_optimized_url(url)
         if optimized_url != url:
-            print(f"   🌟 最適化URL使用: s800-no-gm")
+            print(f"   🌟 最適化URL使用: s1000-no-gm")
         
         # User-Agentを設定
         headers = {
@@ -120,7 +120,7 @@ def download_image(url, output_path, index):
                 # 最適化URLを記録（実際のダウンロードは既に最適化済み）
                 final_url = generate_optimized_url(url)
                 if final_url != url:
-                    print(f"   ✨ 最適化URL記録: s800-no-gm形式")
+                    print(f"   ✨ 最適化URL記録: s1000-no-gm形式")
                 else:
                     print(f"   📷 通常版（最適化未対応URL）")
                 
