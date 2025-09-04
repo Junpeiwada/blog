@@ -41,7 +41,7 @@ from selenium.webdriver.common.keys import Keys
 
 
 # 待機時間設定
-HDR_WAIT_TIME = 7      # HDR画像処理用の固定待機時間（秒）
+HDR_WAIT_TIME = 2      # 画像処理用の固定待機時間（秒）
 
 
 def create_progress_bar(current, total, width=40):

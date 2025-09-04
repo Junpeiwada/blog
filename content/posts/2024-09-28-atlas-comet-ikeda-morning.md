@@ -3,7 +3,7 @@ title: "池田山でアトラス彗星を追う - 肉眼では見えない天体
 date: "2024-09-28"
 category: "旅行・アウトドア"
 description: "地球に接近中のアトラス彗星を観測しに池田山へ。明け方の東の空で肉眼では確認できませんでしたが、カメラには美しい彗星の姿が写っていました。"
-featured_image: "https://lh3.googleusercontent.com/pw/AP1GczOEamamf7FTK0o23OBDyNJepAV3lw9VCpmDY3neIS8qt7zL98mFBzGSHmKWbtbiuHYVDqa-P86GT3qjFK-3nixMNBaYrX6Ehv-AZjul2VRjvHLLBT_o=w800-h1421-s-no-gm?authuser=0"
+featured_image: "https://lh3.googleusercontent.com/pw/AP1GczOEamamf7FTK0o23OBDyNJepAV3lw9VCpmDY3neIS8qt7zL98mFBzGSHmKWbtbiuHYVDqa-P86GT3qjFK-3nixMNBaYrX6Ehv-AZjul2VRjvHLLBT_o=s800-no-gm?authuser=0"
 tags: ["アトラス彗星", "天体観測", "天体撮影", "彗星", "池田山", "明け方観測", "C/2023 A3", "長時間露光"]
 ---
 
@@ -15,7 +15,7 @@ tags: ["アトラス彗星", "天体観測", "天体撮影", "彗星", "池田�
 
 アトラス彗星は現在地球に近づいている最中で、明け方の東の空に見えます。東の空が開けた高い場所という条件で、池田山が最適だと判断しました。岐阜県と滋賀県の境に位置するこの山は、関西平野を一望できる絶好の立地です。
 
-![池田山からの昼間の眺望](https://lh3.googleusercontent.com/pw/AP1GczPLtbxvrDsT3gc20SZgGqaUc3gIir6yCdS988CLa_TLofHynPWYYi8VeLxJP3UbqQMS3mqh_SX5SVkQMciBUIfQnRSWGww0YwsTBF-is8WeSpnBweV9Dc0_xc5XOCnbmJwFQwlCZdwhu46IoXD-VMH9tg=w800-h449-s-no-gm?authuser=0)
+![池田山からの昼間の眺望](https://lh3.googleusercontent.com/pw/AP1GczPLtbxvrDsT3gc20SZgGqaUc3gIir6yCdS988CLa_TLofHynPWYYi8VeLxJP3UbqQMS3mqh_SX5SVkQMciBUIfQnRSWGww0YwsTBF-is8WeSpnBweV9Dc0_xc5XOCnbmJwFQwlCZdwhu46IoXD-VMH9tg=s800-no-gm?authuser=0)
 
 昼間に見る池田山からの眺望です。東方向の視界が非常に開けており、関西平野を一望できます。この開放感が、明け方の彗星観測には理想的な条件となります。
 
@@ -27,13 +27,13 @@ tags: ["アトラス彗星", "天体観測", "天体撮影", "彗星", "池田�
 
 しかし、実際に撮影している時には彗星は全然見えませんでした。肉眼では確認することができず、写っているかどうかもわからない状況でした。薄明かりが始まった空の中で、果たしてアトラス彗星を捉えることができているのか、半信半疑のまま撮影を続けました。
 
-![明け方のアトラス彗星](https://lh3.googleusercontent.com/pw/AP1GczOEamamf7FTK0o23OBDyNJepAV3lw9VCpmDY3neIS8qt7zL98mFBzGSHmKWbtbiuHYVDqa-P86GT3qjFK-3nixMNBaYrX6Ehv-AZjul2VRjvHLLBT_o=w800-h1421-s-no-gm?authuser=0)
+![明け方のアトラス彗星](https://lh3.googleusercontent.com/pw/AP1GczOEamamf7FTK0o23OBDyNJepAV3lw9VCpmDY3neIS8qt7zL98mFBzGSHmKWbtbiuHYVDqa-P86GT3qjFK-3nixMNBaYrX6Ehv-AZjul2VRjvHLLBT_o=s800-no-gm?authuser=0)
 
 ところが、帰宅してから写真を確認すると、なんと写っていました！画面中央上部に、アトラス彗星の短い尾がはっきりと写っています。薄明かりの美しいグラデーションの中に浮かぶ彗星と、下部に広がる関西圏の夜景との対比が印象的です。
 
 ## 写真に写った奇跡
 
-![同じ構図でのもう一枚](https://lh3.googleusercontent.com/pw/AP1GczM_WvKEtTEPjBBl7xzLbaDz40hJ3VI2VuKIfDXC1knLQOtd1BReF5utWu2NGXoSl_dALKiMaje-4W63yrb0sp5Oj_7FPyXajvERzFvXE16Y9sNB4UbnH40RVsrUWvNO1Fpk5nlLqeHhA9WNFEtKpIlOFg=w800-h1421-s-no-gm?authuser=0)
+![同じ構図でのもう一枚](https://lh3.googleusercontent.com/pw/AP1GczM_WvKEtTEPjBBl7xzLbaDz40hJ3VI2VuKIfDXC1knLQOtd1BReF5utWu2NGXoSl_dALKiMaje-4W63yrb0sp5Oj_7FPyXajvERzFvXE16Y9sNB4UbnH40RVsrUWvNO1Fpk5nlLqeHhA9WNFEtKpIlOFg=s800-no-gm?authuser=0)
 
 同じ構図で複数枚撮影していたおかげで、確実にアトラス彗星を捉えることができました。肉眼では見えなくても、カメラの長時間露光によって彗星の美しい姿が浮かび上がったのです。
 

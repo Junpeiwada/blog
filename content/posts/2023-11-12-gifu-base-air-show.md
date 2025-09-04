@@ -3,7 +3,7 @@ title: "岐阜基地航空祭2023 - テスト機カラーリングと迫力の�
 date: 2023-11-12
 category: "旅行記"
 description: "岐阜基地航空祭での特徴的なテスト機カラーリングの航空機と、ブルーインパルスの素晴らしい展示飛行を楽しんできました。南側ポジションでの撮影のコツも紹介。"
-featured_image: "https://lh3.googleusercontent.com/pw/AP1GczO0S5r381LmnOp1q0DKSjUaLuHruZGSCo4IZiTngjHuBjHC08PGFaK8MIR3CBidDfL7j91rZ9TuQYsj7dlOKMc5O7knEHTRTq8N4iVnJ7ONZ1lac8iQLQvr7Tv7nHAL5fJucYwkyFwXU28ceNwVIF2jUQ=w800-h450-s-no-gm?authuser=0"
+featured_image: "https://lh3.googleusercontent.com/pw/AP1GczO0S5r381LmnOp1q0DKSjUaLuHruZGSCo4IZiTngjHuBjHC08PGFaK8MIR3CBidDfL7j91rZ9TuQYsj7dlOKMc5O7knEHTRTq8N4iVnJ7ONZ1lac8iQLQvr7Tv7nHAL5fJucYwkyFwXU28ceNwVIF2jUQ=s800-no-gm?authuser=0"
 ---
 
 <!-- Google Photos元URL: https://photos.app.goo.gl/nCNnfc7BnUj6kJwz5 -->
@@ -12,7 +12,7 @@ featured_image: "https://lh3.googleusercontent.com/pw/AP1GczO0S5r381LmnOp1q0DKSj
 
 岐阜基地航空祭に参加してきました。午前中の良い飛行を見逃さないよう、早めに会場入りし、南側にポジションをキープしました。
 
-![基地周辺の様子](https://lh3.googleusercontent.com/pw/AP1GczNgkHJbr-__IbA69fAk7RJHvYTYrAet3cHSmdTAI1pByn_WqiIL2rK3nImx5K7e5Z17_c_iUZbv8QVIn_nwAifiX9Do_KNK8KI5fPeDTb9lUAM0GAYQ=w800-h600-s-no-gm?authuser=0)
+![基地周辺の様子](https://lh3.googleusercontent.com/pw/AP1GczNgkHJbr-__IbA69fAk7RJHvYTYrAet3cHSmdTAI1pByn_WqiIL2rK3nImx5K7e5Z17_c_iUZbv8QVIn_nwAifiX9Do_KNK8KI5fPeDTb9lUAM0GAYQ=s800-no-gm?authuser=0)
 
 南側ポジションを選ぶ理由は光の当たり方です。逆光を避けることで、機体が真っ黒に写ってしまうのを防げます。航空写真撮影では、太陽の位置を意識した撮影ポジションの選択が非常に重要になります。
 
@@ -20,17 +20,17 @@ featured_image: "https://lh3.googleusercontent.com/pw/AP1GczO0S5r381LmnOp1q0DKSj
 
 岐阜基地の大きな魅力は、他では見られない特徴的な飛行機が多いことです。特にテスト機のカラーリングが印象的でした。
 
-![F-15戦闘機のアフターバーナー点火](https://lh3.googleusercontent.com/pw/AP1GczO0S5r381LmnOp1q0DKSjUaLuHruZGSCo4IZiTngjHuBjHC08PGFaK8MIR3CBidDfL7j91rZ9TuQYsj7dlOKMc5O7knEHTRTq8N4iVnJ7ONZ1lac8iQLQvr7Tv7nHAL5fJucYwkyFwXU28ceNwVIF2jUQ=w800-h450-s-no-gm?authuser=0)
+![F-15戦闘機のアフターバーナー点火](https://lh3.googleusercontent.com/pw/AP1GczO0S5r381LmnOp1q0DKSjUaLuHruZGSCo4IZiTngjHuBjHC08PGFaK8MIR3CBidDfL7j91rZ9TuQYsj7dlOKMc5O7knEHTRTq8N4iVnJ7ONZ1lac8iQLQvr7Tv7nHAL5fJucYwkyFwXU28ceNwVIF2jUQ=s800-no-gm?authuser=0)
 
 この写真はF-15戦闘機がアフターバーナーを点火している瞬間を捉えたものです。オレンジ色の炎がエンジンノズルから吹き出している迫力ある光景でした。
 
-![F-2戦闘機501号機の単体飛行](https://lh3.googleusercontent.com/pw/AP1GczMcT_b6EYYko6N4zTE_-lG0W2Y55OiffuXhMqsvQe5qs1ow8OFrLe63nBIHvvudiAKjkHeRSgq9TYl5EKiqn-E-cXCrXKtqXw6ilHYC1GDuLLkz13eeYknsAuJKP5WtNpO3IpyqpEuiLQQxqqtYny-iVA=w800-h450-s-no-gm?authuser=0)
+![F-2戦闘機501号機の単体飛行](https://lh3.googleusercontent.com/pw/AP1GczMcT_b6EYYko6N4zTE_-lG0W2Y55OiffuXhMqsvQe5qs1ow8OFrLe63nBIHvvudiAKjkHeRSgq9TYl5EKiqn-E-cXCrXKtqXw6ilHYC1GDuLLkz13eeYknsAuJKP5WtNpO3IpyqpEuiLQQxqqtYny-iVA=s800-no-gm?authuser=0)
 
 F-2戦闘機501号機の美しい単体飛行です。この機体は岐阜基地の飛行開発実験団に配属されている特別な実用試験機で、白を基調とし機体中心線と各翼端が赤で塗装された独特のカラーリングが特徴的です。これは試験時の姿勢視認性を高めるための実用的な理由から採用されており、量産型F-2の標準的な洋上迷彩（濃淡の青2色）とは全く異なります。岐阜基地にしか配備されていない唯一無二の存在として、航空ファンにとって非常に貴重な機体です。
 
 ## 編隊飛行の迫力
 
-![混成編隊の飛行](https://lh3.googleusercontent.com/pw/AP1GczN3sWQoxYtO9adHwfnwCMqczFLiaq0VROh9Pj4Q7UE3t8WDl0Q0MoyW_nhNrdamIq42anoc6hF64B16egz9CMwG9PAFchrXPGKax4EaqqygSOnu0P43MKdKOFATSPV5myjeSfvEYPg93VGpjcEOEfLFKA=w800-h800-s-no-gm?authuser=0)
+![混成編隊の飛行](https://lh3.googleusercontent.com/pw/AP1GczN3sWQoxYtO9adHwfnwCMqczFLiaq0VROh9Pj4Q7UE3t8WDl0Q0MoyW_nhNrdamIq42anoc6hF64B16egz9CMwG9PAFchrXPGKax4EaqqygSOnu0P43MKdKOFATSPV5myjeSfvEYPg93VGpjcEOEfLFKA=s800-no-gm?authuser=0)
 
 この写真は岐阜基地ならではの混成編隊です。上から：
 - T-5練習機（プロペラ機）
@@ -52,13 +52,13 @@ F-2戦闘機501号機の美しい単体飛行です。この機体は岐阜基�
 
 航空祭のハイライトは何と言ってもブルーインパルスの展示飛行でした。
 
-![ブルーインパルスのスモークライン](https://lh3.googleusercontent.com/pw/AP1GczPJt_M9te-ByQrUecJs1rdUoME6ZK-1PfpbqBcDHpdR11S00rvInnFYh5NHQ-xxQoRLxzmCePFHcnPMsn_QFoqdxH0XCs9IZOQ1eXI1SPl2sqKFcyNUO3otCnK4oXNHkTR_tIerDVZwg2l6lwZzruh9vQ=w800-h450-s-no-gm?authuser=0)
+![ブルーインパルスのスモークライン](https://lh3.googleusercontent.com/pw/AP1GczPJt_M9te-ByQrUecJs1rdUoME6ZK-1PfpbqBcDHpdR11S00rvInnFYh5NHQ-xxQoRLxzmCePFHcnPMsn_QFoqdxH0XCs9IZOQ1eXI1SPl2sqKFcyNUO3otCnK4oXNHkTR_tIerDVZwg2l6lwZzruh9vQ=s800-no-gm?authuser=0)
 
 6機のT-4練習機が描く美しいスモークラインです。白いスモークが青空に映えて、見事なフォーメーションを披露してくれました。このような一糸乱れぬ編隊飛行を間近で見ることができ、とても感動的でした。
 
 ## 基地南側通路からの見学
 
-![ブルーインパルス機の地上展示](https://lh3.googleusercontent.com/pw/AP1GczMta_hSxa94cdz1WW8AKaZgpAku3fxW_U6uY0IZVSwsyPGa3EEG1Q33Pbr_3jrtMmAaLUBOtuZg12h8mR9kOmgN5K6S3OBtNf6SClu5ZEAgh_FBA86AaHvxUSCGxLwBbuurFiq4sSou6A7n99oCG9lixg=w800-h450-s-no-gm?authuser=0)
+![ブルーインパルス機の地上展示](https://lh3.googleusercontent.com/pw/AP1GczMta_hSxa94cdz1WW8AKaZgpAku3fxW_U6uY0IZVSwsyPGa3EEG1Q33Pbr_3jrtMmAaLUBOtuZg12h8mR9kOmgN5K6S3OBtNf6SClu5ZEAgh_FBA86AaHvxUSCGxLwBbuurFiq4sSou6A7n99oCG9lixg=s800-no-gm?authuser=0)
 
 午前中の展示飛行後は、基地南側の通路から入って地上展示を見学しました。この写真はブルーインパルス仕様のT-4練習機で、機体番号686、「26-5686」の表記が確認できます。「Blue Impulse」の文字も機体に美しく描かれています。
 
