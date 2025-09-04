@@ -20,63 +20,30 @@ import re
 import sys
 import glob
 import argparse
-import requests
 from pathlib import Path
 from collections import defaultdict
-from urllib.parse import urlparse
-import time
 
-def get_image_size_from_url(url):
-    """URLから画像のサイズを取得"""
-    try:
-        # HEADリクエストでContent-Lengthのみ取得し、実際にはダウンロード
-        response = requests.get(url, timeout=10, stream=True)
-        response.raise_for_status()
-        
-        # 画像の最初の部分を読んでサイズを取得
-        from PIL import Image
-        from io import BytesIO
-        
-        # 最初の数KB読んでサイズを取得
-        chunk_size = 2048
-        image_data = BytesIO()
-        for chunk in response.iter_content(chunk_size=chunk_size):
-            image_data.write(chunk)
-            image_data.seek(0)
-            try:
-                with Image.open(image_data) as img:
-                    return img.size  # (width, height)
-            except Exception:
-                if len(image_data.getvalue()) > chunk_size * 10:  # 20KB以上読んでもダメなら諦める
-                    break
-                continue
-        
-        return None
-    except Exception as e:
-        print(f"   ⚠️ サイズ取得エラー ({url[:60]}...): {e}")
-        return None
+def convert_url_to_s800_no_gm(original_url):
+    """Google Photos URLをs800-no-gm形式に変換（大幅簡素化）"""
+    # s1621形式の変換
+    if '=s1621?authuser=0' in original_url:
+        return original_url.replace('=s1621?authuser=0', '=s800-no-gm?authuser=0')
+    elif '=s1621' in original_url:
+        return original_url.replace('=s1621', '=s800-no-gm')
+    
+    # 既存HDR形式の変換
+    # w{width}-h{height}-s-no-gm → s800-no-gm
+    import re
+    hdr_pattern = r'=w\d+-h\d+-s-no-gm'
+    if re.search(hdr_pattern, original_url):
+        return re.sub(hdr_pattern, '=s800-no-gm', original_url)
+    
+    # 変換不要の場合
+    return original_url
 
-def generate_hdr_url_800px(original_url, width, height):
-    """800px幅基準でHDR URLを生成"""
-    try:
-        # アスペクト比を計算
-        aspect_ratio = height / width
-        target_width = 800
-        target_height = int(target_width * aspect_ratio)
-        
-        # s1621パラメーターをHDR対応パラメーターに変更
-        if '=s1621?authuser=0' in original_url:
-            return original_url.replace('=s1621?authuser=0', f'=w{target_width}-h{target_height}-s-no-gm?authuser=0')
-        elif '=s1621' in original_url:
-            return original_url.replace('=s1621', f'=w{target_width}-h{target_height}-s-no-gm')
-        else:
-            return original_url
-    except Exception as e:
-        print(f"   ⚠️ HDR URL生成エラー: {e}")
-        return original_url
 
 def scan_markdown_files(target_file=None):
-    """Markdownファイルをスキャンして s1621 URLを抽出"""
+    """Markdownファイルをスキャンして変換対象のGoogle Photos URLを抽出"""
     content_dir = Path("content/posts")
     
     if target_file:
@@ -84,7 +51,11 @@ def scan_markdown_files(target_file=None):
     else:
         files = list(content_dir.glob("*.md"))
     
-    url_pattern = re.compile(r'https://lh3\.googleusercontent\.com/[^)\s]*=s1621[^)\s]*')
+    # s1621形式とHDR形式（w{width}-h{height}-s-no-gm）の両方を検出
+    patterns = [
+        re.compile(r'https://lh3\.googleusercontent\.com/[^)\s]*=s1621[^)\s]*'),
+        re.compile(r'https://lh3\.googleusercontent\.com/[^)\s]*=w\d+-h\d+-s-no-gm[^)\s]*')
+    ]
     
     file_urls = {}  # ファイル名 -> URLリスト
     all_urls = set()  # 重複排除用
@@ -98,7 +69,11 @@ def scan_markdown_files(target_file=None):
             with open(file_path, 'r', encoding='utf-8') as f:
                 content = f.read()
             
-            urls = url_pattern.findall(content)
+            # 両方のパターンで検索
+            urls = []
+            for pattern in patterns:
+                urls.extend(pattern.findall(content))
+            
             if urls:
                 file_urls[file_path.name] = urls
                 all_urls.update(urls)
@@ -107,27 +82,20 @@ def scan_markdown_files(target_file=None):
     
     return file_urls, list(all_urls)
 
-def process_urls_to_hdr(urls):
-    """URLリストをHDR版に変換"""
-    url_mapping = {}  # 元URL -> HDR URL
+def process_urls_to_s800(urls):
+    """URLリストをs800-no-gm形式に変換（シンプル処理）"""
+    url_mapping = {}  # 元URL -> 変換後URL
     
-    print(f"\n🔍 {len(urls)}個のURLのサイズを取得中...")
+    print(f"\n🔄 {len(urls)}個のURLをs800-no-gm形式に変換中...")
     
     for i, url in enumerate(urls, 1):
-        print(f"[{i:2d}/{len(urls)}] サイズ取得中...")
+        converted_url = convert_url_to_s800_no_gm(url)
+        url_mapping[url] = converted_url
         
-        size = get_image_size_from_url(url)
-        if size:
-            width, height = size
-            hdr_url = generate_hdr_url_800px(url, width, height)
-            url_mapping[url] = hdr_url
-            print(f"   ✅ {width}×{height}px → 800×{int(800 * height / width)}px")
+        if converted_url != url:
+            print(f"[{i:2d}/{len(urls)}] ✅ 変換: {url.split('=')[-1][:20]}... → s800-no-gm")
         else:
-            url_mapping[url] = url  # 失敗時は元URLを維持
-            print(f"   ❌ サイズ取得失敗、元URLを維持")
-        
-        # レート制限対策
-        time.sleep(0.5)
+            print(f"[{i:2d}/{len(urls)}] ➖ 変換不要: すでに最適化済み")
     
     return url_mapping
 
@@ -173,15 +141,15 @@ def update_markdown_files(file_urls, url_mapping, dry_run=False):
     return updated_files, total_replacements
 
 def main():
-    parser = argparse.ArgumentParser(description='既存記事の画像URLをHDR版に一括更新')
+    parser = argparse.ArgumentParser(description='既存記事の画像URLをs800-no-gm形式に一括変換')
     parser.add_argument('--dry-run', action='store_true', help='実際の更新を行わず、確認のみ実行')
     parser.add_argument('--file', type=str, help='特定のファイルのみ処理')
     
     args = parser.parse_args()
     
-    print("=" * 60)
-    print("🚀 既存記事HDR一括更新スクリプト")
-    print("=" * 60)
+    print("=" * 70)
+    print("🚀 既存記事画像URL s800-no-gm一括変換スクリプト")
+    print("=" * 70)
     
     if args.dry_run:
         print("🔍 DRY RUNモード: 実際の更新は行いません")
@@ -191,21 +159,21 @@ def main():
     file_urls, all_urls = scan_markdown_files(args.file)
     
     if not all_urls:
-        print("✨ s1621パターンのURLが見つかりませんでした")
+        print("✨ 変換対象のGoogle Photos URLが見つかりませんでした")
         return
     
     print(f"📊 検出結果:")
     print(f"   📄 対象ファイル数: {len(file_urls)}個")
     print(f"   🔗 ユニークURL数: {len(all_urls)}個")
     
-    # Step 2: URLをHDR版に変換
-    url_mapping = process_urls_to_hdr(all_urls)
+    # Step 2: URLをs800-no-gm形式に変換
+    url_mapping = process_urls_to_s800(all_urls)
     
     # 変換統計
     converted_count = sum(1 for old, new in url_mapping.items() if old != new)
     print(f"\n📈 変換統計:")
-    print(f"   ✅ HDR変換成功: {converted_count}個")
-    print(f"   📷 変換不要/失敗: {len(all_urls) - converted_count}個")
+    print(f"   ✅ s800-no-gm変換成功: {converted_count}個")
+    print(f"   📷 変換不要: {len(all_urls) - converted_count}個")
     
     # Step 3: ファイル更新
     if converted_count > 0:
@@ -222,9 +190,9 @@ def main():
             else:
                 print(f"   python scripts/bulk_hdr_update.py")
         else:
-            print(f"\n✅ HDR一括更新完了！")
+            print(f"\n✅ s800-no-gm一括変換完了！")
     else:
-        print(f"\n📷 更新対象のURLがありませんでした")
+        print(f"\n📷 変換対象のURLがありませんでした")
 
 if __name__ == "__main__":
     try:
