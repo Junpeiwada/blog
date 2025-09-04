@@ -12,7 +12,8 @@
       "Bash(python:*)",
       "Bash(gtimeout:*)",
       "Bash(mkdir:*)",
-      "Bash(npm run:*)"
+      "Bash(npm run:*)",
+      "WebFetch(domain:scienceportal.jst.go.jp)"
     ],
     "deny": [],
     "ask": []
