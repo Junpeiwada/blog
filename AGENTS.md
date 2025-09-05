@@ -1,46 +1,45 @@
-# Repository Guidelines
+# リポジトリガイドライン
 
-Refer to `CLAUDE.md` for agent workflows and the Japanese response policy.
+エージェントワークフローと日本語レスポンス方針については `CLAUDE.md` を参照してください。
 
-## Project Structure & Modules
-- `posts/`: Markdown sources (`YYYY-MM-DD-title.md`, with YAML frontmatter).
-- `templates/`: Jinja2 templates (`base.html`, `post.html`, `index.html`).
-- `scripts/`: Build/deploy/validate tools (Python).
-- `assets/` and `images/`: Source CSS and images (copied to `docs/`).
-- `docs/`: Generated site for GitHub Pages (do not edit manually).
+## プロジェクト構造・モジュール
+- `posts/`: Markdownソースファイル（`YYYY-MM-DD-title.md`形式、YAMLフロントマター付き）
+- `templates/`: Jinja2テンプレート（`base.html`, `post.html`, `index.html`）
+- `scripts/`: ビルド・デプロイ・検証ツール（Python）
+- `assets/` と `images/`: ソースCSS・画像（`docs/`にコピーされる）
+- `docs/`: GitHub Pages用生成サイト（手動編集禁止）
 
-## Build, Test, and Dev
-- `npm run build`: Generate site into `docs/`.
-- `npm run serve`: Build and launch local preview server.
-- `npm run dev`: Build then serve for development.
-- `npm run validate`: Lint article frontmatter, image paths, basics.
-- `npm run deploy` / `npm run publish` / `npm run ビルドして公開`: Full build + publish.
-- Python direct (after `source venv/bin/activate`): `python scripts/build.py [--serve]`, `python scripts/deploy.py`.
+## ビルド・テスト・開発
+- `npm run ビルド`: サイトを`docs/`に生成
+- `npm run プレビュー`: ビルドしてローカルプレビューサーバー起動
+- `npm run 検証`: 記事フロントマター・画像パス等の基本チェック
+- `npm run ビルドして公開`: フルビルド+公開
+- Python直接実行（`source venv/bin/activate`後）: `python scripts/build.py [--serve]`, `python scripts/deploy.py`
 
-## Coding Style & Naming
-- Python: PEP 8, 4-space indent, `snake_case` for files/functions in `scripts/`.
-- Templates: Use Jinja2 blocks consistently; keep shared layout in `base.html`.
-- Posts: Filename `YYYY-MM-DD-title.md`; image paths like `../images/filename.jpg`.
-- Content: YAML frontmatter requires `title`, `date` (YYYY-MM-DD), `category`, `description`; `tags` is a list.
+## コーディングスタイル・命名規則
+- Python: PEP 8準拠、4スペースインデント、`scripts/`内のファイル・関数は`snake_case`
+- テンプレート: Jinja2ブロックを一貫して使用、共通レイアウトは`base.html`に
+- 記事: ファイル名`YYYY-MM-DD-title.md`、画像パス形式`../images/filename.jpg`
+- コンテンツ: YAMLフロントマターに`title`, `date`(YYYY-MM-DD), `category`, `description`必須、`tags`はリスト形式
 
-## Testing Guidelines
-- Run `npm run validate` before pushing; fix reported errors/warnings.
-- Preview locally with `npm run serve` and spot-check links/images.
-- Do not commit changes under `docs/` without running a fresh build.
+## テストガイドライン
+- プッシュ前に`npm run 検証`を実行、報告されたエラー・警告を修正
+- `npm run プレビュー`でローカル確認、リンク・画像を目視チェック
+- `docs/`配下の変更は必ずフレッシュビルド実行後にコミット
 
-## Commit & Pull Requests
-- Commit style examples:
-  - New post: `feat(post): add <title>`
-  - Post update: `chore(post): update <title> - <change>`
-  - System: `refactor(build): <scope>` / `fix(validator): <issue>`
-- PRs should include: clear description, linked issues, steps to validate (commands), and screenshots for UI changes.
+## コミット・プルリクエスト
+- コミットスタイル例:
+  - 新記事: `feat(post): add <タイトル>`
+  - 記事更新: `chore(post): update <タイトル> - <変更内容>`
+  - システム: `refactor(build): <範囲>` / `fix(validator): <問題>`
+- PR要件: 明確な説明、関連Issue、検証手順（コマンド）、UI変更時はスクリーンショット
 
-## Security & Configuration
-- No secrets in repo or posts; GitHub Pages publishes from `docs/` only.
-- Use `venv` + `pip install -r requirements.txt`; Node >= 14 for npm scripts.
-- Large media: commit to `images/`; avoid external hotlinks when possible.
+## セキュリティ・設定
+- リポジトリ・記事内にシークレット情報なし、GitHub Pagesは`docs/`のみ公開
+- `venv` + `pip install -r requirements.txt`使用、npm scripts用にNode >= 14
+- 大容量メディア: `images/`にコミット、可能な限り外部ホットリンク避ける
 
-## Agent-Specific Instructions
-- Read `CLAUDE.md` first; follow `docs/ARTICLE_WORKFLOW.md` for post creation.
-- Communicate in Japanese as required by `CLAUDE.md`.
-- Before publishing: `npm run validate` → `npm run serve` to preview.
+## エージェント固有指示
+- 最初に`CLAUDE.md`を読み、記事作成は`docs/ARTICLE_WORKFLOW.md`に従う
+- `CLAUDE.md`の要求により日本語でコミュニケーション
+- 公開前: `npm run 検証` → `npm run プレビュー`でプレビュー確認

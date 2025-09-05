@@ -52,20 +52,13 @@ blog/
 npm run ビルドして公開
 
 # ビルドのみ（HTML生成）
-npm run build
+npm run ビルド
 
 # ローカルサーバー起動（プレビュー用）
-npm run serve
-
-# 開発モード（ビルド → サーバー起動）
-npm run dev
+npm run プレビュー
 
 # 記事検証
-npm run validate
-
-# エイリアス
-npm run deploy    # = npm run ビルドして公開
-npm run publish   # = npm run ビルドして公開
+npm run 検証
 ```
 
 ### Python 直接実行（従来方法）
@@ -122,7 +115,7 @@ pip install selenium webdriver-manager  # Google Photos用
             "label": "ビルド",
             "type": "shell",
             "command": "npm",
-            "args": ["run", "build"],
+            "args": ["run", "ビルド"],
             "group": {
                 "kind": "build",
                 "isDefault": true
@@ -138,7 +131,7 @@ pip install selenium webdriver-manager  # Google Photos用
             "label": "サーバー起動",
             "type": "shell",
             "command": "npm",
-            "args": ["run", "serve"]
+            "args": ["run", "プレビュー"]
         }
     ]
 }

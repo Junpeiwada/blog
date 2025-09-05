@@ -79,7 +79,7 @@ python scripts/download_images_for_review.py --clean "$ARGUMENTS" --article-titl
 ### 記事更新後の確認
 ```bash
 # ローカルでプレビュー確認
-npm run serve
+npm run プレビュー
 
 # 問題なければビルド・公開
 npm run ビルドして公開
@@ -131,7 +131,7 @@ npm run ビルドして公開
 ### 5. 最終チェックと公開
 ```bash
 # プレビューで確認
-npm run serve
+npm run プレビュー
 
 # 問題なければ公開
 npm run ビルドして公開

@@ -4,12 +4,9 @@
   "description": "Junpei Wada's personal blog with Japanese Alps mountain guides",
   "main": "scripts/build.py",
   "scripts": {
-    "build": "source venv/bin/activate && python scripts/build.py",
-    "deploy": "source venv/bin/activate && python scripts/deploy.py",
-    "serve": "source venv/bin/activate && python scripts/build.py --serve",
-    "validate": "source venv/bin/activate && python scripts/validate_post.py",
-    "dev": "npm run build && npm run serve",
-    "publish": "npm run deploy",
+    "ビルド": "source venv/bin/activate && python scripts/build.py",
+    "プレビュー": "source venv/bin/activate && python scripts/build.py --serve",
+    "検証": "source venv/bin/activate && python scripts/validate_post.py",
     "ビルドして公開": "source venv/bin/activate && python scripts/deploy.py"
   },
   "keywords": [
@@ -22,7 +19,7 @@
     "static-site-generator"
   ],
   "author": "Junpei Wada",
-  "license": "MIT",
+  "license": "Copyright Junpei Wada",
   "repository": {
     "type": "git",
     "url": "https://github.com/Junpeiwada/blog.git"
