@@ -11,12 +11,14 @@ GoglePhotosから写真のurlの取得とダウンロードを行うPythonスク
 
 google_photos_extractor.pyは写真の枚数によって非常に時間がかかるのでタイムアウトを15分程度に設定して実行を待つ必要があります。
 ```bash
-# Google Photos URL抽出
+# Google Photos URL抽出（⚠️必ずクオート必須⚠️）
 python scripts/google_photos_extractor.py "共有URL" --headless
 
-# 画像ダウンロード・分析（自動でEXIF日時抽出・最適化URL生成・分析MD生成）
-python scripts/download_images_for_review.py --clean [URL群] --article-title "記事タイトル"
+# 画像ダウンロード・分析（⚠️各URLを必ずクオートで囲む⚠️）
+python scripts/download_images_for_review.py --clean "URL1" "URL2" "URL3" --article-title "記事タイトル"
 ```
+
+**⚠️ 重要**: URLには`?authuser=0`などのクエリパラメータが含まれるため、必ず**ダブルクオート**で囲む必要があります。
 
 **Step 1の出力**:
 - `scripts/tmp/review_image_XX_HASH.jpg` - ダウンロードされた画像
